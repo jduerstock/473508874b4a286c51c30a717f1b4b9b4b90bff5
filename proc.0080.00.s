@@ -4203,22 +4203,22 @@ sub_10002b1e:
 	rts			/* 10002c70:	4e75 */
 
 sub_10002c72:
-	.byte	0x60,0x00,0xe3,0x08
+	braw	sub_10000f7c	/* 10002c72:	6000 e308 */
 
 sub_10002c76:
-	.byte	0x60,0x00,0xd8,0x6e
+	braw	sub_100004e6	/* 10002c76:	6000 d86e */
 
 sub_10002c7a:
-	.byte	0x60,0x00,0xea,0x82
+	braw	sub_100016fe	/* 10002c7a:	6000 ea82 */
 
 sub_10002c7e:
-	.byte	0x60,0x00,0xeb,0x3c
+	braw	sub_100017bc	/* 10002c7e:	6000 eb3c */
 
 sub_10002c82:
-	.byte	0x60,0x00,0xf3,0xb8
+	braw	sub_1000203c	/* 10002c82:	6000 f3b8 */
 
 sub_10002c86:
-	.byte	0x60,0x00,0xf2,0xb2
+	braw	sub_10001f3a	/* 10002c86:	6000 f2b2 */
 
 sub_10002c8a:
 	.byte	0x4e,0x56,0xff,0xec,0x48,0xe7
