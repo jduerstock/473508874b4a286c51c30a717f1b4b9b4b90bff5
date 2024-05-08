@@ -3557,13 +3557,13 @@ sub_10009772:
 	rts	/* 100097de:	4e75 */
 
 sub_100097e0:
-	.byte	0x60,0x00,0x76,0xe2
+	braw	sub_10010ec4	/* 100097e0:	6000 76e2 */
 
 sub_100097e4:
-	.byte	0x60,0x00,0x76,0xe2
+	braw	sub_10010ec8	/* 100097e4:	6000 76e2 */
 
 sub_100097e8:
-	.byte	0x60,0x00,0x76,0xe2
+	braw	sub_10010ecc	/* 100097e8:	6000 76e2 */
 
 sub_100097ec:
 	.byte	0x4e,0x56,0xff,0xfa
