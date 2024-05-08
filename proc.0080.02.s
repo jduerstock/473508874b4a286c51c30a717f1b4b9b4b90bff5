@@ -2354,7 +2354,7 @@ sub_10008b4c:
 	rts	/* 10008c48:	4e75 */
 
 sub_10008c4a:
-	.byte	0x60,0x00,0xf8,0x22
+	braw	sub_1000846e	/* 10008c4a:	6000 f822 */
 
 sub_10008c4e:
 	.byte	0x4e,0x56
