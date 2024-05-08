@@ -1382,7 +1382,7 @@ sub_100080e8:
 	rts	/* 100081d6:	4e75 */
 
 sub_100081d8:
-	.byte	0x60,0x00,0x76,0xb4
+	braw	sub_1000f88e	/* 100081d8:	6000 76b4 */
 
 sub_100081dc:
 	.byte	0x4e,0x56,0xff,0xe4
