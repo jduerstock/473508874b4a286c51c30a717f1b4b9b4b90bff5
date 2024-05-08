@@ -1290,13 +1290,13 @@ sub_10007fce:
 	rts	/* 100080da:	4e75 */
 
 sub_100080dc:
-	.byte	0x60,0x00,0x71,0x1e
+	braw	sub_1000f1fc	/* 100080dc:	6000 711e */
 
 sub_100080e0:
-	.byte	0x60,0x00,0x71,0x1e
+	braw	sub_1000f200	/* 100080e0:	6000 711e */
 
 sub_100080e4:
-	.byte	0x60,0x00,0x71,0x1e
+	braw	sub_1000f204	/* 100080e4:	6000 711e */
 
 sub_100080e8:
 	.byte	0x4e,0x56,0xff,0xe8,0x48,0xe7,0x00,0x38
