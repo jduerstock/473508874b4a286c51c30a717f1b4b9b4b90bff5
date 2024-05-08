@@ -1179,7 +1179,7 @@ sub_10007e40:
 	rts	/* 10007fc8:	4e75 */
 
 sub_10007fca:
-	.byte	0x60,0x00,0x72,0x3c
+	braw	sub_1000f208	/* 10007fca:	6000 723c */
 
 sub_10007fce:
 	.byte	0x4e,0x56
