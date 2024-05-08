@@ -169,9 +169,16 @@ sub_10007650:
 	braw	sub_1000ed90	/* 10007650:	6000 773e */
 
 sub_10007654:
-	.byte	0x4e,0x56,0xff,0xfc,0x2f,0x2e,0x00,0x08,0x4e,0xba,0x00,0x28
-	.byte	0x2d,0x40,0xff,0xfc,0x4e,0xba,0x77,0x2a,0x20,0x40,0x20,0x2e,0xff,0xfc,0x21,0x40
-	.byte	0x00,0x88,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#-4	/* 10007654:	4e56 fffc */
+	movel	%fp@(8),%sp@-	/* 10007658:	2f2e 0008 */
+	jsr	%pc@(sub_10007686)	/* 1000765c:	4eba 0028 */
+	movel	%d0,%fp@(-4)	/* 10007660:	2d40 fffc */
+	jsr	%pc@(sub_1000ed90)	/* 10007664:	4eba 772a */
+	moveal	%d0,%a0	/* 10007668:	2040 */
+	movel	%fp@(-4),%d0	/* 1000766a:	202e fffc */
+	movel	%d0,%a0@(136)	/* 1000766e:	2140 0088 */
+	unlk	%fp	/* 10007672:	4e5e */
+	rts	/* 10007674:	4e75 */
 
 sub_10007676:
 	.byte	0x60,0x00,0x18,0x6e
