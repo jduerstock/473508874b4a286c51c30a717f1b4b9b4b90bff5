@@ -2708,13 +2708,44 @@ sub_10008fb2:
 	braw	sub_1001055a	/* 10008fb2:	6000 75a6 */
 
 sub_10008fb6:
-	.byte	0x4e,0x56,0xff,0xfc,0x48,0xe7,0x00,0x18,0x4e,0xba
-	.byte	0x5d,0xd0,0x20,0x40,0x2d,0x68,0x01,0xb8,0xff,0xfc,0x60,0x3c,0x59,0x8f,0x20,0x6e
-	.byte	0xff,0xfc,0x20,0x68,0x00,0x08,0x2f,0x10,0x4e,0xba,0x68,0xb4,0x28,0x5f,0x20,0x6e
-	.byte	0xff,0xfc,0x26,0x50,0x60,0x14,0x2f,0x2e,0x00,0x14,0x2f,0x2e,0x00,0x10,0x2f,0x0c
-	.byte	0x58,0x4c,0x4e,0xba,0x75,0x72,0x4f,0xef,0x00,0x0c,0xb7,0xcc,0x62,0xe8,0x20,0x6e
-	.byte	0xff,0xfc,0x2d,0x68,0x00,0x18,0xff,0xfc,0x4a,0xae,0xff,0xfc,0x66,0xbe,0x4c,0xee
-	.byte	0x18,0x00,0xff,0xf4,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#-4	/* 10008fb6:	4e56 fffc */
+	moveml	%a3-%a4,%sp@-	/* 10008fba:	48e7 0018 */
+	jsr	%pc@(sub_1000ed90)	/* 10008fbe:	4eba 5dd0 */
+	moveal	%d0,%a0	/* 10008fc2:	2040 */
+	movel	%a0@(440),%fp@(-4)	/* 10008fc4:	2d68 01b8 fffc */
+	bras	.L10009008	/* 10008fca:	603c */
+
+.L10008fcc:
+	subql	#4,%sp		/* 10008fcc:	598f */
+	moveal	%fp@(-4),%a0	/* 10008fce:	206e fffc */
+	moveal	%a0@(8),%a0	/* 10008fd2:	2068 0008 */
+	movel	%a0@,%sp@-	/* 10008fd6:	2f10 */
+	jsr	%pc@(sub_1000f88e)	/* 10008fd8:	4eba 68b4 */
+	moveal	%sp@+,%a4	/* 10008fdc:	285f */
+	moveal	%fp@(-4),%a0	/* 10008fde:	206e fffc */
+	moveal	%a0@,%a3	/* 10008fe2:	2650 */
+	bras	.L10008ffa	/* 10008fe4:	6014 */
+
+.L10008fe6:
+	movel	%fp@(20),%sp@-	/* 10008fe6:	2f2e 0014 */
+	movel	%fp@(16),%sp@-	/* 10008fea:	2f2e 0010 */
+	movel	%a4,%sp@-	/* 10008fee:	2f0c */
+	addqw	#4,%a4		/* 10008ff0:	584c */
+	jsr	%pc@(sub_10010566)	/* 10008ff2:	4eba 7572 */
+	lea	%sp@(12),%sp	/* 10008ff6:	4fef 000c */
+
+.L10008ffa:
+	cmpal	%a4,%a3		/* 10008ffa:	b7cc */
+	bhis	.L10008fe6	/* 10008ffc:	62e8 */
+	moveal	%fp@(-4),%a0	/* 10008ffe:	206e fffc */
+	movel	%a0@(24),%fp@(-4)	/* 10009002:	2d68 0018 fffc */
+
+.L10009008:
+	tstl	%fp@(-4)	/* 10009008:	4aae fffc */
+	bnes	.L10008fcc	/* 1000900c:	66be */
+	moveml	%fp@(-12),%a3-%a4	/* 1000900e:	4cee 1800 fff4 */
+	unlk	%fp	/* 10009014:	4e5e */
+	rts	/* 10009016:	4e75 */
 
 sub_10009018:
 	.byte	0x60,0x00,0x1a,0x92
