@@ -3856,10 +3856,10 @@ sub_10009a0a:
 	rts	/* 10009aa2:	4e75 */
 
 sub_10009aa4:
-	.byte	0x60,0x00,0x76,0x06
+	braw	sub_100110ac	/* 10009aa4:	6000 7606 */
 
 sub_10009aa8:
-	.byte	0x60,0x00,0x76,0x0a
+	braw	sub_100110b4	/* 10009aa8:	6000 760a */
 
 sub_10009aac:
 	.byte	0x4e,0x56,0x00,0x00
