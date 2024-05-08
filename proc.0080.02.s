@@ -885,16 +885,16 @@ sub_10007b44:
 	rts	/* 10007cba:	4e75 */
 
 sub_10007cbc:
-	.byte	0x60,0x00,0x1d,0xee
+	braw	sub_10009aac	/* 10007cbc:	6000 1dee */
 
 sub_10007cc0:
-	.byte	0x60,0x00,0x2c,0xbc
+	braw	sub_1000a97e	/* 10007cc0:	6000 2cbc */
 
 sub_10007cc4:
-	.byte	0x60,0x00,0x75,0x2a
+	braw	sub_1000f1f0	/* 10007cc4:	6000 752a */
 
 sub_10007cc8:
-	.byte	0x60,0x00,0x75,0x2a
+	braw	sub_1000f1f4	/* 10007cc8:	6000 752a */
 
 sub_10007ccc:
 	.byte	0x4e,0x56,0xff,0xe8
