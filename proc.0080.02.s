@@ -4436,10 +4436,10 @@ sub_10009c14:
 	rts	/* 1000a042:	4e75 */
 
 sub_1000a044:
-	.byte	0x60,0x00,0xee,0x60
+	braw	sub_10008ea6	/* 1000a044:	6000 ee60 */
 
 sub_1000a048:
-	.byte	0x60,0x00,0xd6,0x38
+	braw	sub_10007682	/* 1000a048:	6000 d638 */
 
 sub_1000a04c:
 	.byte	0x4e,0x56,0xff,0xf8
