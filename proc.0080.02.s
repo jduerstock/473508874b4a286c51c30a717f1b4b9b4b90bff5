@@ -4991,49 +4991,49 @@ sub_1000a3fa:
 	rts	/* 1000a57c:	4e75 */
 
 sub_1000a57e:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b32	/* 1000a57e:	6000 75b2 */
 
 sub_1000a582:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b36	/* 1000a582:	6000 75b2 */
 
 sub_1000a586:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b3a	/* 1000a586:	6000 75b2 */
 
 sub_1000a58a:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b3e	/* 1000a58a:	6000 75b2 */
 
 sub_1000a58e:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b42	/* 1000a58e:	6000 75b2 */
 
 sub_1000a592:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b46	/* 1000a592:	6000 75b2 */
 
 sub_1000a596:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b4a	/* 1000a596:	6000 75b2 */
 
 sub_1000a59a:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b4e	/* 1000a59a:	6000 75b2 */
 
 sub_1000a59e:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b52	/* 1000a59e:	6000 75b2 */
 
 sub_1000a5a2:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b56	/* 1000a5a2:	6000 75b2 */
 
 sub_1000a5a6:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b5a	/* 1000a5a6:	6000 75b2 */
 
 sub_1000a5aa:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b5e	/* 1000a5aa:	6000 75b2 */
 
 sub_1000a5ae:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b62	/* 1000a5ae:	6000 75b2 */
 
 sub_1000a5b2:
-	.byte	0x60,0x00,0x75,0xb2
+	braw	sub_10011b66	/* 1000a5b2:	6000 75b2 */
 
 sub_1000a5b6:
-	.byte	0x60,0x00,0xe5,0x94
+	braw	sub_10008b4c	/* 1000a5b6:	6000 e594 */
 
 sub_1000a5ba:
 	.byte	0x4e,0x56,0xff,0xf8,0x48,0xe7
