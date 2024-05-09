@@ -4601,7 +4601,7 @@ sub_1000a124:
 	.byte	0x02,0x6c
 	.byte	0x02,0x74
 
-	.byte	0x41,0xfa,0xd8,0x7c
+	lea	%pc@(sub_10007ab4),%a0	/* 1000a236:	41fa d87c */
 	movel	%a0,%d0	/* 1000a23a:	2008 */
 	braw	.L1000a3ca	/* 1000a23c:	6000 018c */
 
