@@ -1857,7 +1857,7 @@ sub_1000bb56:
 	rts	/* 1000bc14:	4e75 */
 
 sbu_1000bc16:
-	.byte	0x60,0x00,0xbf,0x28
+	braw	sub_10007b40	/* 1000bc16:	6000 bf28 */
 
 sbu_1000bc1a:
 	.byte	0x4e,0x56,0x00,0x00,0x2f,0x0c
