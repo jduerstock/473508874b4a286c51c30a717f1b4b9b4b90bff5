@@ -3897,7 +3897,7 @@ sub_1000d28c:
 sub_10002d24:
 	braw	sub_1000ad74	/* 1000d2d4:	6000 da9e */
 
-sub_10002d28:
+sub_1000d2d8:
 	linkw	%fp,#-88	/* 1000d2d8:	4e56 ffa8 */
 	moveml	%d5-%d7/%a2-%a4,%sp@-	/* 1000d2dc:	48e7 0738 */
 	jsr	%pc@(sub_1000ed90)	/* 1000d2e0:	4eba 1aae */
