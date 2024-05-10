@@ -1856,10 +1856,10 @@ sub_1000bb56:
 	unlk	%fp	/* 1000bc12:	4e5e */
 	rts	/* 1000bc14:	4e75 */
 
-sbu_1000bc16:
+sub_1000bc16:
 	braw	sub_10007b40	/* 1000bc16:	6000 bf28 */
 
-sbu_1000bc1a:
+sub_1000bc1a:
 	linkw	%fp,#0	/* 1000bc1a:	4e56 0000 */
 	movel	%a4,%sp@-	/* 1000bc1e:	2f0c */
 	moveq	#0,%d0	/* 1000bc20:	7000 */
@@ -3471,70 +3471,70 @@ sub_1000c710:
 	rts	/* 1000cf4a:	4e75 */
 
 sub_1000cf4c:
-	.byte	0x60,0x00,0x10,0x36
+	braw	sub_1000df84	/* 1000cf4c:	6000 1036 */
 
 sub_1000cf50:
-	.byte	0x60,0x00,0xec,0x04
+	braw	sub_1000bb56	/* 1000cf50:	6000 ec04 */
 
 sub_1000cf54:
-	.byte	0x60,0x00,0xcb,0xf4
+	braw	sub_10009b4a	/* 1000cf54:	6000 cbf4 */
 
 sub_1000cf58:
-	.byte	0x60,0x00,0xb8,0xda
+	braw	sub_10008834	/* 1000cf58:	6000 b8da */
 
 sub_1000cf5c:
-	.byte	0x60,0x00,0xf7,0xaa
+	braw	sub_1000c708	/* 1000cf5c:	6000 f7aa */
 
 sub_1000cf60:
-	.byte	0x60,0x00,0x8a,0xae
+	braw	sub_10005a10	/* 1000cf60:	6000 8aae */
 
 sub_1000cf64:
-	.byte	0x60,0x00,0xa8,0x42
+	braw	sub_100077a8	/* 1000cf64:	6000 a842 */
 
 sub_1000cf68:
-	.byte	0x60,0x00,0xa8,0x4a
+	braw	sub_100077b4	/* 1000cf68:	6000 a84a */
 
 sub_1000cf6c:
-	.byte	0x60,0x00,0xad,0x52
+	braw	sub_10007cc0	/* 1000cf6c:	6000 ad52 */
 
 sub_1000cf70:
-	.byte	0x60,0x00,0xa6,0x78
+	braw	sub_100075ea	/* 1000cf70:	6000 a678 */
 
 sub_1000cf74:
-	.byte	0x60,0x00,0xa6,0xde
+	braw	sub_10007654	/* 1000cf74:	6000 a6de */
 
 sub_1000cf78:
-	.byte	0x60,0x00,0xaa,0x1c
+	braw	sub_10007996	/* 1000cf78:	6000 aa1c */
 
 sub_1000cf7c:
-	.byte	0x60,0x00,0x97,0x14
+	braw	sub_10006692	/* 1000cf7c:	6000 9714 */
 
 sub_1000cf80:
-	.byte	0x60,0x00,0xc3,0x28
+	braw	sub_100092aa	/* 1000cf80:	6000 c328 */
 
 sub_1000cf84:
-	.byte	0x60,0x00,0xc2,0xfa
+	braw	sub_10009280	/* 1000cf84:	6000 c2fa */
 
 sub_1000cf88:
-	.byte	0x60,0x00,0xc2,0xe8
+	braw	sub_10009272	/* 1000cf88:	6000 c2e8 */
 
 sub_1000cf8c:
-	.byte	0x60,0x00,0xec,0x8c
+	braw	sub_1000bc1a	/* 1000cf8c:	6000 ec8c */
 
 sub_1000cf90:
-	.byte	0x60,0x00,0xc2,0x14
+	braw	sub_100091a6	/* 1000cf90:	6000 c214 */
 
 sub_1000cf94:
-	.byte	0x60,0x00,0xc1,0xec
+	braw	sub_10009182	/* 1000cf94:	6000 c1ec */
 
 sub_1000cf98:
-	.byte	0x60,0x00,0xc1,0xca
+	braw	sub_10009164	/* 1000cf98:	6000 c1ca */
 
 sub_1000cf9c:
-	.byte	0x60,0x00,0xc1,0xa8
+	braw	sub_10009146	/* 1000cf9c:	6000 c1a8 */
 
 sub_1000cfa0:
-	.byte	0x60,0x00,0xc1,0x84
+	braw	sub_10009126	/* 1000cfa0:	6000 c184 */
 
 sub_1000cfa4:
 	.byte	0x4e,0x56,0xff,0xfc,0x48,0xe7,0x00,0x38,0x4e,0xba,0x1d,0xe2
