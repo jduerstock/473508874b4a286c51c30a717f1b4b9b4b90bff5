@@ -490,7 +490,7 @@ sub_1000e17c:
 	rts	/* 1000e388:	4e75 */
 
 sub_1000e38a:
-	.byte	0x60,0x00,0xc7,0x18
+	braw	sub_1000aaa4	/* 1000e38a:	6000 c718 */
 
 sub_1000e38e:
 	.byte	0x4e,0x56
