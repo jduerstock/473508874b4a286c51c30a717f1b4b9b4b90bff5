@@ -3319,10 +3319,22 @@ sub_1000f8ca:
 	rts	/* 100101d2:	4e75 */
 
 sub_100101d4:
-	.byte	0x60,0x00,0x8a,0x74
-	.byte	0x60,0x00,0xba,0x72,0x60,0x00,0x8e,0xba
-	.byte	0x60,0x00,0x8b,0x9e
-	.byte	0x60,0x00,0x8b,0xf4,0x60,0x00,0x8b,0x42
+	braw	sub_10008c4a	/* 100101d4:	6000 8a74 */
+
+sub_100101d8:
+	braw	sub_1000bc4c	/* 100101d8:	6000 ba72 */
+
+sub_100101dc:
+	braw	sub_10009098	/* 100101dc:	6000 8eba */
+
+sub_100101e0:
+	braw	sub_10008d80	/* 100101e0:	6000 8b9e */
+
+sub_100101e4:
+	braw	sub_10008dda	/* 100101e4:	6000 8bf4 */
+
+sub_100101e8:
+	braw	sub_10008d2c	/* 100101e8:	6000 8b42 */
 
 sub_100101ec:
 	.byte	0x4e,0x56,0x00,0x00
