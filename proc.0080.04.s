@@ -5147,25 +5147,25 @@ sub_10011282:
 	rts	/* 100113dc:	4e75 */
 
 sub_100113de:
-	.byte	0x60,0x00,0x77,0x4c
+	braw	sub_10018b2c	/* 100113de:	6000 774c */
 
 sub_100113e2:
-	.byte	0x60,0x00,0x40,0x18
+	braw	sub_100153fc	/* 100113e2:	6000 4018 */
 
 sub_100113e6:
-	.byte	0x60,0x00,0x77,0x48
+	braw	sub_10018b30	/* 100113e6:	6000 7748 */
 
 sub_100113ea:
-	.byte	0x60,0x00,0x8c,0x58
+	braw	sub_1000a044	/* 100113ea:	6000 8c58 */
 
 sub_100113ee:
-	.byte	0x60,0x00,0xee,0x2a
+	braw	sub_1001021a	/* 100113ee:	6000 ee2a */
 
 sub_100113f2:
-	.byte	0x60,0x00,0x8c,0x54
+	braw	sub_1000a048	/* 100113f2:	6000 8c54 */
 
 sub_100113f6:
-	.byte	0x60,0x00,0xf1,0x72
+	braw	sub_1001056a	/* 100113f6:	6000 f172 */
 
 sub_100113fa:
 	.byte	0x4e,0x56,0xff,0xbc,0x48,0xe7
