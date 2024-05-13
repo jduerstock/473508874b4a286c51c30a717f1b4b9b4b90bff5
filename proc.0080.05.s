@@ -368,70 +368,70 @@ sub_10011a26:
 	rts	/* 10011b18:	4e75 */
 
 sub_10011b1a:
-	.byte	0x60,0x00,0x57,0x42
+	braw	sub_1001725e	/* 10011b1a:	6000 5742 */
 
 sub_10011b1e:
-	.byte	0x60,0x00,0x33,0xfc
+	braw	sub_10014f1c	/* 10011b1e:	6000 33fc */
 
 sub_10011b22:
-	.byte	0x60,0x00,0x77,0xea
+	braw	sub_1001930e	/* 10011b22:	6000 77ea */
 
 sub_10011b26:
-	.byte	0x60,0x00,0x57,0x4a
+	braw	sub_10017272	/* 10011b26:	6000 574a */
 
 sub_10011b2a:
-	.byte	0x60,0x00,0x34,0xb2
+	braw	sub_10014fde	/* 10011b2a:	6000 34b2 */
 
 sub_10011b2e:
-	.byte	0x60,0x00,0x77,0xe2
+	braw	sub_10019312	/* 10011b2e:	6000 77e2 */
 
 sub_10011b32:
-	.byte	0x60,0x00,0x3e,0x56
+	braw	sub_1001598a	/* 10011b32:	6000 3e56 */
 
 sub_10011b36:
-	.byte	0x60,0x00,0x77,0xde
+	braw	sub_10019316	/* 10011b36:	6000 77de */
 
 sub_10011b3a:
-	.byte	0x60,0x00,0x77,0xde
+	braw	sub_1001931a	/* 10011b3a:	6000 77de */
 
 sub_10011b3e:
-	.byte	0x60,0x00,0x77,0xde
+	braw	sub_1001931e	/* 10011b3e:	6000 77de */
 
 sub_10011b42:
-	.byte	0x60,0x00,0x3f,0x72
+	braw	sub_10015ab6	/* 10011b42:	6000 3f72 */
 
 sub_10011b46:
-	.byte	0x60,0x00,0x77,0xda
+	braw	sub_10019322	/* 10011b46:	6000 77da */
 
 sub_10011b4a:
-	.byte	0x60,0x00,0x77,0xda
+	braw	sub_10019326	/* 10011b4a:	6000 77da */
 
 sub_10011b4e:
-	.byte	0x60,0x00,0x77,0xda
+	braw	sub_1001932a	/* 10011b4e:	6000 77da */
 
 sub_10011b52:
-	.byte	0x60,0x00,0x40,0xa2
+	braw	sub_10015bf6	/* 10011b52:	6000 40a2 */
 
 sub_10011b56:
-	.byte	0x60,0x00,0x77,0xd6
+	braw	sub_1001932e	/* 10011b56:	6000 77d6 */
 
 sub_10011b5a:
-	.byte	0x60,0x00,0x77,0xd6
+	braw	sub_10019332	/* 10011b5a:	6000 77d6 */
 
 sub_10011b5e:
-	.byte	0x60,0x00,0x41,0xb2
+	braw	sub_10015d12	/* 10011b5e:	6000 41b2 */
 
 sub_10011b62:
-	.byte	0x60,0x00,0x77,0xd2
+	braw	sub_10019336	/* 10011b62:	6000 77d2 */
 
 sub_10011b66:
-	.byte	0x60,0x00,0x77,0xd2
+	braw	sub_1001933a	/* 10011b66:	6000 77d2 */
 
 sub_10011b6a:
-	.byte	0x60,0x00,0x75,0xe6
+	braw	sub_10019152	/* 10011b6a:	6000 75e6 */
 
 sub_10011b6e:
-	.byte	0x60,0x00,0xca,0xc2
+	braw	sub_1000e632	/* 10011b6e:	6000 cac2 */
 
 sub_10011b72:
 	.byte	0x4e,0x56,0xff,0x9c,0x48,0xe7,0x03,0x00,0x70,0x00,0x2d,0x40,0xff,0xe4
