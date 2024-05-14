@@ -2585,10 +2585,10 @@ sub_100166a2:
 	rts	/* 10016714:	4e75 */
 
 sub_10016716:
-	.byte	0x60,0x00,0x76,0xca
+	braw	sub_1001dde2	/* 10016716:	6000 76ca */
 
 sub_1001671a:
-	.byte	0x60,0x00,0x77,0xd0
+	braw	sub_1001deec	/* 1001671a:	6000 77d0 */
 
 sub_1001671e:
 	.byte	0x4e,0x56
