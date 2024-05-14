@@ -71,10 +71,10 @@ sub_10014e7a:
 	rts	/* 10014f12:	4e75 */
 
 sub_10014f14:
-	.byte	0x60,0x00,0xf3,0xec
+	braw	sub_10014302	/* 10014f14:	6000 f3ec */
 
 sub_10014f18:
-	.byte	0x60,0x00,0xee,0x8c
+	braw	sub_10013da6	/* 10014f18:	6000 ee8c */
 
 sub_10014f1c:
 	.byte	0x4e,0x56,0xff,0xe8
