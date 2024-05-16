@@ -4009,9 +4009,20 @@ sub_10017342:
 	movel	%a0@-,%a1@-	/* 100173bc:	2320 */
 	rts	/* 100173be:	4e75 */
 
-	.byte	0x3f,0x00,0x48,0x57,0x3f,0x3c,0x00,0x01,0xa9,0xeb,0x54,0x8f,0x4e,0x75
-	.byte	0x55,0x8f
-	.byte	0x48,0x57,0x3f,0x3c,0x00,0x03,0xa9,0xeb,0x70,0x00,0x30,0x1f,0x4e,0x75
+	movew	%d0,%sp@-	/* 100173c0:	3f00 */
+	pea	%sp@	/* 100173c2:	4857 */
+	movew	#1,%sp@-	/* 100173c4:	3f3c 0001 */
+	.short	0xa9eb	/* 100173c8:	a9eb */
+	addql	#2,%sp	/* 100173ca:	548f */
+	rts	/* 100173cc:	4e75 */
+
+	subql	#2,%sp	/* 100173ce:	558f */
+	pea	%sp@	/* 100173d0:	4857 */
+	movew	#3,%sp@-	/* 100173d2:	3f3c 0003 */
+	.short	0xa9eb	/* 100173d6:	a9eb */
+	moveq	#0,%d0	/* 100173d8:	7000 */
+	movew	%sp@+,%d0	/* 100173da:	301f */
+	rts	/* 100173dc:	4e75 */
 
 sub_100173de:
 	.byte	0x4e,0x56
