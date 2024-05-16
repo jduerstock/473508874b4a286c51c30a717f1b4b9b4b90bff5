@@ -3247,9 +3247,13 @@ sub_10016d0a:
 	rts	/* 10016d1c:	4e75 */
 
 sub_10016d1e:
-	.byte	0x20,0x6f
-	.byte	0x00,0x0c,0x72,0x03,0x92,0xaf,0x00,0x08,0xd2,0xaf,0x00,0x04,0x58,0xc0,0x20,0x81
-	.byte	0x4e,0x75
+	moveal	%sp@(12),%a0	/* 10016d1e:	206f 000c */
+	moveq	#3,%d1	/* 10016d22:	7203 */
+	subl	%sp@(8),%d1	/* 10016d24:	92af 0008 */
+	addl	%sp@(4),%d1	/* 10016d28:	d2af 0004 */
+	svc	%d0	/* 10016d2c:	58c0 */
+	movel	%d1,%a0@	/* 10016d2e:	2081 */
+	rts	/* 10016d30:	4e75 */
 
 sub_10016d32:
 	.byte	0x60,0x00,0x8b,0x8e
