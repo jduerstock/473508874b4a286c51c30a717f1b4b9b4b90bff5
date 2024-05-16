@@ -3782,8 +3782,12 @@ sub_100171b2:
 	braw	sub_100101e8	/* 100171b2:	6000 9034 */
 
 sub_100171b6:
-	.byte	0x4e,0x56,0x00,0x00,0x48,0x7a,0xd5,0x1c,0x48,0x7a
-	.byte	0xfc,0xac,0x4e,0xba,0xff,0x02,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 100171b6:	4e56 0000 */
+	pea	%pc@(sub_100146d8)	/* 100171ba:	487a d51c */
+	pea	%pc@(sub_10016e6c)	/* 100171be:	487a fcac */
+	jsr	%pc@(sub_100170c6)	/* 100171c2:	4eba ff02 */
+	unlk	%fp	/* 100171c6:	4e5e */
+	rts	/* 100171c8:	4e75 */
 
 sub_100171ca:
 	.byte	0x4e,0x56,0x00,0x00,0x48,0x7a
