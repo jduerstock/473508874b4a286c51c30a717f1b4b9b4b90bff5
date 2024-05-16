@@ -3584,22 +3584,22 @@ sub_10016fe0:
 	rts	/* 10016fec:	4e75 */
 
 sub_10016fee:
-	.byte	0x60,0x00,0x78,0x5c
+	braw	sub_1001e84c	/* 10016fee:	6000 785c */
 
 sub_10016ff2:
-	.byte	0x60,0x00,0x78,0x5c
+	braw	sub_1001e850	/* 10016ff2:	6000 785c */
 
 sub_10016ff6:
-	.byte	0x60,0x00,0x68,0x8a
+	braw	sub_1001d882	/* 10016ff6:	6000 688a */
 
 sub_10016ffa:
-	.byte	0x60,0x00,0x5f,0x2a
+	braw	sub_1001cf26	/* 10016ffa:	6000 5f2a */
 
 sub_10016ffe:
-	.byte	0x60,0x00,0x78,0x54
+	braw	sub_1001e854	/* 10016ffe:	6000 7854 */
 
 sub_10017002:
-	.byte	0x60,0x00,0x78,0x54
+	braw	sub_1001e858	/* 10017002:	6000 7854 */
 
 sub_10017006:
 	.byte	0x4e,0x56,0xff,0xdc,0x48,0xe7,0x00,0x38,0x26,0x6e
