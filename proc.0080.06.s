@@ -3997,10 +3997,12 @@ sub_10017342:
 	unlk	%fp	/* 100173a2:	4e5e */
 	rts	/* 100173a4:	4e75 */
 
+sub_100173a6:
 	moveml	%fp@(-12),%d0-%d1/%a0	/* 100173a6:	4cee 0103 fff4 */
 	unlk	%fp	/* 100173ac:	4e5e */
 	rts	/* 100173ae:	4e75 */
 
+sub_100173b0:
 	moveq	#8,%d0	/* 100173b0:	7008 */
 
 sub_100173b2:
@@ -4035,12 +4037,14 @@ sub_100173de:
 	movew	#8216,%sp@-	/* 100173ee:	3f3c 2018 */
 	.short	0xa9eb	/* 100173f2:	a9eb */
 
-sub_100173fc:
-	.byte	0x60,0x00,0xff,0xb0
+	braw	sub_100173a6	/* 100173f4:	6000 ffb0 */
 
 sub_100173f8:
-	.byte	0x4e,0x56,0xff,0xf4,0x61,0x00,0xff,0xb2
-	.byte	0x48,0x51,0x3f,0x3c,0x00,0x14,0xa9,0xeb
+	linkw	%fp,#-12	/* 100173f8:	4e56 fff4 */
+	bsrw	sub_100173b0	/* 100173fc:	6100 ffb2 */
+	pea	%a1@	/* 10017400:	4851 */
+	movew	#20,%sp@-	/* 10017402:	3f3c 0014 */
+	.short	0xa9eb	/* 10017406:	a9eb */
 	.byte	0x60,0x00,0xff,0x9c
 
 sub_1001740c:
