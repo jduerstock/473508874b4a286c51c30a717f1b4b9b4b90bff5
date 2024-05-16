@@ -3299,7 +3299,7 @@ sub_10016d36:
 	rts	/* 10016d88:	4e75 */
 
 sub_10016d8a:
-	.byte	0x60,0x00,0x8b,0x3a
+	braw	sub_1000f8c6	/* 10016d8a:	6000 8b3a */
 
 sub_10016d8e:
 	.byte	0x4e,0x56
