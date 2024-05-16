@@ -4002,6 +4002,8 @@ sub_10017342:
 	rts	/* 100173ae:	4e75 */
 
 	moveq	#8,%d0	/* 100173b0:	7008 */
+
+sub_100173b2:
 	lea	%fp@(0xa,%d0:w),%a0	/* 100173b2:	41f6 000a */
 	moveal	%fp,%a1	/* 100173b6:	224e */
 	movel	%a0@-,%a1@-	/* 100173b8:	2320 */
@@ -4025,9 +4027,13 @@ sub_10017342:
 	rts	/* 100173dc:	4e75 */
 
 sub_100173de:
-	.byte	0x4e,0x56
-	.byte	0xff,0xf4,0x70,0x0c,0x61,0x00,0xff,0xcc,0x48,0x6e,0x00,0x0a,0x48,0x51,0x3f,0x3c
-	.byte	0x20,0x18,0xa9,0xeb
+	linkw	%fp,#-12	/* 100173de:	4e56 fff4 */
+	moveq	#12,%d0	/* 100173e2:	700c */
+	bsrw	sub_100173b2	/* 100173e4:	6100 ffcc */
+	pea	%fp@(10)	/* 100173e8:	486e 000a */
+	pea	%a1@	/* 100173ec:	4851 */
+	movew	#8216,%sp@-	/* 100173ee:	3f3c 2018 */
+	.short	0xa9eb	/* 100173f2:	a9eb */
 
 sub_100173fc:
 	.byte	0x60,0x00,0xff,0xb0
