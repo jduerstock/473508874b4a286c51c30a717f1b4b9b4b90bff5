@@ -3352,7 +3352,7 @@ sub_10016d8e:
 	rts	/* 10016e06:	4e75 */
 
 sub_10016e08:
-	.byte	0x60,0x00,0xf0,0xd4
+	braw	sub_10015ede	/* 10016e08:	6000 f0d4 */
 
 sub_10016e0c:
 	linkw	%fp,#0	/* 10016e0c:	4e56 0000 */
