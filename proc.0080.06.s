@@ -3217,9 +3217,11 @@ sub_10016c24:
 	unlk	%fp	/* 10016cda:	4e5e */
 	rts	/* 10016cdc:	4e75 */
 
-	.byte	0x60,0x00
-	.byte	0x8b,0xd6
-	.byte	0x60,0x00,0x8b,0xd6
+sub_10016cde:
+	braw	sub_1000f8b6	/* 10016cde:	6000 8bd6 */
+
+sub_10016ce2:
+	braw	sub_1000f8ba	/* 10016ce2:	6000 8bd6 */
 
 sub_10016ce6:
 	.byte	0x4e,0x56,0x00,0x00,0x2f,0x0c,0x20,0x6e,0x00,0x08
