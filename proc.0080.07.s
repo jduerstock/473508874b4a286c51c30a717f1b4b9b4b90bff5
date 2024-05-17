@@ -3294,19 +3294,19 @@ sub_10019bca:
 	rts	/* 1001a312:	4e75 */
 
 sub_1001a314:
-	.byte	0x60,0x00,0x8a,0xfc
+	braw	sub_10012e12	/* 1001a314:	6000 8afc */
 
 sub_1001a318:
-	.byte	0x60,0x00,0xd4,0x7c
+	braw	sub_10017796	/* 1001a318:	6000 d47c */
 
 sub_1001a31c:
-	.byte	0x60,0x00,0x8a,0xf8
+	braw	sub_10012e16	/* 1001a31c:	6000 8af8 */
 
 sub_1001a320:
-	.byte	0x60,0x00,0x9a,0x80
+	braw	sub_10013da2	/* 1001a320:	6000 9a80 */
 
 sub_1001a324:
-	.byte	0x60,0x00,0x8a,0xf4
+	braw	sub_10012e1a	/* 1001a324:	6000 8af4 */
 
 sub_1001a328:
 	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x03,0x18
