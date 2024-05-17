@@ -1205,7 +1205,7 @@ sub_10018d0e:
 	rts	/* 10018dc8:	4e75 */
 
 sub_10018dca:
-	.byte	0x60,0x00,0xe2,0x2e
+	braw	sub_10016ffa	/* 10018dca:	6000 e22e */
 
 sub_10018dce:
 	.byte	0x4e,0x56
