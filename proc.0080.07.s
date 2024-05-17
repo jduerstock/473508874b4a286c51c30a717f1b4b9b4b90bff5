@@ -2055,13 +2055,13 @@ sub_100194b2:
 	rts	/* 100195c0:	4e75 */
 
 sub_100195c2:
-	.byte	0x60,0x00,0x77,0x74
+	braw	sub_10020d38	/* 100195c2:	6000 7774 */
 
 sub_100195c6:
-	.byte	0x60,0x00,0x8b,0xcc
+	braw	sub_10012194	/* 100195c6:	6000 8bcc */
 
 sub_100195ca:
-	.byte	0x60,0x00,0xf5,0x74
+	braw	sub_10018b40	/* 100195ca:	6000 f574 */
 
 sub_100195ce:
 	.byte	0x4e,0x56
