@@ -4836,12 +4836,46 @@ sub_10017b1a:
 	rts	/* 10017b62:	4e75 */
 
 sub_10017b64:
-	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x11,0x18,0x26,0x6e,0x00,0x0c
-	.byte	0x28,0x6e,0x00,0x08,0x2f,0x14,0x4e,0xba,0x67,0x76,0x1e,0x00,0x76,0x01,0x70,0x00
-	.byte	0x10,0x07,0x22,0x0b,0xe6,0x81,0xb2,0x80,0x58,0x4f,0x67,0x1c,0x2f,0x03,0x2f,0x0b
-	.byte	0x2f,0x0c,0x70,0x00,0x10,0x07,0x2f,0x00,0x4e,0xba,0xfd,0xa2,0x4f,0xef,0x00,0x0c
-	.byte	0x26,0x1f,0x4a,0x00,0x66,0x02,0x76,0x00,0x4a,0x03,0x66,0x0a,0x2f,0x0b,0x2f,0x14
-	.byte	0x4e,0xba,0xda,0x68,0x50,0x4f,0x4c,0xee,0x18,0x88,0xff,0xf0,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 10017b64:	4e56 0000 */
+	moveml	%d3/%d7/%a3-%a4,%sp@-	/* 10017b68:	48e7 1118 */
+	moveal	%fp@(12),%a3	/* 10017b6c:	266e 000c */
+	moveal	%fp@(8),%a4	/* 10017b70:	286e 0008 */
+	movel	%a4@,%sp@-	/* 10017b74:	2f14 */
+	jsr	%pc@(sub_1001e2ee)	/* 10017b76:	4eba 6776 */
+	moveb	%d0,%d7	/* 10017b7a:	1e00 */
+	moveq	#1,%d3	/* 10017b7c:	7601 */
+	moveq	#0,%d0	/* 10017b7e:	7000 */
+	moveb	%d7,%d0	/* 10017b80:	1007 */
+	movel	%a3,%d1	/* 10017b82:	220b */
+	asrl	#3,%d1	/* 10017b84:	e681 */
+	cmpl	%d0,%d1	/* 10017b86:	b280 */
+	addqw	#4,%sp	/* 10017b88:	584f */
+	beqs	.L10017ba8	/* 10017b8a:	671c */
+	movel	%d3,%sp@-	/* 10017b8c:	2f03 */
+	movel	%a3,%sp@-	/* 10017b8e:	2f0b */
+	movel	%a4,%sp@-	/* 10017b90:	2f0c */
+	moveq	#0,%d0	/* 10017b92:	7000 */
+	moveb	%d7,%d0	/* 10017b94:	1007 */
+	movel	%d0,%sp@-	/* 10017b96:	2f00 */
+	jsr	%pc@(sub_1001793c)	/* 10017b98:	4eba fda2 */
+	lea	%sp@(12),%sp	/* 10017b9c:	4fef 000c */
+	movel	%sp@+,%d3	/* 10017ba0:	261f */
+	tstb	%d0	/* 10017ba2:	4a00 */
+	bnes	.L10017ba8	/* 10017ba4:	6602 */
+	moveq	#0,%d3	/* 10017ba6:	7600 */
+
+.L10017ba8:
+	tstb	%d3	/* 10017ba8:	4a03 */
+	bnes	.L10017bb6	/* 10017baa:	660a */
+	movel	%a3,%sp@-	/* 10017bac:	2f0b */
+	movel	%a4@,%sp@-	/* 10017bae:	2f14 */
+	jsr	%pc@(sub_1001561a)	/* 10017bb0:	4eba da68 */
+	addqw	#8,%sp	/* 10017bb4:	504f */
+
+.L10017bb6:
+	moveml	%fp@(-16),%d3/%d7/%a3-%a4	/* 10017bb6:	4cee 1888 fff0 */
+	unlk	%fp	/* 10017bbc:	4e5e */
+	rts	/* 10017bbe:	4e75 */
 
 sub_10017bc0:
 	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x11,0x18,0x26,0x6e,0x00,0x0c,0x28,0x6e,0x00,0x08
