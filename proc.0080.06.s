@@ -4878,21 +4878,55 @@ sub_10017b64:
 	rts	/* 10017bbe:	4e75 */
 
 sub_10017bc0:
-	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x11,0x18,0x26,0x6e,0x00,0x0c,0x28,0x6e,0x00,0x08
-	.byte	0x2f,0x14,0x4e,0xba,0x67,0x1a,0x1e,0x00,0x76,0x01,0x70,0x00,0x10,0x07,0x22,0x0b
-	.byte	0xe6,0x81,0xb2,0x80,0x58,0x4f,0x67,0x1c,0x2f,0x03,0x2f,0x0b,0x2f,0x0c,0x70,0x00
-	.byte	0x10,0x07,0x2f,0x00,0x4e,0xba,0xfd,0x46,0x4f,0xef,0x00,0x0c,0x26,0x1f,0x4a,0x00
-	.byte	0x66,0x02,0x76,0x00,0x4a,0x03,0x66,0x0c,0x2f,0x2e,0x00,0x10,0x2f,0x14,0x4e,0xba
-	.byte	0xda,0x0a,0x50,0x4f,0x4c,0xee,0x18,0x88,0xff,0xf0,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 10017bc0:	4e56 0000 */
+	moveml	%d3/%d7/%a3-%a4,%sp@-	/* 10017bc4:	48e7 1118 */
+	moveal	%fp@(12),%a3	/* 10017bc8:	266e 000c */
+	moveal	%fp@(8),%a4	/* 10017bcc:	286e 0008 */
+	movel	%a4@,%sp@-	/* 10017bd0:	2f14 */
+	jsr	%pc@(sub_1001e2ee)	/* 10017bd2:	4eba 671a */
+	moveb	%d0,%d7	/* 10017bd6:	1e00 */
+	moveq	#1,%d3	/* 10017bd8:	7601 */
+	moveq	#0,%d0	/* 10017bda:	7000 */
+	moveb	%d7,%d0	/* 10017bdc:	1007 */
+	movel	%a3,%d1	/* 10017bde:	220b */
+	asrl	#3,%d1	/* 10017be0:	e681 */
+	cmpl	%d0,%d1	/* 10017be2:	b280 */
+	addqw	#4,%sp	/* 10017be4:	584f */
+	beqs	.L10017c04	/* 10017be6:	671c */
+	movel	%d3,%sp@-	/* 10017be8:	2f03 */
+	movel	%a3,%sp@-	/* 10017bea:	2f0b */
+	movel	%a4,%sp@-	/* 10017bec:	2f0c */
+	moveq	#0,%d0	/* 10017bee:	7000 */
+	moveb	%d7,%d0	/* 10017bf0:	1007 */
+	movel	%d0,%sp@-	/* 10017bf2:	2f00 */
+	jsr	%pc@(sub_1001793c)	/* 10017bf4:	4eba fd46 */
+	lea	%sp@(12),%sp	/* 10017bf8:	4fef 000c */
+	movel	%sp@+,%d3	/* 10017bfc:	261f */
+	tstb	%d0	/* 10017bfe:	4a00 */
+	bnes	.L10017c04	/* 10017c00:	6602 */
+	moveq	#0,%d3	/* 10017c02:	7600 */
+
+.L10017c04:
+	tstb	%d3	/* 10017c04:	4a03 */
+	bnes	.L10017c14	/* 10017c06:	660c */
+	movel	%fp@(16),%sp@-	/* 10017c08:	2f2e 0010 */
+	movel	%a4@,%sp@-	/* 10017c0c:	2f14 */
+	jsr	%pc@(sub_1001561a)	/* 10017c0e:	4eba da0a */
+	addqw	#8,%sp	/* 10017c12:	504f */
+
+.L10017c14:
+	moveml	%fp@(-16),%d3/%d7/%a3-%a4	/* 10017c14:	4cee 1888 fff0 */
+	unlk	%fp	/* 10017c1a:	4e5e */
+	rts	/* 10017c1c:	4e75 */
 
 sub_10017c1e:
-	.byte	0x60,0x00,0x78,0x70
+	braw	sub_1001f490	/* 10017c1e:	6000 7870 */
 
 sub_10017c22:
-	.byte	0x60,0x00,0x77,0xe2
+	braw	sub_1001f406	/* 10017c22:	6000 77e2 */
 
 sub_10017c26:
-	.byte	0x60,0x00,0xf1,0x66
+	braw	sub_10016d8e	/* 10017c26:	6000 f166 */
 
 sub_10017c2a:
 	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7
