@@ -2522,19 +2522,19 @@ sub_100198d0:
 	rts	/* 10019a78:	4e75 */
 
 sub_10019a7a:
-	.byte	0x60,0x00,0x8a,0x60
+	braw	sub_100124dc	/* 10019a7a:	6000 8a60 */
 
 sub_10019a7e:
-	.byte	0x60,0x00,0x95,0xcc
+	braw	sub_1001304c	/* 10019a7e:	6000 95cc */
 
 sub_10019a82:
-	.byte	0x60,0x00,0xf0,0xb4
+	braw	sub_10018b38	/* 10019a82:	6000 f0b4 */
 
 sub_10019a86:
-	.byte	0x60,0x00,0xeb,0xea
+	braw	sub_10018672	/* 10019a86:	6000 ebea */
 
 sub_10019a8a:
-	.byte	0x60,0x00,0xd7,0x0a
+	braw	sub_10017196	/* 10019a8a:	6000 d70a */
 
 sub_10019a8e:
 	.byte	0x4e,0x56
