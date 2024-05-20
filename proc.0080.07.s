@@ -5251,7 +5251,7 @@ sub_1001b490:
 	rts	/* 1001b5e4:	4e75 */
 
 sub_1001b5e6:
-	.byte	0x60,0x00,0x79,0x82
+	braw	sub_10022f6a	/* 1001b5e6:	6000 7982 */
 
 sub_1001b5ea:
 	.byte	0x4e,0x56,0xff,0xfc,0x48,0xe7
