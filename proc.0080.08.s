@@ -529,10 +529,28 @@ sub_1001bd78:
 	braw	sub_10014778	/* 1001bd78:	6000 89fe */
 
 sub_1001bd7c:
-	.byte	0x4e,0x56,0x00,0x00
-	.byte	0x2f,0x0c,0x74,0x00,0x28,0x6e,0x00,0x08,0x60,0x10,0x20,0x02,0x52,0x82,0x20,0x0c
-	.byte	0x72,0xf8,0xc2,0x80,0x20,0x41,0x28,0x68,0x00,0x08,0xb9,0xfc,0x00,0x00,0x00,0x02
-	.byte	0x66,0xe8,0x20,0x02,0x28,0x6e,0xff,0xfc,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 1001bd7c:	4e56 0000 */
+	movel	%a4,%sp@-	/* 1001bd80:	2f0c */
+	moveq	#0,%d2	/* 1001bd82:	7400 */
+	moveal	%fp@(8),%a4	/* 1001bd84:	286e 0008 */
+	bras	.L1001bd9a	/* 1001bd88:	6010 */
+
+.L1001bd8a:
+	movel	%d2,%d0	/* 1001bd8a:	2002 */
+	addql	#1,%d2	/* 1001bd8c:	5282 */
+	movel	%a4,%d0	/* 1001bd8e:	200c */
+	moveq	#-8,%d1	/* 1001bd90:	72f8 */
+	andl	%d0,%d1	/* 1001bd92:	c280 */
+	moveal	%d1,%a0	/* 1001bd94:	2041 */
+	moveal	%a0@(8),%a4	/* 1001bd96:	2868 0008 */
+
+.L1001bd9a:
+	cmpal	#2,%a4	/* 1001bd9a:	b9fc 0000 0002 */
+	bnes	.L1001bd8a	/* 1001bda0:	66e8 */
+	movel	%d2,%d0	/* 1001bda2:	2002 */
+	moveal	%fp@(-4),%a4	/* 1001bda4:	286e fffc */
+	unlk	%fp	/* 1001bda8:	4e5e */
+	rts	/* 1001bdaa:	4e75 */
 
 sub_1001bdac:
 	.byte	0x60,0x00,0xe7,0x5a
