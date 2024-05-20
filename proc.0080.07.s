@@ -4726,10 +4726,20 @@ sub_1001acfa:
 	rts	/* 1001b06c:	4e75 */
 
 sub_1001b06e:
-	.byte	0x4e,0x56
-	.byte	0x00,0x00,0x70,0x00,0x10,0x2e,0x00,0x0f,0x2f,0x00,0x70,0x00,0x2f,0x00,0x72,0x01
-	.byte	0x2f,0x01,0x74,0x00,0x14,0x2e,0x00,0x0b,0x2f,0x02,0x4e,0xba,0xfc,0x6e,0x4e,0x5e
-	.byte	0x4e,0x75
+	linkw	%fp,#0	/* 1001b06e:	4e56 0000 */
+	moveq	#0,%d0	/* 1001b072:	7000 */
+	moveb	%fp@(15),%d0	/* 1001b074:	102e 000f */
+	movel	%d0,%sp@-	/* 1001b078:	2f00 */
+	moveq	#0,%d0	/* 1001b07a:	7000 */
+	movel	%d0,%sp@-	/* 1001b07c:	2f00 */
+	moveq	#1,%d1	/* 1001b07e:	7201 */
+	movel	%d1,%sp@-	/* 1001b080:	2f01 */
+	moveq	#0,%d2	/* 1001b082:	7400 */
+	moveb	%fp@(11),%d2	/* 1001b084:	142e 000b */
+	movel	%d2,%sp@-	/* 1001b088:	2f02 */
+	jsr	%pc@(sub_1001acfa)	/* 1001b08a:	4eba fc6e */
+	unlk	%fp	/* 1001b08e:	4e5e */
+	rts	/* 1001b090:	4e75 */
 
 sub_1001b092:
 	.byte	0x60,0x00,0x74,0xc4
