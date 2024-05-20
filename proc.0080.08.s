@@ -180,7 +180,7 @@ sub_1001b9bc:
 	rts	/* 1001b9e4:	4e75 */
 
 sub_1001b9e6:
-	.byte	0x60,0x00,0x75,0x8a
+	braw	sub_10022f72	/* 1001b9e6:	6000 758a */
 
 sub_1001b9ea:
 	.byte	0x4e,0x56,0xff,0xf8,0x48,0xe7
