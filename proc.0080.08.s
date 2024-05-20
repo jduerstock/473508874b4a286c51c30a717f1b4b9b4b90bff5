@@ -164,10 +164,20 @@ sub_1001b996:
 	rts	/* 1001b9ba:	4e75 */
 
 sub_1001b9bc:
-	.byte	0x4e,0x56,0xff,0xf8
-	.byte	0x48,0xe7,0x00,0x38,0x22,0x6e,0x00,0x08,0x24,0x6e,0x00,0x0c,0x26,0x49,0x28,0x4a
-	.byte	0x20,0x0b,0x72,0xf8,0xc2,0x80,0x20,0x41,0x21,0x4c,0x00,0x08,0x4c,0xee,0x1c,0x00
-	.byte	0xff,0xec,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#-8	/* 1001b9bc:	4e56 fff8 */
+	moveml	%a2-%a4,%sp@-	/* 1001b9c0:	48e7 0038 */
+	moveal	%fp@(8),%a1	/* 1001b9c4:	226e 0008 */
+	moveal	%fp@(12),%a2	/* 1001b9c8:	246e 000c */
+	moveal	%a1,%a3	/* 1001b9cc:	2649 */
+	moveal	%a2,%a4	/* 1001b9ce:	284a */
+	movel	%a3,%d0	/* 1001b9d0:	200b */
+	moveq	#-8,%d1	/* 1001b9d2:	72f8 */
+	andl	%d0,%d1	/* 1001b9d4:	c280 */
+	moveal	%d1,%a0	/* 1001b9d6:	2041 */
+	movel	%a4,%a0@(8)	/* 1001b9d8:	214c 0008 */
+	moveml	%fp@(-20),%a2-%a4	/* 1001b9dc:	4cee 1c00 ffec */
+	unlk	%fp	/* 1001b9e2:	4e5e */
+	rts	/* 1001b9e4:	4e75 */
 
 sub_1001b9e6:
 	.byte	0x60,0x00,0x75,0x8a
