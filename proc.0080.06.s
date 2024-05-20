@@ -3570,6 +3570,8 @@ sub_10016f34:
 	moveml	%fp@(-52),%d7/%a2-%a4	/* 10016fc6:	4cee 1c80 ffcc */
 	unlk	%fp	/* 10016fcc:	4e5e */
 	rts	/* 10016fce:	4e75 */
+
+sub_10016fd0:
 	linkw	%fp,#0	/* 10016fd0:	4e56 0000 */
 	movel	%fp@(8),%sp@-	/* 10016fd4:	2f2e 0008 */
 	jsr	%pc@(sub_10016d36)	/* 10016fd8:	4eba fd5c */
