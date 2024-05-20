@@ -674,13 +674,13 @@ sub_1001be0a:
 	rts	/* 1001beba:	4e75 */
 
 sub_1001bebc:
-	.byte	0x60,0x00,0xbc,0x54
+	braw	sub_10017b12	/* 1001bebc:	6000 bc54 */
 
 sub_1001bec0:
-	.byte	0x60,0x00,0xd9,0xfe
+	braw	sub_100198c0	/* 1001bec0:	6000 d9fe */
 
 sub_1001bec4:
-	.byte	0x60,0x00,0x9f,0x70
+	braw	sub_10015e36	/* 1001bec4:	6000 9f70 */
 
 sub_1001bec8:
 	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x00,0x18
