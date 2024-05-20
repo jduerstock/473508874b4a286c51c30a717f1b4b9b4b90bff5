@@ -230,9 +230,12 @@ sub_1001b9ea:
 	rts	/* 1001ba6c:	4e75 */
 
 sub_1001ba6e:
-	.byte	0x4e,0x56
-	.byte	0x00,0x00,0x2f,0x2e,0x00,0x0c,0x2f,0x2e,0x00,0x08,0x4e,0xba,0x06,0x8a,0x4e,0x5e
-	.byte	0x4e,0x75
+	linkw	%fp,#0	/* 1001ba6e:	4e56 0000 */
+	movel	%fp@(12),%sp@-	/* 1001ba72:	2f2e 000c */
+	movel	%fp@(8),%sp@-	/* 1001ba76:	2f2e 0008 */
+	jsr	%pc@(sub_1001c106)	/* 1001ba7a:	4eba 068a */
+	unlk	%fp	/* 1001ba7e:	4e5e */
+	rts	/* 1001ba80:	4e75 */
 
 sub_1001ba82:
 	.byte	0x60,0x00,0x74,0xf2
