@@ -2988,10 +2988,10 @@ sub_1001d3b4:
 	rts	/* 1001d502:	4e75 */
 
 sub_1001d504:
-	.byte	0x60,0x00,0x77,0xde
+	braw	sub_10024ce4	/* 1001d504:	6000 77de */
 
 sub_1001d508:
-	.byte	0x60,0x00,0x77,0xde
+	braw	sub_10024ce8	/* 1001d508:	6000 77de */
 
 sub_1001d50c:
 	.byte	0x4e,0x56,0xff,0xf0
