@@ -2529,16 +2529,47 @@ sub_1001d086:
 	unlk	%fp	/* 1001d094:	4e5e */
 	rts	/* 1001d096:	4e75 */
 
-	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x00,0x18
-	.byte	0x26,0x6e,0x00,0x08,0x28,0x6e,0x00,0x0c,0x20,0x0b,0x72,0xf8,0xc2,0x80,0x20,0x41
-	.byte	0x20,0x8c,0x4c,0xee,0x18,0x00,0xff,0xf8,0x4e,0x5e,0x4e,0x75
-	.byte	0x60,0x00,0x8b,0x34
-	.byte	0x4e,0x56,0xff,0xf8,0x48,0xe7,0x00,0x38,0x22,0x6e,0x00,0x08,0x24,0x6e,0x00,0x0c
-	.byte	0x26,0x49,0x28,0x4a,0x20,0x0b,0x72,0xf8,0xc2,0x80,0x20,0x41,0x21,0x4c,0x00,0x04
-	.byte	0x4c,0xee,0x1c,0x00,0xff,0xec,0x4e,0x5e,0x4e,0x75
+sub_1001d098:
+	linkw	%fp,#0	/* 1001d098:	4e56 0000 */
+	moveml	%a3-%a4,%sp@-	/* 1001d09c:	48e7 0018 */
+	moveal	%fp@(8),%a3	/* 1001d0a0:	266e 0008 */
+	moveal	%fp@(12),%a4	/* 1001d0a4:	286e 000c */
+	movel	%a3,%d0	/* 1001d0a8:	200b */
+	moveq	#-8,%d1	/* 1001d0aa:	72f8 */
+	andl	%d0,%d1	/* 1001d0ac:	c280 */
+	moveal	%d1,%a0	/* 1001d0ae:	2041 */
+	movel	%a4,%a0@	/* 1001d0b0:	208c */
+	moveml	%fp@(-8),%a3-%a4	/* 1001d0b2:	4cee 1800 fff8 */
+	unlk	%fp	/* 1001d0b8:	4e5e */
+	rts	/* 1001d0ba:	4e75 */
 
-	.byte	0x4e,0x56,0x00,0x00,0x70,0xf8
-	.byte	0xc0,0xae,0x00,0x08,0x20,0x40,0x20,0x28,0x00,0x04,0x4e,0x5e,0x4e,0x75
+sub_1001d0bc:
+	braw	sub_10015bf2	/* 1001d0bc:	6000 8b34 */
+
+sub_1001d0c0:
+	linkw	%fp,#-8	/* 1001d0c0:	4e56 fff8 */
+	moveml	%a2-%a4,%sp@-	/* 1001d0c4:	48e7 0038 */
+	moveal	%fp@(8),%a1	/* 1001d0c8:	226e 0008 */
+	moveal	%fp@(12),%a2	/* 1001d0cc:	246e 000c */
+	moveal	%a1,%a3	/* 1001d0d0:	2649 */
+	moveal	%a2,%a4	/* 1001d0d2:	284a */
+	movel	%a3,%d0	/* 1001d0d4:	200b */
+	moveq	#-8,%d1	/* 1001d0d6:	72f8 */
+	andl	%d0,%d1	/* 1001d0d8:	c280 */
+	moveal	%d1,%a0	/* 1001d0da:	2041 */
+	movel	%a4,%a0@(4)	/* 1001d0dc:	214c 0004 */
+	moveml	%fp@(-20),%a2-%a4	/* 1001d0e0:	4cee 1c00 ffec */
+	unlk	%fp	/* 1001d0e6:	4e5e */
+	rts	/* 1001d0e8:	4e75 */
+
+sub_1001d0ea:
+	linkw	%fp,#0	/* 1001d0ea:	4e56 0000 */
+	moveq	#-8,%d0	/* 1001d0ee:	70f8 */
+	andl	%fp@(8),%d0	/* 1001d0f0:	c0ae 0008 */
+	moveal	%d0,%a0	/* 1001d0f4:	2040 */
+	movel	%a0@(4),%d0	/* 1001d0f6:	2028 0004 */
+	unlk	%fp	/* 1001d0fa:	4e5e */
+	rts	/* 1001d0fc:	4e75 */
 
 sub_1001d0fe:
 	.byte	0x60,0x00,0x78,0xce
