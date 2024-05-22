@@ -4801,16 +4801,16 @@ sub_1001e452:
 	rts	/* 1001e5c8:	4e75 */
 
 sub_1001e5ca:
-	.byte	0x60,0x00,0x10,0xc0
+	braw	sub_1001f68c	/* 1001e5ca:	6000 10c0 */
 
 sub_1001e5ce:
-	.byte	0x60,0x00,0x11,0x1a
+	braw	sub_1001f6ea	/* 1001e5ce:	6000 111a */
 
 sub_1001e5d2:
-	.byte	0x60,0x00,0x11,0x38
+	braw	sub_1001f70c	/* 1001e5d2:	6000 1138 */
 
 sub_1001e5d6:
-	.byte	0x60,0x00,0x0f,0xe6
+	braw	sub_1001f5be	/* 1001e5d6:	6000 0fe6 */
 
 sub_1001e5da:
 	.byte	0x4e,0x56,0xff,0xec,0x48,0xe7
