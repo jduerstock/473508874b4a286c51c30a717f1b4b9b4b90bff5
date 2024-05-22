@@ -357,13 +357,13 @@ sub_1001f156:
 	rts	/* 1001f1aa:	4e75 */
 
 sub_1001f1ac:
-	.byte	0x60,0x00,0x6e,0x6c
+	braw	sub_1002601a	/* 1001f1ac:	6000 6e6c */
 
 sub_1001f1b0:
-	.byte	0x60,0x00,0x6e,0x6c
+	braw	sub_1002601e	/* 1001f1b0:	6000 6e6c */
 
 sub_1001f1b4:
-	.byte	0x60,0x00,0x6e,0x98
+	braw	sub_1002604e	/* 1001f1b4:	6000 6e98 */
 
 sub_1001f1b8:
 	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x01,0x18
