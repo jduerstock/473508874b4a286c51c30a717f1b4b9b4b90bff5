@@ -5498,7 +5498,7 @@ sub_1001ea96:
 	unlk	%fp	/* 1001ec80:	4e5e */
 	rts	/* 1001ec82:	4e75 */
 
-sub_1010ec84:
+sub_1001ec84:
 	linkw	%fp,#-4	/* 1001ec84:	4e56 fffc */
 	moveml	%d3-%d7/%a3-%a4,%sp@-	/* 1001ec88:	48e7 1f18 */
 	moveal	%fp@(16),%a4	/* 1001ec8c:	286e 0010 */
