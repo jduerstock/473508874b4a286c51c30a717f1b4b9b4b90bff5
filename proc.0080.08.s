@@ -4981,7 +4981,7 @@ sub_1001e724:
 	rts	/* 1001e794:	4e75 */
 
 sub_1001e796:
-	.byte	0x60,0x00,0x77,0xb6
+	braw	sub_10025f4e	/* 1001e796:	6000 77b6 */
 
 sub_1001e79a:
 	.byte	0x4e,0x56,0xff,0xe8,0x48,0xe7
