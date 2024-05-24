@@ -630,8 +630,10 @@ sub_1001f422:
 	rts	/* 1001f43a:	4e75 */
 
 sub_1001f43c:
-	.byte	0x4e,0x56,0x00,0x00
-	.byte	0x70,0x01,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 1001f43c:	4e56 0000 */
+	moveq	#1,%d0	/* 1001f440:	7001 */
+	unlk	%fp	/* 1001f442:	4e5e */
+	rts	/* 1001f444:	4e75 */
 
 sub_1001f446:
 	.byte	0x60,0x00,0x6c,0x0e
