@@ -1714,7 +1714,7 @@ sub_1001fc10:
 	rts	/* 1001fdb8:	4e75 */
 
 sub_1001fdba:
-	.byte	0x60,0x00,0xa7,0x48
+	braw	sub_1001a504	/* 1001fdba:	6000 a748 */
 
 sub_1001fdbe:
 	.byte	0x4e,0x56
