@@ -1894,46 +1894,46 @@ sub_1001fed4:
 	rts	/* 1001ff3e:	4e75 */
 
 sub_1001ff40:
-	.byte	0x60,0x00,0x79,0x08
+	braw	sub_1002784a	/* 1001ff40:	6000 7908 */
 
 sub_1001ff44:
-	.byte	0x60,0x00,0x79,0x08
+	braw	sub_1002784e	/* 1001ff44:	6000 7908 */
 
 sub_1001ff48:
-	.byte	0x60,0x00,0x79,0x08
+	braw	sub_10027852	/* 1001ff48:	6000 7908 */
 
 sub_1001ff4c:
-	.byte	0x60,0x00,0x8c,0x0a
+	braw	sub_10018b58	/* 1001ff4c:	6000 8c0a */
 
 sub_1001ff50:
-	.byte	0x60,0x00,0xd1,0xb0
+	braw	sub_1001d102	/* 1001ff50:	6000 d1b0 */
 
 sub_1001ff54:
-	.byte	0x60,0x00,0x8c,0x06
+	braw	sub_10018b5c	/* 1001ff54:	6000 8c06 */
 
 sub_1001ff58:
-	.byte	0x60,0x00,0x8c,0x06
+	braw	sub_10018b60	/* 1001ff58:	6000 8c06 */
 
 sub_1001ff5c:
-	.byte	0x60,0x00,0x8c,0x06
+	braw	sub_10018b64	/* 1001ff5c:	6000 8c06 */
 
 sub_1001ff60:
-	.byte	0x60,0x00,0x8c,0x06
+	braw	sub_10018b68	/* 1001ff60:	6000 8c06 */
 
 sub_1001ff64:
-	.byte	0x60,0x00,0x8c,0x06
+	braw	sub_10018b6c	/* 1001ff64:	6000 8c06 */
 
 sub_1001ff68:
-	.byte	0x60,0x00,0x8c,0x06
+	braw	sub_10018b70	/* 1001ff68:	6000 8c06 */
 
 sub_1001ff6c:
-	.byte	0x60,0x00,0x8c,0x06
+	braw	sub_10018b74	/* 1001ff6c:	6000 8c06 */
 
 sub_1001ff70:
-	.byte	0x60,0x00,0x8c,0x06
+	braw	sub_10018b78	/* 1001ff70:	6000 8c06 */
 
 sub_1001ff74:
-	.byte	0x60,0x00,0xd6,0xe8
+	braw	sub_1001d65e	/* 1001ff74:	6000 d6e8 */
 
 sub_1001ff78:
 	.byte	0x4e,0x56,0xff,0xfc,0x48,0xe7,0x01,0x38
