@@ -663,8 +663,13 @@ sub_1001f44e:
 	rts	/* 1001f47c:	4e75 */
 
 sub_1001f47e:
-	.byte	0x4e,0x56
-	.byte	0x00,0x00,0x70,0x02,0xb0,0xae,0x00,0x08,0x57,0xc0,0x44,0x00,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 1001f47e:	4e56 0000 */
+	moveq	#2,%d0	/* 1001f482:	7002 */
+	cmpl	%fp@(8),%d0	/* 1001f484:	b0ae 0008 */
+	seq	%d0	/* 1001f488:	57c0 */
+	negb	%d0	/* 1001f48a:	4400 */
+	unlk	%fp	/* 1001f48c:	4e5e */
+	rts	/* 1001f48e:	4e75 */
 
 sub_1001f490:
 	.byte	0x60,0x00,0x6b,0x98
