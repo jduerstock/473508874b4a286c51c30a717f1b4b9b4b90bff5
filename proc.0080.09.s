@@ -2872,10 +2872,19 @@ sub_10020866:
 	rts	/* 1002087a:	4e75 */
 
 sub_1002087c:
-	.byte	0x4e,0x56,0x00,0x00
-	.byte	0x2f,0x0c,0x28,0x6e,0x00,0x08,0x2f,0x0c,0x4e,0xba,0x00,0x14,0x2f,0x0c,0x4e,0xba
-	.byte	0xfb,0xe4,0x28,0x6e,0xff,0xfc,0x4e,0x5e,0x4e,0x75
-	.byte	0x60,0x00,0x8a,0xaa
+	linkw	%fp,#0	/* 1002087c:	4e56 0000 */
+	movel	%a4,%sp@-	/* 10020880:	2f0c */
+	moveal	%fp@(8),%a4	/* 10020882:	286e 0008 */
+	movel	%a4,%sp@-	/* 10020886:	2f0c */
+	jsr	%pc@(sub_1002089e)	/* 10020888:	4eba 0014 */
+	movel	%a4,%sp@-	/* 1002088c:	2f0c */
+	jsr	%pc@(sub_10020474)	/* 1002088e:	4eba fbe4 */
+	moveal	%fp@(-4),%a4	/* 10020892:	286e fffc */
+	unlk	%fp	/* 10020896:	4e5e */
+	rts	/* 10020898:	4e75 */
+
+sub_1002089a:
+	braw	sub_10019346	/* 1002089a:	6000 8aaa */
 
 sub_1002089e:
 	.byte	0x4e,0x56
