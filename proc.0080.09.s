@@ -5594,14 +5594,29 @@ sub_10022188:
 	unlk	%fp	/* 100221da:	4e5e */
 	rts	/* 100221dc:	4e75 */
 
-	.byte	0x60,0x00,0x8a,0xfa
-	.byte	0x60,0x00,0x8a,0xfa
-	.byte	0x60,0x00,0x8a,0xfa
-	.byte	0x60,0x00,0x8a,0xfa
-	.byte	0x60,0x00,0x8a,0xfa
-	.byte	0x60,0x00,0x8a,0xfa
-	.byte	0x60,0x00,0x8a,0xfa
-	.byte	0x60,0x00,0x8a,0xfa
+sub_100221de:
+	braw	sub_1001acda	/* 100221de:	6000 8afa */
+
+sub_100221e2:
+	braw	sub_1001acde	/* 100221e2:	6000 8afa */
+
+sub_100221e6:
+	braw	sub_1001ace2	/* 100221e6:	6000 8afa */
+
+sub_100221ea:
+	braw	sub_1001ace6	/* 100221ea:	6000 8afa */
+
+sub_100221ee:
+	braw	sub_1001acea	/* 100221ee:	6000 8afa */
+
+sub_100221f2:
+	braw	sub_1001acee	/* 100221f2:	6000 8afa */
+
+sub_100221f6:
+	braw	sub_1001acf2	/* 100221f6:	6000 8afa */
+
+sub_100221fa:
+	braw	sub_1001acf6	/* 100221fa:	6000 8afa */
 
 sub_100221fe:
 	.byte	0x4e,0x56
