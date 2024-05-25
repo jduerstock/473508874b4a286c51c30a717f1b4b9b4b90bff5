@@ -5351,16 +5351,16 @@ sub_10021ef4:
 	rts	/* 10021fdc:	4e75 */
 
 sub_10021fde:
-	.byte	0x60,0x00,0xf1,0x8c
+	braw	sub_1002116c	/* 10021fde:	6000 f18c */
 
 sub_10021fe2:
-	.byte	0x60,0x00,0x99,0x04
+	braw	sub_1001b8e8	/* 10021fe2:	6000 9904 */
 
 sub_10021fe6:
-	.byte	0x60,0x00,0x98,0xc8
+	braw	sub_1001b8b0	/* 10021fe6:	6000 98c8 */
 
 sub_10021fea:
-	.byte	0x60,0x00,0xd4,0x62
+	braw	sub_1001f44e	/* 10021fea:	6000 d462 */
 
 sub_10021fee:
 	.byte	0x4e,0x56
