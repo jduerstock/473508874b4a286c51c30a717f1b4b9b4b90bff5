@@ -2961,13 +2961,42 @@ sub_1002095c:
 	braw	sub_10019342	/* 1002095c:	6000 89e4 */
 
 sub_10020960:
-	.byte	0x4e,0x56,0xff,0xf4,0x48,0xe7,0x01,0x38,0x28,0x6e,0x00,0x08,0x4e,0xba,0x4b,0x1c
-	.byte	0x20,0x40,0x47,0xe8,0x01,0xd0,0x24,0x53,0x59,0x4a,0x2f,0x12,0x4e,0xba,0xf9,0xf2
-	.byte	0x2e,0x00,0x48,0x6e,0xff,0xfc,0x48,0x6e,0xff,0xf8,0x2f,0x07,0x2f,0x3c,0x6f,0x62
-	.byte	0x6a,0x20,0x4e,0xba,0x39,0xec,0x4a,0x40,0x4f,0xef,0x00,0x14,0x66,0x16,0x2f,0x2e
-	.byte	0xff,0xfc,0x2f,0x2e,0xff,0xf8,0x2f,0x07,0x2f,0x0c,0x4e,0xba,0x00,0x26,0x4f,0xef
-	.byte	0x00,0x10,0x60,0x08,0x2f,0x0c,0x4e,0xba,0x01,0xd0,0x58,0x4f,0x4c,0xee,0x1c,0x80
-	.byte	0xff,0xe4,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#-12	/* 10020960:	4e56 fff4 */
+	moveml	%d7/%a2-%a4,%sp@-	/* 10020964:	48e7 0138 */
+	moveal	%fp@(8),%a4	/* 10020968:	286e 0008 */
+	jsr	%pc@(sub_1002548a)	/* 1002096c:	4eba 4b1c */
+	moveal	%d0,%a0	/* 10020970:	2040 */
+	lea	%a0@(464),%a3	/* 10020972:	47e8 01d0 */
+	moveal	%a3@,%a2	/* 10020976:	2453 */
+	subqw	#4,%a2	/* 10020978:	594a */
+	movel	%a2@,%sp@-	/* 1002097a:	2f12 */
+	jsr	%pc@(sub_10020370)	/* 1002097c:	4eba f9f2 */
+	movel	%d0,%d7	/* 10020980:	2e00 */
+	pea	%fp@(-4)	/* 10020982:	486e fffc */
+	pea	%fp@(-8)	/* 10020986:	486e fff8 */
+	movel	%d7,%sp@-	/* 1002098a:	2f07 */
+	movel	#1868720672,%sp@-	/* 1002098c:	2f3c 6f62 6a20 */
+	jsr	%pc@(sub_10024380)	/* 10020992:	4eba 39ec */
+	tstw	%d0	/* 10020996:	4a40 */
+	lea	%sp@(20),%sp	/* 10020998:	4fef 0014 */
+	bnes	.L100209b4	/* 1002099c:	6616 */
+	movel	%fp@(-4),%sp@-	/* 1002099e:	2f2e fffc */
+	movel	%fp@(-8),%sp@-	/* 100209a2:	2f2e fff8 */
+	movel	%d7,%sp@-	/* 100209a6:	2f07 */
+	movel	%a4,%sp@-	/* 100209a8:	2f0c */
+	jsr	%pc@(sub_100209d2)	/* 100209aa:	4eba 0026 */
+	lea	%sp@(16),%sp	/* 100209ae:	4fef 0010 */
+	bras	.L100209bc	/* 100209b2:	6008 */
+
+.L100209b4:
+	movel	%a4,%sp@-	/* 100209b4:	2f0c */
+	jsr	%pc@(sub_10020b88)	/* 100209b6:	4eba 01d0 */
+	addqw	#4,%sp	/* 100209ba:	584f */
+
+.L100209bc:
+	moveml	%fp@(-28),%d7/%a2-%a4	/* 100209bc:	4cee 1c80 ffe4 */
+	unlk	%fp	/* 100209c2:	4e5e */
+	rts	/* 100209c4:	4e75 */
 
 sub_100209c6:
 	.byte	0x60,0x00,0x10,0xc8
