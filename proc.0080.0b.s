@@ -3,28 +3,28 @@ sub_10025ac4:
 	braw	sub_1002d49c	/* 10025ac4:	6000 79d6 */
 
 sub_10025ac8:
-	.byte	0x60,0x00,0xb2,0x6e
+	braw	sub_10020d38	/* 10025ac8:	6000 b26e */
 
 sub_10025acc:
-	.byte	0x60,0x00,0xb6,0x92
+	braw	sub_10021160	/* 10025acc:	6000 b692 */
 
 sub_10025ad0:
-	.byte	0x60,0x00,0x89,0x68
+	braw	sub_1001e43a	/* 10025ad0:	6000 8968 */
 
 sub_10025ad4:
-	.byte	0x60,0x00,0x89,0x68
+	braw	sub_1001e43e	/* 10025ad4:	6000 8968 */
 
 sub_10025ad8:
-	.byte	0x60,0x00,0x89,0x68
+	braw	sub_1001e442	/* 10025ad8:	6000 8968 */
 
 sub_10025adc:
-	.byte	0x60,0x00,0x89,0x68
+	braw	sub_1001e446	/* 10025adc:	6000 8968 */
 
 sub_10025ae0:
-	.byte	0x60,0x00,0x89,0x68
+	braw	sub_1001e44a	/* 10025ae0:	6000 8968 */
 
 sub_10025ae4:
-	.byte	0x60,0x00,0x89,0x68
+	braw	sub_1001e44e	/* 10025ae4:	6000 8968 */
 
 sub_10025ae8:
 	.byte	0x4e,0x56,0xfe,0xd8,0x48,0xe7,0x07,0x38
