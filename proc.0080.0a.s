@@ -5434,22 +5434,28 @@ sub_100256ca:
 	rts	/* 100257dc:	4e75 */
 
 sub_100257de:
-	.byte	0x60,0x00,0x8b,0x22
+	braw	sub_1001e302	/* 100257de:	6000 8b22 */
 
 sub_100257e2:
-	.byte	0x60,0x00,0xa6,0x68
-	.byte	0x60,0x00,0x8b,0x1e
-	.byte	0x60,0x00,0x8b,0x1e
-	.byte	0x60,0x00,0x8b,0x1e
+	braw	sub_1001fe4c	/* 100257e2:	6000 a668 */
+
+sub_100257e6:
+	braw	sub_1001e306	/* 100257e6:	6000 8b1e */
+
+sub_100257ea:
+	braw	sub_1001e30a	/* 100257ea:	6000 8b1e */
+
+sub_100257ee:
+	braw	sub_1001e30e	/* 100257ee:	6000 8b1e */
 
 sub_100257f2:
-	.byte	0x4e,0x75
+	rts	/* 100257f2:	4e75 */
 
 sub_100257f4:
-	.byte	0x4e,0xad,0x00,0x2a
+	jsr	%a5@(42)	/* 100257f4:	4ead 002a */
 
 sub_100257f8:
-	.byte	0x60,0x00,0x7a,0x10
+	braw	sub_1002d20a	/* 100257f8:	6000 7a10 */
 
 sub_100257fc:
 	.byte	0x60,0x00,0x7a,0x10
