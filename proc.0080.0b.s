@@ -473,67 +473,67 @@ sub_10025f52:
 	rts	/* 10026008:	4e75 */
 
 sub_1002600a:
-	.byte	0x60,0x00,0x79,0xc4
+	braw	sub_1002d9d0	/* 1002600a:	6000 79c4 */
 
 sub_1002600e:
-	.byte	0x60,0x00,0x79,0xc4
+	braw	sub_1002d9d4	/* 1002600e:	6000 79c4 */
 
 sub_10026012:
-	.byte	0x60,0x00,0x79,0xc4
+	braw	sub_1002d9d8	/* 10026012:	6000 79c4 */
 
 sub_10026016:
-	.byte	0x60,0x00,0x79,0xc4
+	braw	sub_1002d9dc	/* 10026016:	6000 79c4 */
 
 sub_1002601a:
-	.byte	0x60,0x00,0x79,0xc4
+	braw	sub_1002d9e0	/* 1002601a:	6000 79c4 */
 
 sub_1002601e:
-	.byte	0x60,0x00,0x79,0xc4
+	braw	sub_1002d9e4	/* 1002601e:	6000 79c4 */
 
 sub_10026022:
-	.byte	0x60,0x00,0x79,0xc4
+	braw	sub_1002d9e8	/* 10026022:	6000 79c4 */
 
 sub_10026026:
-	.byte	0x60,0x00,0x79,0xc4
+	braw	sub_1002d9ec	/* 10026026:	6000 79c4 */
 
 sub_1002602a:
-	.byte	0x60,0x00,0x79,0xc4
+	braw	sub_1002d9f0	/* 1002602a:	6000 79c4 */
 
 sub_1002602e:
-	.byte	0x60,0x00,0x79,0xc4
+	braw	sub_1002d9f4	/* 1002602e:	6000 79c4 */
 
 sub_10026032:
-	.byte	0x60,0x00,0x73,0x2a
+	braw	sub_1002d35e	/* 10026032:	6000 732a */
 
 sub_10026036:
-	.byte	0x60,0x00,0x79,0xc0
+	braw	sub_1002d9f8	/* 10026036:	6000 79c0 */
 
 sub_1002603a:
-	.byte	0x60,0x00,0x79,0xc0
+	braw	sub_1002d9fc	/* 1002603a:	6000 79c0 */
 
 sub_1002603e:
-	.byte	0x60,0x00,0x79,0xc0
+	braw	sub_1002da00	/* 1002603e:	6000 79c0 */
 
 sub_10026042:
-	.byte	0x60,0x00,0x79,0xc0
+	braw	sub_1002da04	/* 10026042:	6000 79c0 */
 
 sub_10026046:
-	.byte	0x60,0x00,0x78,0xc6
+	braw	sub_1002d90e	/* 10026046:	6000 78c6 */
 
 sub_1002604a:
-	.byte	0x60,0x00,0x78,0xc6
+	braw	sub_1002d912	/* 1002604a:	6000 78c6 */
 
 sub_1002604e:
-	.byte	0x60,0x00,0x78,0xc6
+	braw	sub_1002d916	/* 1002604e:	6000 78c6 */
 
 sub_10026052:
-	.byte	0x60,0x00,0x78,0xc6
+	braw	sub_1002d91a	/* 10026052:	6000 78c6 */
 
 sub_10026056:
-	.byte	0x60,0x00,0x4f,0x50
+	braw	sub_1002afa8	/* 10026056:	6000 4f50 */
 
 sub_1002605a:
-	.byte	0x60,0x00,0x78,0xc2
+	braw	sub_1002d91e	/* 1002605a:	6000 78c2 */
 
 sub_1002605e:
 	.byte	0x4e,0x56
