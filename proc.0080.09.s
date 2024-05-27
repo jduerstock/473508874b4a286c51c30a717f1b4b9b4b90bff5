@@ -840,6 +840,8 @@ sub_1001f5f2:
 sub_1001f5f6:
 	movel	%sp@(4),%d1	/* 1001f5f6:	222f 0004 */
 	movel	%sp@(8),%d0	/* 1001f5fa:	202f 0008 */
+
+sub_1001f5fe:
 	jsr	%pc@(sub_1001f63c)	/* 1001f5fe:	4eba 003c */
 	movel	%d1,%d0	/* 1001f602:	2001 */
 	rts	/* 1001f604:	4e75 */
