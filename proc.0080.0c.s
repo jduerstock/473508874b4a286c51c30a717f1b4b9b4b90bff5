@@ -578,10 +578,10 @@ sub_1002992e:
 	rts	/* 10029960:	4e75 */
 
 sub_10029962:
-	.byte	0x60,0x00,0xe3,0x7c
+	braw	sub_10027ce0	/* 10029962:	6000 e37c */
 
 sub_10029966:
-	.byte	0x60,0x00,0xee,0xee
+	braw	sub_10028856	/* 10029966:	6000 eeee */
 
 sub_1002996a:
 	.byte	0x4e,0x56,0xfd,0xe8,0x48,0xe7
