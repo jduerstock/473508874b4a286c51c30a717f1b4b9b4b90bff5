@@ -4165,16 +4165,16 @@ sub_1002bb34:
 	rts	/* 1002bc16:	4e75 */
 
 sub_1002bc18:
-	.byte	0x60,0x00,0xe4,0x22
+	braw	sub_1002a03c	/* 1002bc18:	6000 e422 */
 
 sub_1002bc1c:
-	.byte	0x60,0x00,0xbc,0x40
+	braw	sub_1002785e	/* 1002bc1c:	6000 bc40 */
 
 sub_1002bc20:
-	.byte	0x60,0x00,0x90,0x4a
+	braw	sub_10024c6c	/* 1002bc20:	6000 904a */
 
 sub_1002bc24:
-	.byte	0x60,0x00,0x90,0x5c
+	braw	sub_10024c82	/* 1002bc24:	6000 905c */
 
 sub_1002bc28:
 	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x01,0x08
