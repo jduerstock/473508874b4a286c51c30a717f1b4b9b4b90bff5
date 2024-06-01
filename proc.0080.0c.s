@@ -4053,17 +4053,17 @@ sub_1002b9ea:
 	unlk	%fp	/* 1002bb20:	4e5e */
 	rts	/* 1002bb22:	4e75 */
 
-sub_10022b24:
-	.byte	0x60,0x00,0xe5,0x1e
+sub_1002bb24:
+	braw	sub_1002a044	/* 1002bb24:	6000 e51e */
 
-sub_10022b28:
-	.byte	0x60,0x00,0xe5,0x22
+sub_1002bb28:
+	braw	sub_1002a04c	/* 1002bb28:	6000 e522 */
 
-sub_10022b2c:
-	.byte	0x60,0x00,0xf4,0x02
+sub_1002bb2c:
+	braw	sub_1002af30	/* 1002bb2c:	6000 f402 */
 
-sub_10022b30:
-	.byte	0x60,0x00,0x8a,0xde
+sub_1002bb30:
+	braw	sub_10024610	/* 1002bb30:	6000 8ade */
 
 sub_1002bb34:
 	.byte	0x4e,0x56,0xff,0xb2,0x48,0xe7,0x07,0x18,0x2c,0x2e,0x00,0x0c
