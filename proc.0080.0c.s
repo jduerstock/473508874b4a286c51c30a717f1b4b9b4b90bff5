@@ -2385,22 +2385,22 @@ sub_1002a890:
 	rts	/* 1002ab34:	4e75 */
 
 sub_1002ab36:
-	.byte	0x60,0x00,0xf1,0xfa
+	braw	sub_10029d32	/* 1002ab36:	6000 f1fa */
 
 sub_1002ab3a:
-	.byte	0x60,0x00,0x8d,0xea
+	braw	sub_10023926	/* 1002ab3a:	6000 8dea */
 
 sub_1002ab3e:
-	.byte	0x60,0x00,0x8d,0xea
+	braw	sub_1002392a	/* 1002ab3e:	6000 8dea */
 
 sub_1002ab42:
-	.byte	0x60,0x00,0x8d,0xea
+	braw	sub_1002392e	/* 1002ab42:	6000 8dea */
 
 sub_1002ab46:
-	.byte	0x60,0x00,0xac,0xbc
+	braw	sub_10025804	/* 1002ab46:	6000 acbc */
 
 sub_1002ab4a:
-	.byte	0x60,0x00,0xca,0x78
+	braw	sub_100275c4	/* 1002ab4a:	6000 ca78 */
 
 sub_1002ab4e:
 	.byte	0x4e,0x56
