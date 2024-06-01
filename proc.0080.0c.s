@@ -4420,24 +4420,23 @@ sub_1002be62:
 	moveal	%fp@(8),%a3	/* 1002be6a:	266e 0008 */
 	moveal	%fp@(16),%a4	/* 1002be6e:	286e 0010 */
 	movel	%fp@(12),%a4@(12)	/* 1002be72:	296e 000c 000c */
-	movel	#1111573546,%fp@(-12)	/* 1002be78:	2d7c 4241 442a */
-		/* 1002be7e:	fff4 */
+	movel	#1111573546,%fp@(-12)	/* 1002be78:	2d7c 4241 442a fff4 */ /* 'BAD*' */
 	subql	#2,%sp	/* 1002be80:	558f */
 	movel	%a3,%sp@-	/* 1002be82:	2f0b */
 	pea	%fp@(-16)	/* 1002be84:	486e fff0 */
-	movew	#7,%d0	/* 1002be88:	303c 0007 */
+	movew	#7,%d0	/* 1002be88:	303c 0007 */ /* FSpGetFInfo */
 	.short	0xaa52	/* 1002be8c:	aa52 */
 	movel	%fp@(-12),%a4@(8)	/* 1002be8e:	296e fff4 0008 */
 	movel	%a3,%sp@-	/* 1002be94:	2f0b */
 	movel	%a4,%sp@-	/* 1002be96:	2f0c */
 	jsr	%pc@(sub_1002bcbc)	/* 1002be98:	4eba fe22 */
-	movel	#1634494835,%a4@	/* 1002be9c:	28bc 616c 6973 */
+	movel	#1634494835,%a4@	/* 1002be9c:	28bc 616c 6973 */ /* 'alis' */
 	subql	#2,%sp	/* 1002bea2:	558f */
 	moveq	#0,%d0	/* 1002bea4:	7000 */
 	movel	%d0,%sp@-	/* 1002bea6:	2f00 */
 	movel	%a3,%sp@-	/* 1002bea8:	2f0b */
 	pea	%a4@(4)	/* 1002beaa:	486c 0004 */
-	moveq	#2,%d0	/* 1002beae:	7002 */
+	moveq	#2,%d0	/* 1002beae:	7002 */ /* NewAlias */
 	.short	0xa823	/* 1002beb0:	a823 */
 	movew	%sp@+,%d0	/* 1002beb2:	301f */
 	moveml	%fp@(-24),%a3-%a4	/* 1002beb4:	4cee 1800 ffe8 */
