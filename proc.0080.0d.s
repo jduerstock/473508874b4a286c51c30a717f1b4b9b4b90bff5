@@ -792,16 +792,16 @@ sub_1002d046:
 	rts	/* 1002d0dc:	4e75 */
 
 sub_1002d0de:
-	.byte	0x60,0x00,0x6b,0x34
+	braw	sub_10033c14	/* 1002d0de:	6000 6b34 */
 
 sub_1002d0e2:
-	.byte	0x60,0x00,0x7a,0x96
+	braw	sub_10034b7a	/* 1002d0e2:	6000 7a96 */
 
 sub_1002d0e6:
-	.byte	0x60,0x00,0x89,0xf0
+	braw	sub_10025ad8	/* 1002d0e6:	6000 89f0 */
 
 sub_1002d0ea:
-	.byte	0x60,0x00,0x89,0xf0
+	braw	sub_10025adc	/* 1002d0ea:	6000 89f0 */
 
 sub_1002d0ee:
 	.byte	0x4e,0x56
