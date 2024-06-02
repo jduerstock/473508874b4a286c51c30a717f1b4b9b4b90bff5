@@ -1121,13 +1121,48 @@ sub_1002d3c0:
 	rts	/* 1002d3ea:	4e75 */
 
 sub_1002d3ec:
-	.byte	0x4e,0x56,0x00,0x00
-	.byte	0x48,0xe7,0x03,0x18,0x26,0x6e,0x00,0x08,0x20,0x0b,0x59,0x80,0x20,0x40,0x28,0x50
-	.byte	0x20,0x0c,0xe6,0x88,0x2e,0x00,0x59,0x87,0x20,0x2e,0x00,0x0c,0x59,0x80,0x20,0x40
-	.byte	0x28,0x50,0x20,0x0c,0xe6,0x88,0x2c,0x00,0x59,0x86,0xbc,0x87,0x66,0x1c,0x2f,0x07
-	.byte	0x20,0x2e,0x00,0x0c,0x2f,0x00,0x20,0x0b,0x2f,0x00,0x4e,0xba,0x64,0xa8,0x4a,0x80
-	.byte	0x4f,0xef,0x00,0x0c,0x66,0x04,0x70,0x01,0x60,0x02,0x70,0x00,0x4c,0xee,0x18,0xc0
-	.byte	0xff,0xf0,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 1002d3ec:	4e56 0000 */
+	moveml	%d6-%d7/%a3-%a4,%sp@-	/* 1002d3f0:	48e7 0318 */
+	moveal	%fp@(8),%a3	/* 1002d3f4:	266e 0008 */
+	movel	%a3,%d0	/* 1002d3f8:	200b */
+	subql	#4,%d0	/* 1002d3fa:	5980 */
+	moveal	%d0,%a0	/* 1002d3fc:	2040 */
+	moveal	%a0@,%a4	/* 1002d3fe:	2850 */
+	movel	%a4,%d0	/* 1002d400:	200c */
+	lsrl	#3,%d0	/* 1002d402:	e688 */
+	movel	%d0,%d7	/* 1002d404:	2e00 */
+	subql	#4,%d7	/* 1002d406:	5987 */
+	movel	%fp@(12),%d0	/* 1002d408:	202e 000c */
+	subql	#4,%d0	/* 1002d40c:	5980 */
+	moveal	%d0,%a0	/* 1002d40e:	2040 */
+	moveal	%a0@,%a4	/* 1002d410:	2850 */
+	movel	%a4,%d0	/* 1002d412:	200c */
+	lsrl	#3,%d0	/* 1002d414:	e688 */
+	movel	%d0,%d6	/* 1002d416:	2c00 */
+	subql	#4,%d6	/* 1002d418:	5986 */
+	cmpl	%d7,%d6	/* 1002d41a:	bc87 */
+	bnes	.L1002d43a	/* 1002d41c:	661c */
+	movel	%d7,%sp@-	/* 1002d41e:	2f07 */
+	movel	%fp@(12),%d0	/* 1002d420:	202e 000c */
+	movel	%d0,%sp@-	/* 1002d424:	2f00 */
+	movel	%a3,%d0	/* 1002d426:	200b */
+	movel	%d0,%sp@-	/* 1002d428:	2f00 */
+	jsr	%pc@(sub_100338d4)	/* 1002d42a:	4eba 64a8 */
+	tstl	%d0	/* 1002d42e:	4a80 */
+	lea	%sp@(12),%sp	/* 1002d430:	4fef 000c */
+	bnes	.L1002d43a	/* 1002d434:	6604 */
+	moveq	#1,%d0	/* 1002d436:	7001 */
+	bras	.L1002d43c	/* 1002d438:	6002 */
+
+.L1002d43a:
+	moveq	#0,%d0	/* 1002d43a:	7000 */
+
+.L1002d43c:
+	moveml	%fp@(-16),%d6-%d7/%a3-%a4	/* 1002d43c:	4cee 18c0 fff0 */
+	unlk	%fp	/* 1002d442:	4e5e */
+	rts	/* 1002d444:	4e75 */
+
+sub_1002d446:
 	.byte	0x60,0x00,0xcc,0xec
 
 sub_1002d44a:
