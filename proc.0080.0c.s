@@ -4812,22 +4812,95 @@ sub_1002c1be:
 	rts	/* 1002c21c:	4e75 */
 
 sub_1002c21e:
-	.byte	0x4e,0x56
-	.byte	0x00,0x00,0x48,0xe7,0x13,0x00,0x1c,0x2e,0x00,0x0f,0x1e,0x2e,0x00,0x0b,0x76,0x01
-	.byte	0xbc,0x07,0x67,0x36,0x0c,0x07,0x00,0x61,0x6d,0x14,0x0c,0x07,0x00,0x7a,0x6e,0x0e
-	.byte	0x48,0x87,0x30,0x07,0xd0,0x7c,0xff,0xe0,0x48,0x86,0xbc,0x40,0x67,0x1c,0x0c,0x06
-	.byte	0x00,0x61,0x6d,0x14,0x0c,0x06,0x00,0x7a,0x6e,0x0e,0x48,0x86,0x30,0x06,0xd0,0x7c
-	.byte	0xff,0xe0,0x48,0x87,0xbe,0x40,0x67,0x02,0x76,0x00,0x10,0x03,0x4c,0xee,0x00,0xc8
-	.byte	0xff,0xf4,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 1002c21e:	4e56 0000 */
+	moveml	%d3/%d6-%d7,%sp@-	/* 1002c222:	48e7 1300 */
+	moveb	%fp@(15),%d6	/* 1002c226:	1c2e 000f */
+	moveb	%fp@(11),%d7	/* 1002c22a:	1e2e 000b */
+	moveq	#1,%d3	/* 1002c22e:	7601 */
+	cmpb	%d7,%d6	/* 1002c230:	bc07 */
+	beqs	.L1002c26a	/* 1002c232:	6736 */
+	cmpib	#97,%d7	/* 1002c234:	0c07 0061 */
+	blts	.L1002c24e	/* 1002c238:	6d14 */
+	cmpib	#122,%d7	/* 1002c23a:	0c07 007a */
+	bgts	.L1002c24e	/* 1002c23e:	6e0e */
+	extw	%d7	/* 1002c240:	4887 */
+	movew	%d7,%d0	/* 1002c242:	3007 */
+	.short	0xd07c,0xffe0	/* addw	#-32,%d0	/* 1002c244:	d07c ffe0 */
+	extw	%d6	/* 1002c248:	4886 */
+	cmpw	%d0,%d6	/* 1002c24a:	bc40 */
+	beqs	.L1002c26a	/* 1002c24c:	671c */
+
+.L1002c24e:
+	cmpib	#97,%d6	/* 1002c24e:	0c06 0061 */
+	blts	.L1002c268	/* 1002c252:	6d14 */
+	cmpib	#122,%d6	/* 1002c254:	0c06 007a */
+	bgts	.L1002c268	/* 1002c258:	6e0e */
+	extw	%d6	/* 1002c25a:	4886 */
+	movew	%d6,%d0	/* 1002c25c:	3006 */
+	.short	0xd07c,0x0ffe0	/* addw	#-32,%d0	/* 1002c25e:	d07c ffe0 */
+	extw	%d7	/* 1002c262:	4887 */
+	cmpw	%d0,%d7	/* 1002c264:	be40 */
+	beqs	.L1002c26a	/* 1002c266:	6702 */
+
+.L1002c268:
+	moveq	#0,%d3	/* 1002c268:	7600 */
+
+.L1002c26a:
+	moveb	%d3,%d0	/* 1002c26a:	1003 */
+	moveml	%fp@(-12),%d3/%d6-%d7	/* 1002c26c:	4cee 00c8 fff4 */
+	unlk	%fp	/* 1002c272:	4e5e */
+	rts	/* 1002c274:	4e75 */
 
 sub_1002c276:
-	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x01,0x18,0x26,0x6e
-	.byte	0x00,0x0c,0x28,0x6e,0x00,0x08,0x10,0x14,0xb0,0x13,0x67,0x04,0x70,0x00,0x60,0x3c
-	.byte	0x1e,0x14,0x60,0x2e,0x70,0x00,0x10,0x07,0x10,0x33,0x00,0x00,0x48,0x80,0x48,0xc0
-	.byte	0x2f,0x00,0x70,0x00,0x10,0x07,0x10,0x34,0x00,0x00,0x48,0x80,0x48,0xc0,0x2f,0x00
-	.byte	0x4e,0xba,0xff,0x6c,0x4a,0x00,0x50,0x4f,0x66,0x04,0x70,0x00,0x60,0x0e,0x10,0x07
-	.byte	0x53,0x07,0x70,0x00,0x10,0x07,0x4a,0x80,0x62,0xca,0x70,0x01,0x4c,0xee,0x18,0x80
-	.byte	0xff,0xf4,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 1002c276:	4e56 0000 */
+	moveml	%d7/%a3-%a4,%sp@-	/* 1002c27a:	48e7 0118 */
+	moveal	%fp@(12),%a3	/* 1002c27e:	266e 000c */
+	moveal	%fp@(8),%a4	/* 1002c282:	286e 0008 */
+	moveb	%a4@,%d0	/* 1002c286:	1014 */
+	cmpb	%a3@,%d0	/* 1002c288:	b013 */
+	beqs	.L1002c290	/* 1002c28a:	6704 */
+	moveq	#0,%d0	/* 1002c28c:	7000 */
+	bras	.L1002c2cc	/* 1002c28e:	603c */
+
+.L1002c290:
+	moveb	%a4@,%d7	/* 1002c290:	1e14 */
+	bras	.L1002c2c2	/* 1002c292:	602e */
+
+.L1002c294:
+	moveq	#0,%d0	/* 1002c294:	7000 */
+	moveb	%d7,%d0	/* 1002c296:	1007 */
+	moveb	%a3@(%d0:w),%d0	/* 1002c298:	1033 0000 */
+	extw	%d0	/* 1002c29c:	4880 */
+	extl	%d0	/* 1002c29e:	48c0 */
+	movel	%d0,%sp@-	/* 1002c2a0:	2f00 */
+	moveq	#0,%d0	/* 1002c2a2:	7000 */
+	moveb	%d7,%d0	/* 1002c2a4:	1007 */
+	moveb	%a4@(%d0:w),%d0	/* 1002c2a6:	1034 0000 */
+	extw	%d0	/* 1002c2aa:	4880 */
+	extl	%d0	/* 1002c2ac:	48c0 */
+	movel	%d0,%sp@-	/* 1002c2ae:	2f00 */
+	jsr	%pc@(sub_1002c21e)	/* 1002c2b0:	4eba ff6c */
+	tstb	%d0	/* 1002c2b4:	4a00 */
+	addqw	#8,%sp	/* 1002c2b6:	504f */
+	bnes	.L1002c2be	/* 1002c2b8:	6604 */
+	moveq	#0,%d0	/* 1002c2ba:	7000 */
+	bras	.L1002c2cc	/* 1002c2bc:	600e */
+
+.L1002c2be:
+	moveb	%d7,%d0	/* 1002c2be:	1007 */
+	subqb	#1,%d7	/* 1002c2c0:	5307 */
+
+.L1002c2c2:
+	moveq	#0,%d0	/* 1002c2c2:	7000 */
+	moveb	%d7,%d0	/* 1002c2c4:	1007 */
+	tstl	%d0	/* 1002c2c6:	4a80 */
+	bhis	.L1002c294	/* 1002c2c8:	62ca */
+	moveq	#1,%d0	/* 1002c2ca:	7001 */
+
+.L1002c2cc:
+	moveml	%fp@(-12),%d7/%a3-%a4	/* 1002c2cc:	4cee 1880 fff4 */
+	unlk	%fp	/* 1002c2d2:	4e5e */
+	rts	/* 1002c2d4:	4e75 */
 
 sub_1002c2d6:
 	.byte	0x4e,0x56,0xff,0xa2,0x48,0xe7,0x01,0x18,0x47,0xee
