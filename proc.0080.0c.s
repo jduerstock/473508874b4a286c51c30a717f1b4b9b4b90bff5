@@ -5327,28 +5327,28 @@ sub_1002c4be:
 	rts	/* 1002c6f6:	4e75 */
 
 sub_1002c6f8:
-	.byte	0x60,0x00,0x89,0x6a
+	braw	sub_10025064	/* 1002c6f8:	6000 896a */
 
 sub_1002c6fc:
-	.byte	0x60,0x00,0x89,0x6a
+	braw	sub_10025068	/* 1002c6fc:	6000 896a */
 
 sub_1002c700:
-	.byte	0x60,0x00,0x8e,0x2c
+	braw	sub_1002552e	/* 1002c700:	6000 8e2c */
 
 sub_1002c704:
-	.byte	0x60,0x00,0x8b,0x28
+	braw	sub_1002522e	/* 1002c704:	6000 8b28 */
 
 sub_1002c708:
-	.byte	0x60,0x00,0x8b,0x28
+	braw	sub_10025232	/* 1002c708:	6000 8b28 */
 
 sub_1002c70c:
-	.byte	0x60,0x00,0x8b,0x28
+	braw	sub_10025236	/* 1002c70c:	6000 8b28 */
 
 sub_1002c710:
-	.byte	0x60,0x00,0x8b,0x28
+	braw	sub_1002523a	/* 1002c710:	6000 8b28 */
 
 sub_1002c714:
-	.byte	0x60,0x00,0x8b,0x28
+	braw	sub_1002523e	/* 1002c714:	6000 8b28 */
 
 sub_1002c718:
 	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x01,0x18
