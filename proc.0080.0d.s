@@ -71,13 +71,13 @@ sub_1002c94c:
 	rts	/* 1002ca10:	4e75 */
 
 sub_1002ca12:
-	.byte	0x60,0x00,0xba,0x5c
+	braw	sub_10028470	/* 1002ca12:	6000 ba5c */
 
 sub_1002ca16:
-	.byte	0x60,0x00,0x8d,0xfc
+	braw	sub_10025814	/* 1002ca16:	6000 8dfc */
 
 sub_1002ca1a:
-	.byte	0x60,0x00,0x89,0xc0
+	braw	sub_100253dc	/* 1002ca1a:	6000 89c0 */
 
 sub_1002ca1e:
 	.byte	0x4e,0x56
