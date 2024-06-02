@@ -260,8 +260,12 @@ sub_1002cbce:
 	braw	sub_10025684	/* 1002cbce:	6000 8ab4 */
 
 sub_1002cbd2:
-	.byte	0x4e,0x56,0x00,0x00,0x42,0x2e,0x00,0x14,0x4e,0x5e,0x20,0x5f,0x4f,0xef
-	.byte	0x00,0x0c,0x4e,0xd0
+	linkw	%fp,#0	/* 1002cbd2:	4e56 0000 */
+	clrb	%fp@(20)	/* 1002cbd6:	422e 0014 */
+	unlk	%fp	/* 1002cbda:	4e5e */
+	moveal	%sp@+,%a0	/* 1002cbdc:	205f */
+	lea	%sp@(12),%sp	/* 1002cbde:	4fef 000c */
+	jmp	%a0@	/* 1002cbe2:	4ed0 */
 
 sub_1002cbe4:
 	.byte	0x60,0x00,0x79,0x88
