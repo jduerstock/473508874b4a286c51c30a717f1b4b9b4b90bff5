@@ -349,13 +349,13 @@ sub_1002cbe8:
 	rts	/* 1002cc9e:	4e75 */
 
 sub_1002cca0:
-	.byte	0x60,0x00,0xd5,0xa2
+	braw	sub_1002a244	/* 1002cca0:	6000 d5a2 */
 
 sub_1002cca4:
-	.byte	0x60,0x00,0x89,0x88
+	braw	sub_1002562e	/* 1002cca4:	6000 8988 */
 
 sub_1002cca8:
-	.byte	0x60,0x00,0x8b,0x44
+	braw	sub_100257ee	/* 1002cca8:	6000 8b44 */
 
 sub_1002ccac:
 	.byte	0x4e,0x56,0xff,0xf8
