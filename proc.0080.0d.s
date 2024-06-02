@@ -649,16 +649,16 @@ sub_1002cf8a:
 	.byte	0x60,0x00,0x79,0x60
 
 sub_1002cf8e:
-	.byte	0x60,0x00,0x79,0x60
+	braw	sub_100348f0	/* 1002cf8e:	6000 7960 */
 
 sub_1002cf92:
-	.byte	0x60,0x00,0x79,0x60
+	braw	sub_100348f4	/* 1002cf92:	6000 7960 */
 
 sub_1002cf96:
-	.byte	0x60,0x00,0x88,0x74
+	braw	sub_1002580c	/* 1002cf96:	6000 8874 */
 
 sub_1002cf9a:
-	.byte	0x60,0x00,0x88,0x74
+	braw	sub_10025810	/* 1002cf9a:	6000 8874 */
 
 sub_1002cf9e:
 	.byte	0x4e,0x56
