@@ -2240,13 +2240,13 @@ sub_1002dc7a:
 	rts	/* 1002de1e:	4e75 */
 
 sub_1002de20:
-	.byte	0x60,0x00,0xf0,0xc4
+	braw	sub_1002cee6	/* 1002de20:	6000 f0c4 */
 
 sub_1002de24:
-	.byte	0x60,0x00,0x97,0xc2
+	braw	sub_100275e8	/* 1002de24:	6000 97c2 */
 
 sub_1002de28:
-	.byte	0x60,0x00,0x97,0xc2
+	braw	sub_100275ec	/* 1002de28:	6000 97c2 */
 
 sub_1002de2c:
 	.byte	0x4e,0x56,0xff,0xf8
