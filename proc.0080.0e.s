@@ -204,10 +204,10 @@ sub_1002ff30:
 	rts	/* 1002ff82:	4e75 */
 
 sub_1002ff84:
-	.byte	0x60,0x00,0xf4,0xb0
+	braw	sub_1002f436	/* 1002ff84:	6000 f4b0 */
 
 sub_1002ff88:
-	.byte	0x60,0x00,0xf4,0xa8
+	braw	sub_1002f432	/* 1002ff88:	6000 f4a8 */
 
 sub_1002ff8c:
 	.byte	0x4e,0x56,0x00,0x00
