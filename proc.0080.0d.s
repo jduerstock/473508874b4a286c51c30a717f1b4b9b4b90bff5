@@ -3074,16 +3074,16 @@ sub_1002e296:
 	rts	/* 1002e588:	4e75 */
 
 sub_1002e58a:
-	.byte	0x60,0x00,0xf1,0xfc
+	braw	sub_1002d788	/* 1002e58a:	6000 f1fc */
 
 sub_1002e58e:
-	.byte	0x60,0x00,0xf1,0xfc
+	braw	sub_1002d78c	/* 1002e58e:	6000 f1fc */
 
 sub_1002e592:
-	.byte	0x60,0x00,0xb2,0x78
+	braw	sub_1002980c	/* 1002e592:	6000 b278 */
 
 sub_1002e596:
-	.byte	0x60,0x00,0x90,0x5c
+	braw	sub_100275f4	/* 1002e596:	6000 905c */
 
 sub_1002e59a:
 	.byte	0x4e,0x56,0x00,0x00,0x2f,0x0c
