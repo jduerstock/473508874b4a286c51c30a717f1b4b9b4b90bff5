@@ -3369,13 +3369,49 @@ sub_1002e7b2:
 	rts	/* 1002e824:	4e75 */
 
 sub_1002e826:
-	.byte	0x4e,0x56,0xff,0xfc,0x2f,0x07,0x4e,0xba,0x79,0x74
-	.byte	0x20,0x40,0x4a,0xa8,0x00,0xb8,0x66,0x40,0x55,0x8f,0x48,0x78,0x01,0x00,0x70,0x08
-	.byte	0x3f,0x00,0x72,0x04,0x3f,0x01,0x70,0x00,0x2f,0x00,0x70,0x00,0x1f,0x00,0x48,0x6e
-	.byte	0xff,0xfc,0x4e,0xba,0x60,0xa0,0x30,0x1f,0x48,0xc0,0x2e,0x00,0x67,0x0c,0x2f,0x07
-	.byte	0x4e,0xba,0x63,0x24,0x70,0x00,0x58,0x4f,0x60,0x02,0x70,0x00,0x4e,0xba,0x79,0x34
-	.byte	0x20,0x40,0x21,0x6e,0xff,0xfc,0x00,0xb8,0x4e,0xba,0x79,0x28,0x20,0x40,0x20,0x28
-	.byte	0x00,0xb8,0x2e,0x2e,0xff,0xf8,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#-4	/* 1002e826:	4e56 fffc */
+	movel	%d7,%sp@-	/* 1002e82a:	2f07 */
+	jsr	%pc@(sub_100361a2)	/* 1002e82c:	4eba 7974 */
+	moveal	%d0,%a0	/* 1002e830:	2040 */
+	tstl	%a0@(184)	/* 1002e832:	4aa8 00b8 */
+	bnes	.L1002e878	/* 1002e836:	6640 */
+	subql	#2,%sp	/* 1002e838:	558f */
+	pea	0x100	/* 1002e83a:	4878 0100 */
+	moveq	#8,%d0	/* 1002e83e:	7008 */
+	movew	%d0,%sp@-	/* 1002e840:	3f00 */
+	moveq	#4,%d1	/* 1002e842:	7204 */
+	movew	%d1,%sp@-	/* 1002e844:	3f01 */
+	moveq	#0,%d0	/* 1002e846:	7000 */
+	movel	%d0,%sp@-	/* 1002e848:	2f00 */
+	moveq	#0,%d0	/* 1002e84a:	7000 */
+	moveb	%d0,%sp@-	/* 1002e84c:	1f00 */
+	pea	%fp@(-4)	/* 1002e84e:	486e fffc */
+	jsr	%pc@(sub_100348f4)	/* 1002e852:	4eba 60a0 */
+	movew	%sp@+,%d0	/* 1002e856:	301f */
+	extl	%d0	/* 1002e858:	48c0 */
+	movel	%d0,%d7	/* 1002e85a:	2e00 */
+	beqs	.L1002e86a	/* 1002e85c:	670c */
+	movel	%d7,%sp@-	/* 1002e85e:	2f07 */
+	jsr	%pc@(sub_10034b86)	/* 1002e860:	4eba 6324 */
+	moveq	#0,%d0	/* 1002e864:	7000 */
+	addqw	#4,%sp	/* 1002e866:	584f */
+	bras	.L1002e86c	/* 1002e868:	6002 */
+
+.L1002e86a:
+	moveq	#0,%d0	/* 1002e86a:	7000 */
+
+.L1002e86c:
+	jsr	%pc@(sub_100361a2)	/* 1002e86c:	4eba 7934 */
+	moveal	%d0,%a0	/* 1002e870:	2040 */
+	movel	%fp@(-4),%a0@(184)	/* 1002e872:	216e fffc 00b8 */
+
+.L1002e878:
+	jsr	%pc@(sub_100361a2)	/* 1002e878:	4eba 7928 */
+	moveal	%d0,%a0	/* 1002e87c:	2040 */
+	movel	%a0@(184),%d0	/* 1002e87e:	2028 00b8 */
+	movel	%fp@(-8),%d7	/* 1002e882:	2e2e fff8 */
+	unlk	%fp	/* 1002e886:	4e5e */
+	rts	/* 1002e888:	4e75 */
 
 sub_1002e88a:
 	.byte	0x4e,0x56,0xff,0xe4,0x48,0xe7
