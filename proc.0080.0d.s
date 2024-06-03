@@ -2515,7 +2515,7 @@ sub_1002df02:
 	rts	/* 1002e084:	4e75 */
 
 sub_1002e086:
-	.byte	0x60,0x00,0xc8,0x08
+	braw	sub_1002a890	/* 1002e086:	6000 c808 */
 
 sub_1002e08a:
 	.byte	0x4e,0x56,0xfe,0xea,0x48,0xe7
