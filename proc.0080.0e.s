@@ -104,13 +104,13 @@ sub_1002fe84:
 	rts	/* 1002feac:	4e75 */
 
 sub_1002feae:
-	.byte	0x60,0x00,0x89,0x72
+	braw	sub_10028822	/* 1002feae:	6000 8972 */
 
 sub_1002feb2:
-	.byte	0x60,0x00,0x89,0x72
+	braw	sub_10028826	/* 1002feb2:	6000 8972 */
 
 sub_1002feb6:
-	.byte	0x60,0x00,0xa9,0xd4
+	braw	sub_1002a88c	/* 1002feb6:	6000 a9d4 */
 
 sub_1002feba:
 	.byte	0x4e,0x56,0x00,0x00,0x2f,0x0c
