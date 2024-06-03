@@ -1237,8 +1237,8 @@ sub_1002d4a4:
 	moveq	#0,%d1	/* 1002d4ee:	7200 */
 	movel	%d1,%sp@-	/* 1002d4f0:	2f01 */
 	pea	%fp@(-12)	/* 1002d4f2:	486e fff4 */
-	movel	#0x8012001a,%sp@-	/* 1002d4f6:	2f3c 8012 001a */
-	.short	0xa8b5	/* 1002d4fc:	a8b5 */
+	movel	#0x8012001a,%sp@-	/* FindWord */
+	.short	0xa8b5
 	movew	%fp@(-10),%d0	/* 1002d4fe:	302e fff6 */
 	extl	%d0	/* 1002d502:	48c0 */
 	movel	%d0,%d7	/* 1002d504:	2e00 */
