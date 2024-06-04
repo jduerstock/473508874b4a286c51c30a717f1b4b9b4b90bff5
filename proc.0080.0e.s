@@ -4613,13 +4613,13 @@ sub_100327f8:
 	rts	/* 10032a1a:	4e75 */
 
 sub_10032a1c:
-	.byte	0x60,0x00,0x94,0x44
+	braw	sub_1002be62	/* 10032a1c:	6000 9444 */
 
 sub_10032a20:
-	.byte	0x60,0x00,0xf0,0xf6
+	braw	sub_10031b18	/* 10032a20:	6000 f0f6 */
 
 sub_10032a24:
-	.byte	0x60,0x00,0xd7,0xba
+	braw	sub_100301e0	/* 10032a24:	6000 d7ba */
 
 sub_10032a28:
 	.byte	0x4e,0x56,0xff,0x64,0x48,0xe7,0x1f,0x18
