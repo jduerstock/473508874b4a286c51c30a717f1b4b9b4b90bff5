@@ -595,13 +595,13 @@ sub_100302a0:
 	rts	/* 1003037c:	4e75 */
 
 sub_1003037e:
-	.byte	0x60,0x00,0x79,0x5a
+	braw	sub_10037cda	/* 1003037e:	6000 795a */
 
 sub_10030382:
-	.byte	0x60,0x00,0xe2,0xa2
+	braw	sub_1002e626	/* 10030382:	6000 e2a2 */
 
 sub_10030386:
-	.byte	0x60,0x00,0xd8,0xee
+	braw	sub_1002dc76	/* 10030386:	6000 d8ee */
 
 sub_1003038a:
 	.byte	0x4e,0x56,0xfe,0xfc,0x48,0xe7
