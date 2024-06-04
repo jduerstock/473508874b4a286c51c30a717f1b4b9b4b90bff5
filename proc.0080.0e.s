@@ -5441,17 +5441,22 @@ sub_100330e6:
 	rts	/* 100332ee:	4e75 */
 
 sub_100332f0:
-	.byte	0x60,0x00,0xef,0xfa
-	.byte	0x60,0x00,0x89,0x2a,0x60,0x00,0xd8,0x98
+	braw	sub_100322ec	/* 100332f0:	6000 effa */
+
+sub_100332f4:
+	braw	sub_1002bc20	/* 100332f4:	6000 892a */
+
+sub_100332f8:
+	braw	sub_10030b92	/* 100332f8:	6000 d898 */
 
 sub_100332fc:
-	.byte	0x60,0x00,0x8b,0x5c
+	braw	sub_1002be5a	/* 100332fc:	6000 8b5c */
 
 sub_10033300:
-	.byte	0x60,0x00,0x8b,0x5c
+	braw	sub_1002be5e	/* 10033300:	6000 8b5c */
 
 sub_10033304:
-	.byte	0x60,0x00,0xd8,0x9c
+	braw	sub_10030ba2	/* 10033304:	6000 d89c */
 
 sub_10033308:
 	.byte	0x4e,0x56,0xff,0xf6,0x48,0xe7,0x03,0x18
