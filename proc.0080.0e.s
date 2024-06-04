@@ -1400,50 +1400,261 @@ sub_100307d2:
 	rts	/* 10030b90:	4e75 */
 
 sub_10030b92:
-	.byte	0x60,0x00,0xce,0x6c
-	.byte	0x60,0x00,0xe4,0xba,0x60,0x00,0xd6,0xf2,0x60,0x00
-	.byte	0xce,0x5c
-	.byte	0x60,0x00,0xf1,0x02,0x60,0x00,0xd2,0x78,0x60,0x00,0xf3,0xdc,0x60,0x00
-	.byte	0x89,0x80
-	.byte	0x60,0x00,0x89,0x80,0x60,0x00,0x89,0x80,0x60,0x00,0x89,0x80,0x60,0x00
-	.byte	0x89,0x80
-	.byte	0x60,0x00,0x89,0x80,0x60,0x00,0x89,0x80,0x60,0x00,0x89,0x80,0x60,0x00
-	.byte	0x89,0x80
-	.byte	0x60,0x00,0x89,0x80,0x60,0x00,0xa4,0x12,0x60,0x00,0x8a,0x66,0x60,0x00
-	.byte	0x8a,0x66
-	.byte	0x60,0x00,0x8a,0x66,0x60,0x00,0x8a,0x66,0x60,0x00,0x8a,0x66,0x60,0x00
-	.byte	0x8a,0x66
-	.byte	0x60,0x00,0x8a,0x66,0x60,0x00,0x8a,0x66,0x60,0x00,0x8a,0x66,0x60,0x00
-	.byte	0x8a,0x66
-	.byte	0x60,0x00,0x9b,0xf0,0x60,0x00,0xdf,0x56,0x60,0x00,0x8a,0x5e,0x60,0x00
-	.byte	0x8a,0x5e
-	.byte	0x60,0x00,0x8a,0x5e,0x60,0x00,0x8a,0x5e,0x60,0x00,0x8a,0x5e,0x60,0x00
-	.byte	0x8a,0x5e
-	.byte	0x60,0x00,0x8a,0x5e,0x60,0x00,0xf2,0x4c,0x60,0x00,0xf2,0x28,0x60,0x00
-	.byte	0xf2,0x34
-	.byte	0x60,0x00,0x8a,0x52,0x60,0x00,0x8a,0x52,0x60,0x00,0x8a,0x52,0x60,0x00
-	.byte	0x8a,0x52
-	.byte	0x60,0x00,0x8a,0x52,0x60,0x00,0x8a,0x52,0x60,0x00,0x8a,0x52,0x60,0x00
-	.byte	0x8a,0x52
-	.byte	0x60,0x00,0x8a,0x52,0x60,0x00,0x8a,0x52,0x60,0x00,0xda,0xae,0x60,0x00
-	.byte	0xda,0x8a
-	.byte	0x60,0x00,0xda,0x66,0x60,0x00,0xda,0x42,0x60,0x00,0xd9,0xfe,0x60,0x00
-	.byte	0xda,0x1a
-	.byte	0x60,0x00,0x8a,0x3a,0x60,0x00,0x8a,0x3a,0x60,0x00,0x8a,0x3a,0x60,0x00
-	.byte	0xda,0x9e
-	.byte	0x60,0x00,0x8a,0x36,0x60,0x00,0xf1,0xba,0x60,0x00,0xf1,0x7c,0x60,0x00
-	.byte	0x8a,0x2e
-	.byte	0x60,0x00,0x8a,0x2e,0x60,0x00,0x8a,0x2e,0x60,0x00,0x8a,0x2e,0x60,0x00
-	.byte	0x8a,0x2e
-	.byte	0x60,0x00,0x8a,0x2e,0x60,0x00,0x8a,0x2e,0x60,0x00,0x8a,0x2e,0x60,0x00
-	.byte	0xdf,0x50
-	.byte	0x60,0x00,0xdf,0x26,0x60,0x00,0xde,0xe6,0x60,0x00,0x8a,0x22,0x60,0x00
-	.byte	0x8a,0x22
-	.byte	0x60,0x00,0x8a,0x88,0x60,0x00,0x8a,0x88,0x60,0x00,0x8a,0x88,0x60,0x00
-	.byte	0x8a,0x88
-	.byte	0x60,0x00,0x8a,0x88,0x60,0x00,0x8a,0x88,0x60,0x00,0x8a,0x88,0x60,0x00
-	.byte	0x8a,0x88
-	.byte	0x60,0x00,0xfa,0x3c
+	braw	sub_1002da00	/* 10030b92:	6000 ce6c */
+
+sub_10030b96:
+	braw	sub_1002f052	/* 10030b96:	6000 e4ba */
+
+sub_10030b9a:
+	braw	sub_1002e28e	/* 10030b9a:	6000 d6f2 */
+
+sub_10030b9e:
+	braw	sub_1002d9fc	/* 10030b9e:	6000 ce5c */
+
+sub_10030ba2:
+	braw	sub_1002fca6	/* 10030ba2:	6000 f102 */
+
+sub_10030ba6:
+	braw	sub_1002de20	/* 10030ba6:	6000 d278 */
+
+sub_10030baa:
+	braw	sub_1002ff88	/* 10030baa:	6000 f3dc */
+
+sub_10030bae:
+	braw	sub_10029530	/* 10030bae:	6000 8980 */
+
+sub_10030bb2:
+	braw	sub_10029534	/* 10030bb2:	6000 8980 */
+
+sub_10030bb6:
+	braw	sub_10029538	/* 10030bb6:	6000 8980 */
+
+sub_10030bba:
+	braw	sub_1002953c	/* 10030bba:	6000 8980 */
+
+sub_10030bbe:
+	braw	sub_10029540	/* 10030bbe:	6000 8980 */
+
+sub_10030bc2:
+	braw	sub_10029544	/* 10030bc2:	6000 8980 */
+
+sub_10030bc6:
+	braw	sub_10029548	/* 10030bc6:	6000 8980 */
+
+sub_10030bca:
+	braw	sub_1002954c	/* 10030bca:	6000 8980 */
+
+sub_10030bce:
+	braw	sub_10029550	/* 10030bce:	6000 8980 */
+
+sub_10030bd2:
+	braw	sub_10029554	/* 10030bd2:	6000 8980 */
+
+sub_10030bd6:
+	braw	sub_1002afea	/* 10030bd6:	6000 a412 */
+
+sub_10030bda:
+	braw	sub_10029642	/* 10030bda:	6000 8a66 */
+
+sub_10030bde:
+	braw	sub_10029646	/* 10030bde:	6000 8a66 */
+
+sub_10030be2:
+	braw	sub_1002964a	/* 10030be2:	6000 8a66 */
+
+sub_10030be6:
+	braw	sub_1002964e	/* 10030be6:	6000 8a66 */
+
+sub_10030bea:
+	braw	sub_10029652	/* 10030bea:	6000 8a66 */
+
+sub_10030bee:
+	braw	sub_10029656	/* 10030bee:	6000 8a66 */
+
+sub_10030bf2:
+	braw	sub_1002965a	/* 10030bf2:	6000 8a66 */
+
+sub_10030bf6:
+	braw	sub_1002965e	/* 10030bf6:	6000 8a66 */
+
+sub_10030bfa:
+	braw	sub_10029662	/* 10030bfa:	6000 8a66 */
+
+sub_10030bfe:
+	braw	sub_10029666	/* 10030bfe:	6000 8a66 */
+
+sub_10030c02:
+	braw	sub_1002a7f4	/* 10030c02:	6000 9bf0 */
+
+sub_10030c06:
+	braw	sub_1002eb5e	/* 10030c06:	6000 df56 */
+
+sub_10030c0a:
+	braw	sub_1002966a	/* 10030c0a:	6000 8a5e */
+
+sub_10030c0e:
+	braw	sub_1002966e	/* 10030c0e:	6000 8a5e */
+
+sub_10030c12:
+	braw	sub_10029672	/* 10030c12:	6000 8a5e */
+
+sub_10030c16:
+	braw	sub_10029676	/* 10030c16:	6000 8a5e */
+
+sub_10030c1a:
+	braw	sub_1002967a	/* 10030c1a:	6000 8a5e */
+
+sub_10030c1e:
+	braw	sub_1002967e	/* 10030c1e:	6000 8a5e */
+
+sub_10030c22:
+	braw	sub_10029682	/* 10030c22:	6000 8a5e */
+
+sub_10030c26:
+	braw	sub_1002fe74	/* 10030c26:	6000 f24c */
+
+sub_10030c2a:
+	braw	sub_1002fe54	/* 10030c2a:	6000 f228 */
+
+sub_10030c2e:
+	braw	sub_1002fe64	/* 10030c2e:	6000 f234 */
+
+sub_10030c32:
+	braw	sub_10029686	/* 10030c32:	6000 8a52 */
+
+sub_10030c36:
+	braw	sub_1002968a	/* 10030c36:	6000 8a52 */
+
+sub_10030c3a:
+	braw	sub_1002968e	/* 10030c3a:	6000 8a52 */
+
+sub_10030c3e:
+	braw	sub_10029692	/* 10030c3e:	6000 8a52 */
+
+sub_10030c42:
+	braw	sub_10029696	/* 10030c42:	6000 8a52 */
+
+sub_10030c46:
+	braw	sub_1002969a	/* 10030c46:	6000 8a52 */
+
+sub_10030c4a:
+	braw	sub_1002969e	/* 10030c4a:	6000 8a52 */
+
+sub_10030c4e:
+	braw	sub_100296a2	/* 10030c4e:	6000 8a52 */
+
+sub_10030c52:
+	braw	sub_100296a6	/* 10030c52:	6000 8a52 */
+
+sub_10030c56:
+	braw	sub_100296aa	/* 10030c56:	6000 8a52 */
+
+sub_10030c5a:
+	braw	sub_1002e70a	/* 10030c5a:	6000 daae */
+
+sub_10030c5e:
+	braw	sub_1002e6ea	/* 10030c5e:	6000 da8a */
+
+sub_10030c62:
+	braw	sub_1002e6ca	/* 10030c62:	6000 da66 */
+
+sub_10030c66:
+	braw	sub_1002e6aa	/* 10030c66:	6000 da42 */
+
+sub_10030c6a:
+	braw	sub_1002e66a	/* 10030c6a:	6000 d9fe */
+
+sub_10030c6e:
+	braw	sub_1002e68a	/* 10030c6e:	6000 da1a */
+
+sub_10030c72:
+	braw	sub_100296ae	/* 10030c72:	6000 8a3a */
+
+sub_10030c76:
+	braw	sub_100296b2	/* 10030c76:	6000 8a3a */
+
+sub_10030c7a:
+	braw	sub_100296b6	/* 10030c7a:	6000 8a3a */
+
+sub_10030c7e:
+	braw	sub_1002e71e	/* 10030c7e:	6000 da9e */
+
+sub_10030c82:
+	braw	sub_100296ba	/* 10030c82:	6000 8a36 */
+
+sub_10030c86:
+	braw	sub_1002fe42	/* 10030c86:	6000 f1ba */
+
+sub_10030c8a:
+	braw	sub_1002fe08	/* 10030c8a:	6000 f17c */
+
+sub_10030c8e:
+	braw	sub_100296be	/* 10030c8e:	6000 8a2e */
+
+sub_10030c92:
+	braw	sub_100296c2	/* 10030c92:	6000 8a2e */
+
+sub_10030c96:
+	braw	sub_100296c6	/* 10030c96:	6000 8a2e */
+
+sub_10030c9a:
+	braw	sub_100296ca	/* 10030c9a:	6000 8a2e */
+
+sub_10030c9e:
+	braw	sub_100296ce	/* 10030c9e:	6000 8a2e */
+
+sub_10030ca2:
+	braw	sub_100296d2	/* 10030ca2:	6000 8a2e */
+
+sub_10030ca6:
+	braw	sub_100296d6	/* 10030ca6:	6000 8a2e */
+
+sub_10030caa:
+	braw	sub_100296da	/* 10030caa:	6000 8a2e */
+
+sub_10030cae:
+	braw	sub_1002ec00	/* 10030cae:	6000 df50 */
+
+sub_10030cb2:
+	braw	sub_1002ebda	/* 10030cb2:	6000 df26 */
+
+sub_10030cb6:
+	braw	sub_1002eb9e	/* 10030cb6:	6000 dee6 */
+
+sub_10030cba:
+	braw	sub_100296de	/* 10030cba:	6000 8a22 */
+
+sub_10030cbe:
+	braw	sub_100296e2	/* 10030cbe:	6000 8a22 */
+
+sub_10030cc2:
+	braw	sub_1002974c	/* 10030cc2:	6000 8a88 */
+
+sub_10030cc6:
+	braw	sub_10029750	/* 10030cc6:	6000 8a88 */
+
+sub_10030cca:
+	braw	sub_10029754	/* 10030cca:	6000 8a88 */
+
+sub_10030cce:
+	braw	sub_10029758	/* 10030cce:	6000 8a88 */
+
+sub_10030cd2:
+	braw	sub_1002975c	/* 10030cd2:	6000 8a88 */
+
+sub_10030cd6:
+	braw	sub_10029760	/* 10030cd6:	6000 8a88 */
+
+sub_10030cda:
+	braw	sub_10029764	/* 10030cda:	6000 8a88 */
+
+sub_10030cde:
+	braw	sub_10029768	/* 10030cde:	6000 8a88 */
+
+sub_10030ce2:
+	braw	sub_10030720	/* 10030ce2:	6000 fa3c */
+
+sub_10030ce6:
 	.byte	0x4e,0x56,0xfe,0xda,0x48,0xe7,0x1f,0x18,0x2e,0x2e
 	.byte	0x00,0x20,0x42,0x6e,0xff,0xf6,0x41,0xee,0xff,0xf8,0x4e,0xba,0x7c,0x8a,0x20,0x40
 	.byte	0x2d,0x68,0x00,0x58,0xff,0xc2,0x41,0xee,0xff,0xc2,0x2f,0x08,0x4e,0xba,0x7c,0x78
