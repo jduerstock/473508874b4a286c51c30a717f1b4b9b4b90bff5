@@ -3123,13 +3123,43 @@ sub_10031b76:
 	braw	sub_1002a446	/* 10031b76:	6000 88ce */
 
 sub_10031b7a:
-	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7
-	.byte	0x00,0x18,0x28,0x6e,0x00,0x08,0x2f,0x2e,0x00,0x0c,0x4e,0xba,0x2d,0x74,0x72,0x00
-	.byte	0x12,0x00,0x0c,0x41,0x00,0x0e,0x58,0x4f,0x66,0x34,0x26,0x6e,0x00,0x0c,0x2f,0x3c
-	.byte	0x3d,0x20,0x20,0x20,0x2f,0x0b,0x4e,0xba,0xe2,0xdc,0x58,0x8f,0x2f,0x00,0x70,0x00
-	.byte	0x2f,0x00,0x2f,0x0b,0x2f,0x0c,0x4e,0xba,0xe2,0xcc,0x58,0x8f,0x2f,0x00,0x70,0x00
-	.byte	0x2f,0x00,0x2f,0x0c,0x4e,0xba,0xf1,0x20,0x4f,0xef,0x00,0x1c,0x60,0x02,0x70,0x00
-	.byte	0x4c,0xee,0x18,0x00,0xff,0xf8,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 10031b7a:	4e56 0000 */
+	moveml	%a3-%a4,%sp@-	/* 10031b7e:	48e7 0018 */
+	moveal	%fp@(8),%a4	/* 10031b82:	286e 0008 */
+	movel	%fp@(12),%sp@-	/* 10031b86:	2f2e 000c */
+	jsr	%pc@(sub_10034900)	/* 10031b8a:	4eba 2d74 */
+	moveq	#0,%d1	/* 10031b8e:	7200 */
+	moveb	%d0,%d1	/* 10031b90:	1200 */
+	cmpiw	#14,%d1	/* 10031b92:	0c41 000e */
+	addqw	#4,%sp	/* 10031b96:	584f */
+	bnes	.L10031bce	/* 10031b98:	6634 */
+	moveal	%fp@(12),%a3	/* 10031b9a:	266e 000c */
+	movel	#1025515552,%sp@-	/* 10031b9e:	2f3c 3d20 2020 */
+	movel	%a3,%sp@-	/* 10031ba4:	2f0b */
+	jsr	%pc@(sub_1002fe84)	/* 10031ba6:	4eba e2dc */
+	addql	#4,%sp	/* 10031baa:	588f */
+	movel	%d0,%sp@-	/* 10031bac:	2f00 */
+	moveq	#0,%d0	/* 10031bae:	7000 */
+	movel	%d0,%sp@-	/* 10031bb0:	2f00 */
+	movel	%a3,%sp@-	/* 10031bb2:	2f0b */
+	movel	%a4,%sp@-	/* 10031bb4:	2f0c */
+	jsr	%pc@(sub_1002fe84)	/* 10031bb6:	4eba e2cc */
+	addql	#4,%sp	/* 10031bba:	588f */
+	movel	%d0,%sp@-	/* 10031bbc:	2f00 */
+	moveq	#0,%d0	/* 10031bbe:	7000 */
+	movel	%d0,%sp@-	/* 10031bc0:	2f00 */
+	movel	%a4,%sp@-	/* 10031bc2:	2f0c */
+	jsr	%pc@(sub_10030ce6)	/* 10031bc4:	4eba f120 */
+	lea	%sp@(28),%sp	/* 10031bc8:	4fef 001c */
+	bras	.L10031bd0	/* 10031bcc:	6002 */
+
+.L10031bce:
+	moveq	#0,%d0	/* 10031bce:	7000 */
+
+.L10031bd0:
+	moveml	%fp@(-8),%a3-%a4	/* 10031bd0:	4cee 1800 fff8 */
+	unlk	%fp	/* 10031bd6:	4e5e */
+	rts	/* 10031bd8:	4e75 */
 
 sub_10031bda:
 	.byte	0x4e,0x56,0xff,0xfc,0x48,0xe7
