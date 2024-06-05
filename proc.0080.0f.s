@@ -2146,7 +2146,7 @@ sub_10034576:
 	jmp	%a0@	/* 10034706:	4ed0 */
 
 sub_10034708:
-	.byte	0x60,0x00,0xeb,0xe6
+	braw	sub_100332f0	/* 10034708:	6000 ebe6 */
 
 sub_1003470c:
 	.byte	0x4e,0x56,0xff,0xec
