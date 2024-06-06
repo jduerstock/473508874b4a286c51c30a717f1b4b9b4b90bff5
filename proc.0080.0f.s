@@ -4293,7 +4293,7 @@ sub_10035b04:
 	jmp	%a0@	/* 10035c14:	4ed0 */
 
 sub_10035c16:
-	.byte	0x60,0x00,0xe8,0x04
+	braw	sub_1003441c	/* 10035c16:	6000 e804 */
 
 sub_10035c1a:
 	.byte	0x4e,0x56,0xff,0x0e,0x48,0xe7
