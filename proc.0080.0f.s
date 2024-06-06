@@ -4797,13 +4797,13 @@ sub_10035edc:
 	jmp	%a0@	/* 1003619c:	4ed0 */
 
 sub_1003619e:
-	.byte	0x60,0x00,0xf2,0x6e
+	braw	sub_1003540e	/* 1003619e:	6000 f26e */
 
 sub_100361a2:
-	.byte	0x60,0x00,0xf2,0x6e
+	braw	sub_10035412	/* 100361a2:	6000 f26e */
 
 sub_100361a6:
-	.byte	0x60,0x00,0xf4,0x52
+	braw	sub_100355fa	/* 100361a6:	6000 f452 */
 
 sub_100361aa:
 	.byte	0x4e,0x56,0xff,0xf0,0x2f,0x07
