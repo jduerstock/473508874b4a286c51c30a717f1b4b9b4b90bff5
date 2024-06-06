@@ -2330,25 +2330,25 @@ sub_1003470c:
 	jmp	%a0@	/* 100348ea:	4ed0 */
 
 sub_100348ec:
-	.byte	0x60,0x00,0x60,0xe0
+	braw	sub_1003a9ce	/* 100348ec:	6000 60e0 */
 
 sub_100348f0:
-	.byte	0x60,0x00,0x5f,0xa2
+	braw	sub_1003a894	/* 100348f0:	6000 5fa2 */
 
 sub_100348f4:
-	.byte	0x60,0x00,0x78,0x00
+	braw	sub_1003c0f6	/* 100348f4:	6000 7800 */
 
 sub_100348f8:
-	.byte	0x60,0x00,0x78,0x00
+	braw	sub_1003c0fa	/* 100348f8:	6000 7800 */
 
 sub_100348fc:
-	.byte	0x60,0x00,0xf2,0x76
+	braw	sub_10033b74	/* 100348fc:	6000 f276 */
 
 sub_10034900:
-	.byte	0x60,0x00,0xd2,0x0a
+	braw	sub_10031b0c	/* 10034900:	6000 d20a */
 
 sub_10034904:
-	.byte	0x60,0x00,0x8a,0x9c
+	braw	sub_1002d3a2	/* 10034904:	6000 8a9c */
 
 sub_10034908:
 	.byte	0x4e,0x56,0xff,0xe8,0x48,0xe7,0x1f,0x18
