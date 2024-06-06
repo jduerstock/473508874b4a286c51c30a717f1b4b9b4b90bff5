@@ -4536,22 +4536,22 @@ sub_10035c1a:
 	jmp	%a0@	/* 10035ec2:	4ed0 */
 
 sub_10035ec4:
-	.byte	0x60,0x00,0xf2,0x28
+	braw	sub_100350ee	/* 10035ec4:	6000 f228 */
 
 sub_10035ec8:
-	.byte	0x60,0x00,0xec,0x2c
+	braw	sub_10034af6	/* 10035ec8:	6000 ec2c */
 
 sub_10035ecc:
-	.byte	0x60,0x00,0xa8,0xf8
+	braw	sub_100307c6	/* 10035ecc:	6000 a8f8 */
 
 sub_10035ed0:
-	.byte	0x60,0x00,0x8c,0x94
+	braw	sub_1002eb66	/* 10035ed0:	6000 8c94 */
 
 sub_10035ed4:
-	.byte	0x60,0x00,0xa0,0x5a
+	braw	sub_1002ff30	/* 10035ed4:	6000 a05a */
 
 sub_10035ed8:
-	.byte	0x60,0x00,0x8a,0xd6
+	braw	sub_1002e9b0	/* 10035ed8:	6000 8ad6 */
 
 sub_10035edc:
 	.byte	0x4e,0x56,0xff,0x12
