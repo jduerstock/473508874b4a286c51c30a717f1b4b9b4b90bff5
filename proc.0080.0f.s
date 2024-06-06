@@ -3122,37 +3122,37 @@ sub_10034ba6:
 	jmp	%a0@	/* 100350e4:	4ed0 */
 
 sub_100350e6:
-	.byte	0x60,0x00,0x59,0xee
+	braw	sub_1003aad6	/* 100350e6:	6000 59ee */
 
 sub_100350ea:
-	.byte	0x60,0x00,0xf0,0x40
+	braw	sub_1003412c	/* 100350ea:	6000 f040 */
 
 sub_100350ee:
-	.byte	0x60,0x00,0x89,0x1c
+	braw	sub_1002da0c	/* 100350ee:	6000 891c */
 
 sub_100350f2:
-	.byte	0x60,0x00,0x8a,0xa4
+	braw	sub_1002db98	/* 100350f2:	6000 8aa4 */
 
 sub_100350f6:
-	.byte	0x60,0x00,0xae,0x14
+	braw	sub_1002ff0c	/* 100350f6:	6000 ae14 */
 
 sub_100350fa:
-	.byte	0x60,0x00,0xad,0xbe
+	braw	sub_1002feba	/* 100350fa:	6000 adbe */
 
 sub_100350fe:
-	.byte	0x60,0x00,0xad,0x84
+	braw	sub_1002fe84	/* 100350fe:	6000 ad84 */
 
 sub_10035102:
-	.byte	0x60,0x00,0xad,0xce
+	braw	sub_1002fed2	/* 10035102:	6000 adce */
 
 sub_10035106:
-	.byte	0x60,0x00,0x8a,0x94
+	braw	sub_1002db9c	/* 10035106:	6000 8a94 */
 
 sub_1003510a:
-	.byte	0x60,0x00,0x8a,0x94
+	braw	sub_1002dba0	/* 1003510a:	6000 8a94 */
 
 sub_1003510e:
-	.byte	0x60,0x00,0x98,0x9c
+	braw	sub_1002e9ac	/* 1003510e:	6000 989c */
 
 sub_10035112:
 	.byte	0x4e,0x56,0x00,0x00,0x2f,0x07,0x2e,0x2e,0x00,0x08,0x66,0x08,0x70,0x00
