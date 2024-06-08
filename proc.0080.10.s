@@ -190,10 +190,10 @@ sub_10036aa0:
 	rts	/* 10036bb2:	4e75 */
 
 sub_10036bb4:
-	.byte	0x60,0x00,0x40,0xb8
+	braw	sub_1003ac6e	/* 10036bb4:	6000 40b8 */
 
 sub_10036bb8:
-	.byte	0x60,0x00,0xe5,0x30
+	braw	sub_100350ea	/* 10036bb8:	6000 e530 */
 
 sub_10036bbc:
 	.byte	0x4e,0x56,0xff,0x64
