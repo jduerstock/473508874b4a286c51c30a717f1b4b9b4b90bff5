@@ -8,7 +8,7 @@ sub_1002fdce:
 sub_1002fdd2:
 	braw	sub_100286dc	/* 1002fdd2:	6000 8908 */
 
-sub_1002fdc6:
+sub_1002fdd6:
 	braw	sub_100286e0	/* 1002fdd6:	6000 8908 */
 
 sub_1002fdda:
