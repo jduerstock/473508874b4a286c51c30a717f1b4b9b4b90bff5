@@ -3480,10 +3480,10 @@ sub_10038ad6:
 	rts	/* 10038b62:	4e75 */
 
 sub_10038b64:
-	.byte	0x60,0x00,0x21,0xfe
+	braw	sub_1003ad64	/* 10038b64:	6000 21fe */
 
 sub_10038b68:
-	.byte	0x60,0x00,0x77,0x30
+	braw	sub_1004029a	/* 10038b68:	6000 7730 */
 
 sub_10038b6c:
 	.byte	0x4e,0x56,0xfe,0x44
