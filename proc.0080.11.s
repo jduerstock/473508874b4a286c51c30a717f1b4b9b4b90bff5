@@ -650,7 +650,7 @@ sub_1003a8f0:
 	rts	/* 1003a9c8:	4e75 */
 
 sub_1003a9ca:
-	.byte	0x60,0x00,0xeb,0x46
+	braw	sub_10039512	/* 1003a9ca:	6000 eb46 */
 
 sub_1003a9ce:
 	.byte	0x4e,0x56
