@@ -984,9 +984,29 @@ sub_1003ac6e:
 	rts	/* 1003ac9e:	4e75 */
 
 sub_1003aca0:
-	.byte	0x20,0x6f,0x00,0x04,0x10,0x2f,0x00,0x0b,0x22,0x2f,0x00,0x0c,0x44,0xfc,0x00,0x00
-	.byte	0x60,0x04,0x48,0x41,0xb0,0x18,0x57,0xc9,0xff,0xfc,0x67,0x0a,0x48,0x41,0x51,0xc9
-	.byte	0xff,0xf2,0x30,0x7c,0x00,0x01,0x20,0x08,0x53,0x80,0x4e,0x75
+	moveal	%sp@(4),%a0	/* 1003aca0:	206f 0004 */
+	moveb	%sp@(11),%d0	/* 1003aca4:	102f 000b */
+	movel	%sp@(12),%d1	/* 1003aca8:	222f 000c */
+	movew	#0,%ccr	/* 1003acac:	44fc 0000 */
+	bras	.L1003acb6	/* 1003acb0:	6004 */
+
+.L1003acb2:
+	swap	%d1	/* 1003acb2:	4841 */
+
+.L1003acb4:
+	cmpb	%a0@+,%d0	/* 1003acb4:	b018 */
+
+.L1003acb6:
+	dbeq	%d1,.L1003acb4	/* 1003acb6:	57c9 fffc */
+	beqs	.L1003acc6	/* 1003acba:	670a */
+	swap	%d1	/* 1003acbc:	4841 */
+	dbf	%d1,.L1003acb2	/* 1003acbe:	51c9 fff2 */
+	moveaw	#1,%a0	/* 1003acc2:	307c 0001 */
+
+.L1003acc6:
+	movel	%a0,%d0	/* 1003acc6:	2008 */
+	subql	#1,%d0	/* 1003acc8:	5380 */
+	rts	/* 1003acca:	4e75 */
 
 	.byte	0x86
 	.ascii	"memchr"
