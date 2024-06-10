@@ -860,13 +860,13 @@ sub_1003ab4e:
 	rts	/* 1003ab8e:	4e75 */
 
 sub_1003ab90:
-	.byte	0x60,0x00,0xa6,0xa0
+	braw	sub_10035232	/* 1003ab90:	6000 a6a0 */
 
 sub_1003ab94:
-	.byte	0x60,0x00,0x8a,0xe4
+	braw	sub_1003367a	/* 1003ab94:	6000 8ae4 */
 
 sub_1003ab98:
-	.byte	0x60,0x00,0xed,0x0c
+	braw	sub_100398a6	/* 1003ab98:	6000 ed0c */
 
 sub_1003ab9c:
 	.byte	0x4e,0x56,0xff,0xfc
