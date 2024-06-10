@@ -3680,10 +3680,10 @@ sbu_1003c564:
 	rts	/* 1003c6c2:	4e75 */
 
 sub_1003c6c4:
-	.byte	0x60,0x00,0x8a,0x30
+	braw	sub_100350f6	/* 1003c6c4:	6000 8a30 */
 
 sub_1003c6c8:
-	.byte	0x60,0x00,0x8a,0x30
+	braw	sub_100350fa	/* 1003c6c8:	6000 8a30 */
 
 sub_1003c6cc:
 	.byte	0x4e,0x56,0x00,0x00
