@@ -1013,7 +1013,7 @@ sub_1003aca0:
 	.byte	0x00,0x00,0x00
 
 sub_1003acd6:
-	.byte	0x4c,0xef,0x03,0x00,0x00,0x04
+	moveml	%sp@(4),%a0-%a1
 	movel	%sp@(12),%d1	/* 1003acdc:	222f 000c */
 	cmpb	%d0,%d0	/* 1003ace0:	b000 */
 	bras	.L1003ace8	/* 1003ace2:	6004 */
