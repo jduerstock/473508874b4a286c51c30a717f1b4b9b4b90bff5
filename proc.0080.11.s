@@ -4919,16 +4919,16 @@ sub_1003cda6:
 	rts	/* 1003d208:	4e75 */
 
 sub_1003d20a:
-	.byte	0x60,0x00,0x8c,0xc8
+	braw	sub_10035ed4	/* 1003d20a:	6000 8cc8 */
 
 sub_1003d20e:
-	.byte	0x60,0x00,0xeb,0x92
+	braw	sub_1003bda2	/* 1003d20e:	6000 eb92 */
 
 sub_1003d212:
-	.byte	0x60,0x00,0x8c,0xc4
+	braw	sub_10035ed8	/* 1003d212:	6000 8cc4 */
 
 sub_1003d216:
-	.byte	0x60,0x00,0xdf,0x5e
+	braw	sub_1003b176	/* 1003d216:	6000 df5e */
 
 sub_1003d21a:
 	.byte	0x4e,0x56,0x00,0x00,0x59,0x8f
