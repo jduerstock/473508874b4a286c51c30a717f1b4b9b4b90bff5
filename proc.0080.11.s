@@ -1644,13 +1644,44 @@ sub_1003b206:
 	rts	/* 1003b256:	4e75 */
 
 sub_1003b258:
-	.byte	0x4e,0x56,0xff,0xfc,0x48,0xe7,0x01,0x38
-	.byte	0x26,0x6e,0x00,0x08,0x5e,0x4b,0x20,0x0b,0x72,0xf8,0xc2,0x80,0x2e,0x01,0x4e,0xba
-	.byte	0x75,0x98,0x20,0x40,0x20,0x68,0x01,0xcc,0x24,0x68,0x00,0x0c,0x4e,0xba,0x75,0x8a
-	.byte	0x20,0x40,0x20,0x68,0x01,0xcc,0x26,0x68,0x00,0x10,0x28,0x4b,0x99,0xc7,0xb9,0xca
-	.byte	0x65,0x18,0x4e,0xba,0x75,0x74,0x20,0x40,0x20,0x68,0x01,0xcc,0x21,0x4c,0x00,0x10
-	.byte	0x20,0x6e,0x00,0x0c,0x20,0x8c,0x70,0x01,0x60,0x02,0x70,0x00,0x4c,0xee,0x1c,0x80
-	.byte	0xff,0xec,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#-4	/* 1003b258:	4e56 fffc */
+	moveml	%d7/%a2-%a4,%sp@-	/* 1003b25c:	48e7 0138 */
+	moveal	%fp@(8),%a3	/* 1003b260:	266e 0008 */
+	addqw	#7,%a3	/* 1003b264:	5e4b */
+	movel	%a3,%d0	/* 1003b266:	200b */
+	moveq	#-8,%d1	/* 1003b268:	72f8 */
+	andl	%d0,%d1	/* 1003b26a:	c280 */
+	movel	%d1,%d7	/* 1003b26c:	2e01 */
+	jsr	%pc@(sub_10042808)	/* 1003b26e:	4eba 7598 */
+	moveal	%d0,%a0	/* 1003b272:	2040 */
+	moveal	%a0@(460),%a0	/* 1003b274:	2068 01cc */
+	moveal	%a0@(12),%a2	/* 1003b278:	2468 000c */
+	jsr	%pc@(sub_10042808)	/* 1003b27c:	4eba 758a */
+	moveal	%d0,%a0	/* 1003b280:	2040 */
+	moveal	%a0@(460),%a0	/* 1003b282:	2068 01cc */
+	moveal	%a0@(16),%a3	/* 1003b286:	2668 0010 */
+	moveal	%a3,%a4	/* 1003b28a:	284b */
+	subal	%d7,%a4	/* 1003b28c:	99c7 */
+	cmpal	%a2,%a4	/* 1003b28e:	b9ca */
+	bcss	.L1003b2aa	/* 1003b290:	6518 */
+	jsr	%pc@(sub_10042808)	/* 1003b292:	4eba 7574 */
+	moveal	%d0,%a0	/* 1003b296:	2040 */
+	moveal	%a0@(460),%a0	/* 1003b298:	2068 01cc */
+	movel	%a4,%a0@(16)	/* 1003b29c:	214c 0010 */
+	moveal	%fp@(12),%a0	/* 1003b2a0:	206e 000c */
+	movel	%a4,%a0@	/* 1003b2a4:	208c */
+	moveq	#1,%d0	/* 1003b2a6:	7001 */
+	bras	.L1003b2ac	/* 1003b2a8:	6002 */
+
+.L1003b2aa:
+	moveq	#0,%d0	/* 1003b2aa:	7000 */
+
+.L1003b2ac:
+	moveml	%fp@(-20),%d7/%a2-%a4	/* 1003b2ac:	4cee 1c80 ffec */
+	unlk	%fp	/* 1003b2b2:	4e5e */
+	rts	/* 1003b2b4:	4e75 */
+
+sub_1003b2b6:
 	.byte	0x60,0x00,0x8e,0x78
 
 sub_1003b2ba:
