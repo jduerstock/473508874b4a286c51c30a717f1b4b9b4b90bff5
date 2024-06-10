@@ -3097,10 +3097,10 @@ sub_1003bfda:
 	rts	/* 1003c0f4:	4e75 */
 
 sub_1003c0f6:
-	.byte	0x60,0x00,0x76,0x02
+	braw	sub_100436fa	/* 1003c0f6:	6000 7602 */
 
 sub_1003c0fa:
-	.byte	0x60,0x00,0x76,0x02
+	braw	sub_100436fe	/* 1003c0fa:	6000 7602 */
 
 sub_1003c0fe:
 	.byte	0x4e,0x56
