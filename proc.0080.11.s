@@ -3749,7 +3749,9 @@ sub_1003d6ea:
 	rts	/* 1003d744:	4e75 */
 
 .L1003d746:
-	.byte	0x01,0x3f,0x00,0x00
+	.byte	0x01
+	.ascii	"?"
+	.byte	0x00,0x00
 
 sub_1003d74a:
 	linkw	%fp,#0	/* 1003d74a:	4e56 0000 */
