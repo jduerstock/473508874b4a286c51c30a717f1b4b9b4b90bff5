@@ -2232,7 +2232,7 @@ sub_1003b756:
 	rts	/* 1003b826:	4e75 */
 
 sub_1003b828:
-	.byte	0x60,0x00,0xf1,0xa0
+	braw	sub_1003a9ca	/* 1003b828:	6000 f1a0 */
 
 sub_1003b82c:
 	.byte	0x4e,0x56,0xff,0xe4
