@@ -5199,13 +5199,13 @@ sub_1003d38c:
 	rts	/* 1003d4d2:	4e75 */
 
 sub_1003d4d4:
-	.byte	0x60,0x00,0x76,0xfc
+	braw	sub_10044bd2	/* 1003d4d4:	6000 76fc */
 
 sub_1003d4d8:
-	.byte	0x60,0x00,0x76,0xfc
+	braw	sub_10044bd6	/* 1003d4d8:	6000 76fc */
 
 sub_1003d4dc:
-	.byte	0x60,0x00,0xe9,0x40
+	braw	sub_1003be1e	/* 1003d4dc:	6000 e940 */
 
 sub_1003d4e0:
 	linkw	%fp,#-60	/* 1003d4e0:	4e56 ffc4 */
