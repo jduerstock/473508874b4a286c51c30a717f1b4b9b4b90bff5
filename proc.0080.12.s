@@ -2607,12 +2607,48 @@ sub_1003f0dc:
 	braw	sub_1003c6c8	/* 1003f0dc:	6000 d5ea */
 
 sub_1003f0e0:
-	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x03,0x08,0x3c,0x2e,0x00,0x0e,0x28,0x6e,0x00,0x08
-	.byte	0x42,0x47,0x60,0x34,0x48,0xc7,0x59,0x8f,0x20,0x54,0x20,0x68,0x00,0x08,0x2f,0x10
-	.byte	0x4e,0xba,0x75,0x7a,0x20,0x5f,0x20,0x07,0x22,0x00,0xc0,0xfc,0x01,0x4e,0x48,0x41
-	.byte	0xc2,0xfc,0x01,0x4e,0x48,0x41,0x42,0x41,0xd0,0x81,0xbc,0x70,0x08,0x00,0x66,0x04
-	.byte	0x30,0x07,0x60,0x0e,0x30,0x07,0x52,0x47,0x20,0x54,0xbe,0x68,0x00,0x02,0x6d,0xc4
-	.byte	0x70,0xff,0x4c,0xee,0x10,0xc0,0xff,0xf4,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 1003f0e0:	4e56 0000 */
+	moveml	%d6-%d7/%a4,%sp@-	/* 1003f0e4:	48e7 0308 */
+	movew	%fp@(14),%d6	/* 1003f0e8:	3c2e 000e */
+	moveal	%fp@(8),%a4	/* 1003f0ec:	286e 0008 */
+	clrw	%d7	/* 1003f0f0:	4247 */
+	bras	.L1003f128	/* 1003f0f2:	6034 */
+
+.L1003f0f4:
+	extl	%d7	/* 1003f0f4:	48c7 */
+	subql	#4,%sp	/* 1003f0f6:	598f */
+	moveal	%a4@,%a0	/* 1003f0f8:	2054 */
+	moveal	%a0@(8),%a0	/* 1003f0fa:	2068 0008 */
+	movel	%a0@,%sp@-	/* 1003f0fe:	2f10 */
+	jsr	%pc@(sub_1004667c)	/* 1003f100:	4eba 757a */
+	moveal	%sp@+,%a0	/* 1003f104:	205f */
+	movel	%d7,%d0	/* 1003f106:	2007 */
+	movel	%d0,%d1	/* 1003f108:	2200 */
+	muluw	#334,%d0	/* 1003f10a:	c0fc 014e */
+	swap	%d1	/* 1003f10e:	4841 */
+	muluw	#334,%d1	/* 1003f110:	c2fc 014e */
+	swap	%d1	/* 1003f114:	4841 */
+	clrw	%d1	/* 1003f116:	4241 */
+	addl	%d1,%d0	/* 1003f118:	d081 */
+	cmpw	%a0@(0,%d0:l),%d6	/* 1003f11a:	bc70 0800 */
+	bnes	.L1003f124	/* 1003f11e:	6604 */
+	movew	%d7,%d0	/* 1003f120:	3007 */
+	bras	.L1003f132	/* 1003f122:	600e */
+
+.L1003f124:
+	movew	%d7,%d0	/* 1003f124:	3007 */
+	addqw	#1,%d7	/* 1003f126:	5247 */
+
+.L1003f128:
+	moveal	%a4@,%a0	/* 1003f128:	2054 */
+	cmpw	%a0@(2),%d7	/* 1003f12a:	be68 0002 */
+	blts	.L1003f0f4	/* 1003f12e:	6dc4 */
+	moveq	#-1,%d0	/* 1003f130:	70ff */
+
+.L1003f132:
+	moveml	%fp@(-12),%d6-%d7/%a4	/* 1003f132:	4cee 10c0 fff4 */
+	unlk	%fp	/* 1003f138:	4e5e */
+	rts	/* 1003f13a:	4e75 */
 
 sub_1003f13c:
 	.byte	0x60,0x00,0xe0,0xcc
