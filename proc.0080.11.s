@@ -254,19 +254,19 @@ sub_1003a33e:
 sub_1003a59e:
 	braw	sub_1003951a	/* 1003a59e:	6000 ef7a */
 
-sub_1003a562:
+sub_1003a5a2:
 	braw	sub_10032ffc	/* 1003a5a2:	6000 8a58 */
 
-sub_1003a566:
+sub_1003a5a6:
 	braw	sub_10033000	/* 1003a5a6:	6000 8a58 */
 
-sub_1003a56a:
+sub_1003a5aa:
 	braw	sub_100398b6	/* 1003a5aa:	6000 f30a */
 
-sub_1003a56e:
+sub_1003a5ae:
 	braw	sub_100330e2	/* 1003a5ae:	6000 8b32 */
 
-sub_1003a572:
+sub_1003a5b2:
 	linkw	%fp,#0	/* 1003a5b2:	4e56 0000 */
 	movel	%fp@(20),%sp@-	/* 1003a5b6:	2f2e 0014 */
 	movel	%fp@(16),%sp@-	/* 1003a5ba:	2f2e 0010 */
