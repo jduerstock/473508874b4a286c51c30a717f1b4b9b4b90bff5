@@ -1255,14 +1255,44 @@ sub_1003e254:
 	rts	/* 1003e3c8:	4e75 */
 
 sub_1003e3ca:
-	.byte	0x4e,0x56,0xff,0xf8,0x48,0xe7
-	.byte	0x01,0x38,0x28,0x6e,0x00,0x08,0x70,0x00,0x2d,0x40,0xff,0xf8,0x45,0xee,0x00,0x0c
-	.byte	0x47,0xee,0xff,0xf8,0x55,0x8f,0x20,0x54,0x2f,0x28,0x00,0x02,0x70,0x00,0x2f,0x00
-	.byte	0x2f,0x0a,0x2f,0x0b,0x4e,0xba,0x7a,0x32,0x4a,0x5f,0x57,0xc0,0x02,0x40,0x00,0x01
-	.byte	0x48,0xc0,0x1e,0x00,0x67,0x20,0x59,0x8f,0x20,0x54,0x20,0x68,0x00,0x06,0x2f,0x10
-	.byte	0x4e,0xba,0x56,0x0c,0x20,0x2e,0xff,0xf8,0xd0,0x9f,0x2f,0x00,0x2f,0x2e,0x00,0x10
-	.byte	0x4e,0xba,0x48,0x56,0x50,0x4f,0x10,0x07,0x4c,0xee,0x1c,0x80,0xff,0xe8,0x4e,0x5e
-	.byte	0x4e,0x75
+	linkw	%fp,#-8	/* 1003e3ca:	4e56 fff8 */
+	moveml	%d7/%a2-%a4,%sp@-	/* 1003e3ce:	48e7 0138 */
+	moveal	%fp@(8),%a4	/* 1003e3d2:	286e 0008 */
+	moveq	#0,%d0	/* 1003e3d6:	7000 */
+	movel	%d0,%fp@(-8)	/* 1003e3d8:	2d40 fff8 */
+	lea	%fp@(12),%a2	/* 1003e3dc:	45ee 000c */
+	lea	%fp@(-8),%a3	/* 1003e3e0:	47ee fff8 */
+	subql	#2,%sp	/* 1003e3e4:	558f */
+	moveal	%a4@,%a0	/* 1003e3e6:	2054 */
+	movel	%a0@(2),%sp@-	/* 1003e3e8:	2f28 0002 */
+	moveq	#0,%d0	/* 1003e3ec:	7000 */
+	movel	%d0,%sp@-	/* 1003e3ee:	2f00 */
+	movel	%a2,%sp@-	/* 1003e3f0:	2f0a */
+	movel	%a3,%sp@-	/* 1003e3f2:	2f0b */
+	jsr	%pc@(sub_10045e28)	/* 1003e3f4:	4eba 7a32 */
+	tstw	%sp@+	/* 1003e3f8:	4a5f */
+	seq	%d0	/* 1003e3fa:	57c0 */
+	andiw	#1,%d0	/* 1003e3fc:	0240 0001 */
+	extl	%d0	/* 1003e400:	48c0 */
+	moveb	%d0,%d7	/* 1003e402:	1e00 */
+	beqs	.L1003e426	/* 1003e404:	6720 */
+	subql	#4,%sp	/* 1003e406:	598f */
+	moveal	%a4@,%a0	/* 1003e408:	2054 */
+	moveal	%a0@(6),%a0	/* 1003e40a:	2068 0006 */
+	movel	%a0@,%sp@-	/* 1003e40e:	2f10 */
+	jsr	%pc@(sub_10043a1e)	/* 1003e410:	4eba 560c */
+	movel	%fp@(-8),%d0	/* 1003e414:	202e fff8 */
+	addl	%sp@+,%d0	/* 1003e418:	d09f */
+	movel	%d0,%sp@-	/* 1003e41a:	2f00 */
+	movel	%fp@(16),%sp@-	/* 1003e41c:	2f2e 0010 */
+	jsr	%pc@(sub_10042c78)	/* 1003e420:	4eba 4856 */
+	addqw	#8,%sp	/* 1003e424:	504f */
+
+.L1003e426:
+	moveb	%d7,%d0	/* 1003e426:	1007 */
+	moveml	%fp@(-24),%d7/%a2-%a4	/* 1003e428:	4cee 1c80 ffe8 */
+	unlk	%fp	/* 1003e42e:	4e5e */
+	rts	/* 1003e430:	4e75 */
 
 sub_1003e432:
 	linkw	%fp,#-702	/* 1003e432:	4e56 fd42 */
