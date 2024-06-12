@@ -3754,19 +3754,19 @@ sub_1003fd36:
 	.byte	0x60,0x00,0xce,0x20
 
 sub_1003fd3a:
-	.byte	0x60,0x00,0xd9,0x40
+	braw	sub_1003d67c	/* 1003fd3a:	6000 d940 */
 
 sub_1003fd3e:
-	.byte	0x60,0x00,0xdf,0xbc
+	braw	sub_1003dcfc	/* 1003fd3e:	6000 dfbc */
 
 sub_1003fd42:
-	.byte	0x60,0x00,0xb4,0xbe
+	braw	sub_1003b202	/* 1003fd42:	6000 b4be */
 
 sub_1003fd46:
-	.byte	0x60,0x00,0xd5,0xc2
+	braw	sub_1003d30a	/* 1003fd46:	6000 d5c2 */
 
 sub_1003fd4a:
-	.byte	0x60,0x00,0xd6,0x00
+	braw	sub_1003d34c	/* 1003fd4a:	6000 d600 */
 
 sub_1003fd4e:
 	.byte	0x4e,0x56
