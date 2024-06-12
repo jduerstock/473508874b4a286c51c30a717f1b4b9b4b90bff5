@@ -3342,13 +3342,13 @@ sub_1003f8e2:
 	rts	/* 1003f93c:	4e75 */
 
 sub_1003f93e:
-	.byte	0x60,0x00,0x73,0x78
+	braw	sub_10046cb8	/* 1003f93e:	6000 7378 */
 
 sub_1003f942:
-	.byte	0x60,0x00,0x73,0x78
+	braw	sub_10046cbc	/* 1003f942:	6000 7378 */
 
 sub_1003f946:
-	.byte	0x60,0x00,0x73,0x78
+	braw	sub_10046cc0	/* 1003f946:	6000 7378 */
 
 sub_1003f94a:
 	.byte	0x4e,0x56,0xfe,0xaa,0x48,0xe7
