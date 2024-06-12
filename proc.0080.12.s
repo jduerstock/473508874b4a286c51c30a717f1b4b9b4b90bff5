@@ -2457,13 +2457,46 @@ sub_1003ef98:
 	braw	sub_1003dcf8	/* 1003ef98:	6000 ed5e */
 
 sub_1003ef9c:
-	.byte	0x4e,0x56,0x00,0x00
-	.byte	0x48,0xe7,0x01,0x08,0x3e,0x2e,0x00,0x0e,0x28,0x6e,0x00,0x08,0x20,0x54,0xbe,0x68
-	.byte	0x00,0x02,0x6d,0x0c,0x2f,0x3c,0xff,0xff,0xf9,0x23,0x4e,0xba,0xb6,0x9a,0x58,0x4f
-	.byte	0x48,0xc7,0x59,0x8f,0x20,0x54,0x20,0x68,0x00,0x08,0x2f,0x10,0x4e,0xba,0x76,0xae
-	.byte	0x20,0x5f,0x20,0x07,0x22,0x00,0xc0,0xfc,0x01,0x4e,0x48,0x41,0xc2,0xfc,0x01,0x4e
-	.byte	0x48,0x41,0x42,0x41,0xd0,0x81,0x22,0x6e,0x00,0x10,0xd1,0xc0,0x70,0x40,0x22,0xd8
-	.byte	0x51,0xc8,0xff,0xfc,0x32,0xd8,0x4c,0xee,0x10,0x80,0xff,0xf8,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 1003ef9c:	4e56 0000 */
+	moveml	%d7/%a4,%sp@-	/* 1003efa0:	48e7 0108 */
+	movew	%fp@(14),%d7	/* 1003efa4:	3e2e 000e */
+	moveal	%fp@(8),%a4	/* 1003efa8:	286e 0008 */
+	moveal	%a4@,%a0	/* 1003efac:	2054 */
+	cmpw	%a0@(2),%d7	/* 1003efae:	be68 0002 */
+	blts	.L1003efc0	/* 1003efb2:	6d0c */
+	movel	#-1757,%sp@-	/* 1003efb4:	2f3c ffff f923 */
+	jsr	%pc@(sub_1003a656)	/* 1003efba:	4eba b69a */
+	addqw	#4,%sp	/* 1003efbe:	584f */
+
+.L1003efc0:
+	extl	%d7	/* 1003efc0:	48c7 */
+	subql	#4,%sp	/* 1003efc2:	598f */
+	moveal	%a4@,%a0	/* 1003efc4:	2054 */
+	moveal	%a0@(8),%a0	/* 1003efc6:	2068 0008 */
+	movel	%a0@,%sp@-	/* 1003efca:	2f10 */
+	jsr	%pc@(sub_1004667c)	/* 1003efcc:	4eba 76ae */
+	moveal	%sp@+,%a0	/* 1003efd0:	205f */
+	movel	%d7,%d0	/* 1003efd2:	2007 */
+	movel	%d0,%d1	/* 1003efd4:	2200 */
+	muluw	#334,%d0	/* 1003efd6:	c0fc 014e */
+	swap	%d1	/* 1003efda:	4841 */
+	muluw	#334,%d1	/* 1003efdc:	c2fc 014e */
+	swap	%d1	/* 1003efe0:	4841 */
+	clrw	%d1	/* 1003efe2:	4241 */
+	addl	%d1,%d0	/* 1003efe4:	d081 */
+	moveal	%fp@(16),%a1	/* 1003efe6:	226e 0010 */
+	addal	%d0,%a0	/* 1003efea:	d1c0 */
+	moveq	#64,%d0	/* 1003efec:	7040 */
+
+.L1003efee:
+	movel	%a0@+,%a1@+	/* 1003efee:	22d8 */
+	dbf	%d0,.L1003efee	/* 1003eff0:	51c8 fffc */
+	movew	%a0@+,%a1@+	/* 1003eff4:	32d8 */
+	moveml	%fp@(-8),%d7/%a4	/* 1003eff6:	4cee 1080 fff8 */
+	unlk	%fp	/* 1003effc:	4e5e */
+	rts	/* 1003effe:	4e75 */
+
+sub_1003f000:
 	.byte	0x60,0x00,0xc6,0xf4
 
 sub_1003f004:
