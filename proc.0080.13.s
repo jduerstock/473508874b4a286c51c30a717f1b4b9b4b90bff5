@@ -1817,10 +1817,10 @@ sub_10042270:
 	rts	/* 100424f0:	4e75 */
 
 sub_100424f2:
-	.byte	0x60,0x00,0xcb,0x0c
+	braw	sub_1003f000	/* 100424f2:	6000 cb0c */
 
 sub_100424f6:
-	.byte	0x60,0x00,0x8b,0x2e
+	braw	sub_1003b026	/* 100424f6:	6000 8b2e */
 
 sub_100424fa:
 	.byte	0x4e,0x56,0xff,0xfc,0x48,0xe7
