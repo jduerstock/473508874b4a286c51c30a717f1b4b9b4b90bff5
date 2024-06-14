@@ -5299,13 +5299,13 @@ sub_10040a34:
 	rts	/* 10040c2c:	4e75 */
 
 sub_10040c2e:
-	.byte	0x60,0x00,0x77,0xe6
+	braw	sub_10048416	/* 10040c2e:	6000 77e6 */
 
 sub_10040c32:
-	.byte	0x60,0x00,0xef,0xb0
+	braw	sub_1003fbe4	/* 10040c32:	6000 efb0 */
 
 sub_10040c36:
-	.byte	0x60,0x00,0xd1,0xd4
+	braw	sub_1003de0c	/* 10040c36:	6000 d1d4 */
 
 sub_10040c3a:
 	.byte	0x4e,0x56,0xff,0xba,0x48,0xe7
