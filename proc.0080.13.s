@@ -1483,7 +1483,7 @@ sub_100420be:
 	rts	/* 100421a8:	4e75 */
 
 sub_100421aa:
-	.byte	0x60,0x00,0x78,0x0e
+	braw	sub_100499ba	/* 100421aa:	6000 780e */
 
 sub_100421ae:
 	.byte	0x4e,0x56
