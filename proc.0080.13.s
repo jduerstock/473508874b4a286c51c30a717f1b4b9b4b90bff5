@@ -1395,10 +1395,10 @@ sub_10041fbc:
 	rts	/* 100420b4:	4e75 */
 
 sub_100420b6:
-	.byte	0x60,0x00,0x8a,0xdc
+	braw	sub_1003ab94	/* 100420b6:	6000 8adc */
 
 sub_100420ba:
-	.byte	0x60,0x00,0x8a,0xdc
+	braw	sub_1003ab98	/* 100420ba:	6000 8adc */
 
 sub_100420be:
 	.byte	0x4e,0x56
