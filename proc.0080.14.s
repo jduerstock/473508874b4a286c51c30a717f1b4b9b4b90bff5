@@ -719,12 +719,43 @@ sub_1004503c:
 	braw	sub_1003dad6	/* 1004503c:	6000 8a98 */
 
 sub_10045040:
-	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x00,0x38,0x24,0x6e,0x00,0x0c,0x26,0x6e,0x00,0x10
-	.byte	0x28,0x6e,0x00,0x08,0x2f,0x0a,0x4e,0xba,0xfb,0x82,0x4a,0x00,0x58,0x4f,0x67,0x0c
-	.byte	0x2f,0x0c,0x4e,0xba,0xfc,0x4e,0x36,0x80,0x58,0x4f,0x60,0x28,0x2f,0x0b,0x2f,0x0a
-	.byte	0x2f,0x0c,0x4e,0xba,0xdb,0x6a,0x4a,0x00,0x4f,0xef,0x00,0x0c,0x66,0x16,0x2f,0x0c
-	.byte	0x4e,0xba,0xda,0x60,0x36,0x80,0x2f,0x0b,0x2f,0x0a,0x2f,0x0c,0x4e,0xba,0xdb,0xa8
-	.byte	0x4f,0xef,0x00,0x10,0x4c,0xee,0x1c,0x00,0xff,0xf4,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 10045040:	4e56 0000 */
+	moveml	%a2-%a4,%sp@-	/* 10045044:	48e7 0038 */
+	moveal	%fp@(12),%a2	/* 10045048:	246e 000c */
+	moveal	%fp@(16),%a3	/* 1004504c:	266e 0010 */
+	moveal	%fp@(8),%a4	/* 10045050:	286e 0008 */
+	movel	%a2,%sp@-	/* 10045054:	2f0a */
+	jsr	%pc@(sub_10044bda)	/* 10045056:	4eba fb82 */
+	tstb	%d0	/* 1004505a:	4a00 */
+	addqw	#4,%sp	/* 1004505c:	584f */
+	beqs	.L1004506c	/* 1004505e:	670c */
+	movel	%a4,%sp@-	/* 10045060:	2f0c */
+	jsr	%pc@(sub_10044cb2)	/* 10045062:	4eba fc4e */
+	movew	%d0,%a3@	/* 10045066:	3680 */
+	addqw	#4,%sp	/* 10045068:	584f */
+	bras	.L10045094	/* 1004506a:	6028 */
+
+.L1004506c:
+	movel	%a3,%sp@-	/* 1004506c:	2f0b */
+	movel	%a2,%sp@-	/* 1004506e:	2f0a */
+	movel	%a4,%sp@-	/* 10045070:	2f0c */
+	jsr	%pc@(sub_10042bde)	/* 10045072:	4eba db6a */
+	tstb	%d0	/* 10045076:	4a00 */
+	lea	%sp@(12),%sp	/* 10045078:	4fef 000c */
+	bnes	.L10045094	/* 1004507c:	6616 */
+	movel	%a4,%sp@-	/* 1004507e:	2f0c */
+	jsr	%pc@(sub_10042ae2)	/* 10045080:	4eba da60 */
+	movew	%d0,%a3@	/* 10045084:	3680 */
+	movel	%a3,%sp@-	/* 10045086:	2f0b */
+	movel	%a2,%sp@-	/* 10045088:	2f0a */
+	movel	%a4,%sp@-	/* 1004508a:	2f0c */
+	jsr	%pc@(sub_10042c36)	/* 1004508c:	4eba dba8 */
+	lea	%sp@(16),%sp	/* 10045090:	4fef 0010 */
+
+.L10045094:
+	moveml	%fp@(-12),%a2-%a4	/* 10045094:	4cee 1c00 fff4 */
+	unlk	%fp	/* 1004509a:	4e5e */
+	rts	/* 1004509c:	4e75 */
 
 sub_1004509e:
 	.byte	0x4e,0x56
