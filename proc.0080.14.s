@@ -175,10 +175,10 @@ sub_10044a30:
 	rts	/* 10044ae4:	4e75 */
 
 sub_10044ae6:
-	.byte	0x60,0x00,0xec,0x1e
+	braw	sub_10043706	/* 10044ae6:	6000 ec1e */
 
 sub_10044aea:
-	.byte	0x60,0x00,0x8e,0x8e
+	braw	sub_1003d97a	/* 10044aea:	6000 8e8e */
 
 sub_10044aee:
 	.byte	0x4e,0x56
