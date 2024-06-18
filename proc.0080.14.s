@@ -3408,70 +3408,70 @@ sub_100465f6:
 	jmp	%a0@	/* 1004662a:	4ed0 */
 
 sub_1004662c:
-	.byte	0x60,0x00,0x8a,0x86
+	braw	sub_1003f0b4	/* 1004662c:	6000 8a86 */
 
 sub_10046630:
-	.byte	0x60,0x00,0xe1,0x10
+	braw	sub_10044742	/* 10046630:	6000 e110 */
 
 sub_10046634:
-	.byte	0x60,0x00,0xe9,0xfe
+	braw	sub_10045034	/* 10046634:	6000 e9fe */
 
 sub_10046638:
-	.byte	0x60,0x00,0x8a,0x7e
+	braw	sub_1003f0b8	/* 10046638:	6000 8a7e */
 
 sub_1004663c:
-	.byte	0x60,0x00,0x8a,0x7e
+	braw	sub_1003f0bc	/* 1004663c:	6000 8a7e */
 
 sub_10046640:
-	.byte	0x60,0x00,0x8a,0x7e
+	braw	sub_1003f0c0	/* 10046640:	6000 8a7e */
 
 sub_10046644:
-	.byte	0x60,0x00,0xd4,0x76
+	braw	sub_10043abc	/* 10046644:	6000 d476 */
 
 sub_10046648:
-	.byte	0x60,0x00,0x8a,0x7a
+	braw	sub_1003f0c4	/* 10046648:	6000 8a7a */
 
 sub_1004664c:
-	.byte	0x60,0x00,0xeb,0xee
+	braw	sub_1004523c	/* 1004664c:	6000 ebee */
 
 sub_10046650:
-	.byte	0x60,0x00,0x8a,0x76
+	braw	sub_1003f0c8	/* 10046650:	6000 8a76 */
 
 sub_10046654:
-	.byte	0x60,0x00,0x8a,0x76
+	braw	sub_1003f0cc	/* 10046654:	6000 8a76 */
 
 sub_10046658:
-	.byte	0x60,0x00,0xec,0xc0
+	braw	sub_1004531a	/* 10046658:	6000 ecc0 */
 
 sub_1004665c:
-	.byte	0x60,0x00,0xe9,0xd2
+	braw	sub_10045030	/* 1004665c:	6000 e9d2 */
 
 sub_10046660:
-	.byte	0x60,0x00,0x8a,0x6e
+	braw	sub_1003f0d0	/* 10046660:	6000 8a6e */
 
 sub_10046664:
-	.byte	0x60,0x00,0x8a,0x6e
+	braw	sub_1003f0d4	/* 10046664:	6000 8a6e */
 
 sub_10046668:
-	.byte	0x60,0x00,0x8a,0x6e
+	braw	sub_1003f0d8	/* 10046668:	6000 8a6e */
 
 sub_1004666c:
-	.byte	0x60,0x00,0x8a,0x6e
+	braw	sub_1003f0dc	/* 1004666c:	6000 8a6e */
 
 sub_10046670:
-	.byte	0x60,0x00,0xd2,0xc4
+	braw	sub_10043936	/* 10046670:	6000 d2c4 */
 
 sub_10046674:
-	.byte	0x60,0x00,0xec,0xf6
+	braw	sub_1004536c	/* 10046674:	6000 ecf6 */
 
 sub_10046678:
-	.byte	0x60,0x00,0x9a,0x54
+	braw	sub_100400ce	/* 10046678:	6000 9a54 */
 
 sub_1004667c:
-	.byte	0x60,0x00,0xd3,0xa0
+	braw	sub_10043a1e	/* 1004667c:	6000 d3a0 */
 
 sub_10046680:
-	.byte	0x60,0x00,0xda,0xa8
+	braw	sub_1004412a	/* 10046680:	6000 daa8 */
 
 sub_10046684:
 	.byte	0x4e,0x56,0x00,0x00,0x2f,0x0c,0x28,0x6e,0x00,0x08,0x20,0x6e
