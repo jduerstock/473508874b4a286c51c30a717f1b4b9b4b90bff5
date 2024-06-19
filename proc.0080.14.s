@@ -3973,9 +3973,13 @@ sub_100469d2:
 	rts	/* 10046baa:	4e75 */
 
 sub_10046bac:
-	.byte	0x60,0x00,0x8c,0xa2
-	.byte	0x60,0x00,0x8c,0xa2
-	.byte	0x60,0x00,0x8c,0xa2
+	braw	sub_1003f850	/* 10046bac:	6000 8ca2 */
+
+sub_10046bb0:
+	braw	sub_1003f854	/* 10046bb0:	6000 8ca2 */
+
+sub_10046bb4:
+	braw	sub_1003f858	/* 10046bb4:	6000 8ca2 */
 
 sub_10046bb8:
 	.byte	0x4e,0x56,0xfd,0xcc,0x48,0xe7,0x03,0x18
