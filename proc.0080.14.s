@@ -3982,23 +3982,101 @@ sub_10046bb4:
 	braw	sub_1003f858	/* 10046bb4:	6000 8ca2 */
 
 sub_10046bb8:
-	.byte	0x4e,0x56,0xfd,0xcc,0x48,0xe7,0x03,0x18
-	.byte	0x26,0x6e,0x00,0x0c,0x28,0x6e,0x00,0x08,0x2d,0x6e,0x00,0x10,0xfd,0xce,0x70,0x00
-	.byte	0x2d,0x40,0xfd,0xd2,0x48,0x6e,0xfd,0xd6,0x4e,0xba,0xfb,0x56,0x70,0x00,0x10,0x14
-	.byte	0x2f,0x00,0x4e,0xba,0x16,0x6e,0x3c,0x00,0x2f,0x0b,0x2f,0x0c,0x4e,0xba,0x01,0x6e
-	.byte	0x4a,0x46,0x4f,0xef,0x00,0x10,0x67,0x32,0x2f,0x0b,0x2f,0x0c,0x4e,0xba,0x06,0x8c
-	.byte	0x4a,0xae,0xfd,0xce,0x50,0x4f,0x67,0x00,0x00,0x86,0x48,0x6e,0xfd,0xd6,0x2f,0x2e
-	.byte	0xfd,0xce,0x2f,0x0c,0x4e,0xba,0x0a,0x9c,0x4a,0x00,0x4f,0xef,0x00,0x0c,0x67,0x6e
-	.byte	0x41,0xee,0xfd,0xd6,0x2d,0x48,0xfd,0xd2,0x60,0x64,0x7c,0x01,0x70,0x00,0x10,0x14
-	.byte	0x2f,0x00,0x4e,0xba,0x16,0x66,0x1e,0x00,0x58,0x4f,0x67,0x44,0x48,0x6e,0xfd,0xd6
-	.byte	0x2f,0x0c,0x2f,0x0b,0x4e,0xba,0x35,0x34,0x4a,0x00,0x4f,0xef,0x00,0x0c,0x67,0x30
-	.byte	0x4a,0x07,0x67,0x0a,0x41,0xee,0xfd,0xd6,0x2d,0x48,0xfd,0xd2,0x60,0x22,0x48,0x6e
-	.byte	0xfd,0xcd,0x48,0x6e,0xfd,0xd6,0x2f,0x0c,0x4e,0xba,0x0d,0xf4,0x4a,0x00,0x4f,0xef
-	.byte	0x00,0x0c,0x66,0x0c,0x70,0x00,0x10,0x2e,0xfd,0xcd,0x4a,0x80,0x66,0x02,0x42,0x06
-	.byte	0x4a,0x06,0x67,0x0a,0x2f,0x0b,0x2f,0x0c,0x4e,0xba,0x06,0x00,0x50,0x4f,0x2f,0x2e
-	.byte	0xfd,0xd2,0x2f,0x0b,0x2f,0x0c,0x4e,0xba,0x07,0x96,0x4a,0xac,0x00,0x02,0x56,0xc0
-	.byte	0x02,0x40,0x00,0x01,0x48,0xc0,0x19,0x40,0x00,0x0a,0x4f,0xef,0x00,0x0c,0x4c,0xee
-	.byte	0x18,0xc0,0xfd,0xbc,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#-564	/* 10046bb8:	4e56 fdcc */
+	moveml	%d6-%d7/%a3-%a4,%sp@-	/* 10046bbc:	48e7 0318 */
+	moveal	%fp@(12),%a3	/* 10046bc0:	266e 000c */
+	moveal	%fp@(8),%a4	/* 10046bc4:	286e 0008 */
+	movel	%fp@(16),%fp@(-562)	/* 10046bc8:	2d6e 0010 fdce */
+	moveq	#0,%d0	/* 10046bce:	7000 */
+	movel	%d0,%fp@(-558)	/* 10046bd0:	2d40 fdd2 */
+	pea	%fp@(-554)	/* 10046bd4:	486e fdd6 */
+	jsr	%pc@(sub_10046730)	/* 10046bd8:	4eba fb56 */
+	moveq	#0,%d0	/* 10046bdc:	7000 */
+	moveb	%a4@,%d0	/* 10046bde:	1014 */
+	movel	%d0,%sp@-	/* 10046be0:	2f00 */
+	jsr	%pc@(sub_10048252)	/* 10046be2:	4eba 166e */
+	movew	%d0,%d6	/* 10046be6:	3c00 */
+	movel	%a3,%sp@-	/* 10046be8:	2f0b */
+	movel	%a4,%sp@-	/* 10046bea:	2f0c */
+	jsr	%pc@(sub_10046d5c)	/* 10046bec:	4eba 016e */
+	tstw	%d6	/* 10046bf0:	4a46 */
+	lea	%sp@(16),%sp	/* 10046bf2:	4fef 0010 */
+	beqs	.L10046c2a	/* 10046bf6:	6732 */
+	movel	%a3,%sp@-	/* 10046bf8:	2f0b */
+	movel	%a4,%sp@-	/* 10046bfa:	2f0c */
+	jsr	%pc@(sub_1004728a)	/* 10046bfc:	4eba 068c */
+	tstl	%fp@(-562)	/* 10046c00:	4aae fdce */
+	addqw	#8,%sp	/* 10046c04:	504f */
+	beqw	.L10046c8e	/* 10046c06:	6700 0086 */
+	pea	%fp@(-554)	/* 10046c0a:	486e fdd6 */
+	movel	%fp@(-562),%sp@-	/* 10046c0e:	2f2e fdce */
+	movel	%a4,%sp@-	/* 10046c12:	2f0c */
+	jsr	%pc@(sub_100476b2)	/* 10046c14:	4eba 0a9c */
+	tstb	%d0	/* 10046c18:	4a00 */
+	lea	%sp@(12),%sp	/* 10046c1a:	4fef 000c */
+	beqs	.L10046c8e	/* 10046c1e:	676e */
+	lea	%fp@(-554),%a0	/* 10046c20:	41ee fdd6 */
+	movel	%a0,%fp@(-558)	/* 10046c24:	2d48 fdd2 */
+	bras	.L10046c8e	/* 10046c28:	6064 */
+
+.L10046c2a:
+	moveq	#1,%d6	/* 10046c2a:	7c01 */
+	moveq	#0,%d0	/* 10046c2c:	7000 */
+	moveb	%a4@,%d0	/* 10046c2e:	1014 */
+	movel	%d0,%sp@-	/* 10046c30:	2f00 */
+	jsr	%pc@(sub_1004829a)	/* 10046c32:	4eba 1666 */
+	moveb	%d0,%d7	/* 10046c36:	1e00 */
+	addqw	#4,%sp	/* 10046c38:	584f */
+	beqs	.L10046c80	/* 10046c3a:	6744 */
+	pea	%fp@(-554)	/* 10046c3c:	486e fdd6 */
+	movel	%a4,%sp@-	/* 10046c40:	2f0c */
+	movel	%a3,%sp@-	/* 10046c42:	2f0b */
+	jsr	%pc@(sub_1004a17a)	/* 10046c44:	4eba 3534 */
+	tstb	%d0	/* 10046c48:	4a00 */
+	lea	%sp@(12),%sp	/* 10046c4a:	4fef 000c */
+	beqs	.L10046c80	/* 10046c4e:	6730 */
+	tstb	%d7	/* 10046c50:	4a07 */
+	beqs	.L10046c5e	/* 10046c52:	670a */
+	lea	%fp@(-554),%a0	/* 10046c54:	41ee fdd6 */
+	movel	%a0,%fp@(-558)	/* 10046c58:	2d48 fdd2 */
+	bras	.L10046c80	/* 10046c5c:	6022 */
+
+.L10046c5e:
+	pea	%fp@(-563)	/* 10046c5e:	486e fdcd */
+	pea	%fp@(-554)	/* 10046c62:	486e fdd6 */
+	movel	%a4,%sp@-	/* 10046c66:	2f0c */
+	jsr	%pc@(sub_10047a5e)	/* 10046c68:	4eba 0df4 */
+	tstb	%d0	/* 10046c6c:	4a00 */
+	lea	%sp@(12),%sp	/* 10046c6e:	4fef 000c */
+	bnes	.L10046c80	/* 10046c72:	660c */
+	moveq	#0,%d0	/* 10046c74:	7000 */
+	moveb	%fp@(-563),%d0	/* 10046c76:	102e fdcd */
+	tstl	%d0	/* 10046c7a:	4a80 */
+	bnes	.L10046c80	/* 10046c7c:	6602 */
+	clrb	%d6	/* 10046c7e:	4206 */
+
+.L10046c80:
+	tstb	%d6	/* 10046c80:	4a06 */
+	beqs	.L10046c8e	/* 10046c82:	670a */
+	movel	%a3,%sp@-	/* 10046c84:	2f0b */
+	movel	%a4,%sp@-	/* 10046c86:	2f0c */
+	jsr	%pc@(sub_1004728a)	/* 10046c88:	4eba 0600 */
+	addqw	#8,%sp	/* 10046c8c:	504f */
+
+.L10046c8e:
+	movel	%fp@(-558),%sp@-	/* 10046c8e:	2f2e fdd2 */
+	movel	%a3,%sp@-	/* 10046c92:	2f0b */
+	movel	%a4,%sp@-	/* 10046c94:	2f0c */
+	jsr	%pc@(sub_1004742e)	/* 10046c96:	4eba 0796 */
+	tstl	%a4@(2)	/* 10046c9a:	4aac 0002 */
+	sne	%d0	/* 10046c9e:	56c0 */
+	andiw	#1,%d0	/* 10046ca0:	0240 0001 */
+	extl	%d0	/* 10046ca4:	48c0 */
+	moveb	%d0,%a4@(10)	/* 10046ca6:	1940 000a */
+	lea	%sp@(12),%sp	/* 10046caa:	4fef 000c */
+	moveml	%fp@(-580),%d6-%d7/%a3-%a4	/* 10046cae:	4cee 18c0 fdbc */
+	unlk	%fp	/* 10046cb4:	4e5e */
+	rts	/* 10046cb6:	4e75 */
 
 sub_10046cb8:
 	.byte	0x60,0x00,0x77,0x20
