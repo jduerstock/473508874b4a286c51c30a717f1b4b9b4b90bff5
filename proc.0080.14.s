@@ -5210,7 +5210,9 @@ sub_10047734:
 	.byte	0x00,0x0c,0x00,0x34
 	.byte	0x00,0x22,0x00,0x34,0x00,0x34
 
-	.short	0x2f0b,0x4eba,0x03b2,0x588f
+	movel	%a3,%sp@-	/* 1004777c:	2f0b */
+	.short	0x4eba,0x03b2
+	addql	#4,%sp	/* 10046764:	588f */
 	movel	%d0,%sp@-	/* 1004776e:	2f00 */
 	pea	%a4@(14)	/* 10047770:	486c 000e */
 	jsr	%pc@(sub_10046678)	/* 10047774:	4eba ef02 */
