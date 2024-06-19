@@ -4688,16 +4688,16 @@ sub_10047276:
 	braw	sub_1004353a	/* 10047276:	6000 c2c2 */
 
 sub_1004727a:
-	.byte	0x60,0x00,0x8a,0xce
+	braw	sub_1003fd4a	/* 1004727a:	6000 8ace */
 
 sub_1004727e:
-	.byte	0x60,0x00,0x91,0xc2
+	braw	sub_10040442	/* 1004727e:	6000 91c2 */
 
 sub_10047282:
-	.byte	0x60,0x00,0xb9,0xf4
+	braw	sub_10042c78	/* 10047282:	6000 b9f4 */
 
 sub_10047286:
-	.byte	0x60,0x00,0xf3,0xf4
+	braw	sub_1004667c	/* 10047286:	6000 f3f4 */
 
 sub_1004728a:
 	.byte	0x4e,0x56,0xfb,0x70,0x48,0xe7
