@@ -3197,13 +3197,40 @@ sub_10049c64:
 	braw	sub_100489f4	/* 10049c64:	6000 ed8e */
 
 sub_10049c68:
-	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x00,0x18
-	.byte	0x26,0x6e,0x00,0x0c,0x28,0x6e,0x00,0x08,0x2f,0x0b,0x2f,0x0c,0x4e,0xba,0x00,0x4e
-	.byte	0x59,0x8f,0x20,0x53,0x2f,0x10,0x4e,0xba,0x0e,0x3c,0x20,0x2b,0x00,0x04,0x90,0x9f
-	.byte	0x20,0x54,0x21,0x40,0x00,0x22,0x2f,0x0b,0x70,0x02,0x2f,0x00,0x4e,0xba,0xe5,0x72
-	.byte	0x2f,0x0b,0x70,0x03,0x2f,0x00,0x4e,0xba,0xe5,0x68,0x2f,0x0b,0x70,0x05,0x2f,0x00
-	.byte	0x4e,0xba,0xe5,0x5e,0x2f,0x0b,0x70,0x07,0x2f,0x00,0x4e,0xba,0xe5,0x54,0x4c,0xee
-	.byte	0x18,0x00,0xff,0xf8,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 10049c68:	4e56 0000 */
+	moveml	%a3-%a4,%sp@-	/* 10049c6c:	48e7 0018 */
+	moveal	%fp@(12),%a3	/* 10049c70:	266e 000c */
+	moveal	%fp@(8),%a4	/* 10049c74:	286e 0008 */
+	movel	%a3,%sp@-	/* 10049c78:	2f0b */
+	movel	%a4,%sp@-	/* 10049c7a:	2f0c */
+	jsr	%pc@(sub_10049ccc)	/* 10049c7c:	4eba 004e */
+	subql	#4,%sp	/* 10049c80:	598f */
+	moveal	%a3@,%a0	/* 10049c82:	2053 */
+	movel	%a0@,%sp@-	/* 10049c84:	2f10 */
+	jsr	%pc@(sub_1004aac4)	/* 10049c86:	4eba 0e3c */
+	movel	%a3@(4),%d0	/* 10049c8a:	202b 0004 */
+	subl	%sp@+,%d0	/* 10049c8e:	909f */
+	moveal	%a4@,%a0	/* 10049c90:	2054 */
+	movel	%d0,%a0@(34)	/* 10049c92:	2140 0022 */
+	movel	%a3,%sp@-	/* 10049c96:	2f0b */
+	moveq	#2,%d0	/* 10049c98:	7002 */
+	movel	%d0,%sp@-	/* 10049c9a:	2f00 */
+	jsr	%pc@(sub_10048210)	/* 10049c9c:	4eba e572 */
+	movel	%a3,%sp@-	/* 10049ca0:	2f0b */
+	moveq	#3,%d0	/* 10049ca2:	7003 */
+	movel	%d0,%sp@-	/* 10049ca4:	2f00 */
+	jsr	%pc@(sub_10048210)	/* 10049ca6:	4eba e568 */
+	movel	%a3,%sp@-	/* 10049caa:	2f0b */
+	moveq	#5,%d0	/* 10049cac:	7005 */
+	movel	%d0,%sp@-	/* 10049cae:	2f00 */
+	jsr	%pc@(sub_10048210)	/* 10049cb0:	4eba e55e */
+	movel	%a3,%sp@-	/* 10049cb4:	2f0b */
+	moveq	#7,%d0	/* 10049cb6:	7007 */
+	movel	%d0,%sp@-	/* 10049cb8:	2f00 */
+	jsr	%pc@(sub_10048210)	/* 10049cba:	4eba e554 */
+	moveml	%fp@(-8),%a3-%a4	/* 10049cbe:	4cee 1800 fff8 */
+	unlk	%fp	/* 10049cc4:	4e5e */
+	rts	/* 10049cc6:	4e75 */
 
 sub_10049cc8:
 	.byte	0x60,0x00,0xed,0x26
