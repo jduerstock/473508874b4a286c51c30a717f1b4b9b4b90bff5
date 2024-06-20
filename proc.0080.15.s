@@ -3233,7 +3233,7 @@ sub_10049c68:
 	rts	/* 10049cc6:	4e75 */
 
 sub_10049cc8:
-	.byte	0x60,0x00,0xed,0x26
+	braw	sub_100489f0	/* 10049cc8:	6000 ed26 */
 
 sub_10049ccc:
 	.byte	0x4e,0x56,0xff,0xf8
