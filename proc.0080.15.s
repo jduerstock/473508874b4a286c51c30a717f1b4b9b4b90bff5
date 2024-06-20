@@ -3710,7 +3710,7 @@ sub_10049f74:
 	rts	/* 1004a174:	4e75 */
 
 sub_1004a176:
-	.byte	0x60,0x00,0xe5,0xec
+	braw	sub_10048764	/* 1004a176:	6000 e5ec */
 
 sub_1004a17a:
 	.byte	0x4e,0x56,0xfb,0xac,0x48,0xe7
