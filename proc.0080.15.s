@@ -5357,13 +5357,13 @@ sub_1004b04e:
 	rts	/* 1004b21a:	4e75 */
 
 sub_1004b21c:
-	.byte	0x60,0x00,0x41,0x58
+	braw	sub_1004f376	/* 1004b21c:	6000 4158 */
 
 sub_1004b220:
-	.byte	0x60,0x00,0x3f,0x3c
+	braw	sub_1004f15e	/* 1004b220:	6000 3f3c */
 
 sub_1004b224:
-	.byte	0x60,0x00,0x13,0xe4
+	braw	sub_1004c60a	/* 1004b224:	6000 13e4 */
 
 sub_1004b228:
 	.byte	0x4e,0x56,0xff,0x58,0x48,0xe7,0x07,0x38
