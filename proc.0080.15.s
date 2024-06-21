@@ -4231,7 +4231,7 @@ sub_1004a5dc:
 	rts	/* 1004a656:	4e75 */
 
 sub_1004a658:
-	.byte	0x60,0x00,0x9a,0xb8
+	braw	sub_10044112	/* 1004a658:	6000 9ab8 */
 
 sub_1004a65c:
 	.byte	0x4e,0x56,0xfb,0xac
