@@ -291,14 +291,49 @@ sub_1004f328:
 	.byte	0xff,0xf4,0x4e,0x5e,0x4e,0x75
 
 sub_1004f376:
-	.byte	0x4e,0x56,0xff,0xf0,0x48,0xe7,0x07,0x38,0x24,0x6e
-	.byte	0x00,0x0c,0x2a,0x2e,0x00,0x10,0x28,0x6e,0x00,0x08,0x20,0x0a,0x67,0x4c,0x3c,0x12
-	.byte	0x47,0xea,0x00,0x02,0x42,0x47,0x60,0x3e,0x2f,0x0b,0x48,0x6e,0xff,0xfe,0x48,0x6e
-	.byte	0xff,0xfc,0x48,0x6e,0xff,0xf0,0x4e,0xba,0xfb,0xf6,0x20,0x05,0xd0,0x93,0x2f,0x00
-	.byte	0x30,0x2e,0xff,0xfe,0x48,0xc0,0x2f,0x00,0x30,0x2e,0xff,0xfc,0x48,0xc0,0x2f,0x00
-	.byte	0x48,0x6e,0xff,0xf0,0x2f,0x0c,0x4e,0xba,0xfe,0x74,0x47,0xeb,0x00,0x14,0x4f,0xef
-	.byte	0x00,0x24,0x30,0x07,0x52,0x47,0xbc,0x47,0x6e,0xbe,0x4c,0xee,0x1c,0xe0,0xff,0xd8
-	.byte	0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#-16	/* 1004f376:	4e56 fff0 */
+	moveml	%d5-%d7/%a2-%a4,%sp@-	/* 1004f37a:	48e7 0738 */
+	moveal	%fp@(12),%a2	/* 1004f37e:	246e 000c */
+	movel	%fp@(16),%d5	/* 1004f382:	2a2e 0010 */
+	moveal	%fp@(8),%a4	/* 1004f386:	286e 0008 */
+	movel	%a2,%d0	/* 1004f38a:	200a */
+	beqs	.L1004f3da	/* 1004f38c:	674c */
+	movew	%a2@,%d6	/* 1004f38e:	3c12 */
+	lea	%a2@(2),%a3	/* 1004f390:	47ea 0002 */
+	clrw	%d7	/* 1004f394:	4247 */
+	bras	.L1004f3d6	/* 1004f396:	603e */
+
+.L1004f398:
+	movel	%a3,%sp@-	/* 1004f398:	2f0b */
+	pea	%fp@(-2)	/* 1004f39a:	486e fffe */
+	pea	%fp@(-4)	/* 1004f39e:	486e fffc */
+	pea	%fp@(-16)	/* 1004f3a2:	486e fff0 */
+	jsr	%pc@(sub_1004ef9e)	/* 1004f3a6:	4eba fbf6 */
+	movel	%d5,%d0	/* 1004f3aa:	2005 */
+	addl	%a3@,%d0	/* 1004f3ac:	d093 */
+	movel	%d0,%sp@-	/* 1004f3ae:	2f00 */
+	movew	%fp@(-2),%d0	/* 1004f3b0:	302e fffe */
+	extl	%d0	/* 1004f3b4:	48c0 */
+	movel	%d0,%sp@-	/* 1004f3b6:	2f00 */
+	movew	%fp@(-4),%d0	/* 1004f3b8:	302e fffc */
+	extl	%d0	/* 1004f3bc:	48c0 */
+	movel	%d0,%sp@-	/* 1004f3be:	2f00 */
+	pea	%fp@(-16)	/* 1004f3c0:	486e fff0 */
+	movel	%a4,%sp@-	/* 1004f3c4:	2f0c */
+	jsr	%pc@(sub_1004f23c)	/* 1004f3c6:	4eba fe74 */
+	lea	%a3@(20),%a3	/* 1004f3ca:	47eb 0014 */
+	lea	%sp@(36),%sp	/* 1004f3ce:	4fef 0024 */
+	movew	%d7,%d0	/* 1004f3d2:	3007 */
+	addqw	#1,%d7	/* 1004f3d4:	5247 */
+
+.L1004f3d6:
+	cmpw	%d7,%d6	/* 1004f3d6:	bc47 */
+	bgts	.L1004f398	/* 1004f3d8:	6ebe */
+
+.L1004f3da:
+	moveml	%fp@(-40),%d5-%d7/%a2-%a4	/* 1004f3da:	4cee 1ce0 ffd8 */
+	unlk	%fp	/* 1004f3e0:	4e5e */
+	rts	/* 1004f3e2:	4e75 */
 
 sub_1004f3e4:
 	linkw	%fp,#-8	/* 1004f3e4:	4e56 fff8 */
