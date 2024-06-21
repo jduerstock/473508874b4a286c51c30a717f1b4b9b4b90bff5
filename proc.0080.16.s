@@ -589,14 +589,53 @@ sub_1004bc3e:
 	rts	/* 1004bc76:	4e75 */
 
 sub_1004bc78:
-	.byte	0x4e,0x56,0xff,0xf4,0x48,0xe7,0x07,0x38
-	.byte	0x26,0x6e,0x00,0x08,0x4a,0x2b,0x00,0x0a,0x67,0x0a,0x30,0x2b,0x00,0x06,0x48,0xc0
-	.byte	0x52,0x80,0x60,0x06,0x30,0x2b,0x00,0x06,0x48,0xc0,0x2a,0x00,0x7e,0x00,0x60,0x36
-	.byte	0x28,0x53,0x4e,0xba,0xd8,0xe6,0x2d,0x40,0xff,0xf4,0x4e,0xba,0xea,0xc8,0x20,0x40
-	.byte	0x41,0xe8,0x01,0xde,0x24,0x48,0x20,0x4a,0x52,0x88,0x2d,0x48,0xff,0xfc,0x10,0x12
-	.byte	0x7c,0x00,0x1c,0x00,0x2f,0x06,0x2f,0x08,0x2f,0x0c,0x4e,0xba,0x95,0xe6,0x4f,0xef
-	.byte	0x00,0x0c,0x20,0x07,0x52,0x87,0xba,0x87,0x6e,0xc6,0x4c,0xee,0x1c,0xe0,0xff,0xdc
-	.byte	0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#-12	/* 1004bc78:	4e56 fff4 */
+	moveml	%d5-%d7/%a2-%a4,%sp@-	/* 1004bc7c:	48e7 0738 */
+	moveal	%fp@(8),%a3	/* 1004bc80:	266e 0008 */
+	tstb	%a3@(10)	/* 1004bc84:	4a2b 000a */
+	beqs	.L1004bc94	/* 1004bc88:	670a */
+	movew	%a3@(6),%d0	/* 1004bc8a:	302b 0006 */
+	extl	%d0	/* 1004bc8e:	48c0 */
+	addql	#1,%d0	/* 1004bc90:	5280 */
+	bras	.L1004bc9a	/* 1004bc92:	6006 */
+
+.L1004bc94:
+	movew	%a3@(6),%d0	/* 1004bc94:	302b 0006 */
+	extl	%d0	/* 1004bc98:	48c0 */
+
+.L1004bc9a:
+	movel	%d0,%d5	/* 1004bc9a:	2a00 */
+	moveq	#0,%d7	/* 1004bc9c:	7e00 */
+	bras	.L1004bcd6	/* 1004bc9e:	6036 */
+
+.L1004bca0:
+	moveal	%a3@,%a4	/* 1004bca0:	2853 */
+	jsr	%pc@(sub_1004958a)	/* 1004bca2:	4eba d8e6 */
+	movel	%d0,%fp@(-12)	/* 1004bca6:	2d40 fff4 */
+	jsr	%pc@(sub_1004a774)	/* 1004bcaa:	4eba eac8 */
+	moveal	%d0,%a0	/* 1004bcae:	2040 */
+	lea	%a0@(478),%a0	/* 1004bcb0:	41e8 01de */
+	moveal	%a0,%a2	/* 1004bcb4:	2448 */
+	moveal	%a2,%a0	/* 1004bcb6:	204a */
+	addql	#1,%a0	/* 1004bcb8:	5288 */
+	movel	%a0,%fp@(-4)	/* 1004bcba:	2d48 fffc */
+	moveb	%a2@,%d0	/* 1004bcbe:	1012 */
+	moveq	#0,%d6	/* 1004bcc0:	7c00 */
+	moveb	%d0,%d6	/* 1004bcc2:	1c00 */
+	movel	%d6,%sp@-	/* 1004bcc4:	2f06 */
+	movel	%a0,%sp@-	/* 1004bcc6:	2f08 */
+	movel	%a4,%sp@-	/* 1004bcc8:	2f0c */
+	jsr	%pc@(sub_100452b2)	/* 1004bcca:	4eba 95e6 */
+	lea	%sp@(12),%sp	/* 1004bcce:	4fef 000c */
+	movel	%d7,%d0	/* 1004bcd2:	2007 */
+	addql	#1,%d7	/* 1004bcd4:	5287 */
+
+.L1004bcd6:
+	cmpl	%d7,%d5	/* 1004bcd6:	ba87 */
+	bgts	.L1004bca0	/* 1004bcd8:	6ec6 */
+	moveml	%fp@(-36),%d5-%d7/%a2-%a4	/* 1004bcda:	4cee 1ce0 ffdc */
+	unlk	%fp	/* 1004bce0:	4e5e */
+	rts	/* 1004bce2:	4e75 */
 
 sub_1004bce4:
 	.byte	0x4e,0x56,0x00,0x00,0x48,0xe7,0x03,0x08,0x28,0x6e,0x00,0x08
