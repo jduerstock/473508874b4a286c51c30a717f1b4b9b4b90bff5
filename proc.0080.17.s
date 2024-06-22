@@ -1531,8 +1531,13 @@ sub_1004ff48:
 	rts	/* 1004ff60:	4e75 */
 
 sub_1004ff62:
-	.byte	0x4e,0x56,0x00,0x00,0x4e,0xba,0xab,0x64,0x20,0x40,0x2f,0x28,0x01,0x88
-	.byte	0x4e,0xba,0x01,0xe4,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 1004ff62:	4e56 0000 */
+	jsr	%pc@(sub_1004aacc)	/* 1004ff66:	4eba ab64 */
+	moveal	%d0,%a0	/* 1004ff6a:	2040 */
+	movel	%a0@(392),%sp@-	/* 1004ff6c:	2f28 0188 */
+	jsr	%pc@(sub_10050156)	/* 1004ff70:	4eba 01e4 */
+	unlk	%fp	/* 1004ff74:	4e5e */
+	rts	/* 1004ff76:	4e75 */
 
 sub_1004ff78:
 	linkw	%fp,#0	/* 1004ff78:	4e56 0000 */
