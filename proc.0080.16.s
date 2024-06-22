@@ -4433,9 +4433,18 @@ sub_1004e3b4:
 	braw	sub_1004ff96	/* 1004e3b4:	6000 1be0 */
 
 sub_1004e3b8:
-	.byte	0x4e,0x56,0x00,0x00,0x2f,0x0c,0x28,0x6e
-	.byte	0x00,0x08,0x70,0x00,0x10,0x2e,0x00,0x0f,0x2f,0x00,0x2f,0x0c,0x4e,0xba,0x85,0x62
-	.byte	0x20,0x0c,0x28,0x6e,0xff,0xfc,0x4e,0x5e,0x4e,0x75
+	linkw	%fp,#0	/* 1004e3b8:	4e56 0000 */
+	movel	%a4,%sp@-	/* 1004e3bc:	2f0c */
+	moveal	%fp@(8),%a4	/* 1004e3be:	286e 0008 */
+	moveq	#0,%d0	/* 1004e3c2:	7000 */
+	moveb	%fp@(15),%d0	/* 1004e3c4:	102e 000f */
+	movel	%d0,%sp@-	/* 1004e3c8:	2f00 */
+	movel	%a4,%sp@-	/* 1004e3ca:	2f0c */
+	jsr	%pc@(sub_10046930)	/* 1004e3cc:	4eba 8562 */
+	movel	%a4,%d0	/* 1004e3d0:	200c */
+	moveal	%fp@(-4),%a4	/* 1004e3d2:	286e fffc */
+	unlk	%fp	/* 1004e3d6:	4e5e */
+	rts	/* 1004e3d8:	4e75 */
 
 sub_1004e3da:
 	.byte	0x60,0x00,0x03,0x98
