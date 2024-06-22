@@ -2542,7 +2542,7 @@ sub_1004ced6:
 
 .L1004d074:
 	.ascii	"true"
-	.byte	0x00,0x00
+	.short	0x0000
 
 sub_1004d07a:
 	linkw	%fp,#0		/* 1004d07a:	4e56 0000 */
