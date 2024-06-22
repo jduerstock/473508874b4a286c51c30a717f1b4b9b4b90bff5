@@ -4415,22 +4415,22 @@ sub_1004e382:
 	rts	/* 1004e39e:	4e75 */
 
 sub_1004e3a0:
-	.byte	0x60,0x00,0x1b,0xd6
+	braw	sub_1004ff78	/* 1004e3a0:	6000 1bd6 */
 
 sub_1004e3a4:
-	.byte	0x60,0x00,0x1b,0xbc
+	braw	sub_1004ff62	/* 1004e3a4:	6000 1bbc */
 
 sub_1004e3a8:
-	.byte	0x60,0x00,0x1b,0x9e
+	braw	sub_1004ff48	/* 1004e3a8:	6000 1b9e */
 
 sub_1004e3ac:
-	.byte	0x60,0x00,0x1b,0x80
+	braw	sub_1004ff2e	/* 1004e3ac:	6000 1b80 */
 
 sub_1004e3b0:
-	.byte	0x60,0x00,0x1a,0xbe
+	braw	sub_1004fe70	/* 1004e3b0:	6000 1abe */
 
 sub_1004e3b4:
-	.byte	0x60,0x00,0x1b,0xe0
+	braw	sub_1004ff96	/* 1004e3b4:	6000 1be0 */
 
 sub_1004e3b8:
 	.byte	0x4e,0x56,0x00,0x00,0x2f,0x0c,0x28,0x6e
