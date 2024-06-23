@@ -4859,8 +4859,7 @@ sub_1004abd8:
 	moveq	#0,%d1	/* 1004acc4:	7200 */
 
 .L1004acc6:
-	moveal	%a4@,%a0	/* 1004acc6:	2054 */
-	.short	0xa023	/* 1004acc8:	a023 */
+	_DisposeHandle %a4@
 	moveq	#0,%d0	/* 1004acca:	7000 */
 	movel	%d0,%a4@	/* 1004accc:	2880 */
 
