@@ -4057,8 +4057,7 @@ sub_10028970:
 	movel	#757935405,%sp@-	/* 100289da:	2f3c 2d2d 2d2d */
 	movel	#1818850164,%sp@-	/* 100289e0:	2f3c 6c69 7374 */
 	pea	%fp@(-38)	/* 100289e6:	486e ffda */
-	movew	#2066,%d0	/* 100289ea:	303c 0812 */
-	.short	0xa816	/* 100289ee:	a816 */
+	_AEGetParamDesc
 	movew	%sp@+,%d7	/* 100289f0:	3e1f */
 	beqs	.L10028a18	/* 100289f2:	6724 */
 	subql	#2,%sp	/* 100289f4:	558f */
