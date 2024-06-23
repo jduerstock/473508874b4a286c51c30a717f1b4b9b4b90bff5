@@ -1,6 +1,8 @@
 
 	.cpu	68000
 
+	.include "interfaces.s"
+
 	.include "proc.0080.00.s"
 	.include "proc.0080.01.s"
 	.include "proc.0080.02.s"
