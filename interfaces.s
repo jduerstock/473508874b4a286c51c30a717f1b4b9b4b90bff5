@@ -1,4 +1,8 @@
 
+	.macro	_DisposeHandle
+		.short	0xa023
+	.endm
+
 	.macro	_Pack8
 		.short	0xa816
 	.endm
