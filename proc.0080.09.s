@@ -4388,7 +4388,7 @@ sub_10021650:
 	moveal	%a4,%a0	/* 10021696:	204c */
 	.short	0xa029	/* 10021698:	a029 */
 	moveal	%a4,%a0	/* 1002169a:	204c */
-	.short	0xa025	/* 1002169c:	a025 */
+	_GetHandleSize
 	movel	%d0,%d6	/* 1002169e:	2c00 */
 	movel	%d6,%d4	/* 100216a0:	2806 */
 	addql	#8,%d4	/* 100216a2:	5084 */
