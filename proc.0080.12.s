@@ -45,8 +45,7 @@ sub_1003d7e2:
 	moveal	%a3@,%a0	/* 1003d806:	2053 */
 	tstl	%a0@(6)	/* 1003d808:	4aa8 0006 */
 	beqs	.L1003d820	/* 1003d80c:	6712 */
-	moveal	%a0@(6),%a0	/* 1003d80e:	2068 0006 */
-	_DisposeHandle
+	_DisposeHandle %a0@(6)
 	moveal	%a3@,%a0	/* 1003d814:	2053 */
 	moveq	#0,%d0	/* 1003d816:	7000 */
 	movel	%d0,%a0@(6)	/* 1003d818:	2140 0006 */
@@ -89,8 +88,7 @@ sub_1003d7e2:
 	moveq	#0,%d0	/* 1003d85e:	7000 */
 
 .L1003d860:
-	moveal	%a3,%a0	/* 1003d860:	204b */
-	_DisposeHandle
+	_DisposeHandle %a3
 	moveq	#0,%d0	/* 1003d864:	7000 */
 	moveal	%d0,%a3	/* 1003d866:	2640 */
 
@@ -143,8 +141,7 @@ sub_1003d7e2:
 	moveal	%a4@,%a0	/* 1003d8e2:	2054 */
 	tstl	%a0@(6)	/* 1003d8e4:	4aa8 0006 */
 	beqs	.L1003d8fc	/* 1003d8e8:	6712 */
-	moveal	%a0@(6),%a0	/* 1003d8ea:	2068 0006 */
-	_DisposeHandle
+	_DisposeHandle %a0@(6)
 	moveal	%a4@,%a0	/* 1003d8f0:	2054 */
 	moveq	#0,%d0	/* 1003d8f2:	7000 */
 	movel	%d0,%a0@(6)	/* 1003d8f4:	2140 0006 */
@@ -3586,8 +3583,7 @@ sub_1003f94a:
 	movel	%fp@(-330),%a0@(88)	/* 1003fb98:	216e feb6 0058 */
 	movel	%a4,%d0	/* 1003fb9e:	200c */
 	beqs	.L1003fbaa	/* 1003fba0:	6708 */
-	moveal	%a4,%a0	/* 1003fba2:	204c */
-	_DisposeHandle
+	_DisposeHandle %a4
 	moveq	#0,%d0	/* 1003fba6:	7000 */
 	moveal	%d0,%a4	/* 1003fba8:	2840 */
 
@@ -3786,8 +3782,7 @@ sub_1003fd4e:
 	moveal	%a4@,%a0	/* 1003fd6e:	2054 */
 	movel	%d7,%d0	/* 1003fd70:	2007 */
 	asll	#2,%d0	/* 1003fd72:	e580 */
-	moveal	%a0@(0x1e,%d0:l),%a0	/* 1003fd74:	2070 081e */
-	_DisposeHandle
+	_DisposeHandle "%a0@(0x1e,%d0:l)"
 	extl	%d7	/* 1003fd7a:	48c7 */
 	moveal	%a4@,%a0	/* 1003fd7c:	2054 */
 	movel	%d7,%d0	/* 1003fd7e:	2007 */
@@ -3805,8 +3800,7 @@ sub_1003fd4e:
 	moveal	%a4@,%a0	/* 1003fd92:	2054 */
 	tstl	%a0@(22)	/* 1003fd94:	4aa8 0016 */
 	beqs	.L1003fda8	/* 1003fd98:	670e */
-	moveal	%a0@(22),%a0	/* 1003fd9a:	2068 0016 */
-	_DisposeHandle
+	_DisposeHandle %a0@(22)
 	moveal	%a4@,%a0	/* 1003fda0:	2054 */
 	moveq	#0,%d0	/* 1003fda2:	7000 */
 	movel	%d0,%a0@(22)	/* 1003fda4:	2140 0016 */
@@ -3815,8 +3809,7 @@ sub_1003fd4e:
 	moveal	%a4@,%a0	/* 1003fda8:	2054 */
 	tstl	%a0@(26)	/* 1003fdaa:	4aa8 001a */
 	beqs	.L1003fdbe	/* 1003fdae:	670e */
-	moveal	%a0@(26),%a0	/* 1003fdb0:	2068 001a */
-	_DisposeHandle
+	_DisposeHandle %a0@(26)
 	moveal	%a4@,%a0	/* 1003fdb6:	2054 */
 	moveq	#0,%d0	/* 1003fdb8:	7000 */
 	movel	%d0,%a0@(26)	/* 1003fdba:	2140 001a */
@@ -3861,8 +3854,7 @@ sub_1003fdc8:
 	movel	%fp@(-56),%a0@(88)	/* 1003fe28:	216e ffc8 0058 */
 	tstl	%fp@(-4)	/* 1003fe2e:	4aae fffc */
 	beqs	.L1003fe40	/* 1003fe32:	670c */
-	moveal	%fp@(-4),%a0	/* 1003fe34:	206e fffc */
-	_DisposeHandle
+	_DisposeHandle %fp@(-4)
 	moveq	#0,%d0	/* 1003fe3a:	7000 */
 	movel	%d0,%fp@(-4)	/* 1003fe3c:	2d40 fffc */
 
@@ -3949,8 +3941,7 @@ sub_1003fdc8:
 	movel	%fp@(-56),%a0@(88)	/* 1003ff16:	216e ffc8 0058 */
 	tstl	%fp@(-4)	/* 1003ff1c:	4aae fffc */
 	beqs	.L1003ff2e	/* 1003ff20:	670c */
-	moveal	%fp@(-4),%a0	/* 1003ff22:	206e fffc */
-	_DisposeHandle
+	_DisposeHandle %fp@(-4)
 	moveq	#0,%d0	/* 1003ff28:	7000 */
 	movel	%d0,%fp@(-4)	/* 1003ff2a:	2d40 fffc */
 
@@ -4853,8 +4844,7 @@ sub_1004059a:
 	movel	%fp@(-106),%a0@(88)	/* 10040798:	216e ff96 0058 */
 	movel	%a4,%d0	/* 1004079e:	200c */
 	beqs	.L100407aa	/* 100407a0:	6708 */
-	moveal	%a4,%a0	/* 100407a2:	204c */
-	_DisposeHandle
+	_DisposeHandle %a4
 	moveq	#0,%d0	/* 100407a6:	7000 */
 	moveal	%d0,%a4	/* 100407a8:	2840 */
 
@@ -5586,8 +5576,7 @@ sub_10040df8:
 	movel	%fp@(-188),%a0@(88)	/* 10040f5a:	216e ff44 0058 */
 	movel	%a3,%d0	/* 10040f60:	200b */
 	beqs	.L10040f6c	/* 10040f62:	6708 */
-	moveal	%a3,%a0	/* 10040f64:	204b */
-	_DisposeHandle
+	_DisposeHandle %a3
 	moveq	#0,%d0	/* 10040f68:	7000 */
 	moveal	%d0,%a3	/* 10040f6a:	2640 */
 
