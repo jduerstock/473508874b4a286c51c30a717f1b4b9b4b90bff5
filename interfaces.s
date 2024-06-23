@@ -1,5 +1,8 @@
 
-	.macro	_DisposeHandle
+	.macro	_DisposeHandle p1
+		.ifnb \p1
+			moveal \p1,%a0
+		.endif
 		.short	0xa023
 	.endm
 

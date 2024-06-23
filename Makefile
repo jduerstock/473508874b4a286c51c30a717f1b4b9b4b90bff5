@@ -1,6 +1,6 @@
 all: proc.0080.bin
 
-includes := $(wildcard proc.0080.??.s)
+includes := $(wildcard proc.0080.??.s) interfaces.s
 
 proc.0080.o: proc.0080.s $(includes)
 	m68k-linux-gnu-as -g -o proc.0080.o proc.0080.s
