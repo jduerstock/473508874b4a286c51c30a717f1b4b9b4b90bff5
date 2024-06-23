@@ -3609,7 +3609,7 @@ sub_10049f74:
 	moveb	%d7,%d0	/* 1004a096:	1007 */
 	moveal	%a4@,%a0	/* 1004a098:	2054 */
 	asll	#2,%d0	/* 1004a09a:	e580 */
-	_DisposeHandle	"%a0@(6,%d0:l)"
+	_DisposeHandle "%a0@(6,%d0:l)"
 	moveq	#0,%d0	/* 1004a0a2:	7000 */
 	moveb	%d7,%d0	/* 1004a0a4:	1007 */
 	moveal	%a4@,%a0	/* 1004a0a6:	2054 */
