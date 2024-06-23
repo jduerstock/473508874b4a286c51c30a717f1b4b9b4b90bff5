@@ -1848,8 +1848,7 @@ sub_1002a564:
 	beqs	.L1002a5c8	/* 1002a5b0:	6716 */
 	movel	%fp@(-268),%sp@-	/* 1002a5b2:	2f2e fef4 */
 	jsr	%pc@(sub_10031e80)	/* 1002a5b6:	4eba 78c8 */
-	moveal	%fp@(-268),%a0	/* 1002a5ba:	206e fef4 */
-	.short	0xa023	/* 1002a5be:	a023 */
+	_DisposeHandle %fp@(-268)
 	moveq	#0,%d0	/* 1002a5c0:	7000 */
 	movel	%d0,%fp@(-268)	/* 1002a5c2:	2d40 fef4 */
 	addqw	#4,%sp	/* 1002a5c6:	584f */
