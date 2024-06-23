@@ -962,8 +962,7 @@ sub_1000e794:
 	movel	%fp@(-52),%a0@(88)	/* 1000e84a:	216e ffcc 0058 */
 	movel	%a4,%d0	/* 1000e850:	200c */
 	beqs	.L1000e85c	/* 1000e852:	6708 */
-	moveal	%a4,%a0	/* 1000e854:	204c */
-	.short	0xa023	/* 1000e856:	a023 */
+	_DisposeHandle %a4
 	moveq	#0,%d0	/* 1000e858:	7000 */
 	moveal	%d0,%a4	/* 1000e85a:	2840 */
 
@@ -1523,8 +1522,7 @@ sub_1000ed94:
 	movel	%fp@(-52),%a0@(88)	/* 1000ee3a:	216e ffcc 0058 */
 	movel	%a4,%d0	/* 1000ee40:	200c */
 	beqs	.L1000ee4c	/* 1000ee42:	6708 */
-	moveal	%a4,%a0	/* 1000ee44:	204c */
-	.short	0xa023	/* 1000ee46:	a023 */
+	_DisposeHandle %a4
 	moveq	#0,%d0	/* 1000ee48:	7000 */
 	moveal	%d0,%a4	/* 1000ee4a:	2840 */
 
@@ -4579,8 +4577,7 @@ sub_10010e4e:
 	moveal	%fp@(8),%a4	/* 10010e56:	286e 0008 */
 	tstl	%a4@(38)	/* 10010e5a:	4aac 0026 */
 	beqs	.L10010e6c	/* 10010e5e:	670c */
-	moveal	%a4@(38),%a0	/* 10010e60:	206c 0026 */
-	.short	0xa023	/* 10010e64:	a023 */
+	_DisposeHandle %a4@(38)
 	moveq	#0,%d0	/* 10010e66:	7000 */
 	movel	%d0,%a4@(38)	/* 10010e68:	2940 0026 */
 
@@ -4591,8 +4588,7 @@ sub_10010e4e:
 	moveal	%a3@,%a0	/* 10010e76:	2053 */
 	tstl	%a0@(18)	/* 10010e78:	4aa8 0012 */
 	beqs	.L10010e90	/* 10010e7c:	6712 */
-	moveal	%a0@(18),%a0	/* 10010e7e:	2068 0012 */
-	.short	0xa023	/* 10010e82:	a023 */
+	_DisposeHandle %a0@(18)
 	moveal	%a3@,%a0	/* 10010e84:	2053 */
 	moveq	#0,%d0	/* 10010e86:	7000 */
 	movel	%d0,%a0@(18)	/* 10010e88:	2140 0012 */
@@ -4606,8 +4602,7 @@ sub_10010e4e:
 	moveal	%a3@,%a0	/* 10010e92:	2053 */
 	tstl	%a0@(2)	/* 10010e94:	4aa8 0002 */
 	beqs	.L10010eac	/* 10010e98:	6712 */
-	moveal	%a0@(2),%a0	/* 10010e9a:	2068 0002 */
-	.short	0xa023	/* 10010e9e:	a023 */
+	_DisposeHandle %a0@(2)
 	moveal	%a3@,%a0	/* 10010ea0:	2053 */
 	moveq	#0,%d0	/* 10010ea2:	7000 */
 	movel	%d0,%a0@(2)	/* 10010ea4:	2140 0002 */
@@ -4618,8 +4613,7 @@ sub_10010e4e:
 	moveq	#0,%d1	/* 10010eac:	7200 */
 
 .L10010eae:
-	moveal	%a4@(34),%a0	/* 10010eae:	206c 0022 */
-	.short	0xa023	/* 10010eb2:	a023 */
+	_DisposeHandle %a4@(34)
 	moveq	#0,%d0	/* 10010eb4:	7000 */
 	movel	%d0,%a4@(34)	/* 10010eb6:	2940 0022 */
 
