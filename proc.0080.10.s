@@ -3568,8 +3568,7 @@ sub_10038b6c:
 	moveq	#0,%d1	/* 10038c78:	7200 */
 	moveb	%d1,%sp@-	/* 10038c7a:	1f01 */
 	movel	%a4,%sp@-	/* 10038c7c:	2f0c */
-	movew	#1798,%d0	/* 10038c7e:	303c 0706 */
-	.short	0xa816	/* 10038c82:	a816 */
+	_AECreateList
 	movew	%sp@+,%d0	/* 10038c84:	301f */
 	extl	%d0	/* 10038c86:	48c0 */
 	movel	%d0,%d6	/* 10038c88:	2c00 */
@@ -4883,8 +4882,7 @@ sub_100398ba:
 	moveq	#0,%d1	/* 10039904:	7200 */
 	moveb	%d1,%sp@-	/* 10039906:	1f01 */
 	movel	%a3,%sp@-	/* 10039908:	2f0b */
-	movew	#1798,%d0	/* 1003990a:	303c 0706 */
-	.short	0xa816	/* 1003990e:	a816 */
+	_AECreateList
 	movew	%sp@+,%d0	/* 10039910:	301f */
 	extl	%d0	/* 10039912:	48c0 */
 	movel	%d0,%d4	/* 10039914:	2800 */
@@ -4935,8 +4933,7 @@ sub_100398ba:
 	moveq	#1,%d1	/* 10039982:	7201 */
 	moveb	%d1,%sp@-	/* 10039984:	1f01 */
 	pea	%fp@(-22)	/* 10039986:	486e ffea */
-	movew	#1798,%d0	/* 1003998a:	303c 0706 */
-	.short	0xa816	/* 1003998e:	a816 */
+	_AECreateList
 	movew	%sp@+,%d0	/* 10039990:	301f */
 	extl	%d0	/* 10039992:	48c0 */
 	movel	%d0,%fp@(-356)	/* 10039994:	2d40 fe9c */
@@ -5357,8 +5354,7 @@ sub_10039d5a:
 	moveq	#0,%d1	/* 10039d86:	7200 */
 	moveb	%d1,%sp@-	/* 10039d88:	1f01 */
 	movel	%a4,%sp@-	/* 10039d8a:	2f0c */
-	movew	#1798,%d0	/* 10039d8c:	303c 0706 */
-	.short	0xa816	/* 10039d90:	a816 */
+	_AECreateList
 	movew	%sp@+,%d0	/* 10039d92:	301f */
 	extl	%d0	/* 10039d94:	48c0 */
 	movel	%d0,%d6	/* 10039d96:	2c00 */
