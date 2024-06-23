@@ -6,6 +6,10 @@
 		.short	0xa023
 	.endm
 
+	.macro	_GetHandleSize
+		.short	0xa025
+	.endm
+
 	.macro	_Pack8
 		.short	0xa816
 	.endm
