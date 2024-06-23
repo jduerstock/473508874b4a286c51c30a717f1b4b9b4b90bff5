@@ -24,6 +24,11 @@
 		_Pack8
 	.endm
 
+	.macro	_AECreateDesc
+		movew	#0x0825,%d0
+		_Pack8
+	.endm
+
 	.macro	_FP68K
 		.short	0xa9eb
 	.endm

@@ -5213,8 +5213,7 @@ sub_10039b84:
 	moveb	%d0,%d1	/* 10039c40:	1200 */
 	movel	%d1,%sp@-	/* 10039c42:	2f01 */
 	movel	%a4,%sp@-	/* 10039c44:	2f0c */
-	movew	#2085,%d0	/* 10039c46:	303c 0825 */
-	.short	0xa816	/* 10039c4a:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d0	/* 10039c4c:	301f */
 	extl	%d0	/* 10039c4e:	48c0 */
 	movel	%d0,%d5	/* 10039c50:	2a00 */
@@ -5236,8 +5235,7 @@ sub_10039b84:
 	moveq	#2,%d0	/* 10039c74:	7002 */
 	movel	%d0,%sp@-	/* 10039c76:	2f00 */
 	movel	%a4,%sp@-	/* 10039c78:	2f0c */
-	movew	#2085,%d0	/* 10039c7a:	303c 0825 */
-	.short	0xa816	/* 10039c7e:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d0	/* 10039c80:	301f */
 	extl	%d0	/* 10039c82:	48c0 */
 	movel	%d0,%d5	/* 10039c84:	2a00 */
@@ -5259,8 +5257,7 @@ sub_10039b84:
 	moveq	#2,%d0	/* 10039ca8:	7002 */
 	movel	%d0,%sp@-	/* 10039caa:	2f00 */
 	movel	%a4,%sp@-	/* 10039cac:	2f0c */
-	movew	#2085,%d0	/* 10039cae:	303c 0825 */
-	.short	0xa816	/* 10039cb2:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d0	/* 10039cb4:	301f */
 	extl	%d0	/* 10039cb6:	48c0 */
 	movel	%d0,%d5	/* 10039cb8:	2a00 */
@@ -5282,8 +5279,7 @@ sub_10039b84:
 	moveq	#2,%d0	/* 10039cd8:	7002 */
 	movel	%d0,%sp@-	/* 10039cda:	2f00 */
 	movel	%a4,%sp@-	/* 10039cdc:	2f0c */
-	movew	#2085,%d0	/* 10039cde:	303c 0825 */
-	.short	0xa816	/* 10039ce2:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d0	/* 10039ce4:	301f */
 	extl	%d0	/* 10039ce6:	48c0 */
 	movel	%d0,%d5	/* 10039ce8:	2a00 */
