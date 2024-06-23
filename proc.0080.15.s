@@ -4834,8 +4834,7 @@ sub_1004abd8:
 	moveal	%a3@,%a0	/* 1004ac8e:	2053 */
 	tstl	%a0@(18)	/* 1004ac90:	4aa8 0012 */
 	beqs	.L1004aca8	/* 1004ac94:	6712 */
-	moveal	%a0@(18),%a0	/* 1004ac96:	2068 0012 */
-	.short	0xa023	/* 1004ac9a:	a023 */
+	_DisposeHandle %a0@(18)
 	moveal	%a3@,%a0	/* 1004ac9c:	2053 */
 	moveq	#0,%d0	/* 1004ac9e:	7000 */
 	movel	%d0,%a0@(18)	/* 1004aca0:	2140 0012 */
@@ -4849,8 +4848,7 @@ sub_1004abd8:
 	moveal	%a3@,%a0	/* 1004acaa:	2053 */
 	tstl	%a0@(2)	/* 1004acac:	4aa8 0002 */
 	beqs	.L1004acc4	/* 1004acb0:	6712 */
-	moveal	%a0@(2),%a0	/* 1004acb2:	2068 0002 */
-	.short	0xa023	/* 1004acb6:	a023 */
+	_DisposeHandle %a0@(2)
 	moveal	%a3@,%a0	/* 1004acb8:	2053 */
 	moveq	#0,%d0	/* 1004acba:	7000 */
 	movel	%d0,%a0@(2)	/* 1004acbc:	2140 0002 */
