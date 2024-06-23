@@ -2896,7 +2896,7 @@ sub_1004996c:
 	movel	%a3,%a4@	/* 1004999c:	288b */
 	movel	%d0,%a4@(4)	/* 1004999e:	2940 0004 */
 	moveal	%a3,%a0	/* 100499a2:	204b */
-	.short	0xa025	/* 100499a4:	a025 */
+	_GetHandleSize
 	movel	%d0,%sp@-	/* 100499a6:	2f00 */
 	movel	%a4,%sp@-	/* 100499a8:	2f0c */
 	jsr	%pc@(sub_10045288)	/* 100499aa:	4eba b8dc */

@@ -4142,7 +4142,7 @@ sub_10043d14:
 	moveal	%a0@,%a0	/* 10043d30:	2050 */
 	lea	%a0@(90),%a3	/* 10043d32:	47e8 005a */
 	moveal	%a3@(4),%a0	/* 10043d36:	206b 0004 */
-	.short	0xa025	/* 10043d3a:	a025 */
+	_GetHandleSize
 	movel	%d0,%d7	/* 10043d3c:	2e00 */
 	movel	%d7,%d5	/* 10043d3e:	2a07 */
 	moveq	#94,%d0	/* 10043d40:	705e */
