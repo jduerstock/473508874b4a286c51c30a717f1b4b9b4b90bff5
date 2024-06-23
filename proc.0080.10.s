@@ -2540,7 +2540,7 @@ sub_100381c6:
 	movel	%a3@,%sp@-	/* 100382dc:	2f13 */
 	jsr	%pc@(sub_1003fbe4)	/* 100382de:	4eba 7904 */
 	moveal	%a3,%a0	/* 100382e2:	204b */
-	.short	0xa025	/* 100382e4:	a025 */
+	_GetHandleSize
 	movel	%d0,%sp@-	/* 100382e6:	2f00 */
 	movel	%a4,%sp@-	/* 100382e8:	2f0c */
 	jsr	%pc@(sub_1003f946)	/* 100382ea:	4eba 765a */
@@ -3537,7 +3537,7 @@ sub_10038b6c:
 	lea	%fp@(-380),%a0	/* 10038c1a:	41ee fe84 */
 	moveal	%fp@(-68),%a3	/* 10038c1e:	266e ffbc */
 	moveal	%a3,%a0	/* 10038c22:	204b */
-	.short	0xa025	/* 10038c24:	a025 */
+	_GetHandleSize
 	movel	%d0,%d5	/* 10038c26:	2a00 */
 	subl	%fp@(-64),%d5	/* 10038c28:	9aae ffc0 */
 	movel	#1853189228,%a4@	/* 10038c2c:	28bc 6e75 6c6c */
