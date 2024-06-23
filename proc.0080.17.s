@@ -170,7 +170,7 @@ sub_1004f15e:
 
 .L1004f1da:
 	moveal	%a3,%a0	/* 1004f1da:	204b */
-	.short	0xa025	/* 1004f1dc:	a025 */
+	_GetHandleSize
 	moveq	#18,%d1	/* 1004f1de:	7212 */
 	jsr	%pc@(sub_10049c48)	/* 1004f1e0:	4eba aa66 */
 	moveal	%a4@,%a0	/* 1004f1e4:	2054 */
@@ -380,7 +380,7 @@ sub_1004f3e4:
 	moveal	%a1@(8),%a3	/* 1004f3f4:	2669 0008 */
 	movel	%a0,%fp@(-4)	/* 1004f3f8:	2d48 fffc */
 	moveal	%a3,%a0	/* 1004f3fc:	204b */
-	.short	0xa025	/* 1004f3fe:	a025 */
+	_GetHandleSize
 	moveq	#18,%d1	/* 1004f400:	7212 */
 	jsr	%pc@(sub_10049c48)	/* 1004f402:	4eba a844 */
 	extl	%d0	/* 1004f406:	48c0 */
@@ -487,7 +487,7 @@ sub_1004f4ec:
 	moveal	%a1@(12),%a3	/* 1004f500:	2669 000c */
 	movel	%a0,%fp@(-4)	/* 1004f504:	2d48 fffc */
 	moveal	%a3,%a0	/* 1004f508:	204b */
-	.short	0xa025	/* 1004f50a:	a025 */
+	_GetHandleSize
 	moveq	#8,%d1	/* 1004f50c:	7208 */
 	jsr	%pc@(sub_10049c48)	/* 1004f50e:	4eba a738 */
 	moveal	%fp@(-4),%a0	/* 1004f512:	206e fffc */
@@ -589,7 +589,7 @@ sub_1004f5fa:
 	moveal	%a4@,%a0	/* 1004f606:	2054 */
 	moveal	%a0@(12),%a3	/* 1004f608:	2668 000c */
 	moveal	%a3,%a0	/* 1004f60c:	204b */
-	.short	0xa025	/* 1004f60e:	a025 */
+	_GetHandleSize
 	moveq	#8,%d1	/* 1004f610:	7208 */
 	jsr	%pc@(sub_10049c48)	/* 1004f612:	4eba a634 */
 	movew	%d0,%d7	/* 1004f616:	3e00 */
@@ -613,7 +613,7 @@ sub_1004f63a:
 	moveal	%a4@,%a0	/* 1004f646:	2054 */
 	moveal	%a0@(8),%a3	/* 1004f648:	2668 0008 */
 	moveal	%a3,%a0	/* 1004f64c:	204b */
-	.short	0xa025	/* 1004f64e:	a025 */
+	_GetHandleSize
 	moveq	#18,%d1	/* 1004f650:	7212 */
 	jsr	%pc@(sub_10049c48)	/* 1004f652:	4eba a5f4 */
 	movew	%d0,%d7	/* 1004f656:	3e00 */
@@ -1404,7 +1404,7 @@ sub_1004fc86:
 	movel	%a0@,%sp@-	/* 1004fe14:	2f10 */
 	jsr	%pc@(sub_1004aac4)	/* 1004fe16:	4eba acac */
 	moveal	%fp@(16),%a0	/* 1004fe1a:	206e 0010 */
-	.short	0xa025	/* 1004fe1e:	a025 */
+	_GetHandleSize
 	movel	%d0,%sp@-	/* 1004fe20:	2f00 */
 	movel	%a3,%sp@-	/* 1004fe22:	2f0b */
 	jsr	%pc@(sub_1004e49e)	/* 1004fe24:	4eba e678 */
@@ -3844,7 +3844,7 @@ sub_100513fa:
 		/* 1005172a:	fc98 */
 	movel	%fp@(-872),%fp@(-868)	/* 1005172c:	2d6e fc98 fc9c */
 	moveal	%fp@(-12),%a0	/* 10051732:	206e fff4 */
-	.short	0xa025	/* 10051736:	a025 */
+	_GetHandleSize
 	movel	%fp@(-868),%d1	/* 10051738:	222e fc9c */
 	addl	%d0,%d1	/* 1005173c:	d280 */
 	movel	%d1,%sp@-	/* 1005173e:	2f01 */
@@ -3863,8 +3863,7 @@ sub_100513fa:
 	moveal	%sp@+,%a0	/* 10051768:	205f */
 	subql	#2,%a0	/* 1005176a:	5588 */
 	movel	%a0,%fp@(-836)	/* 1005176c:	2d48 fcbc */
-	addil	#250,%fp@(-840)	/* 10051770:	06ae 0000 00fa */
-		/* 10051776:	fcb8 */
+	addil	#250,%fp@(-840)	/* 10051770:	06ae 0000 00fa fcb8 */
 	movel	%fp@(-876),%d0	/* 10051778:	202e fc94 */
 	addl	%d0,%d0	/* 1005177c:	d080 */
 	addl	%fp@(-836),%d0	/* 1005177e:	d0ae fcbc */
