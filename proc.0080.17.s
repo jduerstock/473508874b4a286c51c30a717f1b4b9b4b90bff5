@@ -3647,8 +3647,7 @@ sub_100513fa:
 	beqs	.L10051534	/* 10051516:	671c */
 	moveal	%fp@(-768),%a0	/* 10051518:	206e fd00 */
 	moveal	%a0@,%a0	/* 1005151c:	2050 */
-	moveal	%a0@(18),%a0	/* 1005151e:	2068 0012 */
-	_DisposeHandle
+	_DisposeHandle %a0@(18)
 	moveal	%fp@(-768),%a0	/* 10051524:	206e fd00 */
 	moveal	%a0@,%a0	/* 10051528:	2050 */
 	moveq	#0,%d0	/* 1005152a:	7000 */
@@ -3666,8 +3665,7 @@ sub_100513fa:
 	beqs	.L1005155e	/* 10051540:	671c */
 	moveal	%fp@(-768),%a0	/* 10051542:	206e fd00 */
 	moveal	%a0@,%a0	/* 10051546:	2050 */
-	moveal	%a0@(2),%a0	/* 10051548:	2068 0002 */
-	_DisposeHandle
+	_DisposeHandle %a0@(2)
 	moveal	%fp@(-768),%a0	/* 1005154e:	206e fd00 */
 	moveal	%a0@,%a0	/* 10051552:	2050 */
 	moveq	#0,%d0	/* 10051554:	7000 */
@@ -3681,8 +3679,7 @@ sub_100513fa:
 .L10051560:
 	moveal	%fp@(-24),%a0	/* 10051560:	206e ffe8 */
 	moveal	%a0@,%a0	/* 10051564:	2050 */
-	moveal	%a0@(2),%a0	/* 10051566:	2068 0002 */
-	_DisposeHandle
+	_DisposeHandle %a0@(2)
 	moveal	%fp@(-24),%a0	/* 1005156c:	206e ffe8 */
 	moveal	%a0@,%a0	/* 10051570:	2050 */
 	moveq	#0,%d0	/* 10051572:	7000 */
@@ -3694,8 +3691,7 @@ sub_100513fa:
 	moveq	#0,%d1	/* 1005157c:	7200 */
 
 .L1005157e:
-	moveal	%fp@(-24),%a0	/* 1005157e:	206e ffe8 */
-	_DisposeHandle
+	_DisposeHandle %fp@(-24)
 	moveq	#0,%d0	/* 10051584:	7000 */
 	movel	%d0,%fp@(-24)	/* 10051586:	2d40 ffe8 */
 
