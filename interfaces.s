@@ -24,3 +24,12 @@
 		_Pack8
 	.endm
 
+	.macro	_FP68K
+		.short	0xa9eb
+	.endm
+
+	.macro	_FI2X
+		movew	#0x200e,%sp@-
+		_FP68K
+	.endm
+	
