@@ -1001,8 +1001,7 @@ sub_10048590:
 	jsr	%pc@(sub_100494e0)	/* 1004870e:	4eba 0dd0 */
 	jsr	%pc@(sub_1004a774)	/* 10048712:	4eba 2060 */
 	moveal	%d0,%a0	/* 10048716:	2040 */
-	moveal	%a0@(364),%a0	/* 10048718:	2068 016c */
-	.short	0xa023	/* 1004871c:	a023 */
+	_DisposeHandle %a0@(364)
 	jsr	%pc@(sub_1004a774)	/* 1004871e:	4eba 2054 */
 	moveal	%d0,%a0	/* 10048722:	2040 */
 	moveq	#0,%d0	/* 10048724:	7000 */
@@ -1148,8 +1147,7 @@ sub_10048768:
 	jsr	%pc@(sub_100494e0)	/* 10048884:	4eba 0c5a */
 	jsr	%pc@(sub_1004a774)	/* 10048888:	4eba 1eea */
 	moveal	%d0,%a0	/* 1004888c:	2040 */
-	moveal	%a0@(372),%a0	/* 1004888e:	2068 0174 */
-	.short	0xa023	/* 10048892:	a023 */
+	_DisposeHandle %a0@(372)
 	jsr	%pc@(sub_1004a774)	/* 10048894:	4eba 1ede */
 	moveal	%d0,%a0	/* 10048898:	2040 */
 	moveq	#0,%d0	/* 1004889a:	7000 */
@@ -1209,8 +1207,7 @@ sub_10048768:
 	jsr	%pc@(sub_100494e0)	/* 1004893a:	4eba 0ba4 */
 	jsr	%pc@(sub_1004a774)	/* 1004893e:	4eba 1e34 */
 	moveal	%d0,%a0	/* 10048942:	2040 */
-	moveal	%a0@(372),%a0	/* 10048944:	2068 0174 */
-	.short	0xa023	/* 10048948:	a023 */
+	_DisposeHandle %a0@(372)
 	jsr	%pc@(sub_1004a774)	/* 1004894a:	4eba 1e28 */
 	moveal	%d0,%a0	/* 1004894e:	2040 */
 	moveq	#0,%d0	/* 10048950:	7000 */
@@ -1320,8 +1317,7 @@ sub_10048a10:
 	jsr	%pc@(sub_100494e0)	/* 10048a32:	4eba 0aac */
 	jsr	%pc@(sub_1004a774)	/* 10048a36:	4eba 1d3c */
 	moveal	%d0,%a0	/* 10048a3a:	2040 */
-	moveal	%a0@(364),%a0	/* 10048a3c:	2068 016c */
-	.short	0xa023	/* 10048a40:	a023 */
+	_DisposeHandle %a0@(364)
 	jsr	%pc@(sub_1004a774)	/* 10048a42:	4eba 1d30 */
 	moveal	%d0,%a0	/* 10048a46:	2040 */
 	moveq	#0,%d0	/* 10048a48:	7000 */
@@ -1345,8 +1341,7 @@ sub_10048a10:
 	beqs	.L10048a8a	/* 10048a72:	6716 */
 	movel	%fp@(-4),%sp@-	/* 10048a74:	2f2e fffc */
 	jsr	%pc@(sub_100494e0)	/* 10048a78:	4eba 0a66 */
-	moveal	%fp@(-4),%a0	/* 10048a7c:	206e fffc */
-	.short	0xa023	/* 10048a80:	a023 */
+	_DisposeHandle %fp@(-4)
 	moveq	#0,%d0	/* 10048a82:	7000 */
 	movel	%d0,%fp@(-4)	/* 10048a84:	2d40 fffc */
 	addqw	#4,%sp	/* 10048a88:	584f */
@@ -1400,8 +1395,7 @@ sub_10048a10:
 	beqs	.L10048b0e	/* 10048af4:	6718 */
 	jsr	%pc@(sub_1004a774)	/* 10048af6:	4eba 1c7c */
 	moveal	%d0,%a0	/* 10048afa:	2040 */
-	moveal	%a0@(360),%a0	/* 10048afc:	2068 0168 */
-	.short	0xa023	/* 10048b00:	a023 */
+	_DisposeHandle %a0@(360)
 	jsr	%pc@(sub_1004a774)	/* 10048b02:	4eba 1c70 */
 	moveal	%d0,%a0	/* 10048b06:	2040 */
 	moveq	#0,%d0	/* 10048b08:	7000 */
@@ -1418,8 +1412,7 @@ sub_10048a10:
 	jsr	%pc@(sub_100494e0)	/* 10048b24:	4eba 09ba */
 	jsr	%pc@(sub_1004a774)	/* 10048b28:	4eba 1c4a */
 	moveal	%d0,%a0	/* 10048b2c:	2040 */
-	moveal	%a0@(372),%a0	/* 10048b2e:	2068 0174 */
-	.short	0xa023	/* 10048b32:	a023 */
+	_DisposeHandle %a0@(372)
 	jsr	%pc@(sub_1004a774)	/* 10048b34:	4eba 1c3e */
 	moveal	%d0,%a0	/* 10048b38:	2040 */
 	moveq	#0,%d0	/* 10048b3a:	7000 */
@@ -1656,8 +1649,7 @@ sub_10048b60:
 	beqs	.L10048dc0	/* 10048dae:	6710 */
 	movel	%a4,%sp@-	/* 10048db0:	2f0c */
 	jsr	%pc@(sub_100494e0)	/* 10048db2:	4eba 072c */
-	moveal	%a4,%a0	/* 10048db6:	204c */
-	.short	0xa023	/* 10048db8:	a023 */
+	_DisposeHandle %a4
 	moveq	#0,%d0	/* 10048dba:	7000 */
 	moveal	%d0,%a4	/* 10048dbc:	2840 */
 	addqw	#4,%sp	/* 10048dbe:	584f */
