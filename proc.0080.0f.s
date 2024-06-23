@@ -2970,8 +2970,7 @@ sub_10034ba6:
 	moveq	#1,%d1	/* 10034f5a:	7201 */
 	moveb	%d1,%sp@-	/* 10034f5c:	1f01 */
 	pea	%fp@(-72)	/* 10034f5e:	486e ffb8 */
-	movew	#1798,%d0	/* 10034f62:	303c 0706 */
-	.short	0xa816	/* 10034f66:	a816 */
+	_AECreateList
 	movew	%sp@+,%d0	/* 10034f68:	301f */
 	extl	%d0	/* 10034f6a:	48c0 */
 	movel	%d0,%d7	/* 10034f6c:	2e00 */

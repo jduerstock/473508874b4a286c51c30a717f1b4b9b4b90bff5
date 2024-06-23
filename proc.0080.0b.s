@@ -4059,8 +4059,7 @@ sub_10028970:
 	moveq	#0,%d0	/* 100289fc:	7000 */
 	moveb	%d0,%sp@-	/* 100289fe:	1f00 */
 	pea	%fp@(-38)	/* 10028a00:	486e ffda */
-	movew	#1798,%d0	/* 10028a04:	303c 0706 */
-	.short	0xa816	/* 10028a08:	a816 */
+	_AECreateList
 	movew	%sp@+,%d7	/* 10028a0a:	3e1f */
 	beqs	.L10028a18	/* 10028a0c:	670a */
 	movew	#-1708,%fp@(20)	/* 10028a0e:	3d7c f954 0014 */

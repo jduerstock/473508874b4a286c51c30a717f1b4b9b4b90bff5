@@ -372,8 +372,7 @@ sub_1002ccac:
 	moveq	#1,%d1	/* 1002ccce:	7201 */
 	moveb	%d1,%sp@-	/* 1002ccd0:	1f01 */
 	pea	%fp@(-8)	/* 1002ccd2:	486e fff8 */
-	movew	#1798,%d0	/* 1002ccd6:	303c 0706 */
-	.short	0xa816	/* 1002ccda:	a816 */
+	_AECreateList
 	movew	%sp@+,%d7	/* 1002ccdc:	3e1f */
 	bnew	.L1002cd8a	/* 1002ccde:	6600 00aa */
 	movel	%fp@(26),%sp@-	/* 1002cce2:	2f2e 001a */
@@ -748,8 +747,7 @@ sub_1002d046:
 	moveq	#1,%d1	/* 1002d054:	7201 */
 	moveb	%d1,%sp@-	/* 1002d056:	1f01 */
 	pea	%fp@(-8)	/* 1002d058:	486e fff8 */
-	movew	#1798,%d0	/* 1002d05c:	303c 0706 */
-	.short	0xa816	/* 1002d060:	a816 */
+	_AECreateList
 	movew	%sp@+,%d7	/* 1002d062:	3e1f */
 	bnes	.L1002d0c6	/* 1002d064:	6660 */
 	subql	#2,%sp	/* 1002d066:	558f */
