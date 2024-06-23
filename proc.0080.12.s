@@ -2754,8 +2754,7 @@ sub_1003f260:
 	lea	%a4@(4),%a3	/* 1003f27a:	47ec 0004 */
 	tstl	%a3@(188)	/* 1003f27e:	4aab 00bc */
 	beqs	.L1003f294	/* 1003f282:	6710 */
-	moveal	%a3@(188),%a0	/* 1003f284:	206b 00bc */
-	_DisposeHandle
+	_DisposeHandle %a3@(188)
 	moveq	#0,%d0	/* 1003f28a:	7000 */
 	movel	%d0,%a3@(188)	/* 1003f28c:	2740 00bc */
 	moveq	#0,%d1	/* 1003f290:	7200 */
@@ -3399,8 +3398,7 @@ sub_1003f94a:
 	movel	%fp@(-330),%a0@(88)	/* 1003fa04:	216e feb6 0058 */
 	movel	%a4,%d0	/* 1003fa0a:	200c */
 	beqs	.L1003fa16	/* 1003fa0c:	6708 */
-	moveal	%a4,%a0	/* 1003fa0e:	204c */
-	_DisposeHandle
+	_DisposeHandle %a4
 	moveq	#0,%d0	/* 1003fa12:	7000 */
 	moveal	%d0,%a4	/* 1003fa14:	2840 */
 
