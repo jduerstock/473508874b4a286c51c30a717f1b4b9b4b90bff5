@@ -28,6 +28,11 @@
 		.short	0xa9eb
 	.endm
 
+	.macro	_FS2X
+		movew	#0x100e,%sp@-
+		_FP68K
+	.endm
+	
 	.macro	_FI2X
 		movew	#0x200e,%sp@-
 		_FP68K
