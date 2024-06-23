@@ -1666,8 +1666,7 @@ sub_1003e432:
 	moveal	%a3@,%a0	/* 1003e828:	2053 */
 	tstl	%a0@(2)	/* 1003e82a:	4aa8 0002 */
 	beqs	.L1003e842	/* 1003e82e:	6712 */
-	moveal	%a0@(2),%a0	/* 1003e830:	2068 0002 */
-	_DisposeHandle
+	_DisposeHandle %a0@(2)
 	moveal	%a3@,%a0	/* 1003e836:	2053 */
 	moveq	#0,%d0	/* 1003e838:	7000 */
 	movel	%d0,%a0@(2)	/* 1003e83a:	2140 0002 */
@@ -1678,8 +1677,7 @@ sub_1003e432:
 	moveq	#0,%d1	/* 1003e842:	7200 */
 
 .L1003e844:
-	moveal	%a3,%a0	/* 1003e844:	204b */
-	_DisposeHandle
+	_DisposeHandle %a3
 	moveq	#0,%d0	/* 1003e848:	7000 */
 	moveal	%d0,%a3	/* 1003e84a:	2640 */
 
@@ -1713,8 +1711,7 @@ sub_1003e884:
 	moveal	%a4@,%a0	/* 1003e890:	2054 */
 	tstl	%a0@(8)	/* 1003e892:	4aa8 0008 */
 	beqs	.L1003e8a6	/* 1003e896:	670e */
-	moveal	%a0@(8),%a0	/* 1003e898:	2068 0008 */
-	_DisposeHandle
+	_DisposeHandle %a0@(8)
 	moveal	%a4@,%a0	/* 1003e89e:	2054 */
 	moveq	#0,%d0	/* 1003e8a0:	7000 */
 	movel	%d0,%a0@(8)	/* 1003e8a2:	2140 0008 */
@@ -1751,8 +1748,7 @@ sub_1003e884:
 	moveal	%a4@,%a0	/* 1003e8e0:	2054 */
 	tstl	%a0@(12)	/* 1003e8e2:	4aa8 000c */
 	beqs	.L1003e8f6	/* 1003e8e6:	670e */
-	moveal	%a0@(12),%a0	/* 1003e8e8:	2068 000c */
-	_DisposeHandle
+	_DisposeHandle %a0@(12)
 	moveal	%a4@,%a0	/* 1003e8ee:	2054 */
 	moveq	#0,%d0	/* 1003e8f0:	7000 */
 	movel	%d0,%a0@(12)	/* 1003e8f2:	2140 000c */
@@ -1898,8 +1894,7 @@ sub_1003e986:
 	movel	%fp@(-434),%a0@(88)	/* 1003ea40:	216e fe4e 0058 */
 	tstl	%fp@(-382)	/* 1003ea46:	4aae fe82 */
 	beqs	.L1003ea58	/* 1003ea4a:	670c */
-	moveal	%fp@(-382),%a0	/* 1003ea4c:	206e fe82 */
-	_DisposeHandle
+	_DisposeHandle %fp@(-382)
 	moveq	#0,%d0	/* 1003ea52:	7000 */
 	movel	%d0,%fp@(-382)	/* 1003ea54:	2d40 fe82 */
 
@@ -1984,8 +1979,7 @@ sub_1003e986:
 	movel	%fp@(-434),%a0@(88)	/* 1003eb2c:	216e fe4e 0058 */
 	tstl	%fp@(-382)	/* 1003eb32:	4aae fe82 */
 	beqs	.L1003eb44	/* 1003eb36:	670c */
-	moveal	%fp@(-382),%a0	/* 1003eb38:	206e fe82 */
-	_DisposeHandle
+	_DisposeHandle %fp@(-382)
 	moveq	#0,%d0	/* 1003eb3e:	7000 */
 	movel	%d0,%fp@(-382)	/* 1003eb40:	2d40 fe82 */
 
