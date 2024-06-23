@@ -4435,8 +4435,7 @@ sub_1003cda6:
 	moveal	%a4@,%a0	/* 1003ce56:	2054 */
 	tstl	%a0@(392)	/* 1003ce58:	4aa8 0188 */
 	beqs	.L1003ce6c	/* 1003ce5c:	670e */
-	moveal	%a0@(392),%a0	/* 1003ce5e:	2068 0188 */
-	.short	0xa023	/* 1003ce62:	a023 */
+	_DisposeHandle %a0@(392)
 	moveal	%a4@,%a0	/* 1003ce64:	2054 */
 	moveq	#0,%d0	/* 1003ce66:	7000 */
 	movel	%d0,%a0@(392)	/* 1003ce68:	2140 0188 */
