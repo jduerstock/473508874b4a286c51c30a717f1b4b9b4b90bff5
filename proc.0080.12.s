@@ -2304,7 +2304,7 @@ sub_1003ee48:
 	extl	%d7	/* 1003ee5a:	48c7 */
 	moveal	%a0@(8),%a3	/* 1003ee5c:	2668 0008 */
 	moveal	%a3,%a0	/* 1003ee60:	204b */
-	.short	0xa025	/* 1003ee62:	a025 */
+	_GetHandleSize
 	movel	#334,%d1	/* 1003ee64:	223c 0000 014e */
 	jsr	%pc@(sub_1003fd42)	/* 1003ee6a:	4eba 0ed6 */
 	cmpl	%d7,%d0	/* 1003ee6e:	b087 */
@@ -2322,7 +2322,7 @@ sub_1003ee48:
 	addl	%d0,%d1	/* 1003ee8c:	d280 */
 	movel	%d1,%d6	/* 1003ee8e:	2c01 */
 	moveal	%a3,%a0	/* 1003ee90:	204b */
-	.short	0xa025	/* 1003ee92:	a025 */
+	_GetHandleSize
 	addl	%d6,%d0	/* 1003ee94:	d086 */
 	movel	%d0,%sp@-	/* 1003ee96:	2f00 */
 	movel	%a3,%sp@-	/* 1003ee98:	2f0b */
@@ -4687,12 +4687,12 @@ sub_1004059a:
 	movel	%d0,%d6	/* 10040682:	2c00 */
 	bnes	.L100406cc	/* 10040684:	6646 */
 	moveal	%a3,%a0	/* 10040686:	204b */
-	.short	0xa025	/* 10040688:	a025 */
+	_GetHandleSize
 	movel	%d0,%sp@-	/* 1004068a:	2f00 */
 	movel	%a4,%sp@-	/* 1004068c:	2f0c */
 	jsr	%pc@(sub_1003aa70)	/* 1004068e:	4eba a3e0 */
 	moveal	%a4,%a0	/* 10040692:	204c */
-	.short	0xa025	/* 10040694:	a025 */
+	_GetHandleSize
 	movel	%d0,%sp@-	/* 10040696:	2f00 */
 	movel	%a3@,%d0	/* 10040698:	2013 */
 	.short	0xa055	/* 1004069a:	a055 */
