@@ -974,7 +974,7 @@ sub_10045288:
 	blts	.L100452a8	/* 10045298:	6d0e */
 	moveal	%a4@,%a3	/* 1004529a:	2654 */
 	moveal	%a3,%a0	/* 1004529c:	204b */
-	.short	0xa025	/* 1004529e:	a025 */
+	_GetHandleSize
 	cmpl	%d7,%d0	/* 100452a0:	b087 */
 	blts	.L100452a8	/* 100452a2:	6d04 */
 	movel	%d7,%a4@(4)	/* 100452a4:	2947 0004 */
@@ -991,7 +991,7 @@ sub_100452b2:
 	moveal	%fp@(8),%a4	/* 100452be:	286e 0008 */
 	moveal	%a4@,%a3	/* 100452c2:	2654 */
 	moveal	%a3,%a0	/* 100452c4:	204b */
-	.short	0xa025	/* 100452c6:	a025 */
+	_GetHandleSize
 	movel	%d0,%d6	/* 100452c8:	2c00 */
 	subl	%a4@(4),%d6	/* 100452ca:	9cac 0004 */
 	cmpl	%d7,%d6	/* 100452ce:	bc87 */
@@ -1034,7 +1034,7 @@ sub_1004531e:
 	moveal	%fp@(8),%a4	/* 10045326:	286e 0008 */
 	moveal	%a4@,%a3	/* 1004532a:	2654 */
 	moveal	%a3,%a0	/* 1004532c:	204b */
-	.short	0xa025	/* 1004532e:	a025 */
+	_GetHandleSize
 	movel	%d0,%d7	/* 10045330:	2e00 */
 	subl	%a4@(4),%d7	/* 10045332:	9eac 0004 */
 	moveq	#1,%d0	/* 10045336:	7001 */
@@ -1085,7 +1085,7 @@ sub_10045374:
 	movel	%d0,%d5	/* 10045392:	2a00 */
 	movel	%d5,%d6	/* 10045394:	2c05 */
 	moveal	%a4,%a0	/* 10045396:	204c */
-	.short	0xa025	/* 10045398:	a025 */
+	_GetHandleSize
 	addl	%d6,%d0	/* 1004539a:	d086 */
 	movel	%d0,%sp@-	/* 1004539c:	2f00 */
 	movel	%a4,%sp@-	/* 1004539e:	2f0c */
@@ -1102,7 +1102,7 @@ sub_100453b0:
 	moveal	%fp@(8),%a4	/* 100453bc:	286e 0008 */
 	moveal	%a4@,%a0	/* 100453c0:	2054 */
 	movel	%a0,%fp@(-4)	/* 100453c2:	2d48 fffc */
-	.short	0xa025	/* 100453c6:	a025 */
+	_GetHandleSize
 	movel	%d0,%d7	/* 100453c8:	2e00 */
 	subl	%a4@(4),%d7	/* 100453ca:	9eac 0004 */
 	cmpl	%a3@,%d7	/* 100453ce:	be93 */
@@ -1135,7 +1135,7 @@ sub_10045406:
 	moveal	%fp@(8),%a4	/* 10045412:	286e 0008 */
 	moveal	%a4@,%a2	/* 10045416:	2454 */
 	moveal	%a2,%a0	/* 10045418:	204a */
-	.short	0xa025	/* 1004541a:	a025 */
+	_GetHandleSize
 	movel	%d0,%d7	/* 1004541c:	2e00 */
 	subl	%a4@(4),%d7	/* 1004541e:	9eac 0004 */
 	moveq	#1,%d0	/* 10045422:	7001 */
@@ -3478,7 +3478,7 @@ sub_10046684:
 	moveal	%fp@(8),%a4	/* 1004668a:	286e 0008 */
 	moveal	%fp@(12),%a0	/* 1004668e:	206e 000c */
 	movel	%a0,%a4@	/* 10046692:	2888 */
-	.short	0xa025	/* 10046694:	a025 */
+	_GetHandleSize
 	movel	%d0,%a4@(8)	/* 10046696:	2940 0008 */
 	moveal	%a4@,%a0	/* 1004669a:	2054 */
 	.short	0xa029	/* 1004669c:	a029 */
@@ -3505,7 +3505,7 @@ sub_100466c2:
 	moveal	%fp@(8),%a4	/* 100466c8:	286e 0008 */
 	moveal	%fp@(12),%a0	/* 100466cc:	206e 000c */
 	movel	%a0,%a4@	/* 100466d0:	2888 */
-	.short	0xa025	/* 100466d2:	a025 */
+	_GetHandleSize
 	movel	%d0,%a4@(8)	/* 100466d4:	2940 0008 */
 	moveal	%a4@,%a0	/* 100466d8:	2054 */
 	.short	0xa029	/* 100466da:	a029 */
