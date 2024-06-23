@@ -2106,8 +2106,7 @@ sub_1000f210:
 	movew	%d0,%fp@(-84)	/* 1000f3c6:	3d40 ffac */
 	pea	%fp@(-84)	/* 1000f3ca:	486e ffac */
 	pea	%fp@(-82)	/* 1000f3ce:	486e ffae */
-	movew	#8206,%sp@-	/* 1000f3d2:	3f3c 200e */
-	.short	0xa9eb	/* 1000f3d6:	a9eb */
+	_FI2X
 	pea	%fp@(-82)	/* 1000f3d8:	486e ffae */
 	pea	%fp@(-72)	/* 1000f3dc:	486e ffb8 */
 	movew	#4,%sp@-	/* 1000f3e0:	3f3c 0004 */
