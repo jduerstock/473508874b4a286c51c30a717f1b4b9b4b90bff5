@@ -3147,7 +3147,7 @@ sub_1002b2a0:
 	movel	%d0,%fp@(-62)	/* 1002b2ac:	2d40 ffc2 */
 	movew	%fp@(10),%fp@(-52)	/* 1002b2b0:	3d6e 000a ffcc */
 	lea	%fp@(-80),%a0	/* 1002b2b6:	41ee ffb0 */
-	.short	0xa007	/* 1002b2ba:	a007 */
+	_GetVolInfo
 	movew	%d0,%d7	/* 1002b2bc:	3e00 */
 	moveal	%fp@(12),%a0	/* 1002b2be:	206e 000c */
 	movew	%fp@(-58),%a0@	/* 1002b2c2:	30ae ffc6 */

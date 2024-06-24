@@ -7,6 +7,10 @@
 		.short	0xa001
 	.endm
 
+	.macro	_GetVolInfo
+		.short	0xa007
+	.endm
+
 	.macro	_SetVol
 		.short	0xa015
 	.endm
