@@ -82,6 +82,10 @@
 		.short	0xa322
 	.endm
 
+	.macro	_CaseSensitiveEqualString
+		.short	0xa43c
+	.endm
+
 	.macro	_NewHandleSys
 		.short	0xa522
 	.endm
