@@ -2086,8 +2086,7 @@ sub_1004914c:
 	movel	%a3,%sp@-	/* 100491d8:	2f0b */
 	moveq	#1,%d0	/* 100491da:	7001 */
 	moveb	%d0,%sp@-	/* 100491dc:	1f00 */
-	movew	#13,%d0	/* 100491de:	303c 000d */
-	.short	0xaa52	/* 100491e2:	aa52 */
+	_FSpOpenResFile
 	movew	%sp@+,%fp@(-6)	/* 100491e4:	3d5f fffa */
 	subql	#2,%sp	/* 100491e8:	558f */
 	movew	#65,%sp@-	/* 100491ea:	3f3c 0041 */
