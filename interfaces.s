@@ -10,6 +10,10 @@
 		.short	0xa025
 	.endm
 
+	.macro	_NewHandleClear
+		.short	0xa322
+	.endm
+
 	.macro	_Pack8
 		.short	0xa816
 	.endm
