@@ -241,8 +241,7 @@ sub_1002cb72:
 	moveq	#8,%d0	/* 1002cbac:	7008 */
 	movel	%d0,%sp@-	/* 1002cbae:	2f00 */
 	movel	%fp@(12),%sp@-	/* 1002cbb0:	2f2e 000c */
-	movew	#2085,%d0	/* 1002cbb4:	303c 0825 */
-	.short	0xa816	/* 1002cbb8:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d0	/* 1002cbba:	301f */
 	extl	%d0	/* 1002cbbc:	48c0 */
 	movel	%d0,%d7	/* 1002cbbe:	2e00 */

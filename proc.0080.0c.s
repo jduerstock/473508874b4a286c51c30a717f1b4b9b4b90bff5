@@ -2440,8 +2440,7 @@ sub_1002ab4e:
 	moveq	#8,%d0	/* 1002abbe:	7008 */
 	movel	%d0,%sp@-	/* 1002abc0:	2f00 */
 	pea	%fp@(-12)	/* 1002abc2:	486e fff4 */
-	movew	#2085,%d0	/* 1002abc6:	303c 0825 */
-	.short	0xa816	/* 1002abca:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d0	/* 1002abcc:	301f */
 	extl	%d0	/* 1002abce:	48c0 */
 	movel	%d0,%fp@(-16)	/* 1002abd0:	2d40 fff0 */
@@ -3407,8 +3406,7 @@ sub_1002b4ce:
 	moveq	#4,%d0	/* 1002b51c:	7004 */
 	movel	%d0,%sp@-	/* 1002b51e:	2f00 */
 	pea	%fp@(-12)	/* 1002b520:	486e fff4 */
-	movew	#2085,%d0	/* 1002b524:	303c 0825 */
-	.short	0xa816	/* 1002b528:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d7	/* 1002b52a:	3e1f */
 	beqs	.L1002b534	/* 1002b52c:	6706 */
 	movew	%d7,%d0	/* 1002b52e:	3007 */
@@ -4188,8 +4186,7 @@ sub_1002bc28:
 	movel	%fp@(8),%sp@-	/* 1002bc4c:	2f2e 0008 */
 	pea	0xfc	/* 1002bc50:	4878 00fc */
 	movel	%a4,%sp@-	/* 1002bc54:	2f0c */
-	movew	#2085,%d0	/* 1002bc56:	303c 0825 */
-	.short	0xa816	/* 1002bc5a:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d7	/* 1002bc5c:	3e1f */
 	movew	%d7,%d0	/* 1002bc5e:	3007 */
 	moveml	%fp@(-8),%d7/%a4	/* 1002bc60:	4cee 1080 fff8 */
@@ -5051,8 +5048,7 @@ sub_1002c3ce:
 	moveq	#8,%d0	/* 1002c42c:	7008 */
 	movel	%d0,%sp@-	/* 1002c42e:	2f00 */
 	movel	%fp@(12),%sp@-	/* 1002c430:	2f2e 000c */
-	movew	#2085,%d0	/* 1002c434:	303c 0825 */
-	.short	0xa816	/* 1002c438:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d0	/* 1002c43a:	301f */
 	extl	%d0	/* 1002c43c:	48c0 */
 	movel	%d0,%d7	/* 1002c43e:	2e00 */
@@ -5094,8 +5090,7 @@ sub_1002c44a:
 	moveq	#8,%d0	/* 1002c49a:	7008 */
 	movel	%d0,%sp@-	/* 1002c49c:	2f00 */
 	movel	%fp@(12),%sp@-	/* 1002c49e:	2f2e 000c */
-	movew	#2085,%d0	/* 1002c4a2:	303c 0825 */
-	.short	0xa816	/* 1002c4a6:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d0	/* 1002c4a8:	301f */
 	extl	%d0	/* 1002c4aa:	48c0 */
 	movel	%d0,%d7	/* 1002c4ac:	2e00 */
@@ -5560,8 +5555,7 @@ sub_1002c8cc:
 	movel	%a4,%sp@-	/* 1002c8fc:	2f0c */
 	movel	%d6,%sp@-	/* 1002c8fe:	2f06 */
 	pea	%fp@(-8)	/* 1002c900:	486e fff8 */
-	movew	#2085,%d0	/* 1002c904:	303c 0825 */
-	.short	0xa816	/* 1002c908:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d7	/* 1002c90a:	3e1f */
 	beqs	.L1002c912	/* 1002c90c:	6704 */
 	movew	%d7,%d0	/* 1002c90e:	3007 */
