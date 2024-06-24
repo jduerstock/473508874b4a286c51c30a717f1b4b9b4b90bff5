@@ -55,3 +55,12 @@
 		_FP68K
 	.endm
 	
+	.macro	_HighLevelFSDispatch
+		.short	0xaa52
+	.endm
+
+	.macro	_FSMakeFSSpec
+		movew	#1,%d0
+		_HighLevelFSDispatch
+	.endm
+
