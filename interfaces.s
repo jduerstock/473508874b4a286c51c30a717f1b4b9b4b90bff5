@@ -50,6 +50,10 @@
 		.short	0xa128
 	.endm
 
+	.macro	_GetTrapAddress
+		.short	0xa146
+	.endm
+
 	.macro	_Gestalt
 		.short	0xa1ad
 	.endm

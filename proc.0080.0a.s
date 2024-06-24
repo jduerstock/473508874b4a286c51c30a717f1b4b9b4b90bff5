@@ -3906,11 +3906,11 @@ sub_100249d2:
 	movew	%fp@(18),%d6	/* 100249e6:	3c2e 0012 */
 	cmpiw	#1536,0x15a	/* 100249ea:	0c78 0600 015a */
 	blts	.L10024a26	/* 100249f0:	6d34 */
-	movew	#-22369,%d0	/* 100249f2:	303c a89f */
-	.short	0xa146	/* 100249f6:	a146 */
+	movew	#0xa89f,%d0	/* 100249f2:	303c a89f */
+	_GetTrapAddress
 	movel	%a0,%fp@(-24)	/* 100249f8:	2d48 ffe8 */
 	subql	#4,%sp	/* 100249fc:	598f */
-	movew	#-22502,%sp@-	/* 100249fe:	3f3c a81a */
+	movew	#0xa81a,%sp@-	/* 100249fe:	3f3c a81a */
 	moveq	#1,%d0	/* 10024a02:	7001 */
 	moveb	%d0,%sp@-	/* 10024a04:	1f00 */
 	jsr	%pc@(sub_10024748)	/* 10024a06:	4eba fd40 */
