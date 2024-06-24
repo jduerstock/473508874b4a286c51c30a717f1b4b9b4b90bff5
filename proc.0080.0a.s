@@ -2835,7 +2835,7 @@ sub_10023fb6:
 	movel	%a4,%d0	/* 10023fc6:	200c */
 	beqs	.L10024014	/* 10023fc8:	674a */
 	moveal	%a4,%a0	/* 10023fca:	204c */
-	.short	0xa069	/* 10023fcc:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 10023fce:	1c00 */
 	tstw	0x220	/* 10023fd0:	4a78 0220 */
 	bnes	.L10023fda	/* 10023fd4:	6604 */

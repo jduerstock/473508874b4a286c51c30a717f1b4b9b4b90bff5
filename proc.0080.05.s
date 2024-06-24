@@ -2947,7 +2947,7 @@ sub_1001347e:
 .L1001363a:
 	moveal	%a4@(4),%a3	/* 1001363a:	266c 0004 */
 	moveal	%a3,%a0	/* 1001363e:	204b */
-	.short	0xa069	/* 10013640:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 10013642:	1c00 */
 	jsr	%pc@(sub_100164fa)	/* 10013644:	4eba 2eb4 */
 	moveal	%d0,%a0	/* 10013648:	2040 */
@@ -3021,7 +3021,7 @@ sub_1001347e:
 .L100136f0:
 	moveal	%a4@(4),%a3	/* 100136f0:	266c 0004 */
 	moveal	%a3,%a0	/* 100136f4:	204b */
-	.short	0xa069	/* 100136f6:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 100136f8:	1c00 */
 	jsr	%pc@(sub_100164fa)	/* 100136fa:	4eba 2dfe */
 	moveal	%d0,%a0	/* 100136fe:	2040 */
@@ -3259,7 +3259,7 @@ sub_1001347e:
 .L10013952:
 	moveal	%a4@(4),%a0	/* 10013952:	206c 0004 */
 	movel	%a0,%fp@(-12)	/* 10013956:	2d48 fff4 */
-	.short	0xa069	/* 1001395a:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 1001395c:	1c00 */
 	jsr	%pc@(sub_100164fa)	/* 1001395e:	4eba 2b9a */
 	moveal	%d0,%a0	/* 10013962:	2040 */
@@ -3326,7 +3326,7 @@ sub_1001347e:
 .L10013a06:
 	moveal	%a4@(4),%a0	/* 10013a06:	206c 0004 */
 	movel	%a0,%fp@(-12)	/* 10013a0a:	2d48 fff4 */
-	.short	0xa069	/* 10013a0e:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 10013a10:	1c00 */
 	jsr	%pc@(sub_100164fa)	/* 10013a12:	4eba 2ae6 */
 	moveal	%d0,%a0	/* 10013a16:	2040 */
@@ -3397,7 +3397,7 @@ sub_1001347e:
 .L10013ac8:
 	moveal	%a4@(4),%a2	/* 10013ac8:	246c 0004 */
 	moveal	%a2,%a0	/* 10013acc:	204a */
-	.short	0xa069	/* 10013ace:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 10013ad0:	1c00 */
 	jsr	%pc@(sub_100164fa)	/* 10013ad2:	4eba 2a26 */
 	moveal	%d0,%a0	/* 10013ad6:	2040 */

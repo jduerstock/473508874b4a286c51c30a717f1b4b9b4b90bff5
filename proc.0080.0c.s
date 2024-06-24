@@ -2295,7 +2295,7 @@ sub_1002a890:
 	jsr	%pc@(sub_1002a374)	/* 1002aa54:	4eba f91e */
 	moveal	%a4@(8),%a3	/* 1002aa58:	266c 0008 */
 	moveal	%a3,%a0	/* 1002aa5c:	204b */
-	.short	0xa069	/* 1002aa5e:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 1002aa60:	1c00 */
 	moveal	%a3,%a0	/* 1002aa62:	204b */
 	_HLock

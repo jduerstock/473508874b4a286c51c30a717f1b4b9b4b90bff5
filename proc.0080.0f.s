@@ -287,7 +287,7 @@ sub_100335f2:
 	moveml	%d6-%d7/%a4,%sp@-	/* 100335f6:	48e7 0308 */
 	moveal	%fp@(12),%a4	/* 100335fa:	286e 000c */
 	moveal	%a4,%a0	/* 100335fe:	204c */
-	.short	0xa069	/* 10033600:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 10033602:	1c00 */
 	moveal	%a4,%a0	/* 10033604:	204c */
 	_HLock

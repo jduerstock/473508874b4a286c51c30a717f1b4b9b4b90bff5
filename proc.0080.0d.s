@@ -5267,12 +5267,11 @@ sub_1002f9d0:
 	moveq	#0,%d0	/* 1002f9e4:	7000 */
 	movel	%d0,%fp@(-8)	/* 1002f9e6:	2d40 fff8 */
 	movel	%d0,%fp@(-4)	/* 1002f9ea:	2d40 fffc */
-	cmpil	#1413830740,%fp@(8)	/* 1002f9ee:	0cae 5445 5854 */
-		/* 1002f9f4:	0008 */
+	cmpil	#1413830740,%fp@(8)	/* 1002f9ee:	0cae 5445 5854 0008 */
 	bnew	.L1002faaa	/* 1002f9f6:	6600 00b2 */
 	moveal	%fp@(12),%a0	/* 1002f9fa:	206e 000c */
 	movel	%a0,%fp@(-8)	/* 1002f9fe:	2d48 fff8 */
-	.short	0xa069	/* 1002fa02:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 1002fa04:	1c00 */
 	jsr	%pc@(sub_10037018)	/* 1002fa06:	4eba 7610 */
 	moveal	%d0,%a0	/* 1002fa0a:	2040 */
