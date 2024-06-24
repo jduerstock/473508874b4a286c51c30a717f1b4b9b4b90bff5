@@ -32,7 +32,7 @@ sub_1003a33e:
 	moveal	%d0,%a0	/* 1003a358:	2040 */
 	movel	%fp@(14),%a0@(68)	/* 1003a35a:	216e 000e 0044 */
 	subql	#2,%sp	/* 1003a360:	558f */
-	.short	0xa994	/* 1003a362:	a994 */
+	_CurResFile
 	movew	%sp@+,%fp@(-2)	/* 1003a364:	3d5f fffe */
 	moveq	#-1,%d6	/* 1003a368:	7cff */
 	moveq	#-1,%d7	/* 1003a36a:	7eff */
@@ -75,7 +75,7 @@ sub_1003a33e:
 	jsr	%pc@(sub_1003c3ea)	/* 1003a3d8:	4eba 2010 */
 	movew	%d0,%d7	/* 1003a3dc:	3e00 */
 	subql	#2,%sp	/* 1003a3de:	558f */
-	.short	0xa994	/* 1003a3e0:	a994 */
+	_CurResFile
 	movew	%sp@+,%d6	/* 1003a3e2:	3c1f */
 	cmpw	%fp@(-2),%d6	/* 1003a3e4:	bc6e fffe */
 	lea	%sp@(20),%sp	/* 1003a3e8:	4fef 0014 */

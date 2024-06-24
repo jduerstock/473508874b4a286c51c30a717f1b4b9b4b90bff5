@@ -128,7 +128,7 @@ sub_1002ca92:
 	moveml	%d6-%d7/%a4,%sp@-	/* 1002ca96:	48e7 0308 */
 	clrw	%d7	/* 1002ca9a:	4247 */
 	subql	#2,%sp	/* 1002ca9c:	558f */
-	.short	0xa994	/* 1002ca9e:	a994 */
+	_CurResFile
 	movew	%sp@+,%d6	/* 1002caa0:	3c1f */
 	moveq	#0,%d0	/* 1002caa2:	7000 */
 	movew	%d0,%sp@-	/* 1002caa4:	3f00 */

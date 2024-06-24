@@ -5472,7 +5472,7 @@ sub_10039eb6:
 	moveq	#1,%d7	/* 10039ed2:	7e01 */
 	moveq	#-1,%d6	/* 10039ed4:	7cff */
 	subql	#2,%sp	/* 10039ed6:	558f */
-	.short	0xa994	/* 10039ed8:	a994 */
+	_CurResFile
 	movew	%sp@+,%d6	/* 10039eda:	3c1f */
 	movel	#1853189228,%a4@	/* 10039edc:	28bc 6e75 6c6c */
 	moveq	#0,%d0	/* 10039ee2:	7000 */
@@ -5519,7 +5519,7 @@ sub_10039eb6:
 	lea	%fp@(-4),%a0	/* 10039f3a:	41ee fffc */
 	nop	/* 10039f3e:	4e71 */
 	subql	#2,%sp	/* 10039f40:	558f */
-	.short	0xa994	/* 10039f42:	a994 */
+	_CurResFile
 	movew	%sp@+,%fp@(-4)	/* 10039f44:	3d5f fffc */
 	moveq	#0,%d0	/* 10039f48:	7000 */
 	moveb	%d0,%sp@-	/* 10039f4a:	1f00 */

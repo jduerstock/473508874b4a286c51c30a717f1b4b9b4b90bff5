@@ -74,6 +74,10 @@
 		.short	0xa976
 	.endm
 
+	.macro	_CurResFile
+		.short	0xa994
+	.endm
+
 	.macro	_FP68K
 		.short	0xa9eb
 	.endm

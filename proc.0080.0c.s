@@ -3297,7 +3297,7 @@ sub_1002b3a8:
 
 .L1002b448:
 	subql	#2,%sp	/* 1002b448:	558f */
-	.short	0xa994	/* 1002b44a:	a994 */
+	_CurResFile
 	movew	%sp@+,%d5	/* 1002b44c:	3a1f */
 	moveq	#0,%d0	/* 1002b44e:	7000 */
 	moveb	%d0,%sp@-	/* 1002b450:	1f00 */
@@ -3780,7 +3780,7 @@ sub_1002b8a6:
 	moveml	%d5-%d7,%sp@-	/* 1002b8aa:	48e7 0700 */
 	clrb	%d7	/* 1002b8ae:	4207 */
 	subql	#2,%sp	/* 1002b8b0:	558f */
-	.short	0xa994	/* 1002b8b2:	a994 */
+	_CurResFile
 	movew	%sp@+,%d5	/* 1002b8b4:	3a1f */
 	moveq	#0,%d0	/* 1002b8b6:	7000 */
 	moveb	%d0,%sp@-	/* 1002b8b8:	1f00 */
@@ -4240,7 +4240,7 @@ sub_1002bcbc:
 	lea	%fp@(-4),%a0	/* 1002bd10:	41ee fffc */
 	nop	/* 1002bd14:	4e71 */
 	subql	#2,%sp	/* 1002bd16:	558f */
-	.short	0xa994	/* 1002bd18:	a994 */
+	_CurResFile
 	movew	%sp@+,%fp@(-4)	/* 1002bd1a:	3d5f fffc */
 	moveq	#0,%d0	/* 1002bd1e:	7000 */
 	moveb	%d0,%sp@-	/* 1002bd20:	1f00 */

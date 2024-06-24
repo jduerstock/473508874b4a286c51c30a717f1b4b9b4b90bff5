@@ -4325,7 +4325,7 @@ sub_10028cbe:
 	moveq	#0,%d0	/* 10028cd8:	7000 */
 	movel	%d0,%fp@(-8)	/* 10028cda:	2d40 fff8 */
 	subql	#2,%sp	/* 10028cde:	558f */
-	.short	0xa994	/* 10028ce0:	a994 */
+	_CurResFile
 	movew	%sp@+,%d4	/* 10028ce2:	381f */
 	subql	#2,%sp	/* 10028ce4:	558f */
 	movel	%d5,%sp@-	/* 10028ce6:	2f05 */
@@ -4548,7 +4548,7 @@ sub_10028eec:
 	moveq	#-1,%d7	/* 10028efc:	7eff */
 	clrw	%d6	/* 10028efe:	4246 */
 	subql	#2,%sp	/* 10028f00:	558f */
-	.short	0xa994	/* 10028f02:	a994 */
+	_CurResFile
 	movew	%sp@+,%d4	/* 10028f04:	381f */
 	subql	#2,%sp	/* 10028f06:	558f */
 	movel	%d5,%sp@-	/* 10028f08:	2f05 */
@@ -4621,7 +4621,7 @@ sub_10028f6e:
 	movew	#-192,%d7	/* 10028f9a:	3e3c ff40 */
 	movel	%d0,%fp@(-8)	/* 10028f9e:	2d40 fff8 */
 	subql	#2,%sp	/* 10028fa2:	558f */
-	.short	0xa994	/* 10028fa4:	a994 */
+	_CurResFile
 	movew	%sp@+,%fp@(-314)	/* 10028fa6:	3d5f fec6 */
 	tstl	%fp@(8)	/* 10028faa:	4aae 0008 */
 	beqs	.L10028ff2	/* 10028fae:	6742 */

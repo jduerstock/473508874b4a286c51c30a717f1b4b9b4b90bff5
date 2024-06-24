@@ -2732,7 +2732,7 @@ sub_1003f204:
 	pea	%a4@(200)	/* 1003f248:	486c 00c8 */
 	jsr	%pc@(sub_100401a4)	/* 1003f24c:	4eba 0f56 */
 	subql	#2,%sp	/* 1003f250:	558f */
-	.short	0xa994	/* 1003f252:	a994 */
+	_CurResFile
 	movew	%sp@+,%a4@	/* 1003f254:	389f */
 	moveml	%fp@(-16),%a3-%a4	/* 1003f256:	4cee 1800 fff0 */
 	unlk	%fp	/* 1003f25c:	4e5e */

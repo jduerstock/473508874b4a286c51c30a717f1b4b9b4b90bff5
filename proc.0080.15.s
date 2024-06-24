@@ -2072,7 +2072,7 @@ sub_1004914c:
 	lea	%fp@(-4),%a0	/* 100491ba:	41ee fffc */
 	nop	/* 100491be:	4e71 */
 	subql	#2,%sp	/* 100491c0:	558f */
-	.short	0xa994	/* 100491c2:	a994 */
+	_CurResFile
 	movew	%sp@+,%fp@(-4)	/* 100491c4:	3d5f fffc */
 	moveq	#0,%d0	/* 100491c8:	7000 */
 	moveb	%d0,%sp@-	/* 100491ca:	1f00 */
