@@ -14,6 +14,10 @@
 		.short	0xa122
 	.endm
 
+	.macro	_PBHOpenRFSync
+		.short	0xa20a
+	.endm
+
 	.macro	_NewHandleClear
 		.short	0xa322
 	.endm
