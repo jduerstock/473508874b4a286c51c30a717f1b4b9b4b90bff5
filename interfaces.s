@@ -30,6 +30,10 @@
 		.short	0xa029
 	.endm
 
+	.macro	_CmpString
+		.short	0xa03c
+	.endm
+
 	.macro	_HGetState
 		.short	0xa069
 	.endm
