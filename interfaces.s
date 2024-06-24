@@ -66,6 +66,14 @@
 		.short	0xa20a
 	.endm
 
+	.macro	_PBHGetVolSync
+		.short	0xa214
+	.endm
+
+	.macro	_PBHSetVolSync
+		.short	0xa215
+	.endm
+
 	.macro	_NewHandleClear
 		.short	0xa322
 	.endm

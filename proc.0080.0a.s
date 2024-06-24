@@ -3684,7 +3684,7 @@ sub_100247d6:
 	moveb	%sp@+,%d0	/* 100247d8:	101f */
 	moveal	%sp@+,%a0	/* 100247da:	205f */
 	bnes	.L100247e2	/* 100247dc:	6604 */
-	.short	0xa215	/* 100247de:	a215 */
+	_PBHSetVolSync
 	bras	.L100247e4	/* 100247e0:	6002 */
 
 .L100247e2:
@@ -3699,7 +3699,7 @@ sub_100247e8:
 	moveb	%sp@+,%d0	/* 100247ea:	101f */
 	moveal	%sp@+,%a0	/* 100247ec:	205f */
 	bnes	.L100247f4	/* 100247ee:	6604 */
-	.short	0xa214	/* 100247f0:	a214 */
+	_PBHGetVolSync
 	bras	.L100247f6	/* 100247f2:	6002 */
 
 .L100247f4:
