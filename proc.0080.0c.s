@@ -3368,7 +3368,7 @@ sub_1002b3a8:
 
 .L1002b4c0:
 	moveal	%a2,%a0	/* 1002b4c0:	204a */
-	.short	0xa9f2	/* 1002b4c2:	a9f2 */
+	_Launch
 
 .L1002b4c4:
 	moveml	%fp@(-46),%d5-%d7/%a2-%a4	/* 1002b4c4:	4cee 1ce0 ffd2 */

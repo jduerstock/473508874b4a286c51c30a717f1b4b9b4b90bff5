@@ -55,6 +55,10 @@
 		_FP68K
 	.endm
 	
+	.macro	_Launch
+		.short	0xa9f2
+	.endm
+
 	.macro	_HighLevelFSDispatch
 		.short	0xaa52
 	.endm
