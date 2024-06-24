@@ -4230,7 +4230,7 @@ sub_10024cec:
 	moveal	%sp@+,%a0	/* 10024d06:	205f */
 	movew	%sp@+,%d0	/* 10024d08:	301f */
 	movel	%a1,%sp@-	/* 10024d0a:	2f09 */
-	.short	0xa090	/* 10024d0c:	a090 */
+	_SysEnvirons
 	movew	%d0,%sp@(4)	/* 10024d0e:	3f40 0004 */
 	rts	/* 10024d12:	4e75 */
 

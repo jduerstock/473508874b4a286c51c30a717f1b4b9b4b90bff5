@@ -38,6 +38,10 @@
 		.short	0xa069
 	.endm
 
+	.macro	_SysEnvirons
+		.short	0xa090
+	.endm
+
 	.macro	_NewHandle
 		.short	0xa122
 	.endm
