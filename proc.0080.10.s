@@ -2522,7 +2522,7 @@ sub_100381c6:
 	moveq	#0,%d0	/* 100382ca:	7000 */
 	movel	%d0,%a0@(18)	/* 100382cc:	2140 0012 */
 	moveal	%fp@(-4),%a0	/* 100382d0:	206e fffc */
-	.short	0xa029	/* 100382d4:	a029 */
+	_HLock
 	moveal	%fp@(-4),%a3	/* 100382d6:	266e fffc */
 	subql	#4,%sp	/* 100382da:	598f */
 	movel	%a3@,%sp@-	/* 100382dc:	2f13 */

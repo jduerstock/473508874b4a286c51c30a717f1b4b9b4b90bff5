@@ -1010,9 +1010,9 @@ sub_100452b2:
 	jsr	%pc@(sub_1004aac4)	/* 100452e6:	4eba 57dc */
 	moveal	%sp@+,%a0	/* 100452ea:	205f */
 	movel	%a4@(4),%d0	/* 100452ec:	202c 0004 */
-	lea	%a0@(0,%d0:l),%a3	/* 100452f0:	47f0 0800 */
+	lea	%a0@(%d0:l),%a3	/* 100452f0:	47f0 0800 */
 	moveal	%a4@,%a0	/* 100452f4:	2054 */
-	.short	0xa029	/* 100452f6:	a029 */
+	_HLock
 	movel	%d7,%sp@-	/* 100452f8:	2f07 */
 	movel	%fp@(12),%sp@-	/* 100452fa:	2f2e 000c */
 	movel	%a3,%sp@-	/* 100452fe:	2f0b */
@@ -3481,7 +3481,7 @@ sub_10046684:
 	_GetHandleSize
 	movel	%d0,%a4@(8)	/* 10046696:	2940 0008 */
 	moveal	%a4@,%a0	/* 1004669a:	2054 */
-	.short	0xa029	/* 1004669c:	a029 */
+	_HLock
 	subql	#4,%sp	/* 1004669e:	598f */
 	subql	#4,%sp	/* 100466a0:	598f */
 	moveal	%a4@,%a0	/* 100466a2:	2054 */
@@ -3508,7 +3508,7 @@ sub_100466c2:
 	_GetHandleSize
 	movel	%d0,%a4@(8)	/* 100466d4:	2940 0008 */
 	moveal	%a4@,%a0	/* 100466d8:	2054 */
-	.short	0xa029	/* 100466da:	a029 */
+	_HLock
 	subql	#4,%sp	/* 100466dc:	598f */
 	subql	#4,%sp	/* 100466de:	598f */
 	moveal	%a4@,%a0	/* 100466e0:	2054 */

@@ -897,9 +897,9 @@ sub_1003052a:
 	movel	%fp@(32),%sp@-	/* 10030670:	2f2e 0020 */
 	jsr	%pc@(sub_1002f71c)	/* 10030674:	4eba f0a6 */
 	moveal	%a3,%a0	/* 10030678:	204b */
-	.short	0xa029	/* 1003067a:	a029 */
+	_HLock
 	moveal	%a4,%a0	/* 1003067c:	204c */
-	.short	0xa029	/* 1003067e:	a029 */
+	_HLock
 	movel	%fp@(28),%sp@-	/* 10030680:	2f2e 001c */
 	movel	%fp@(24),%sp@-	/* 10030684:	2f2e 0018 */
 	movew	%fp@(-2),%d0	/* 10030688:	302e fffe */

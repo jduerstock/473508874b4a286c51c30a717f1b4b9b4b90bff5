@@ -940,7 +940,7 @@ sub_1000e794:
 	movel	%d0,%d7	/* 1000e812:	2e00 */
 	bnes	.L1000e844	/* 1000e814:	662e */
 	moveal	%a4,%a0	/* 1000e816:	204c */
-	.short	0xa029	/* 1000e818:	a029 */
+	_HLock
 	subql	#4,%sp	/* 1000e81a:	598f */
 	movel	%a4@,%sp@-	/* 1000e81c:	2f14 */
 	jsr	%pc@(sub_1000f88e)	/* 1000e81e:	4eba 106e */
@@ -1500,7 +1500,7 @@ sub_1000ed94:
 	movel	%d0,%d7	/* 1000ee04:	2e00 */
 	bnes	.L1000ee34	/* 1000ee06:	662c */
 	moveal	%a4,%a0	/* 1000ee08:	204c */
-	.short	0xa029	/* 1000ee0a:	a029 */
+	_HLock
 	subql	#4,%sp	/* 1000ee0c:	598f */
 	movel	%a4@,%sp@-	/* 1000ee0e:	2f14 */
 	jsr	%pc@(sub_1000f88e)	/* 1000ee10:	4eba 0a7c */

@@ -3755,7 +3755,7 @@ sub_1004dc46:
 	lea	%sp@(12),%sp	/* 1004dca4:	4fef 000c */
 	bnew	.L1004def8	/* 1004dca8:	6600 024e */
 	moveal	%fp@(-4),%a0	/* 1004dcac:	206e fffc */
-	.short	0xa029	/* 1004dcb0:	a029 */
+	_HLock
 	moveq	#0,%d6	/* 1004dcb2:	7c00 */
 	subql	#4,%sp	/* 1004dcb4:	598f */
 	moveal	%fp@(-4),%a0	/* 1004dcb6:	206e fffc */
@@ -5131,12 +5131,12 @@ sub_1004ea94:
 	jsr	%pc@(sub_1004a176)	/* 1004eaf2:	4eba b682 */
 	moveal	%d0,%a3	/* 1004eaf6:	2640 */
 	moveal	%a4@,%a0	/* 1004eaf8:	2054 */
-	.short	0xa029	/* 1004eafa:	a029 */
+	_HLock
 	movel	%a3,%sp@-	/* 1004eafc:	2f0b */
 	movel	%a4@(8),%sp@-	/* 1004eafe:	2f2c 0008 */
 	jsr	%pc@(sub_1004f68a)	/* 1004eb02:	4eba 0b86 */
 	moveal	%a3,%a0	/* 1004eb06:	204b */
-	.short	0xa029	/* 1004eb08:	a029 */
+	_HLock
 	movel	%fp@(12),%sp@-	/* 1004eb0a:	2f2e 000c */
 	moveal	%a3,%a0	/* 1004eb0e:	204b */
 	_GetHandleSize
