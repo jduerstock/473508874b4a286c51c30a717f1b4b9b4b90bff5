@@ -74,6 +74,10 @@
 		.short	0xa215
 	.endm
 
+	.macro	_MarkSensitiveEqualString
+		.short	0xa23c
+	.endm
+
 	.macro	_NewHandleClear
 		.short	0xa322
 	.endm

@@ -3647,7 +3647,7 @@ sub_1002475c:
 	bras	.L1002478c	/* 10024788:	6002 */
 
 .L1002478a:
-	.short	0xa23c	/* 1002478a:	a23c */
+	_MarkSensitiveEqualString
 
 .L1002478c:
 	eorib	#1,%d0	/* 1002478c:	0a00 0001 */
