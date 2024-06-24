@@ -5179,8 +5179,7 @@ sub_100033bc:
 	movel	%fp@(-86),%a0@(88)	/* 100035f2:	216e ffaa 0058 */
 	subql	#2,%sp	/* 100035f8:	558f */
 	pea	%fp@(-22)	/* 100035fa:	486e ffea */
-	movew	#0x0204,%d0	/* 100035fe:	303c 0204 */ /* AEDisposeDesc */
-	.short	0xa816	/* 10003602:	a816 */
+	_AEDisposeDesc
 	tstl	%d7	/* 10003604:	4a87 */
 	addqw	#2,%sp	/* 10003606:	544f */
 	beqs	.L10003626	/* 10003608:	671c */
