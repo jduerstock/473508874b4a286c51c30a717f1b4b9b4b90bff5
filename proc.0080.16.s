@@ -4069,8 +4069,7 @@ sub_1004dfd4:
 	movew	%d0,%d7	/* 1004e024:	3e00 */
 	subql	#2,%sp	/* 1004e026:	558f */
 	pea	%fp@(-8)	/* 1004e028:	486e fff8 */
-	movew	#516,%d0	/* 1004e02c:	303c 0204 */
-	.short	0xa816	/* 1004e030:	a816 */
+	_AEDisposeDesc
 	tstw	%d7	/* 1004e032:	4a47 */
 	lea	%sp@(14),%sp	/* 1004e034:	4fef 000e */
 	bnew	.L1004e0e4	/* 1004e038:	6600 00aa */
@@ -4112,8 +4111,7 @@ sub_1004dfd4:
 	movel	%fp@(-68),%a0@(88)	/* 1004e0a0:	216e ffbc 0058 */
 	subql	#2,%sp	/* 1004e0a6:	558f */
 	pea	%fp@(-16)	/* 1004e0a8:	486e fff0 */
-	movew	#516,%d0	/* 1004e0ac:	303c 0204 */
-	.short	0xa816	/* 1004e0b0:	a816 */
+	_AEDisposeDesc
 	tstl	%d7	/* 1004e0b2:	4a87 */
 	addqw	#2,%sp	/* 1004e0b4:	544f */
 	beqs	.L1004e0d4	/* 1004e0b6:	671c */
