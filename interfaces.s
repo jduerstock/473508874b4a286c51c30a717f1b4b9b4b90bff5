@@ -10,6 +10,10 @@
 		.short	0xa025
 	.endm
 
+	.macro	_HLock
+		.short	0xa029
+	.endm
+
 	.macro	_NewHandle
 		.short	0xa122
 	.endm
@@ -48,6 +52,10 @@
 	.macro	_AECreateDesc
 		movew	#0x0825,%d0
 		_Pack8
+	.endm
+
+	.macro	_OSDispatch
+		.short	0xa88f
 	.endm
 
 	.macro	_GetKeys
