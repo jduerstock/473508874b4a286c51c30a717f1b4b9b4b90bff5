@@ -1237,12 +1237,10 @@ sub_10048768:
 	movel	%fp@(-76),%a0@(88)	/* 10048988:	216e ffb4 0058 */
 	subql	#2,%sp	/* 1004898e:	558f */
 	pea	%fp@(-24)	/* 10048990:	486e ffe8 */
-	movew	#516,%d0	/* 10048994:	303c 0204 */
-	.short	0xa816	/* 10048998:	a816 */
+	_AEDisposeDesc
 	subql	#2,%sp	/* 1004899a:	558f */
 	pea	%fp@(-16)	/* 1004899c:	486e fff0 */
-	movew	#516,%d0	/* 100489a0:	303c 0204 */
-	.short	0xa816	/* 100489a4:	a816 */
+	_AEDisposeDesc
 	tstl	%d5	/* 100489a6:	4a85 */
 	addqw	#4,%sp	/* 100489a8:	584f */
 	beqs	.L100489c8	/* 100489aa:	671c */
@@ -2621,8 +2619,7 @@ sub_100495e6:
 	jsr	%pc@(sub_100499be)	/* 100496c0:	4eba 02fc */
 	subql	#2,%sp	/* 100496c4:	558f */
 	pea	%fp@(-68)	/* 100496c6:	486e ffbc */
-	movew	#516,%d0	/* 100496ca:	303c 0204 */
-	.short	0xa816	/* 100496ce:	a816 */
+	_AEDisposeDesc
 	lea	%sp@(10),%sp	/* 100496d0:	4fef 000a */
 	movel	%d7,%d0	/* 100496d4:	2007 */
 	addql	#1,%d7	/* 100496d6:	5287 */
@@ -2637,8 +2634,7 @@ sub_100495e6:
 	movel	%fp@(-52),%a0@(88)	/* 100496e4:	216e ffcc 0058 */
 	subql	#2,%sp	/* 100496ea:	558f */
 	movel	%a3,%sp@-	/* 100496ec:	2f0b */
-	movew	#516,%d0	/* 100496ee:	303c 0204 */
-	.short	0xa816	/* 100496f2:	a816 */
+	_AEDisposeDesc
 	tstl	%d5	/* 100496f4:	4a85 */
 	addqw	#2,%sp	/* 100496f6:	544f */
 	beqs	.L10049716	/* 100496f8:	671c */
@@ -5023,8 +5019,7 @@ sub_1004ae16:
 	movew	%d0,%d7	/* 1004ae9a:	3e00 */
 	subql	#2,%sp	/* 1004ae9c:	558f */
 	pea	%fp@(-22)	/* 1004ae9e:	486e ffea */
-	movew	#516,%d0	/* 1004aea2:	303c 0204 */
-	.short	0xa816	/* 1004aea6:	a816 */
+	_AEDisposeDesc
 	tstw	%d7	/* 1004aea8:	4a47 */
 	lea	%sp@(26),%sp	/* 1004aeaa:	4fef 001a */
 	beqs	.L1004aebc	/* 1004aeae:	670c */
@@ -5098,15 +5093,13 @@ sub_1004ae16:
 .L1004af74:
 	subql	#2,%sp	/* 1004af74:	558f */
 	pea	%fp@(-14)	/* 1004af76:	486e fff2 */
-	movew	#516,%d0	/* 1004af7a:	303c 0204 */
-	.short	0xa816	/* 1004af7e:	a816 */
+	_AEDisposeDesc
 	addqw	#2,%sp	/* 1004af80:	544f */
 
 .L1004af82:
 	subql	#2,%sp	/* 1004af82:	558f */
 	pea	%fp@(-30)	/* 1004af84:	486e ffe2 */
-	movew	#516,%d0	/* 1004af88:	303c 0204 */
-	.short	0xa816	/* 1004af8c:	a816 */
+	_AEDisposeDesc
 	movew	%d7,%d0	/* 1004af8e:	3007 */
 	addqw	#2,%sp	/* 1004af90:	544f */
 
