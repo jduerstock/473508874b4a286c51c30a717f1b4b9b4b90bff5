@@ -4221,7 +4221,7 @@ sub_10043d14:
 	movel	%a4,%sp@-	/* 10043e2c:	2f0c */
 	jsr	%pc@(sub_100452b2)	/* 10043e2e:	4eba 1482 */
 	moveal	%a3@(4),%a0	/* 10043e32:	206b 0004 */
-	.short	0xa069	/* 10043e36:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 10043e38:	1c00 */
 	moveal	%a3@(4),%a0	/* 10043e3a:	206b 0004 */
 	_HLock

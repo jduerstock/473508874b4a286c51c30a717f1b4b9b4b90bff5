@@ -303,7 +303,7 @@ sub_1004f328:
 	movel	%a3,%d0	/* 1004f338:	200b */
 	beqs	.L1004f364	/* 1004f33a:	6728 */
 	moveal	%a3,%a0	/* 1004f33c:	204b */
-	.short	0xa069	/* 1004f33e:	a069 */
+	_HGetState
 	moveb	%d0,%d7	/* 1004f340:	1e00 */
 	moveal	%a3,%a0	/* 1004f342:	204b */
 	_HLock
@@ -3264,7 +3264,7 @@ sub_10050800:
 	moveal	%a0@,%a0	/* 10051182:	2050 */
 	movel	%a0@,%a3@	/* 10051184:	2690 */
 	moveal	%fp@(-546),%a0	/* 10051186:	206e fdde */
-	.short	0xa069	/* 1005118a:	a069 */
+	_HGetState
 	moveb	%d0,%fp@(-1185)	/* 1005118c:	1d40 fb5f */
 	moveal	%fp@(-546),%a0	/* 10051190:	206e fdde */
 	_HLock

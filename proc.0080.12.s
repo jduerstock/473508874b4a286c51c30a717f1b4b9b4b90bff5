@@ -1127,7 +1127,7 @@ sub_1003e254:
 	movel	%fp@(12),%a0@(6)	/* 1003e2aa:	216e 000c 0006 */
 	moveal	%a4@,%a0	/* 1003e2b0:	2054 */
 	moveal	%a0@(6),%a0	/* 1003e2b2:	2068 0006 */
-	.short	0xa069	/* 1003e2b6:	a069 */
+	_HGetState
 	moveb	%d0,%d4	/* 1003e2b8:	1800 */
 	jsr	%pc@(sub_10045034)	/* 1003e2ba:	4eba 6d78 */
 	moveal	%d0,%a0	/* 1003e2be:	2040 */
@@ -1365,7 +1365,7 @@ sub_1003e432:
 	moveq	#0,%d0	/* 1003e508:	7000 */
 	movel	%d0,%a0@(18)	/* 1003e50a:	2140 0012 */
 	moveal	%fp@(12),%a0	/* 1003e50e:	206e 000c */
-	.short	0xa069	/* 1003e512:	a069 */
+	_HGetState
 	moveb	%d0,%fp@(-69)	/* 1003e514:	1d40 ffbb */
 	jsr	%pc@(sub_10045034)	/* 1003e518:	4eba 6b1a */
 	moveal	%d0,%a0	/* 1003e51c:	2040 */
@@ -3869,13 +3869,13 @@ sub_1003fdc8:
 	bnes	.L1003ff10	/* 1003fe9c:	6672 */
 	moveal	%a4@,%a0	/* 1003fe9e:	2054 */
 	moveal	%a0@(26),%a0	/* 1003fea0:	2068 001a */
-	.short	0xa069	/* 1003fea4:	a069 */
+	_HGetState
 	moveb	%d0,%d5	/* 1003fea6:	1a00 */
 	moveal	%a4@,%a0	/* 1003fea8:	2054 */
 	moveal	%a0@(26),%a0	/* 1003feaa:	2068 001a */
 	_HLock
 	moveal	%fp@(-4),%a0	/* 1003feb0:	206e fffc */
-	.short	0xa069	/* 1003feb4:	a069 */
+	_HGetState
 	moveb	%d0,%d4	/* 1003feb6:	1800 */
 	moveal	%fp@(-4),%a0	/* 1003feb8:	206e fffc */
 	_HLock
@@ -3992,7 +3992,7 @@ sub_1003ff76:
 	moveal	%a4@,%a0	/* 1003ffe6:	2054 */
 	moveal	%a0@(34),%a3	/* 1003ffe8:	2668 0022 */
 	moveal	%a0@(22),%a0	/* 1003ffec:	2068 0016 */
-	.short	0xa069	/* 1003fff0:	a069 */
+	_HGetState
 	moveb	%d0,%d6	/* 1003fff2:	1c00 */
 	moveal	%a4@,%a0	/* 1003fff4:	2054 */
 	moveal	%a0@(22),%a0	/* 1003fff6:	2068 0016 */
@@ -4010,7 +4010,7 @@ sub_1003ff76:
 	.short	0xa9eb	/* 1004001c:	a9eb */
 	bles	.L10040062	/* 1004001e:	6f42 */
 	moveal	%a3,%a0	/* 10040020:	204b */
-	.short	0xa069	/* 10040022:	a069 */
+	_HGetState
 	moveb	%d0,%d5	/* 10040024:	1a00 */
 	moveal	%a3,%a0	/* 10040026:	204b */
 	_HLock
@@ -4040,7 +4040,7 @@ sub_1003ff76:
 	moveal	%a4@,%a0	/* 10040062:	2054 */
 	moveal	%a0@(38),%a3	/* 10040064:	2668 0026 */
 	moveal	%a3,%a0	/* 10040068:	204b */
-	.short	0xa069	/* 1004006a:	a069 */
+	_HGetState
 	moveb	%d0,%d5	/* 1004006c:	1a00 */
 	moveal	%a3,%a0	/* 1004006e:	204b */
 	_HLock
@@ -4091,7 +4091,7 @@ sub_100400d2:
 	clrb	%d4	/* 100400de:	4204 */
 	moveal	%a4@,%a0	/* 100400e0:	2054 */
 	moveal	%a0@(22),%a0	/* 100400e2:	2068 0016 */
-	.short	0xa069	/* 100400e6:	a069 */
+	_HGetState
 	moveb	%d0,%d3	/* 100400e8:	1600 */
 	moveal	%a4@,%a0	/* 100400ea:	2054 */
 	moveal	%a0@(22),%a0	/* 100400ec:	2068 0016 */
@@ -4108,7 +4108,7 @@ sub_100400d2:
 	movel	%a3,%d0	/* 10040102:	200b */
 	beqs	.L10040162	/* 10040104:	675c */
 	moveal	%a3,%a0	/* 10040106:	204b */
-	.short	0xa069	/* 10040108:	a069 */
+	_HGetState
 	moveb	%d0,%d5	/* 1004010a:	1a00 */
 	moveal	%a3,%a0	/* 1004010c:	204b */
 	_HLock
@@ -4353,11 +4353,11 @@ sub_10040316:
 	jsr	%pc@(sub_10038db8)	/* 1004032e:	4eba 8a88 */
 	moveq	#1,%d0	/* 10040332:	7001 */
 	movel	%d0,%sp@-	/* 10040334:	2f00 */
-	movel	#1634955366,%sp@-	/* 10040336:	2f3c 6173 7066 */
+	movel	#0x61737066,%sp@-	/* 10040336:	2f3c 6173 7066 */
 	jsr	%pc@(sub_1004022e)	/* 1004033c:	4eba fef0 */
 	moveal	%d0,%a3	/* 10040340:	2640 */
 	moveal	%a3,%a0	/* 10040342:	204b */
-	.short	0xa069	/* 10040344:	a069 */
+	_HGetState
 	moveb	%d0,%d7	/* 10040346:	1e00 */
 	moveal	%a3,%a0	/* 10040348:	204b */
 	_HLock
