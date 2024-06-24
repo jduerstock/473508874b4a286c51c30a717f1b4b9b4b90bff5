@@ -64,6 +64,11 @@
 		_HighLevelFSDispatch
 	.endm
 
+	.macro	_FSpGetFInfo
+		movew	#7,%d0
+		_HighLevelFSDispatch
+	.endm
+
 	.macro	_FSpOpenResFile
 		movew	#13,%d0
 		_HighLevelFSDispatch

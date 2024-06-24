@@ -3282,25 +3282,20 @@ sub_1002b3a8:
 	subql	#2,%sp	/* 1002b3de:	558f */
 	movel	%a3,%sp@-	/* 1002b3e0:	2f0b */
 	pea	%fp@(-16)	/* 1002b3e2:	486e fff0 */
-	movew	#7,%d0	/* 1002b3e6:	303c 0007 */
-	.short	0xaa52	/* 1002b3ea:	aa52 */
+	_FSpGetFInfo
 	movew	%sp@+,%d7	/* 1002b3ec:	3e1f */
 	beqs	.L1002b3f8	/* 1002b3ee:	6708 */
 	movew	#-2703,%d0	/* 1002b3f0:	303c f571 */
 	braw	.L1002b4c4	/* 1002b3f4:	6000 00ce */
 
 .L1002b3f8:
-	cmpil	#1095782476,%fp@(-16)	/* 1002b3f8:	0cae 4150 504c */
-		/* 1002b3fe:	fff0 */
+	cmpil	#1095782476,%fp@(-16)	/* 1002b3f8:	0cae 4150 504c fff0 */
 	beqw	.L1002b4c0	/* 1002b400:	6700 00be */
-	cmpil	#1095782467,%fp@(-16)	/* 1002b404:	0cae 4150 5043 */
-		/* 1002b40a:	fff0 */
+	cmpil	#1095782467,%fp@(-16)	/* 1002b404:	0cae 4150 5043 fff0 */
 	beqw	.L1002b4c0	/* 1002b40c:	6700 00b2 */
-	cmpil	#1095782468,%fp@(-16)	/* 1002b410:	0cae 4150 5044 */
-		/* 1002b416:	fff0 */
+	cmpil	#1095782468,%fp@(-16)	/* 1002b410:	0cae 4150 5044 fff0 */
 	beqw	.L1002b4c0	/* 1002b418:	6700 00a6 */
-	cmpil	#1634758757,%fp@(-16)	/* 1002b41c:	0cae 6170 7065 */
-		/* 1002b422:	fff0 */
+	cmpil	#1634758757,%fp@(-16)	/* 1002b41c:	0cae 6170 7065 fff0 */
 	beqw	.L1002b4c0	/* 1002b424:	6700 009a */
 	clrb	%d6	/* 1002b428:	4206 */
 	movel	#1667658343,%d0	/* 1002b42a:	203c 6366 7267 */
@@ -3329,8 +3324,7 @@ sub_1002b3a8:
 	movel	%a3,%sp@-	/* 1002b45e:	2f0b */
 	moveq	#1,%d0	/* 1002b460:	7001 */
 	moveb	%d0,%sp@-	/* 1002b462:	1f00 */
-	movew	#13,%d0	/* 1002b464:	303c 000d */
-	.short	0xaa52	/* 1002b468:	aa52 */
+	_FSpOpenResFile
 	movew	%sp@+,%d7	/* 1002b46a:	3e1f */
 	subql	#2,%sp	/* 1002b46c:	558f */
 	movew	#65,%sp@-	/* 1002b46e:	3f3c 0041 */
@@ -4114,8 +4108,7 @@ sub_1002bb34:
 	movel	%d1,%sp@-	/* 1002bbb2:	2f01 */
 	movel	%a4,%sp@-	/* 1002bbb4:	2f0c */
 	movel	%a3,%sp@-	/* 1002bbb6:	2f0b */
-	movew	#1,%d0	/* 1002bbb8:	303c 0001 */
-	.short	0xaa52	/* 1002bbbc:	aa52 */
+	_FSMakeFSSpec
 	movew	%sp@+,%d7	/* 1002bbbe:	3e1f */
 	cmpiw	#-43,%d7	/* 1002bbc0:	0c47 ffd5 */
 	bnes	.L1002bbde	/* 1002bbc4:	6618 */
@@ -4126,8 +4119,7 @@ sub_1002bb34:
 	movel	%d5,%sp@-	/* 1002bbd0:	2f05 */
 	movel	%a4,%sp@-	/* 1002bbd2:	2f0c */
 	movel	%a3,%sp@-	/* 1002bbd4:	2f0b */
-	movew	#1,%d0	/* 1002bbd6:	303c 0001 */
-	.short	0xaa52	/* 1002bbda:	aa52 */
+	_FSMakeFSSpec
 	movew	%sp@+,%d7	/* 1002bbdc:	3e1f */
 
 .L1002bbde:
@@ -4280,8 +4272,7 @@ sub_1002bcbc:
 	movel	%a3,%sp@-	/* 1002bd2e:	2f0b */
 	moveq	#1,%d0	/* 1002bd30:	7001 */
 	moveb	%d0,%sp@-	/* 1002bd32:	1f00 */
-	movew	#13,%d0	/* 1002bd34:	303c 000d */
-	.short	0xaa52	/* 1002bd38:	aa52 */
+	_FSpOpenResFile
 	movew	%sp@+,%fp@(-6)	/* 1002bd3a:	3d5f fffa */
 	subql	#2,%sp	/* 1002bd3e:	558f */
 	movew	#65,%sp@-	/* 1002bd40:	3f3c 0041 */
@@ -4420,8 +4411,7 @@ sub_1002be62:
 	subql	#2,%sp	/* 1002be80:	558f */
 	movel	%a3,%sp@-	/* 1002be82:	2f0b */
 	pea	%fp@(-16)	/* 1002be84:	486e fff0 */
-	movew	#7,%d0	/* 1002be88:	303c 0007 */ /* FSpGetFInfo */
-	.short	0xaa52	/* 1002be8c:	aa52 */
+	_FSpGetFInfo
 	movel	%fp@(-12),%a4@(8)	/* 1002be8e:	296e fff4 0008 */
 	movel	%a3,%sp@-	/* 1002be94:	2f0b */
 	movel	%a4,%sp@-	/* 1002be96:	2f0c */
