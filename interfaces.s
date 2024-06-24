@@ -58,6 +58,10 @@
 		.short	0xa1ad
 	.endm
 
+	.macro	_PBHDeleteSync
+		.short	0xa209
+	.endm
+
 	.macro	_PBHOpenRFSync
 		.short	0xa20a
 	.endm
