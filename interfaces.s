@@ -30,6 +30,11 @@
 		.short	0xa816
 	.endm
 
+	.macro	_AEDisposeDesc
+		movew	#0x0204,%d0
+		_Pack8
+	.endm
+
 	.macro	_AECreateList
 		movew	#0x0706,%d0
 		_Pack8

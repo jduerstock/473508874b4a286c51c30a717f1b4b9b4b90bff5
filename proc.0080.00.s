@@ -5127,8 +5127,7 @@ sub_100033bc:
 	movew	%d0,%d4	/* 1000355c:	3800 */
 	subql	#2,%sp	/* 1000355e:	558f */
 	pea	%fp@(-30)	/* 10003560:	486e ffe2 */
-	movew	#0x0204,%d0	/* 10003564:	303c 0204 */ /* AEDisposeDesc */
-	.short	0xa816	/* 10003568:	a816 */
+	_AEDisposeDesc
 	tstw	%d4	/* 1000356a:	4a44 */
 	lea	%sp@(30),%sp	/* 1000356c:	4fef 001e */
 	bnew	.L10003668	/* 10003570:	6600 00f6 */
