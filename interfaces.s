@@ -18,6 +18,10 @@
 		.short	0xa322
 	.endm
 
+	.macro	_NewHandleSys
+		.short	0xa522
+	.endm
+
 	.macro	_Pack8
 		.short	0xa816
 	.endm

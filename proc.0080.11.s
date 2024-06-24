@@ -912,7 +912,7 @@ sub_1003abf0:
 	linkw	%fp,#0	/* 1003abf0:	4e56 0000 */
 	movel	%a4,%sp@-	/* 1003abf4:	2f0c */
 	movel	%fp@(8),%d0	/* 1003abf6:	202e 0008 */
-	.short	0xa522	/* 1003abfa:	a522 */
+	_NewHandleSys
 	moveal	%a0,%a4	/* 1003abfc:	2848 */
 	movel	%a4,%d0	/* 1003abfe:	200c */
 	bnes	.L1003ac28	/* 1003ac00:	6626 */
@@ -2769,7 +2769,7 @@ sub_1003bda6:
 
 .L1003bdd0:
 	movel	%d7,%d0	/* 1003bdd0:	2007 */
-	.short	0xa522	/* 1003bdd2:	a522 */
+	_NewHandleSys
 	moveal	%a0,%a4	/* 1003bdd4:	2848 */
 	movel	%a4,%d0	/* 1003bdd6:	200c */
 	beqs	.L1003bdde	/* 1003bdd8:	6704 */
