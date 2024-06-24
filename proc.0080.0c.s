@@ -3737,7 +3737,7 @@ sub_1002b7ee:
 	jsr	%pc@(sub_1002bc28)	/* 1002b84c:	4eba 03da */
 	movew	%d0,%d7	/* 1002b850:	3e00 */
 	moveal	%fp@(12),%a0	/* 1002b852:	206e 000c */
-	.short	0xa02a	/* 1002b856:	a02a */
+	_HUnlock
 	movew	%d7,%d0	/* 1002b858:	3007 */
 	lea	%sp@(12),%sp	/* 1002b85a:	4fef 000c */
 	bras	.L1002b89c	/* 1002b85e:	603c */
@@ -4695,7 +4695,7 @@ sub_1002c124:
 	movel	%fp@(12),%sp@-	/* 1002c15e:	2f2e 000c */
 	jsr	%pc@(sub_1002d9f4)	/* 1002c162:	4eba 1890 */
 	moveal	%a4@(4),%a0	/* 1002c166:	206c 0004 */
-	.short	0xa02a	/* 1002c16a:	a02a */
+	_HUnlock
 	moveq	#0,%d0	/* 1002c16c:	7000 */
 	lea	%sp@(12),%sp	/* 1002c16e:	4fef 000c */
 	bras	.L1002c18e	/* 1002c172:	601a */
@@ -5480,7 +5480,7 @@ sub_1002c860:
 	moveal	%fp@(16),%a0	/* 1002c8a2:	206e 0010 */
 	moveb	%d0,%a0@	/* 1002c8a6:	1080 */
 	moveal	%a4@(4),%a0	/* 1002c8a8:	206c 0004 */
-	.short	0xa02a	/* 1002c8ac:	a02a */
+	_HUnlock
 	moveq	#0,%d0	/* 1002c8ae:	7000 */
 	addqw	#8,%sp	/* 1002c8b0:	504f */
 	bras	.L1002c8c2	/* 1002c8b2:	600e */

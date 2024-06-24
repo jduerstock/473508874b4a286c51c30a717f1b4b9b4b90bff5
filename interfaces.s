@@ -30,6 +30,10 @@
 		.short	0xa029
 	.endm
 
+	.macro	_HUnlock
+		.short	0xa02a
+	.endm
+
 	.macro	_CmpString
 		.short	0xa03c
 	.endm

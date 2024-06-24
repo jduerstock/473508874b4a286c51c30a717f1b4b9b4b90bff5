@@ -1018,7 +1018,7 @@ sub_100452b2:
 	movel	%a3,%sp@-	/* 100452fe:	2f0b */
 	jsr	%pc@(sub_10049c58)	/* 10045300:	4eba 4956 */
 	moveal	%a4@,%a0	/* 10045304:	2054 */
-	.short	0xa02a	/* 10045306:	a02a */
+	_HUnlock
 	addl	%d7,%a4@(4)	/* 10045308:	dfac 0004 */
 	lea	%sp@(12),%sp	/* 1004530c:	4fef 000c */
 	moveml	%fp@(-16),%d6-%d7/%a3-%a4	/* 10045310:	4cee 18c0 fff0 */

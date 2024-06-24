@@ -5531,7 +5531,7 @@ sub_10040df8:
 	movel	%a4,%sp@-	/* 10040f28:	2f0c */
 	jsr	%pc@(sub_100453b0)	/* 10040f2a:	4eba 4484 */
 	moveal	%a3,%a0	/* 10040f2e:	204b */
-	.short	0xa02a	/* 10040f30:	a02a */
+	_HUnlock
 	pea	%fp@(-26)	/* 10040f32:	486e ffe6 */
 	jsr	%pc@(sub_10039880)	/* 10040f36:	4eba 8948 */
 	jsr	%pc@(sub_100489f4)	/* 10040f3a:	4eba 7ab8 */

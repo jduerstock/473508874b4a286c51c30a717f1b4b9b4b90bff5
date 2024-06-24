@@ -5627,7 +5627,7 @@ sub_1002fcae:
 
 .L1002fd8e:
 	moveal	%a4@,%a0	/* 1002fd8e:	2054 */
-	.short	0xa02a	/* 1002fd90:	a02a */
+	_HUnlock
 	tstl	%d7	/* 1002fd92:	4a87 */
 	beqs	.L1002fdb2	/* 1002fd94:	671c */
 	movel	%d7,%d0	/* 1002fd96:	2007 */

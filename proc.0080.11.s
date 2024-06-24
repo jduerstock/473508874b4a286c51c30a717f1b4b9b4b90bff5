@@ -1411,7 +1411,7 @@ sub_1003b052:
 	moveal	%fp@(12),%a3	/* 1003b05e:	266e 000c */
 	moveal	%a3@,%a2	/* 1003b062:	2453 */
 	moveal	%a4,%a0	/* 1003b064:	204c */
-	.short	0xa02a	/* 1003b066:	a02a */
+	_HUnlock
 	movel	%fp@(16),%d7	/* 1003b068:	2e2e 0010 */
 	moveq	#32,%d0	/* 1003b06c:	7020 */
 	addl	%d0,%d7	/* 1003b06e:	de80 */

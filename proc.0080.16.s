@@ -3962,7 +3962,7 @@ sub_1004dc46:
 	moveal	%d0,%a0	/* 1004defc:	2040 */
 	movel	%fp@(-72),%a0@(88)	/* 1004defe:	216e ffb8 0058 */
 	moveal	%fp@(-4),%a0	/* 1004df04:	206e fffc */
-	.short	0xa02a	/* 1004df08:	a02a */
+	_HUnlock
 	tstl	%d7	/* 1004df0a:	4a87 */
 	beqs	.L1004df2a	/* 1004df0c:	671c */
 	movel	%d7,%d0	/* 1004df0e:	2007 */
@@ -5163,7 +5163,7 @@ sub_1004ea94:
 
 .L1004eb46:
 	moveal	%a4@,%a0	/* 1004eb46:	2054 */
-	.short	0xa02a	/* 1004eb48:	a02a */
+	_HUnlock
 	tstl	%d7	/* 1004eb4a:	4a87 */
 	beqs	.L1004eb6a	/* 1004eb4c:	671c */
 	movel	%d7,%d0	/* 1004eb4e:	2007 */

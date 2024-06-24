@@ -3839,9 +3839,8 @@ sub_100513fa:
 	cmpl	%fp@(-840),%d0	/* 10051718:	b0ae fcb8 */
 	bles	.L10051788	/* 1005171c:	6f6a */
 	moveal	%fp@(-12),%a0	/* 1005171e:	206e fff4 */
-	.short	0xa02a	/* 10051722:	a02a */
-	movel	#500,%fp@(-872)	/* 10051724:	2d7c 0000 01f4 */
-		/* 1005172a:	fc98 */
+	_HUnlock
+	movel	#500,%fp@(-872)	/* 10051724:	2d7c 0000 01f4 fc98 */
 	movel	%fp@(-872),%fp@(-868)	/* 1005172c:	2d6e fc98 fc9c */
 	moveal	%fp@(-12),%a0	/* 10051732:	206e fff4 */
 	_GetHandleSize

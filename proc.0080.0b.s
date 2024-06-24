@@ -4686,7 +4686,7 @@ sub_10028f6e:
 	tstl	%fp@(-32)	/* 1002904a:	4aae ffe0 */
 	beqs	.L1002905c	/* 1002904e:	670c */
 	moveal	%fp@(-32),%a0	/* 10029050:	206e ffe0 */
-	.short	0xa02a	/* 10029054:	a02a */
+	_HUnlock
 	_DisposeHandle %fp@(-32)
 
 .L1002905c:
