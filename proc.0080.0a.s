@@ -5353,7 +5353,7 @@ sub_100256ca:
 	subql	#2,%sp	/* 10025776:	558f */
 	movel	%fp@(-6),%sp@-	/* 10025778:	2f2e fffa */
 	pea	%fp@(-54)	/* 1002577c:	486e ffca */
-	.short	0xa92c	/* 10025780:	a92c */
+	_FindWindow
 	movew	%sp@+,%d7	/* 10025782:	3e1f */
 	cmpiw	#2,%d7	/* 10025784:	0c47 0002 */
 	bnes	.L100257ce	/* 10025788:	6644 */

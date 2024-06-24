@@ -58,6 +58,10 @@
 		.short	0xa88f
 	.endm
 
+	.macro	_FindWindow
+		.short	0xa92c
+	.endm
+
 	.macro	_GetKeys
 		.short	0xa976
 	.endm
