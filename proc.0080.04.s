@@ -4415,8 +4415,7 @@ sub_10010c7a:
 	jsr	%pc@(sub_10013e02)	/* 10010cde:	4eba 3122 */
 	subql	#2,%sp	/* 10010ce2:	558f */
 	pea	%fp@(-16)	/* 10010ce4:	486e fff0 */
-	movew	#516,%d0	/* 10010ce8:	303c 0204 */
-	.short	0xa816	/* 10010cec:	a816 */
+	_AEDisposeDesc
 	subql	#2,%sp	/* 10010cee:	558f */
 	movel	%a4,%sp@-	/* 10010cf0:	2f0c */
 	movel	#757935405,%sp@-	/* 10010cf2:	2f3c 2d2d 2d2d */
@@ -4443,8 +4442,7 @@ sub_10010c7a:
 	jsr	%pc@(sub_10013e02)	/* 10010d26:	4eba 30da */
 	subql	#2,%sp	/* 10010d2a:	558f */
 	pea	%fp@(-8)	/* 10010d2c:	486e fff8 */
-	movew	#516,%d0	/* 10010d30:	303c 0204 */
-	.short	0xa816	/* 10010d34:	a816 */
+	_AEDisposeDesc
 	moveq	#0,%d0	/* 10010d36:	7000 */
 	movel	%d0,%sp@-	/* 10010d38:	2f00 */
 	moveq	#114,%d1	/* 10010d3a:	7272 */
@@ -4485,8 +4483,7 @@ sub_10010d50:
 	jsr	%pc@(sub_10013e02)	/* 10010d94:	4eba 306c */
 	subql	#2,%sp	/* 10010d98:	558f */
 	pea	%fp@(-16)	/* 10010d9a:	486e fff0 */
-	movew	#516,%d0	/* 10010d9e:	303c 0204 */
-	.short	0xa816	/* 10010da2:	a816 */
+	_AEDisposeDesc
 	subql	#2,%sp	/* 10010da4:	558f */
 	movel	%a3,%sp@-	/* 10010da6:	2f0b */
 	movel	#1768846184,%sp@-	/* 10010da8:	2f3c 696e 7368 */
@@ -4502,8 +4499,7 @@ sub_10010d50:
 	jsr	%pc@(sub_10013e02)	/* 10010dce:	4eba 3032 */
 	subql	#2,%sp	/* 10010dd2:	558f */
 	pea	%fp@(-8)	/* 10010dd4:	486e fff8 */
-	movew	#516,%d0	/* 10010dd8:	303c 0204 */
-	.short	0xa816	/* 10010ddc:	a816 */
+	_AEDisposeDesc
 	moveq	#0,%d0	/* 10010dde:	7000 */
 	movel	%d0,%sp@-	/* 10010de0:	2f00 */
 	moveq	#115,%d1	/* 10010de2:	7273 */
@@ -4637,8 +4633,7 @@ sub_10010ed8:
 	jsr	%pc@(sub_10013e02)	/* 10010f1a:	4eba 2ee6 */
 	subql	#2,%sp	/* 10010f1e:	558f */
 	pea	%fp@(-8)	/* 10010f20:	486e fff8 */
-	movew	#516,%d0	/* 10010f24:	303c 0204 */
-	.short	0xa816	/* 10010f28:	a816 */
+	_AEDisposeDesc
 	lea	%sp@(10),%sp	/* 10010f2a:	4fef 000a */
 	bras	.L10010f42	/* 10010f2e:	6012 */
 
@@ -5081,8 +5076,7 @@ sub_10011282:
 	movel	%fp@(-64),%a0@(88)	/* 10011388:	216e ffc0 0058 */
 	subql	#2,%sp	/* 1001138e:	558f */
 	pea	%fp@(-12)	/* 10011390:	486e fff4 */
-	movew	#516,%d0	/* 10011394:	303c 0204 */
-	.short	0xa816	/* 10011398:	a816 */
+	_AEDisposeDesc
 	tstl	%d7	/* 1001139a:	4a87 */
 	addqw	#2,%sp	/* 1001139c:	544f */
 	beqs	.L100113bc	/* 1001139e:	671c */
@@ -5228,8 +5222,7 @@ sub_100113fa:
 .L1001150a:
 	subql	#2,%sp	/* 1001150a:	558f */
 	pea	%fp@(-20)	/* 1001150c:	486e ffec */
-	movew	#516,%d0	/* 10011510:	303c 0204 */
-	.short	0xa816	/* 10011514:	a816 */
+	_AEDisposeDesc
 	jsr	%pc@(sub_100164fa)	/* 10011516:	4eba 4fe2 */
 	moveal	%d0,%a0	/* 1001151a:	2040 */
 	movel	%d7,%a0@(340)	/* 1001151c:	2147 0154 */
@@ -5431,8 +5424,7 @@ sub_100113fa:
 .L1001172e:
 	subql	#2,%sp	/* 1001172e:	558f */
 	pea	%fp@(-32)	/* 10011730:	486e ffe0 */
-	movew	#516,%d0	/* 10011734:	303c 0204 */
-	.short	0xa816	/* 10011738:	a816 */
+	_AEDisposeDesc
 	addqw	#2,%sp	/* 1001173a:	544f */
 	movel	%d7,%d0	/* 1001173c:	2007 */
 	addql	#1,%d7	/* 1001173e:	5287 */
