@@ -50,6 +50,10 @@
 		_Pack8
 	.endm
 
+	.macro	_GetKeys
+		.short	0xa976
+	.endm
+
 	.macro	_FP68K
 		.short	0xa9eb
 	.endm
