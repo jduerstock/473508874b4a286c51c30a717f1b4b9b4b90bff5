@@ -7,6 +7,10 @@
 		.short	0xa001
 	.endm
 
+	.macro	_SetVol
+		.short	0xa015
+	.endm
+
 	.macro	_DisposeHandle p1
 		.ifnb \p1
 			moveal \p1,%a0
