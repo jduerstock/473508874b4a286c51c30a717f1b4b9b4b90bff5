@@ -4357,16 +4357,16 @@ sub_10024cec:
 	jmp	%a1@	/* 10024e54:	4ed1 */
 
 sub_10024e56:
-	linkw	%fp,#0	/* 10024e56:	4e56 0000 */
-	movel	#43167,%d0	/* 10024e5a:	203c 0000 a89f */
-	.short	0xa746	/* 10024e60:	a746 */
+	linkw	%fp,#0		/* 10024e56:	4e56 0000 */
+	movel	#0xa89f,%d0	/* 10024e5a:	203c 0000 a89f */
+	.short	0xa746		/* 10024e60:	a746 */
 	movel	%a0,%sp@-	/* 10024e62:	2f08 */
-	movel	#41133,%d0	/* 10024e64:	203c 0000 a0ad */
-	.short	0xa346	/* 10024e6a:	a346 */
+	movel	#0xa0ad,%d0	/* 10024e64:	203c 0000 a0ad */
+	.short	0xa346		/* 10024e6a:	a346 */
 	cmpal	%sp@+,%a0	/* 10024e6c:	b1df */
 	beqs	.L10024e7e	/* 10024e6e:	670e */
 	movel	%fp@(12),%d0	/* 10024e70:	202e 000c */
-	.short	0xa1ad	/* 10024e74:	a1ad */
+	_Gestalt
 	moveal	%fp@(8),%a1	/* 10024e76:	226e 0008 */
 	movel	%a0,%a1@	/* 10024e7a:	2288 */
 	bras	.L10024ea4	/* 10024e7c:	6026 */

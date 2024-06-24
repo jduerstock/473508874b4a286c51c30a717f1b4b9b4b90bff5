@@ -4073,7 +4073,7 @@ sub_10028970:
 	movel	#1937339254,%d0	/* 10028a28:	203c 7379 7376 */
 	lea	%fp@(-4),%a0	/* 10028a2e:	41ee fffc */
 	moveal	%a0,%a1	/* 10028a32:	2248 */
-	.short	0xa1ad	/* 10028a34:	a1ad */
+	_Gestalt
 	movel	%a0,%a1@	/* 10028a36:	2288 */
 	movew	%d0,%d7	/* 10028a38:	3e00 */
 	bnew	.L10028b1a	/* 10028a3a:	6600 00de */
@@ -4391,7 +4391,7 @@ sub_10028cbe:
 	movel	#1937339254,%d0	/* 10028d80:	203c 7379 7376 */
 	lea	%fp@(-4),%a0	/* 10028d86:	41ee fffc */
 	moveal	%a0,%a1	/* 10028d8a:	2248 */
-	.short	0xa1ad	/* 10028d8c:	a1ad */
+	_Gestalt
 	movel	%a0,%a1@	/* 10028d8e:	2288 */
 	movew	%d0,%d7	/* 10028d90:	3e00 */
 	bnes	.L10028dbc	/* 10028d92:	6628 */

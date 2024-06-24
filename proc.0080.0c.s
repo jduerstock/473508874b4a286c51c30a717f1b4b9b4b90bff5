@@ -3286,7 +3286,7 @@ sub_1002b3a8:
 	movel	#1667658343,%d0	/* 1002b42a:	203c 6366 7267 */
 	lea	%fp@(-22),%a0	/* 1002b430:	41ee ffea */
 	moveal	%a0,%a1	/* 1002b434:	2248 */
-	.short	0xa1ad	/* 1002b436:	a1ad */
+	_Gestalt
 	movel	%a0,%a1@	/* 1002b438:	2288 */
 	movew	%d0,%d7	/* 1002b43a:	3e00 */
 	bnes	.L1002b448	/* 1002b43c:	660a */
