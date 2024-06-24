@@ -64,3 +64,8 @@
 		_HighLevelFSDispatch
 	.endm
 
+	.macro	_FSpOpenResFile
+		movew	#13,%d0
+		_HighLevelFSDispatch
+	.endm
+

@@ -4290,8 +4290,7 @@ sub_10028c32:
 	movel	%d5,%sp@-	/* 10028c7e:	2f05 */
 	movel	%a4@(18),%sp@-	/* 10028c80:	2f2c 0012 */
 	pea	%fp@(-434)	/* 10028c84:	486e fe4e */
-	movew	#1,%d0	/* 10028c88:	303c 0001 */
-	.short	0xaa52	/* 10028c8c:	aa52 */
+	_FSMakeFSSpec
 	movew	%sp@+,%d7	/* 10028c8e:	3e1f */
 	beqs	.L10028c96	/* 10028c90:	6704 */
 	movew	%d7,%d0	/* 10028c92:	3007 */
@@ -4632,8 +4631,7 @@ sub_10028f6e:
 	movel	%fp@(8),%sp@-	/* 10028fb2:	2f2e 0008 */
 	moveq	#1,%d0	/* 10028fb6:	7001 */
 	moveb	%d0,%sp@-	/* 10028fb8:	1f00 */
-	movew	#13,%d0	/* 10028fba:	303c 000d */
-	.short	0xaa52	/* 10028fbe:	aa52 */
+	_FSpOpenResFile
 	movew	%sp@+,%fp@(-318)	/* 10028fc0:	3d5f fec2 */
 	moveq	#-1,%d0	/* 10028fc4:	70ff */
 	cmpw	%fp@(-318),%d0	/* 10028fc6:	b06e fec2 */
