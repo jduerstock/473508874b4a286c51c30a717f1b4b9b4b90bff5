@@ -4988,14 +4988,11 @@ sub_1004ae16:
 	moveal	%fp@(28),%a4	/* 1004ae22:	286e 001c */
 	moveq	#0,%d0	/* 1004ae26:	7000 */
 	movel	%d0,%fp@(-26)	/* 1004ae28:	2d40 ffe6 */
-	movel	#1853189228,%fp@(-30)	/* 1004ae2c:	2d7c 6e75 6c6c */
-		/* 1004ae32:	ffe2 */
+	movel	#1853189228,%fp@(-30)	/* 1004ae2c:	2d7c 6e75 6c6c ffe2 */
 	movel	%d0,%fp@(-18)	/* 1004ae34:	2d40 ffee */
-	movel	#1853189228,%fp@(-22)	/* 1004ae38:	2d7c 6e75 6c6c */
-		/* 1004ae3e:	ffea */
+	movel	#1853189228,%fp@(-22)	/* 1004ae38:	2d7c 6e75 6c6c ffea */
 	movel	%d0,%fp@(-10)	/* 1004ae40:	2d40 fff6 */
-	movel	#1853189228,%fp@(-14)	/* 1004ae44:	2d7c 6e75 6c6c */
-		/* 1004ae4a:	fff2 */
+	movel	#1853189228,%fp@(-14)	/* 1004ae44:	2d7c 6e75 6c6c fff2 */
 	moveq	#0,%d7	/* 1004ae4c:	7e00 */
 	movel	%d0,%a3@(4)	/* 1004ae4e:	2740 0004 */
 	movel	%a4,%d1	/* 1004ae52:	220c */
