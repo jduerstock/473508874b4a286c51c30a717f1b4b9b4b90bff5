@@ -74,3 +74,8 @@
 		_HighLevelFSDispatch
 	.endm
 
+	.macro	_FSpCreateResFile
+		movew	#14,%d0
+		_HighLevelFSDispatch
+	.endm
+
