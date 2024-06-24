@@ -46,6 +46,10 @@
 		.short	0xa122
 	.endm
 
+	.macro	_RecoverHandle
+		.short	0xa128
+	.endm
+
 	.macro	_Gestalt
 		.short	0xa1ad
 	.endm

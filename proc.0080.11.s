@@ -829,7 +829,7 @@ sub_1003ab4e:
 	linkw	%fp,#0	/* 1003ab4e:	4e56 0000 */
 	movel	%a4,%sp@-	/* 1003ab52:	2f0c */
 	moveal	%fp@(8),%a0	/* 1003ab54:	206e 0008 */
-	.short	0xa128	/* 1003ab58:	a128 */
+	_RecoverHandle
 	moveal	%a0,%a4	/* 1003ab5a:	2848 */
 	movel	%a4,%d0	/* 1003ab5c:	200c */
 	bnes	.L1003ab86	/* 1003ab5e:	6626 */
