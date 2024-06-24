@@ -55,6 +55,10 @@
 		_FP68K
 	.endm
 	
+	.macro	_PtrAndHand
+		.short	0xa9ef
+	.endm
+
 	.macro	_Launch
 		.short	0xa9f2
 	.endm

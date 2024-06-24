@@ -926,12 +926,11 @@ sub_10033b78:
 	movel	%d5,%fp@(-16)	/* 10033bca:	2d45 fff0 */
 	movew	#1,%fp@(-12)	/* 10033bce:	3d7c 0001 fff4 */
 	movew	%d7,%fp@(-10)	/* 10033bd4:	3d47 fff6 */
-	movel	#-86057299,%fp@(-8)	/* 10033bd8:	2d7c fade dead */
-		/* 10033bde:	fff8 */
+	movel	#0xfadedead,%fp@(-8)	/* 10033bd8:	2d7c fade dead fff8 */
 	lea	%fp@(-16),%a0	/* 10033be0:	41ee fff0 */
 	moveal	%a4,%a1	/* 10033be4:	224c */
 	moveq	#12,%d0	/* 10033be6:	700c */
-	.short	0xa9ef	/* 10033be8:	a9ef */
+	_PtrAndHand
 	movew	%d0,%fp@(16)	/* 10033bea:	3d40 0010 */
 
 .L10033bee:
