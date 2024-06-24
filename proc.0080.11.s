@@ -3509,8 +3509,7 @@ sub_1003c3ea:
 	pea	%fp@(-72)	/* 1003c52e:	486e ffb8 */
 	moveq	#1,%d0	/* 1003c532:	7001 */
 	moveb	%d0,%sp@-	/* 1003c534:	1f00 */
-	movew	#13,%d0	/* 1003c536:	303c 000d */
-	.short	0xaa52	/* 1003c53a:	aa52 */
+	_FSpOpenResFile
 	movew	%sp@+,%d0	/* 1003c53c:	301f */
 	bras	.L1003c552	/* 1003c53e:	6012 */
 
@@ -3690,8 +3689,7 @@ sub_1003c6cc:
 	pea	%a0@(292)	/* 1003c6f4:	4868 0124 */
 	moveq	#1,%d0	/* 1003c6f8:	7001 */
 	moveb	%d0,%sp@-	/* 1003c6fa:	1f00 */
-	movew	#13,%d0	/* 1003c6fc:	303c 000d */
-	.short	0xaa52	/* 1003c700:	aa52 */
+	_FSpOpenResFile
 	movew	%sp@+,%d7	/* 1003c702:	3e1f */
 	bges	.L1003c71a	/* 1003c704:	6c14 */
 	subql	#2,%sp	/* 1003c706:	558f */
