@@ -18,6 +18,10 @@
 		.short	0xa122
 	.endm
 
+	.macro	_Gestalt
+		.short	0xa1ad
+	.endm
+
 	.macro	_PBHOpenRFSync
 		.short	0xa20a
 	.endm
