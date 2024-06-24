@@ -2689,8 +2689,7 @@ sub_10034ba6:
 	moveq	#4,%d0	/* 10034c54:	7004 */
 	movel	%d0,%sp@-	/* 10034c56:	2f00 */
 	pea	%fp@(-60)	/* 10034c58:	486e ffc4 */
-	movew	#2085,%d0	/* 10034c5c:	303c 0825 */
-	.short	0xa816	/* 10034c60:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d0	/* 10034c62:	301f */
 	extl	%d0	/* 10034c64:	48c0 */
 	movel	%d0,%d7	/* 10034c66:	2e00 */
@@ -2763,8 +2762,7 @@ sub_10034ba6:
 	movel	%d0,%sp@-	/* 10034d20:	2f00 */
 	movel	%d0,%sp@-	/* 10034d22:	2f00 */
 	movel	%a4,%sp@-	/* 10034d24:	2f0c */
-	movew	#2085,%d0	/* 10034d26:	303c 0825 */
-	.short	0xa816	/* 10034d2a:	a816 */
+	_AECreateDesc
 	movew	%sp@+,%d0	/* 10034d2c:	301f */
 	extl	%d0	/* 10034d2e:	48c0 */
 	movel	%d0,%d5	/* 10034d30:	2a00 */
