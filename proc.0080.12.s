@@ -2767,7 +2767,7 @@ sub_1003f260:
 	cmpw	%a4@(2),%d0	/* 1003f298:	b06c 0002 */
 	beqs	.L1003f2aa	/* 1003f29c:	670c */
 	movew	%a4@(2),%sp@-	/* 1003f29e:	3f2c 0002 */
-	.short	0xa99a	/* CloseResFile */
+	_CloseResFile
 	movew	#-1,%a4@(2)	/* 1003f2a4:	397c ffff 0002 */
 
 .L1003f2aa:
@@ -2784,7 +2784,7 @@ sub_1003f2b4:
 	cmpw	%a4@(2),%d0	/* 1003f2c4:	b06c 0002 */
 	beqs	.L1003f2d6	/* 1003f2c8:	670c */
 	movew	%a4@(2),%sp@-	/* 1003f2ca:	3f2c 0002 */
-	.short	0xa99a	/* 1003f2ce:	a99a */
+	_CloseResFile
 	movew	#-1,%a4@(2)	/* 1003f2d0:	397c ffff 0002 */
 
 .L1003f2d6:
@@ -4534,7 +4534,7 @@ sub_10040446:
 	cmpw	%fp@(-2),%d0	/* 10040500:	b06e fffe */
 	beqs	.L10040526	/* 10040504:	6720 */
 	movew	%fp@(-2),%sp@-	/* 10040506:	3f2e fffe */
-	.short	0xa99a	/* 1004050a:	a99a */
+	_CloseResFile
 	subql	#2,%sp	/* 1004050c:	558f */
 	.short	0xa9af	/* 1004050e:	a9af */
 	movew	%sp@+,%d0	/* 10040510:	301f */
@@ -4923,7 +4923,7 @@ sub_1004059a:
 	cmpw	%fp@(-2),%d0	/* 1004088c:	b06e fffe */
 	beqs	.L100408b2	/* 10040890:	6720 */
 	movew	%fp@(-2),%sp@-	/* 10040892:	3f2e fffe */
-	.short	0xa99a	/* 10040896:	a99a */
+	_CloseResFile
 	subql	#2,%sp	/* 10040898:	558f */
 	.short	0xa9af	/* 1004089a:	a9af */
 	movew	%sp@+,%d0	/* 1004089c:	301f */
@@ -5033,7 +5033,7 @@ sub_100408f0:
 	cmpw	%fp@(-2),%d0	/* 100409a2:	b06e fffe */
 	beqs	.L100409c8	/* 100409a6:	6720 */
 	movew	%fp@(-2),%sp@-	/* 100409a8:	3f2e fffe */
-	.short	0xa99a	/* 100409ac:	a99a */
+	_CloseResFile
 	subql	#2,%sp	/* 100409ae:	558f */
 	.short	0xa9af	/* 100409b0:	a9af */
 	movew	%sp@+,%d0	/* 100409b2:	301f */

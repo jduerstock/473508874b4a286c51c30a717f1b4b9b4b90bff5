@@ -3338,7 +3338,7 @@ sub_1002b3a8:
 
 .L1002b4a8:
 	movew	%d7,%sp@-	/* 1002b4a8:	3f07 */
-	.short	0xa99a	/* 1002b4aa:	a99a */
+	_CloseResFile
 	movew	%d5,%sp@-	/* 1002b4ac:	3f05 */
 	.short	0xa998	/* 1002b4ae:	a998 */
 
@@ -3824,7 +3824,7 @@ sub_1002b8a6:
 
 .L1002b91e:
 	movew	%d6,%sp@-	/* 1002b91e:	3f06 */
-	.short	0xa99a	/* 1002b920:	a99a */
+	_CloseResFile
 	movew	%d5,%sp@-	/* 1002b922:	3f05 */
 	.short	0xa998	/* 1002b924:	a998 */
 
@@ -4321,7 +4321,7 @@ sub_1002bcbc:
 	moveal	%d0,%a0	/* 1002bde0:	2040 */
 	movel	%fp@(-58),%a0@(88)	/* 1002bde2:	216e ffc6 0058 */
 	movew	%fp@(-6),%sp@-	/* 1002bde8:	3f2e fffa */
-	.short	0xa99a	/* 1002bdec:	a99a */
+	_CloseResFile
 	subql	#2,%sp	/* 1002bdee:	558f */
 	.short	0xa9af	/* 1002bdf0:	a9af */
 	movew	%sp@+,%d5	/* 1002bdf2:	3a1f */

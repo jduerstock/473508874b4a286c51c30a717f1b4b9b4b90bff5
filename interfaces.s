@@ -134,6 +134,10 @@
 		.short	0xa994
 	.endm
 
+	.macro	_CloseResFile
+		.short	0xa99a
+	.endm
+
 	.macro	_FP68K
 		.short	0xa9eb
 	.endm

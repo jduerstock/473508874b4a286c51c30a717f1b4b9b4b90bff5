@@ -205,7 +205,7 @@ sub_1003a33e:
 	cmpiw	#-1,%d7	/* 1003a522:	0c47 ffff */
 	beqs	.L1003a52c	/* 1003a526:	6704 */
 	movew	%d7,%sp@-	/* 1003a528:	3f07 */
-	.short	0xa99a	/* 1003a52a:	a99a */
+	_CloseResFile
 
 .L1003a52c:
 	movew	%fp@(-2),%sp@-	/* 1003a52c:	3f2e fffe */
@@ -3719,7 +3719,7 @@ sub_1003c72e:
 	cmpiw	#-1,%d7	/* 1003c73e:	0c47 ffff */
 	beqs	.L1003c754	/* 1003c742:	6710 */
 	movew	%d7,%sp@-	/* 1003c744:	3f07 */
-	.short	0xa99a	/* 1003c746:	a99a */
+	_CloseResFile
 	jsr	%pc@(sub_1004411e)	/* 1003c748:	4eba 79d4 */
 	moveal	%d0,%a0	/* 1003c74c:	2040 */
 	movew	#-1,%a0@(192)	/* 1003c74e:	317c ffff 00c0 */

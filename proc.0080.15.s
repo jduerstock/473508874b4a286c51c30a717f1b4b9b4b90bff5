@@ -2177,7 +2177,7 @@ sub_1004914c:
 	moveal	%d0,%a0	/* 100492c0:	2040 */
 	movel	%fp@(-58),%a0@(88)	/* 100492c2:	216e ffc6 0058 */
 	movew	%fp@(-6),%sp@-	/* 100492c8:	3f2e fffa */
-	.short	0xa99a	/* 100492cc:	a99a */
+	_CloseResFile
 	subql	#2,%sp	/* 100492ce:	558f */
 	.short	0xa9af	/* 100492d0:	a9af */
 	movew	%sp@+,%d7	/* 100492d2:	3e1f */

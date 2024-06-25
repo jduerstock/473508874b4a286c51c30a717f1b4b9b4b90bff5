@@ -5798,7 +5798,7 @@ sub_10039eb6:
 	moveal	%d0,%a0	/* 1003a20c:	2040 */
 	movel	%fp@(-78),%a0@(88)	/* 1003a20e:	216e ffb2 0058 */
 	movew	%fp@(-6),%sp@-	/* 1003a214:	3f2e fffa */
-	.short	0xa99a	/* 1003a218:	a99a */
+	_CloseResFile
 	subql	#2,%sp	/* 1003a21a:	558f */
 	.short	0xa9af	/* 1003a21c:	a9af */
 	movew	%sp@+,%d5	/* 1003a21e:	3a1f */

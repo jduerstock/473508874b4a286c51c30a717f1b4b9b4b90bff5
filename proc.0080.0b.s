@@ -4949,7 +4949,7 @@ sub_10028f6e:
 	tstw	%fp@(-318)	/* 100292ea:	4a6e fec2 */
 	blts	.L100292f6	/* 100292ee:	6d06 */
 	movew	%fp@(-318),%sp@-	/* 100292f0:	3f2e fec2 */
-	.short	0xa99a	/* 100292f4:	a99a */
+	_CloseResFile
 
 .L100292f6:
 	movew	%d7,%d0	/* 100292f6:	3007 */
