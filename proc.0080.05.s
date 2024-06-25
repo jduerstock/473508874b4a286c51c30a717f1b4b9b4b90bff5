@@ -2988,7 +2988,7 @@ sub_1001347e:
 	movel	%fp@(-316),%a0@(88)	/* 100136a0:	216e fec4 0058 */
 	moveal	%a3,%a0	/* 100136a6:	204b */
 	moveb	%d6,%d0	/* 100136a8:	1006 */
-	.short	0xa06a	/* 100136aa:	a06a */
+	_HSetState
 	tstl	%d7	/* 100136ac:	4a87 */
 	beqs	.L100136cc	/* 100136ae:	671c */
 	movel	%d7,%d0	/* 100136b0:	2007 */
@@ -3077,7 +3077,7 @@ sub_1001347e:
 	movel	%fp@(-316),%a0@(88)	/* 10013790:	216e fec4 0058 */
 	moveal	%a3,%a0	/* 10013796:	204b */
 	moveb	%d6,%d0	/* 10013798:	1006 */
-	.short	0xa06a	/* 1001379a:	a06a */
+	_HSetState
 	tstl	%d7	/* 1001379c:	4a87 */
 	beqs	.L100137bc	/* 1001379e:	671c */
 	movel	%d7,%d0	/* 100137a0:	2007 */
@@ -3299,7 +3299,7 @@ sub_1001347e:
 	movel	%fp@(-316),%a0@(88)	/* 100139bc:	216e fec4 0058 */
 	moveal	%fp@(-12),%a0	/* 100139c2:	206e fff4 */
 	moveb	%d6,%d0	/* 100139c6:	1006 */
-	.short	0xa06a	/* 100139c8:	a06a */
+	_HSetState
 	tstl	%d7	/* 100139ca:	4a87 */
 	beqs	.L100139ea	/* 100139cc:	671c */
 	movel	%d7,%d0	/* 100139ce:	2007 */
@@ -3370,7 +3370,7 @@ sub_1001347e:
 	movel	%fp@(-316),%a0@(88)	/* 10013a7e:	216e fec4 0058 */
 	moveal	%fp@(-12),%a0	/* 10013a84:	206e fff4 */
 	moveb	%d6,%d0	/* 10013a88:	1006 */
-	.short	0xa06a	/* 10013a8a:	a06a */
+	_HSetState
 	tstl	%d7	/* 10013a8c:	4a87 */
 	beqs	.L10013aac	/* 10013a8e:	671c */
 	movel	%d7,%d0	/* 10013a90:	2007 */
@@ -3448,7 +3448,7 @@ sub_1001347e:
 	movel	%fp@(-316),%a0@(88)	/* 10013b54:	216e fec4 0058 */
 	moveal	%a2,%a0	/* 10013b5a:	204a */
 	moveb	%d6,%d0	/* 10013b5c:	1006 */
-	.short	0xa06a	/* 10013b5e:	a06a */
+	_HSetState
 	tstl	%d7	/* 10013b60:	4a87 */
 	beqs	.L10013b80	/* 10013b62:	671c */
 	movel	%d7,%d0	/* 10013b64:	2007 */

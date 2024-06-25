@@ -42,6 +42,10 @@
 		.short	0xa069
 	.endm
 
+	.macro	_HSetState
+		.short	0xa06a
+	.endm
+
 	.macro	_SysEnvirons
 		.short	0xa090
 	.endm

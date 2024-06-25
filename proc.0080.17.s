@@ -316,7 +316,7 @@ sub_1004f328:
 	jsr	%pc@(sub_1004f376)	/* 1004f356:	4eba 001e */
 	moveal	%a3,%a0	/* 1004f35a:	204b */
 	moveb	%d7,%d0	/* 1004f35c:	1007 */
-	.short	0xa06a	/* 1004f35e:	a06a */
+	_HSetState
 	lea	%sp@(12),%sp	/* 1004f360:	4fef 000c */
 
 .L1004f364:
@@ -3278,7 +3278,7 @@ sub_10050800:
 	jsr	%pc@(sub_1005125c)	/* 100511aa:	4eba 00b0 */
 	moveal	%fp@(-546),%a0	/* 100511ae:	206e fdde */
 	moveb	%fp@(-1185),%d0	/* 100511b2:	102e fb5f */
-	.short	0xa06a	/* 100511b6:	a06a */
+	_HSetState
 	lea	%sp@(20),%sp	/* 100511b8:	4fef 0014 */
 
 .L100511bc:

@@ -4232,7 +4232,7 @@ sub_10043d14:
 	jsr	%pc@(sub_100452b2)	/* 10043e4a:	4eba 1466 */
 	moveal	%a3@(4),%a0	/* 10043e4e:	206b 0004 */
 	moveb	%d6,%d0	/* 10043e52:	1006 */
-	.short	0xa06a	/* 10043e54:	a06a */
+	_HSetState
 	jsr	%pc@(sub_1004aacc)	/* 10043e56:	4eba 6c74 */
 	moveal	%d0,%a0	/* 10043e5a:	2040 */
 	lea	%a0@(464),%a3	/* 10043e5c:	47e8 01d0 */

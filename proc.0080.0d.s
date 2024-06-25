@@ -5313,7 +5313,7 @@ sub_1002f9d0:
 	movel	%fp@(-86),%a0@(88)	/* 1002fa6a:	216e ffaa 0058 */
 	moveal	%fp@(-8),%a0	/* 1002fa70:	206e fff8 */
 	moveb	%d6,%d0	/* 1002fa74:	1006 */
-	.short	0xa06a	/* 1002fa76:	a06a */
+	_HSetState
 	tstl	%d7	/* 1002fa78:	4a87 */
 	beqs	.L1002fa98	/* 1002fa7a:	671c */
 	movel	%d7,%d0	/* 1002fa7c:	2007 */

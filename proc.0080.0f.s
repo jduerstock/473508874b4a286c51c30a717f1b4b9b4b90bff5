@@ -314,7 +314,7 @@ sub_100335f2:
 	jsr	%pc@(sub_1003364c)	/* 10033634:	4eba 0016 */
 	moveal	%a4,%a0	/* 10033638:	204c */
 	moveb	%d6,%d0	/* 1003363a:	1006 */
-	.short	0xa06a	/* 1003363c:	a06a */
+	_HSetState
 	lea	%sp@(12),%sp	/* 1003363e:	4fef 000c */
 	moveml	%fp@(-12),%d6-%d7/%a4	/* 10033642:	4cee 10c0 fff4 */
 	unlk	%fp	/* 10033648:	4e5e */

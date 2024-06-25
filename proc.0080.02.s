@@ -3745,7 +3745,7 @@ sub_10009972:
 	movel	%a1,%sp@-	/* 100099b4:	2f09 */
 	moveal	%a1,%a0	/* 100099b6:	2049 */
 	moveb	%d6,%d0	/* 100099b8:	1006 */
-	.short	0xa06a	/* 100099ba:	a06a */
+	_HSetState
 	moveal	%sp@+,%a1	/* 100099bc:	225f */
 	movel	%a3,%d0	/* 100099be:	200b */
 	moveml	%fp@(-32),%d6-%d7/%a2-%a4	/* 100099c0:	4cee 1cc0 ffe0 */

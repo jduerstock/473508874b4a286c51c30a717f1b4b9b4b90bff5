@@ -1214,7 +1214,7 @@ sub_1003e254:
 	moveal	%a4@,%a0	/* 1003e388:	2054 */
 	moveal	%a0@(6),%a0	/* 1003e38a:	2068 0006 */
 	moveb	%d4,%d0	/* 1003e38e:	1004 */
-	.short	0xa06a	/* 1003e390:	a06a */
+	_HSetState
 	tstl	%d5	/* 1003e392:	4a85 */
 	beqs	.L1003e3b2	/* 1003e394:	671c */
 	movel	%d5,%d0	/* 1003e396:	2005 */
@@ -1623,7 +1623,7 @@ sub_1003e432:
 	movel	%fp@(-126),%a0@(88)	/* 1003e7ba:	216e ff82 0058 */
 	moveal	%fp@(12),%a0	/* 1003e7c0:	206e 000c */
 	moveb	%fp@(-69),%d0	/* 1003e7c4:	102e ffbb */
-	.short	0xa06a	/* 1003e7c8:	a06a */
+	_HSetState
 	tstl	%fp@(-74)	/* 1003e7ca:	4aae ffb6 */
 	beqs	.L1003e7ee	/* 1003e7ce:	671e */
 	movel	%fp@(-74),%d0	/* 1003e7d0:	202e ffb6 */
@@ -3895,11 +3895,11 @@ sub_1003fdc8:
 	movew	%sp@+,%d6	/* 1003fee6:	3c1f */
 	moveal	%fp@(-4),%a0	/* 1003fee8:	206e fffc */
 	moveb	%d4,%d0	/* 1003feec:	1004 */
-	.short	0xa06a	/* 1003feee:	a06a */
+	_HSetState
 	moveal	%a4@,%a0	/* 1003fef0:	2054 */
 	moveal	%a0@(26),%a0	/* 1003fef2:	2068 001a */
 	moveb	%d5,%d0	/* 1003fef6:	1005 */
-	.short	0xa06a	/* 1003fef8:	a06a */
+	_HSetState
 	moveq	#0,%d0	/* 1003fefa:	7000 */
 	moveb	%d6,%d0	/* 1003fefc:	1006 */
 	tstl	%d0	/* 1003fefe:	4a80 */
@@ -4030,7 +4030,7 @@ sub_1003ff76:
 	movew	%sp@+,%d7	/* 10040052:	3e1f */
 	moveal	%a3,%a0	/* 10040054:	204b */
 	moveb	%d5,%d0	/* 10040056:	1005 */
-	.short	0xa06a	/* 10040058:	a06a */
+	_HSetState
 	moveq	#0,%d0	/* 1004005a:	7000 */
 	moveb	%d7,%d0	/* 1004005c:	1007 */
 	tstl	%d0	/* 1004005e:	4a80 */
@@ -4060,7 +4060,7 @@ sub_1003ff76:
 	movew	%sp@+,%d7	/* 1004009a:	3e1f */
 	moveal	%a3,%a0	/* 1004009c:	204b */
 	moveb	%d5,%d0	/* 1004009e:	1005 */
-	.short	0xa06a	/* 100400a0:	a06a */
+	_HSetState
 	moveq	#0,%d0	/* 100400a2:	7000 */
 	moveb	%d7,%d0	/* 100400a4:	1007 */
 	tstl	%d0	/* 100400a6:	4a80 */
@@ -4070,7 +4070,7 @@ sub_1003ff76:
 	moveal	%a4@,%a0	/* 100400b4:	2054 */
 	moveal	%a0@(22),%a0	/* 100400b6:	2068 0016 */
 	moveb	%d6,%d0	/* 100400ba:	1006 */
-	.short	0xa06a	/* 100400bc:	a06a */
+	_HSetState
 	addqw	#4,%sp	/* 100400be:	584f */
 
 .L100400c0:
@@ -4128,7 +4128,7 @@ sub_100400d2:
 	movew	%sp@+,%d6	/* 10040138:	3c1f */
 	moveal	%a3,%a0	/* 1004013a:	204b */
 	moveb	%d5,%d0	/* 1004013c:	1005 */
-	.short	0xa06a	/* 1004013e:	a06a */
+	_HSetState
 	moveq	#0,%d0	/* 10040140:	7000 */
 	moveb	%d6,%d0	/* 10040142:	1006 */
 	tstl	%d0	/* 10040144:	4a80 */
@@ -4157,7 +4157,7 @@ sub_100400d2:
 	moveal	%a4@,%a0	/* 1004016c:	2054 */
 	moveal	%a0@(22),%a0	/* 1004016e:	2068 0016 */
 	moveb	%d3,%d0	/* 10040172:	1003 */
-	.short	0xa06a	/* 10040174:	a06a */
+	_HSetState
 	tstb	%d4	/* 10040176:	4a04 */
 	bnes	.L10040186	/* 10040178:	660c */
 	movel	#-2740,%sp@-	/* 1004017a:	2f3c ffff f54c */
@@ -4373,7 +4373,7 @@ sub_10040316:
 	jsr	%pc@(sub_1004727e)	/* 10040362:	4eba 6f1a */
 	moveal	%a3,%a0	/* 10040366:	204b */
 	moveb	%d7,%d0	/* 10040368:	1007 */
-	.short	0xa06a	/* 1004036a:	a06a */
+	_HSetState
 	subql	#2,%sp	/* 1004036c:	558f */
 	movew	#-32768,%sp@-	/* 1004036e:	3f3c 8000 */
 	movel	#1886545254,%sp@-	/* 10040372:	2f3c 7072 6566 */

@@ -2304,7 +2304,7 @@ sub_1002a890:
 	jsr	%pc@(sub_10031582)	/* 1002aa6c:	4eba 6b14 */
 	moveal	%a3,%a0	/* 1002aa70:	204b */
 	moveb	%d6,%d0	/* 1002aa72:	1006 */
-	.short	0xa06a	/* 1002aa74:	a06a */
+	_HSetState
 	pea	%fp@(-9)	/* 1002aa76:	486e fff7 */
 	movel	%a4,%sp@-	/* 1002aa7a:	2f0c */
 	pea	%fp@(-330)	/* 1002aa7c:	486e feb6 */
