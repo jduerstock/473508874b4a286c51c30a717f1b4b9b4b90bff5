@@ -166,6 +166,11 @@
 		_OSDispatch
 	.endm
 
+	.macro	_GetFrontProcess
+		movew	#57,%sp@-
+		_OSDispatch
+	.endm
+
 	.macro	_GetProcessInformation
 		movew	#58,%sp@-
 		_OSDispatch
