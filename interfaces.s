@@ -151,6 +151,11 @@
 		.short	0xa88f
 	.endm
 
+	.macro	_TempTopMem
+		movew	#22,%sp@-
+		_OSDispatch
+	.endm
+
 	.macro	_TempNewHandle
 		movew	#29,%sp@-
 		_OSDispatch
