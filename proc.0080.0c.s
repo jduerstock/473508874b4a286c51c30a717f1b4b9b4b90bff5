@@ -3081,8 +3081,7 @@ sub_1002b1c8:
 .L1002b228:
 	subql	#2,%sp	/* 1002b228:	558f */
 	movel	%a4,%sp@-	/* 1002b22a:	2f0c */
-	movew	#56,%sp@-	/* 1002b22c:	3f3c 0038 */
-	.short	0xa88f	/* 1002b230:	a88f */
+	_GetNextProcess
 	movew	%sp@+,%d7	/* 1002b232:	3e1f */
 	bnes	.L1002b256	/* 1002b234:	6620 */
 	moveq	#60,%d0	/* 1002b236:	703c */

@@ -171,6 +171,11 @@
 		_OSDispatch
 	.endm
 
+	.macro	_GetNextProcess
+		movew	#56,%sp@-
+		_OSDispatch
+	.endm
+
 	.macro	_GetFrontProcess
 		movew	#57,%sp@-
 		_OSDispatch
