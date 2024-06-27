@@ -3776,8 +3776,7 @@ sub_1002b8a6:
 	moveb	%d0,%sp@-	/* 1002b8b8:	1f00 */
 	.short	0xa99b	/* 1002b8ba:	a99b */
 	subql	#2,%sp	/* 1002b8bc:	558f */
-	movew	#64,%sp@-	/* 1002b8be:	3f3c 0040 */
-	.short	0xa88f	/* 1002b8c2:	a88f */
+	_BeginSystemMode
 	subql	#2,%sp	/* 1002b8c4:	558f */
 	movew	%fp@(10),%sp@-	/* 1002b8c6:	3f2e 000a */
 	movel	%fp@(12),%sp@-	/* 1002b8ca:	2f2e 000c */
@@ -3787,8 +3786,7 @@ sub_1002b8a6:
 	jsr	%pc@(sub_100249d2)	/* 1002b8d6:	4eba 90fa */
 	movew	%sp@+,%d6	/* 1002b8da:	3c1f */
 	subql	#2,%sp	/* 1002b8dc:	558f */
-	movew	#65,%sp@-	/* 1002b8de:	3f3c 0041 */
-	.short	0xa88f	/* 1002b8e2:	a88f */
+	_EndSystemMode
 	cmpiw	#-1,%d6	/* 1002b8e4:	0c46 ffff */
 	addqw	#4,%sp	/* 1002b8e8:	584f */
 	beqs	.L1002b926	/* 1002b8ea:	673a */
@@ -3907,13 +3905,11 @@ sub_1002b9ea:
 	movel	%d1,%fp@(-12)	/* 1002ba02:	2d41 fff4 */
 	subql	#2,%sp	/* 1002ba06:	558f */
 	pea	%fp@(-8)	/* 1002ba08:	486e fff8 */
-	movew	#55,%sp@-	/* 1002ba0c:	3f3c 0037 */
-	.short	0xa88f	/* 1002ba10:	a88f */
+	_GetCurrentProcess
 	subql	#2,%sp	/* 1002ba12:	558f */
 	pea	%fp@(-8)	/* 1002ba14:	486e fff8 */
 	pea	%fp@(-68)	/* 1002ba18:	486e ffbc */
-	movew	#58,%sp@-	/* 1002ba1c:	3f3c 003a */
-	.short	0xa88f	/* 1002ba20:	a88f */
+	_GetProcessInformation
 	movel	#1024,%d0	/* 1002ba22:	203c 0000 0400 */
 	andl	%fp@(-44),%d0	/* 1002ba28:	c0ae ffd4 */
 	addqw	#4,%sp	/* 1002ba2c:	584f */
@@ -4236,8 +4232,7 @@ sub_1002bcbc:
 	moveb	%d0,%sp@-	/* 1002bd20:	1f00 */
 	.short	0xa99b	/* 1002bd22:	a99b */
 	subql	#2,%sp	/* 1002bd24:	558f */
-	movew	#64,%sp@-	/* 1002bd26:	3f3c 0040 */
-	.short	0xa88f	/* 1002bd2a:	a88f */
+	_BeginSystemMode
 	subql	#2,%sp	/* 1002bd2c:	558f */
 	movel	%a3,%sp@-	/* 1002bd2e:	2f0b */
 	moveq	#1,%d0	/* 1002bd30:	7001 */
@@ -4245,8 +4240,7 @@ sub_1002bcbc:
 	_FSpOpenResFile
 	movew	%sp@+,%fp@(-6)	/* 1002bd3a:	3d5f fffa */
 	subql	#2,%sp	/* 1002bd3e:	558f */
-	movew	#65,%sp@-	/* 1002bd40:	3f3c 0041 */
-	.short	0xa88f	/* 1002bd44:	a88f */
+	_EndSystemMode
 	moveq	#1,%d0	/* 1002bd46:	7001 */
 	moveb	%d0,%sp@-	/* 1002bd48:	1f00 */
 	.short	0xa99b	/* 1002bd4a:	a99b */
@@ -4738,8 +4732,7 @@ sub_1002c1be:
 	bnes	.L1002c1e8	/* 1002c1d2:	6614 */
 	subql	#2,%sp	/* 1002c1d4:	558f */
 	pea	%fp@(8)	/* 1002c1d6:	486e 0008 */
-	movew	#55,%sp@-	/* 1002c1da:	3f3c 0037 */
-	.short	0xa88f	/* 1002c1de:	a88f */
+	_GetCurrentProcess
 	movew	%sp@+,%d7	/* 1002c1e0:	3e1f */
 	beqs	.L1002c1e8	/* 1002c1e2:	6704 */
 	movew	%d7,%d0	/* 1002c1e4:	3007 */
@@ -4754,8 +4747,7 @@ sub_1002c1be:
 	subql	#2,%sp	/* 1002c1fa:	558f */
 	pea	%fp@(8)	/* 1002c1fc:	486e 0008 */
 	pea	%fp@(-60)	/* 1002c200:	486e ffc4 */
-	movew	#58,%sp@-	/* 1002c204:	3f3c 003a */
-	.short	0xa88f	/* 1002c208:	a88f */
+	_GetProcessInformation
 	movew	%sp@+,%d7	/* 1002c20a:	3e1f */
 	moveal	%fp@(20),%a0	/* 1002c20c:	206e 0014 */
 	movel	%fp@(-40),%a0@	/* 1002c210:	20ae ffd8 */
