@@ -127,6 +127,11 @@
 		_Pack8
 	.endm
 
+	.macro	_AEInstallEventHandler
+		movew	#0x091f,%d0
+		_Pack8
+	.endm
+
 	.macro	_AEGetNthDesc
 		movew	#0x0a0b,%d0
 		_Pack8

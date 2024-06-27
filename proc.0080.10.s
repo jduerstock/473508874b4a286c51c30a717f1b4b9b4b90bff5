@@ -63,8 +63,7 @@ sub_100369c8:
 	movel	%a0@(8),%sp@-	/* 10036a50:	2f28 0008 */
 	moveq	#0,%d0	/* 10036a54:	7000 */
 	moveb	%d0,%sp@-	/* 10036a56:	1f00 */
-	movew	#2335,%d0	/* 10036a58:	303c 091f */
-	.short	0xa816	/* 10036a5c:	a816 */
+	_AEInstallEventHandler
 	jsr	%pc@(sub_1003d67c)	/* 10036a5e:	4eba 6c1c */
 	moveal	%d0,%a0	/* 10036a62:	2040 */
 	movel	%a4,%a0@(240)	/* 10036a64:	214c 00f0 */

@@ -3900,8 +3900,7 @@ sub_1002882a:
 	movel	%fp@(8),%sp@-	/* 10028840:	2f2e 0008 */
 	moveq	#1,%d0	/* 10028844:	7001 */
 	moveb	%d0,%sp@-	/* 10028846:	1f00 */
-	movew	#2335,%d0	/* 10028848:	303c 091f */
-	.short	0xa816	/* 1002884c:	a816 */
+	_AEInstallEventHandler
 	unlk	%fp	/* 1002884e:	4e5e */
 	rts	/* 10028850:	4e75 */
 
@@ -4812,8 +4811,7 @@ sub_10028f6e:
 	movel	%fp@(-14),%sp@-	/* 1002919a:	2f2e fff2 */
 	moveq	#1,%d0	/* 1002919e:	7001 */
 	moveb	%d0,%sp@-	/* 100291a0:	1f00 */
-	movew	#2335,%d0	/* 100291a2:	303c 091f */
-	.short	0xa816	/* 100291a6:	a816 */
+	_AEInstallEventHandler
 	movew	%sp@+,%d7	/* 100291a8:	3e1f */
 	braw	.L100292c8	/* 100291aa:	6000 011c */
 
