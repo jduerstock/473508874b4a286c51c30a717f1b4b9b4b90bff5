@@ -2757,8 +2757,7 @@ sub_1003bda6:
 	subql	#4,%sp	/* 1003bdb2:	598f */
 	movel	%d7,%sp@-	/* 1003bdb4:	2f07 */
 	pea	%fp@(-2)	/* 1003bdb6:	486e fffe */
-	movew	#29,%sp@-	/* 1003bdba:	3f3c 001d */
-	.short	0xa88f	/* 1003bdbe:	a88f */
+	_TempNewHandle
 	moveal	%sp@+,%a4	/* 1003bdc0:	285f */
 	movel	%a4,%d0	/* 1003bdc2:	200c */
 	beqs	.L1003bdd0	/* 1003bdc4:	670a */

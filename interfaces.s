@@ -151,6 +151,11 @@
 		.short	0xa88f
 	.endm
 
+	.macro	_TempNewHandle
+		movew	#29,%sp@-
+		_OSDispatch
+	.endm
+
 	.macro	_GetPSNFromPortName
 		movew	#53,%sp@-
 		_OSDispatch

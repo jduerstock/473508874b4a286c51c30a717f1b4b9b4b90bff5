@@ -5519,8 +5519,7 @@ sub_10039eb6:
 	moveb	%d0,%sp@-	/* 10039f4a:	1f00 */
 	.short	0xa99b	/* 10039f4c:	a99b */
 	subql	#2,%sp	/* 10039f4e:	558f */
-	movew	#64,%sp@-	/* 10039f50:	3f3c 0040 */
-	.short	0xa88f	/* 10039f54:	a88f */
+	_BeginSystemMode
 	subql	#2,%sp	/* 10039f56:	558f */
 	movel	%a3,%sp@-	/* 10039f58:	2f0b */
 	moveq	#1,%d0	/* 10039f5a:	7001 */
@@ -5528,8 +5527,7 @@ sub_10039eb6:
 	_FSpOpenResFile
 	movew	%sp@+,%fp@(-6)	/* 10039f64:	3d5f fffa */
 	subql	#2,%sp	/* 10039f68:	558f */
-	movew	#65,%sp@-	/* 10039f6a:	3f3c 0041 */
-	.short	0xa88f	/* 10039f6e:	a88f */
+	_EndSystemMode
 	moveq	#1,%d0	/* 10039f70:	7001 */
 	moveb	%d0,%sp@-	/* 10039f72:	1f00 */
 	.short	0xa99b	/* 10039f74:	a99b */
