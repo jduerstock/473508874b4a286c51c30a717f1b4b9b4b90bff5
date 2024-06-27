@@ -107,6 +107,11 @@
 		_Pack8
 	.endm
 
+	.macro	_AECountItems
+		movew	#0x0407,%d0
+		_Pack8
+	.endm
+
 	.macro	_AECreateList
 		movew	#0x0706,%d0
 		_Pack8
