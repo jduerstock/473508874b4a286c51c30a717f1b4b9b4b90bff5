@@ -181,6 +181,11 @@
 		_OSDispatch
 	.endm
 
+	.macro	_SameProcess
+		movew	#61,%sp@-
+		_OSDispatch
+	.endm
+
 	.macro	_BeginSystemMode
 		movew	#64,%sp@-
 		_OSDispatch

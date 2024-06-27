@@ -5287,14 +5287,12 @@ sub_100256ca:
 	clrb	%fp@(-17)	/* 100256d6:	422e ffef */
 	subql	#2,%sp	/* 100256da:	558f */
 	pea	%fp@(-26)	/* 100256dc:	486e ffe6 */
-	movew	#55,%sp@-	/* 100256e0:	3f3c 0037 */
-	.short	0xa88f	/* 100256e4:	a88f */
+	_GetCurrentProcess
 	subql	#2,%sp	/* 100256e6:	558f */
 	pea	%fp@(-34)	/* 100256e8:	486e ffde */
 	moveq	#-1,%d0	/* 100256ec:	70ff */
 	movel	%d0,%sp@-	/* 100256ee:	2f00 */
-	movew	#57,%sp@-	/* 100256f0:	3f3c 0039 */
-	.short	0xa88f	/* 100256f4:	a88f */
+	_GetFrontProcess
 	movew	%sp@+,%d7	/* 100256f6:	3e1f */
 	addqw	#2,%sp	/* 100256f8:	544f */
 	bnes	.L10025712	/* 100256fa:	6616 */
@@ -5302,8 +5300,7 @@ sub_100256ca:
 	pea	%fp@(-26)	/* 100256fe:	486e ffe6 */
 	pea	%fp@(-34)	/* 10025702:	486e ffde */
 	pea	%fp@(-17)	/* 10025706:	486e ffef */
-	movew	#61,%sp@-	/* 1002570a:	3f3c 003d */
-	.short	0xa88f	/* 1002570e:	a88f */
+	_SameProcess
 	movew	%sp@+,%d7	/* 10025710:	3e1f */
 
 .L10025712:
