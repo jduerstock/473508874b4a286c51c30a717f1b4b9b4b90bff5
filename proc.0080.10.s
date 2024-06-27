@@ -903,8 +903,7 @@ sub_10037240:
 	movel	#707406378,%sp@-	/* 100372c2:	2f3c 2a2a 2a2a */
 	pea	%fp@(-36)	/* 100372c8:	486e ffdc */
 	pea	%fp@(-32)	/* 100372cc:	486e ffe0 */
-	movew	#2571,%d0	/* 100372d0:	303c 0a0b */
-	.short	0xa816	/* 100372d4:	a816 */
+	_AEGetNthDesc
 	movew	%sp@+,%d0	/* 100372d6:	301f */
 	extl	%d0	/* 100372d8:	48c0 */
 	movel	%d0,%fp@(-24)	/* 100372da:	2d40 ffe8 */

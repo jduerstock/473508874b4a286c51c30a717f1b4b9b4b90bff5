@@ -127,6 +127,11 @@
 		_Pack8
 	.endm
 
+	.macro	_AEGetNthDesc
+		movew	#0x0a0b,%d0
+		_Pack8
+	.endm
+
 	.macro	_OSDispatch
 		.short	0xa88f
 	.endm
