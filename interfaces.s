@@ -142,6 +142,16 @@
 		_Pack8
 	.endm
 
+	.macro	_AE0937
+		movew	#0x0937,%d0
+		_Pack8
+	.endm
+
+	.macro	_AE0939
+		movew	#0x0939,%d0
+		_Pack8
+	.endm
+
 	.macro	_AEGetNthDesc
 		movew	#0x0a0b,%d0
 		_Pack8
