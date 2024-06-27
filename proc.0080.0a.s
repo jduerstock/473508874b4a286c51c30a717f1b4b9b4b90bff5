@@ -3434,8 +3434,7 @@ sub_1002455c:
 	subql	#2,%sp	/* 100245c2:	558f */
 	movel	%a3,%sp@-	/* 100245c4:	2f0b */
 	pea	%fp@(-8)	/* 100245c6:	486e fff8 */
-	movew	#53,%sp@-	/* 100245ca:	3f3c 0035 */
-	.short	0xa88f	/* 100245ce:	a88f */
+	_GetPSNFromPortName
 	tstw	%sp@+	/* 100245d0:	4a5f */
 	bnes	.L100245fe	/* 100245d2:	662a */
 	tstw	%d7	/* 100245d4:	4a47 */
