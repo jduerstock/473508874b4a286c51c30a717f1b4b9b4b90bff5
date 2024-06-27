@@ -137,6 +137,11 @@
 		_Pack8
 	.endm
 
+	.macro	_AE0833
+		movew	#0x0833,%d0
+		_Pack8
+	.endm
+
 	.macro	_AEInstallEventHandler
 		movew	#0x091f,%d0
 		_Pack8
