@@ -223,8 +223,7 @@ sub_1002cb72:
 	moveal	%a0@,%a0	/* 1002cb84:	2050 */
 	pea	%a0@(4)	/* 1002cb86:	4868 0004 */
 	pea	%fp@(-8)	/* 1002cb8a:	486e fff8 */
-	movew	#53,%sp@-	/* 1002cb8e:	3f3c 0035 */
-	.short	0xa88f	/* 1002cb92:	a88f */
+	_GetPSNFromPortName
 	movew	%sp@+,%d0	/* 1002cb94:	301f */
 	extl	%d0	/* 1002cb96:	48c0 */
 	movel	%d0,%d7	/* 1002cb98:	2e00 */
