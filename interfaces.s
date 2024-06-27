@@ -206,6 +206,11 @@
 		_OSDispatch
 	.endm
 
+	.macro	_GetPortNameFromPSN
+		movew	#70,%sp@-
+		_OSDispatch
+	.endm
+
 	.macro	_FindWindow
 		.short	0xa92c
 	.endm

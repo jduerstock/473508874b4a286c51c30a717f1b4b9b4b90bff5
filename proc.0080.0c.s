@@ -4867,8 +4867,7 @@ sub_1002c2d6:
 	subql	#2,%sp	/* 1002c300:	558f */
 	movel	%a4,%sp@-	/* 1002c302:	2f0c */
 	pea	%fp@(-94)	/* 1002c304:	486e ffa2 */
-	movew	#58,%sp@-	/* 1002c308:	3f3c 003a */
-	.short	0xa88f	/* 1002c30c:	a88f */
+	_GetProcessInformation
 	movew	%sp@+,%d7	/* 1002c30e:	3e1f */
 	beqs	.L1002c316	/* 1002c310:	6704 */
 	movew	%d7,%d0	/* 1002c312:	3007 */
@@ -4887,8 +4886,7 @@ sub_1002c2d6:
 .L1002c32a:
 	subql	#2,%sp	/* 1002c32a:	558f */
 	movel	%a4,%sp@-	/* 1002c32c:	2f0c */
-	movew	#56,%sp@-	/* 1002c32e:	3f3c 0038 */
-	.short	0xa88f	/* 1002c332:	a88f */
+	_GetNextProcess
 	movew	%sp@+,%d7	/* 1002c334:	3e1f */
 	beqs	.L1002c2f0	/* 1002c336:	67b8 */
 	movew	%d7,%d0	/* 1002c338:	3007 */
@@ -4921,8 +4919,7 @@ sub_1002c348:
 	subql	#2,%sp	/* 1002c376:	558f */
 	movel	%a3,%sp@-	/* 1002c378:	2f0b */
 	pea	%fp@(-130)	/* 1002c37a:	486e ff7e */
-	movew	#58,%sp@-	/* 1002c37e:	3f3c 003a */
-	.short	0xa88f	/* 1002c382:	a88f */
+	_GetProcessInformation
 	movew	%sp@+,%d7	/* 1002c384:	3e1f */
 	beqs	.L1002c38c	/* 1002c386:	6704 */
 	movew	%d7,%d0	/* 1002c388:	3007 */
@@ -4947,8 +4944,7 @@ sub_1002c348:
 .L1002c3b4:
 	subql	#2,%sp	/* 1002c3b4:	558f */
 	movel	%a3,%sp@-	/* 1002c3b6:	2f0b */
-	movew	#56,%sp@-	/* 1002c3b8:	3f3c 0038 */
-	.short	0xa88f	/* 1002c3bc:	a88f */
+	_GetNextProcess
 	movew	%sp@+,%d7	/* 1002c3be:	3e1f */
 	beqs	.L1002c362	/* 1002c3c0:	67a0 */
 	movew	%d7,%d0	/* 1002c3c2:	3007 */
@@ -5069,8 +5065,7 @@ sub_1002c4be:
 	pea	%fp@(-2548)	/* 1002c4e2:	486e f60c */
 	moveal	%fp@(-4),%a0	/* 1002c4e6:	206e fffc */
 	movel	%a0@,%sp@-	/* 1002c4ea:	2f10 */
-	movew	#70,%sp@-	/* 1002c4ec:	3f3c 0046 */
-	.short	0xa88f	/* 1002c4f0:	a88f */
+	_GetPortNameFromPSN
 	movew	%sp@+,%d0	/* 1002c4f2:	301f */
 	extl	%d0	/* 1002c4f4:	48c0 */
 	movel	%d0,%d7	/* 1002c4f6:	2e00 */
