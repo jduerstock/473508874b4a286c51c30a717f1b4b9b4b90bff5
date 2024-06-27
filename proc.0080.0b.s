@@ -4874,8 +4874,7 @@ sub_10028f6e:
 	moveb	%fp@(-23),%sp@-	/* 10029246:	1f2e ffe9 */
 	moveq	#1,%d0	/* 1002924a:	7001 */
 	moveb	%d0,%sp@-	/* 1002924c:	1f00 */
-	movew	#2594,%d0	/* 1002924e:	303c 0a22 */
-	.short	0xa816	/* 10029252:	a816 */
+	_AEInstallCoercionHandler
 	movew	%sp@+,%d7	/* 10029254:	3e1f */
 	bras	.L100292c8	/* 10029256:	6070 */
 
