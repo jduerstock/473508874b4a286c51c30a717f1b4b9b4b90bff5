@@ -4824,8 +4824,7 @@ sub_10028f6e:
 	pea	%fp@(-23)	/* 100291bc:	486e ffe9 */
 	moveq	#1,%d0	/* 100291c0:	7001 */
 	moveb	%d0,%sp@-	/* 100291c2:	1f00 */
-	movew	#2852,%d0	/* 100291c4:	303c 0b24 */
-	.short	0xa816	/* 100291c8:	a816 */
+	_AEGetCoercionHandler
 	movew	%sp@+,%d7	/* 100291ca:	3e1f */
 	cmpiw	#-1717,%d7	/* 100291cc:	0c47 f94b */
 	bnes	.L100291da	/* 100291d0:	6608 */

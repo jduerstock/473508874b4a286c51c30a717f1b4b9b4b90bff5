@@ -132,6 +132,11 @@
 		_Pack8
 	.endm
 
+	.macro	_AEGetCoercionHandler
+		movew	#0x0b24,%d0
+		_Pack8
+	.endm
+
 	.macro	_AEGetAttributeDesc
 		movew	#0x0826,%d0
 		_Pack8
