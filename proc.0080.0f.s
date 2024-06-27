@@ -5439,8 +5439,7 @@ sub_100368b6:
 	moveml	%d6-%d7/%a4,%sp@-	/* 100368ba:	48e7 0308 */
 	subql	#2,%sp	/* 100368be:	558f */
 	pea	%fp@(-48)	/* 100368c0:	486e ffd0 */
-	movew	#55,%sp@-	/* 100368c4:	3f3c 0037 */
-	.short	0xa88f	/* 100368c8:	a88f */
+	_GetCurrentProcess
 	movew	%sp@+,%d0	/* 100368ca:	301f */
 	extl	%d0	/* 100368cc:	48c0 */
 	movel	%d0,%d7	/* 100368ce:	2e00 */
