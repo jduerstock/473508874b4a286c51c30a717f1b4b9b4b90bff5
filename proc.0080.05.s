@@ -774,8 +774,7 @@ sub_10011e5e:
 	movel	#707406378,%sp@-	/* 10011f36:	2f3c 2a2a 2a2a */
 	pea	%fp@(-88)	/* 10011f3c:	486e ffa8 */
 	pea	%fp@(-8)	/* 10011f40:	486e fff8 */
-	movew	#2571,%d0	/* 10011f44:	303c 0a0b */
-	.short	0xa816	/* 10011f48:	a816 */
+	_AEGetNthDesc
 	movew	%sp@+,%d6	/* 10011f4a:	3c1f */
 	bnew	.L100120d4	/* 10011f4c:	6600 0186 */
 	moveq	#1,%d0	/* 10011f50:	7001 */
@@ -853,8 +852,7 @@ sub_10011e5e:
 	movel	#707406378,%sp@-	/* 10012006:	2f3c 2a2a 2a2a */
 	pea	%fp@(-104)	/* 1001200c:	486e ff98 */
 	pea	%fp@(-100)	/* 10012010:	486e ff9c */
-	movew	#2571,%d0	/* 10012014:	303c 0a0b */
-	.short	0xa816	/* 10012018:	a816 */
+	_AEGetNthDesc
 	movew	%sp@+,%d6	/* 1001201a:	3c1f */
 	beqs	.L1001204e	/* 1001201c:	6730 */
 	jsr	%pc@(sub_100164fa)	/* 1001201e:	4eba 44da */
@@ -2477,8 +2475,7 @@ sub_1001304c:
 	movel	#707406378,%sp@-	/* 100130fe:	2f3c 2a2a 2a2a */
 	pea	%fp@(-76)	/* 10013104:	486e ffb4 */
 	pea	%fp@(-16)	/* 10013108:	486e fff0 */
-	movew	#2571,%d0	/* 1001310c:	303c 0a0b */
-	.short	0xa816	/* 10013110:	a816 */
+	_AEGetNthDesc
 	movew	%sp@+,%d5	/* 10013112:	3a1f */
 	beqs	.L10013146	/* 10013114:	6730 */
 	jsr	%pc@(sub_100164fa)	/* 10013116:	4eba 33e2 */
@@ -2639,8 +2636,7 @@ sub_10013202:
 	movel	#707406378,%sp@-	/* 10013282:	2f3c 2a2a 2a2a */
 	pea	%fp@(-20)	/* 10013288:	486e ffec */
 	pea	%fp@(-16)	/* 1001328c:	486e fff0 */
-	movew	#2571,%d0	/* 10013290:	303c 0a0b */
-	.short	0xa816	/* 10013294:	a816 */
+	_AEGetNthDesc
 	movew	%sp@+,%d6	/* 10013296:	3c1f */
 	beqs	.L100132ca	/* 10013298:	6730 */
 	jsr	%pc@(sub_100164fa)	/* 1001329a:	4eba 325e */
