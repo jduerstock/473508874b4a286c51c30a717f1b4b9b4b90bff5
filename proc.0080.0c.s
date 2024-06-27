@@ -3092,8 +3092,7 @@ sub_1002b1c8:
 	subql	#2,%sp	/* 1002b246:	558f */
 	movel	%a4,%sp@-	/* 1002b248:	2f0c */
 	pea	%fp@(-60)	/* 1002b24a:	486e ffc4 */
-	movew	#58,%sp@-	/* 1002b24e:	3f3c 003a */
-	.short	0xa88f	/* 1002b252:	a88f */
+	_GetProcessInformation
 	movew	%sp@+,%d7	/* 1002b254:	3e1f */
 
 .L1002b256:
@@ -3297,8 +3296,7 @@ sub_1002b3a8:
 	moveb	%d0,%sp@-	/* 1002b450:	1f00 */
 	.short	0xa99b	/* 1002b452:	a99b */
 	subql	#2,%sp	/* 1002b454:	558f */
-	movew	#64,%sp@-	/* 1002b456:	3f3c 0040 */
-	.short	0xa88f	/* 1002b45a:	a88f */
+	_BeginSystemMode
 	subql	#2,%sp	/* 1002b45c:	558f */
 	movel	%a3,%sp@-	/* 1002b45e:	2f0b */
 	moveq	#1,%d0	/* 1002b460:	7001 */
@@ -3306,8 +3304,7 @@ sub_1002b3a8:
 	_FSpOpenResFile
 	movew	%sp@+,%d7	/* 1002b46a:	3e1f */
 	subql	#2,%sp	/* 1002b46c:	558f */
-	movew	#65,%sp@-	/* 1002b46e:	3f3c 0041 */
-	.short	0xa88f	/* 1002b472:	a88f */
+	_EndSystemMode
 	moveq	#0,%d0	/* 1002b474:	7000 */
 	moveal	%d0,%a4	/* 1002b476:	2840 */
 	cmpiw	#-1,%d7	/* 1002b478:	0c47 ffff */
@@ -3562,8 +3559,7 @@ sub_1002b676:
 	bnes	.L1002b6ee	/* 1002b6dc:	6610 */
 	subql	#2,%sp	/* 1002b6de:	558f */
 	movel	%a2,%sp@-	/* 1002b6e0:	2f0a */
-	movew	#59,%sp@-	/* 1002b6e2:	3f3c 003b */
-	.short	0xa88f	/* 1002b6e6:	a88f */
+	_SetFrontProcess
 	movew	%sp@+,%d0	/* 1002b6e8:	301f */
 	braw	.L1002b7e4	/* 1002b6ea:	6000 00f8 */
 

@@ -186,6 +186,11 @@
 		_OSDispatch
 	.endm
 
+	.macro	_SetFrontProcess
+		movew	#59,%sp@-
+		_OSDispatch
+	.endm
+
 	.macro	_SameProcess
 		movew	#61,%sp@-
 		_OSDispatch
