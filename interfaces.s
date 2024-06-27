@@ -117,6 +117,11 @@
 		_Pack8
 	.endm
 
+	.macro	_AERemoveEventHandler
+		movew	#0x0720,%d0
+		_Pack8
+	.endm
+
 	.macro	_AEGetParamDesc
 		movew	#0x0812,%d0
 		_Pack8

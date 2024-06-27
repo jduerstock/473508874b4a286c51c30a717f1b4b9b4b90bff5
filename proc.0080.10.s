@@ -49,8 +49,7 @@ sub_100369c8:
 	cmpal	#1,%a4	/* 10036a24:	b9fc 0000 0001 */
 	addqw	#4,%sp	/* 10036a2a:	584f */
 	bnes	.L10036a38	/* 10036a2c:	660a */
-	movel	#-1756,%fp@(12)	/* 10036a2e:	2d7c ffff f924 */
-		/* 10036a34:	000c */
+	movel	#-1756,%fp@(12)	/* 10036a2e:	2d7c ffff f924 000c */
 	bras	.L10036a90	/* 10036a36:	6058 */
 
 .L10036a38:
@@ -102,8 +101,7 @@ sub_10036aa0:
 	pea	%pc@(sub_1003639c)	/* 10036ac0:	487a f8da */
 	moveq	#0,%d0	/* 10036ac4:	7000 */
 	moveb	%d0,%sp@-	/* 10036ac6:	1f00 */
-	movew	#1824,%d0	/* 10036ac8:	303c 0720 */
-	.short	0xa816	/* 10036acc:	a816 */
+	_AERemoveEventHandler
 	movel	#1919247203,%sp@-	/* 10036ace:	2f3c 7265 6363 */
 	jsr	%pc@(sub_100368b6)	/* 10036ad4:	4eba fde0 */
 	movel	%d0,%d7	/* 10036ad8:	2e00 */
