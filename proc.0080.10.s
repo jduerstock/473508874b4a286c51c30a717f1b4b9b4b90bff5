@@ -1644,8 +1644,7 @@ sub_1003784e:
 	movel	#1937072746,%sp@-	/* 10037abc:	2f3c 7375 626a */
 	movel	#707406378,%sp@-	/* 10037ac2:	2f3c 2a2a 2a2a */
 	pea	%fp@(-86)	/* 10037ac8:	486e ffaa */
-	movew	#2086,%d0	/* 10037acc:	303c 0826 */
-	.short	0xa816	/* 10037ad0:	a816 */
+	_AEGetAttributeDesc
 	movew	%sp@+,%d6	/* 10037ad2:	3c1f */
 	bnew	.L10037b78	/* 10037ad4:	6600 00a2 */
 	jsr	%pc@(sub_1003d67c)	/* 10037ad8:	4eba 5ba2 */

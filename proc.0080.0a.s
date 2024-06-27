@@ -3407,7 +3407,7 @@ sub_1002455c:
 	subql	#2,%sp	/* 1002456c:	558f */
 	movel	%a3,%sp@-	/* 1002456e:	2f0b */
 	movel	#1952543335,%sp@-	/* 10024570:	2f3c 7461 7267 */
-	movel	#707406378,%sp@-	/* 10024576:	2f3c 2a2a 2a2a */
+	movel	#0x2a2a2a2a,%sp@-
 	movel	%a4,%sp@-	/* 1002457c:	2f0c */
 	_AEGetParamDesc
 	movew	%sp@+,%d7	/* 10024584:	3e1f */
@@ -3416,10 +3416,9 @@ sub_1002455c:
 	subql	#2,%sp	/* 1002458c:	558f */
 	movel	%a3,%sp@-	/* 1002458e:	2f0b */
 	movel	#1633969266,%sp@-	/* 10024590:	2f3c 6164 6472 */
-	movel	#707406378,%sp@-	/* 10024596:	2f3c 2a2a 2a2a */
+	movel	#0x2a2a2a2a,%sp@-
 	movel	%a4,%sp@-	/* 1002459c:	2f0c */
-	movew	#2086,%d0	/* 1002459e:	303c 0826 */
-	.short	0xa816	/* 100245a2:	a816 */
+	_AEGetAttributeDesc
 	movew	%sp@+,%d6	/* 100245a4:	3c1f */
 	bnes	.L100245aa	/* 100245a6:	6602 */
 	movew	%d6,%d7	/* 100245a8:	3e06 */
