@@ -156,6 +156,16 @@
 		_OSDispatch
 	.endm
 
+	.macro	_BeginSystemMode
+		movew	#64,%sp@-
+		_OSDispatch
+	.endm
+
+	.macro	_EndSystemMode
+		movew	#65,%sp@-
+		_OSDispatch
+	.endm
+
 	.macro	_FindWindow
 		.short	0xa92c
 	.endm
