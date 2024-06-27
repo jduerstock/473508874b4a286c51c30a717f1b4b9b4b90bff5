@@ -1409,8 +1409,7 @@ sub_1002a134:
 	subql	#2,%sp	/* 1002a1c0:	558f */
 	pea	%fp@(-72)	/* 1002a1c2:	486e ffb8 */
 	pea	%fp@(-132)	/* 1002a1c6:	486e ff7c */
-	movew	#58,%sp@-	/* 1002a1ca:	3f3c 003a */
-	.short	0xa88f	/* 1002a1ce:	a88f */
+	_GetProcessInformation
 	movew	%sp@+,%d7	/* 1002a1d0:	3e1f */
 	bnes	.L1002a1e4	/* 1002a1d2:	6610 */
 	moveq	#2,%d0	/* 1002a1d4:	7002 */

@@ -166,6 +166,11 @@
 		_OSDispatch
 	.endm
 
+	.macro	_GetProcessInformation
+		movew	#58,%sp@-
+		_OSDispatch
+	.endm
+
 	.macro	_BeginSystemMode
 		movew	#64,%sp@-
 		_OSDispatch
