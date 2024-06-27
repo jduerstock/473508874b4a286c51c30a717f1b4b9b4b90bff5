@@ -3513,8 +3513,7 @@ sub_10024672:
 	movel	%d7,%sp@-	/* 10024676:	2f07 */
 	subql	#2,%sp	/* 10024678:	558f */
 	pea	%fp@(-8)	/* 1002467a:	486e fff8 */
-	movew	#55,%sp@-	/* 1002467e:	3f3c 0037 */
-	.short	0xa88f	/* 10024682:	a88f */
+	_GetCurrentProcess
 	movew	%sp@+,%d7	/* 10024684:	3e1f */
 	beqs	.L1002468c	/* 10024686:	6704 */
 	movew	%d7,%d0	/* 10024688:	3007 */
@@ -3561,8 +3560,7 @@ sub_100246b2:
 	movel	%a0@+,%a1@+	/* 100246ea:	22d8 */
 	subql	#2,%sp	/* 100246ec:	558f */
 	pea	%fp@(-8)	/* 100246ee:	486e fff8 */
-	movew	#55,%sp@-	/* 100246f2:	3f3c 0037 */
-	.short	0xa88f	/* 100246f6:	a88f */
+	_GetCurrentProcess
 	movew	%sp@+,%d7	/* 100246f8:	3e1f */
 	beqs	.L10024700	/* 100246fa:	6704 */
 	movew	%d7,%d0	/* 100246fc:	3007 */
