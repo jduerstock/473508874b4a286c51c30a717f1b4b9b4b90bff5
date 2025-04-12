@@ -4341,7 +4341,7 @@ sub_10010c12:
 	movel	#707406378,%sp@-	/* 10010c24:	2f3c 2a2a 2a2a */
 	pea	%fp@(-8)	/* 10010c2a:	486e fff8 */
 	movew	#0x0812,%d0	/* 10010c2e:	303c 0812 */
-	.short	0xa816	/* 10010c32:	a816 */
+	_Pack8
 	movew	%sp@+,%d0	/* 10010c34:	301f */
 	extl	%d0	/* 10010c36:	48c0 */
 	movel	%d0,%d7	/* 10010c38:	2e00 */
@@ -4363,7 +4363,7 @@ sub_10010c12:
 	subql	#2,%sp	/* 10010c56:	558f */
 	pea	%fp@(-8)	/* 10010c58:	486e fff8 */
 	movew	#0x0204,%d0	/* 10010c5c:	303c 0204 */ /* AEDisposeDesc */
-	.short	0xa816	/* 10010c60:	a816 */
+	_Pack8
 	moveq	#0,%d0	/* 10010c62:	7000 */
 	movel	%d0,%sp@-	/* 10010c64:	2f00 */
 	moveq	#101,%d1	/* 10010c66:	7265 */
@@ -4384,7 +4384,7 @@ sub_10010c7a:
 	movel	#707406378,%sp@-	/* 10010c90:	2f3c 2a2a 2a2a */
 	pea	%fp@(-16)	/* 10010c96:	486e fff0 */
 	movew	#0x0812,%d0	/* 10010c9a:	303c 0812 */ /* AEGetParamDesc */
-	.short	0xa816	/* 10010c9e:	a816 */
+	_Pack8
 	movew	%sp@+,%d7	/* 10010ca0:	3e1f */
 	beqs	.L10010cd4	/* 10010ca2:	6730 */
 	jsr	%pc@(sub_100164fa)	/* 10010ca4:	4eba 5854 */
