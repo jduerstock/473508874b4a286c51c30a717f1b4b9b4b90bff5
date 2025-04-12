@@ -950,7 +950,7 @@ sub_10041b7c:
 	pea	%fp@(-16)	/* 10041bbe:	486e fff0 */
 	pea	%fp@(-26)	/* 10041bc2:	486e ffe6 */
 	movew	#2062,%sp@-	/* 10041bc6:	3f3c 080e */
-	.short	0xa9eb	/* 10041bca:	a9eb */
+	_Pack4
 	lea	%fp@(-16),%a0	/* 10041bcc:	41ee fff0 */
 	movel	%a0@-,%sp@-	/* 10041bd0:	2f20 */
 	movel	%a0@-,%sp@-	/* 10041bd2:	2f20 */
@@ -3912,7 +3912,7 @@ sub_10043a22:
 	pea	%fp@(-30)	/* 10043a94:	486e ffe2 */
 	pea	%fp@(-8)	/* 10043a98:	486e fff8 */
 	movew	#2064,%sp@-	/* 10043a9c:	3f3c 0810 */
-	.short	0xa9eb	/* 10043aa0:	a9eb */
+	_Pack4
 	moveq	#8,%d0	/* 10043aa2:	7008 */
 	movel	%d0,%sp@-	/* 10043aa4:	2f00 */
 	pea	%fp@(-8)	/* 10043aa6:	486e fff8 */

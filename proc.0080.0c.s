@@ -4778,15 +4778,15 @@ sub_1002c21e:
 	beqs	.L1002c26a	/* 1002c24c:	671c */
 
 .L1002c24e:
-	cmpib	#97,%d6	/* 1002c24e:	0c06 0061 */
+	cmpib	#97,%d6		/* 1002c24e:	0c06 0061 */
 	blts	.L1002c268	/* 1002c252:	6d14 */
 	cmpib	#122,%d6	/* 1002c254:	0c06 007a */
 	bgts	.L1002c268	/* 1002c258:	6e0e */
-	extw	%d6	/* 1002c25a:	4886 */
-	movew	%d6,%d0	/* 1002c25c:	3006 */
-	.short	0xd07c,0x0ffe0	/* addw	#-32,%d0	/* 1002c25e:	d07c ffe0 */
-	extw	%d7	/* 1002c262:	4887 */
-	cmpw	%d0,%d7	/* 1002c264:	be40 */
+	extw	%d6		/* 1002c25a:	4886 */
+	movew	%d6,%d0		/* 1002c25c:	3006 */
+	.short	0xd07c,0xffe0	/* addw	#-32,%d0	/* 1002c25e:	d07c ffe0 */
+	extw	%d7		/* 1002c262:	4887 */
+	cmpw	%d0,%d7		/* 1002c264:	be40 */
 	beqs	.L1002c26a	/* 1002c266:	6702 */
 
 .L1002c268:
@@ -4799,14 +4799,14 @@ sub_1002c21e:
 	rts	/* 1002c274:	4e75 */
 
 sub_1002c276:
-	linkw	%fp,#0	/* 1002c276:	4e56 0000 */
+	linkw	%fp,#0		/* 1002c276:	4e56 0000 */
 	moveml	%d7/%a3-%a4,%sp@-	/* 1002c27a:	48e7 0118 */
 	moveal	%fp@(12),%a3	/* 1002c27e:	266e 000c */
 	moveal	%fp@(8),%a4	/* 1002c282:	286e 0008 */
 	moveb	%a4@,%d0	/* 1002c286:	1014 */
 	cmpb	%a3@,%d0	/* 1002c288:	b013 */
 	beqs	.L1002c290	/* 1002c28a:	6704 */
-	moveq	#0,%d0	/* 1002c28c:	7000 */
+	moveq	#0,%d0		/* 1002c28c:	7000 */
 	bras	.L1002c2cc	/* 1002c28e:	603c */
 
 .L1002c290:
@@ -4847,24 +4847,24 @@ sub_1002c276:
 .L1002c2cc:
 	moveml	%fp@(-12),%d7/%a3-%a4	/* 1002c2cc:	4cee 1880 fff4 */
 	unlk	%fp	/* 1002c2d2:	4e5e */
-	rts	/* 1002c2d4:	4e75 */
+	rts		/* 1002c2d4:	4e75 */
 
 sub_1002c2d6:
 	linkw	%fp,#-94	/* 1002c2d6:	4e56 ffa2 */
 	moveml	%d7/%a3-%a4,%sp@-	/* 1002c2da:	48e7 0118 */
 	lea	%fp@(-34),%a3	/* 1002c2de:	47ee ffde */
 	moveal	%fp@(12),%a4	/* 1002c2e2:	286e 000c */
-	moveq	#0,%d0	/* 1002c2e6:	7000 */
+	moveq	#0,%d0		/* 1002c2e6:	7000 */
 	movel	%d0,%a4@	/* 1002c2e8:	2880 */
 	movel	%d0,%a4@(4)	/* 1002c2ea:	2940 0004 */
 	bras	.L1002c32a	/* 1002c2ee:	603a */
 
 .L1002c2f0:
-	moveq	#60,%d0	/* 1002c2f0:	703c */
+	moveq	#60,%d0		/* 1002c2f0:	703c */
 	movel	%d0,%fp@(-94)	/* 1002c2f2:	2d40 ffa2 */
 	movel	%a3,%fp@(-90)	/* 1002c2f6:	2d4b ffa6 */
 	movel	%fp@(16),%fp@(-38)	/* 1002c2fa:	2d6e 0010 ffda */
-	subql	#2,%sp	/* 1002c300:	558f */
+	subql	#2,%sp		/* 1002c300:	558f */
 	movel	%a4,%sp@-	/* 1002c302:	2f0c */
 	pea	%fp@(-94)	/* 1002c304:	486e ffa2 */
 	_GetProcessInformation
@@ -4877,10 +4877,10 @@ sub_1002c2d6:
 	movel	%a3,%sp@-	/* 1002c316:	2f0b */
 	movel	%fp@(8),%sp@-	/* 1002c318:	2f2e 0008 */
 	jsr	%pc@(sub_1002c276)	/* 1002c31c:	4eba ff58 */
-	tstb	%d0	/* 1002c320:	4a00 */
-	addqw	#8,%sp	/* 1002c322:	504f */
+	tstb	%d0		/* 1002c320:	4a00 */
+	addqw	#8,%sp		/* 1002c322:	504f */
 	beqs	.L1002c32a	/* 1002c324:	6704 */
-	moveq	#0,%d0	/* 1002c326:	7000 */
+	moveq	#0,%d0		/* 1002c326:	7000 */
 	bras	.L1002c33a	/* 1002c328:	6010 */
 
 .L1002c32a:

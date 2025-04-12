@@ -5013,7 +5013,7 @@ sub_1001e79a:
 	movew	%a0@+,%a1@+	/* 1001e7ee:	32d8 */
 	pea	%fp@(-24)	/* 1001e7f0:	486e ffe8 */
 	movew	#22,%sp@-	/* 1001e7f4:	3f3c 0016 */
-	.short	0xa9eb	/* 1001e7f8:	a9eb */
+	_Pack4
 	pea	%fp@(-24)	/* 1001e7fa:	486e ffe8 */
 	jsr	%pc@(sub_1001f6ea)	/* 1001e7fe:	4eba 0eea */
 	movel	%d7,%d1	/* 1001e802:	2207 */

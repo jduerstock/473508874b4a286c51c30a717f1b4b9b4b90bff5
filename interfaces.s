@@ -266,6 +266,10 @@
 		_FP68K
 	.endm
 	
+	.macro	_Pack4
+		.short	0xa9eb
+	.endm
+
 	.macro	_PtrAndHand
 		.short	0xa9ef
 	.endm

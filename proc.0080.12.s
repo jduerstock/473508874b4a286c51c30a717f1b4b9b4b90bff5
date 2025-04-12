@@ -3962,11 +3962,11 @@ sub_1003ff76:
 	pea	%fp@(-32)	/* 1003ff96:	486e ffe0 */
 	pea	%fp@(-30)	/* 1003ff9a:	486e ffe2 */
 	movew	#8206,%sp@-	/* 1003ff9e:	3f3c 200e */
-	.short	0xa9eb	/* 1003ffa2:	a9eb */
+	_Pack4
 	pea	%fp@(-30)	/* 1003ffa4:	486e ffe2 */
 	pea	%fp@(-20)	/* 1003ffa8:	486e ffec */
 	movew	#10,%sp@-	/* 1003ffac:	3f3c 000a */
-	.short	0xa9eb	/* 1003ffb0:	a9eb */
+	_Pack4
 	bccs	.L1003ffca	/* 1003ffb2:	6416 */
 	lea	%fp@(-42),%a0	/* 1003ffb4:	41ee ffd6 */
 	lea	%fp@(-20),%a1	/* 1003ffb8:	43ee ffec */
@@ -4001,13 +4001,13 @@ sub_1003ff76:
 	pea	%a0@(2)	/* 1003fffe:	4868 0002 */
 	pea	%fp@(-10)	/* 10040002:	486e fff6 */
 	movew	#10,%sp@-	/* 10040006:	3f3c 000a */
-	.short	0xa9eb	/* 1004000a:	a9eb */
+	_Pack4
 	bccs	.L10040062	/* 1004000c:	6454 */
 	moveal	%a4@,%a0	/* 1004000e:	2054 */
 	pea	%a0@(12)	/* 10040010:	4868 000c */
 	pea	%fp@(-10)	/* 10040014:	486e fff6 */
 	movew	#10,%sp@-	/* 10040018:	3f3c 000a */
-	.short	0xa9eb	/* 1004001c:	a9eb */
+	_Pack4
 	bles	.L10040062	/* 1004001e:	6f42 */
 	moveal	%a3,%a0	/* 10040020:	204b */
 	_HGetState
